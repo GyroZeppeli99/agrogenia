@@ -1,6 +1,0 @@
-chmod +x consenso_multi_corrida.py
-
-
-python consenso_multi_corrida.py \
-  --corridas v51_fresa_exh_sep_microbios.json v51_fresa_exh_auto.json v52_fresa_exh_sep_microbios.json \
-  --salida consenso_fresa_3_corridas
