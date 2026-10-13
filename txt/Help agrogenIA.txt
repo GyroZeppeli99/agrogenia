@@ -1,0 +1,26 @@
+(venv) elrob@elrob-Desktop:~/agrogenia$ python pipeline_v4.2.1_validacion.py --help
+usage: pipeline_v4.2.1_validacion.py [-h] [--rasgo RASGO] [--receptora {yuca,arabidopsis,arroz,tomate}] [--max-por-especie MAX_POR_ESPECIE] [--max-hmmer MAX_HMMER] [--top TOP] [--estrategia {A,B}] [--modelo {calidad,rapido,razonador}]
+                                     [--salida SALIDA]
+
+AgroGenIA V4.2 - Busqueda trans-especie orquestada
+
+options:
+  -h, --help            show this help message and exit
+  --rasgo RASGO         Rasgo objetivo (cualquier rasgo imaginable) (default: tolerancia a sequia)
+  --receptora {yuca,arabidopsis,arroz,tomate}
+  --max-por-especie MAX_POR_ESPECIE
+                        Max proteinas por especie donante (default: 50)
+  --max-hmmer MAX_HMMER
+                        Max proteinas a escanear con HMMER (default: 200)
+  --top TOP             Candidatos a priorizar (default: 10)
+  --estrategia {A,B}    A: prioriza ortologos (sesgo natural hacia plantas). B: fuerza diversidad reservando slots por tipo de organismo (default: A)
+  --modelo {calidad,rapido,razonador}
+  --salida SALIDA
+
+
+
+# Estrategia A: sesgo hacia ortólogos
+python pipeline_v4.2.1_validacion.py --rasgo "tolerancia a sequia" --receptora yuca --estrategia A --salida v42_sequia_EA
+
+# Estrategia B: diversidad equilibrada
+python pipeline_v4.2.1_validacion.py --rasgo "tolerancia a sequia" --receptora yuca --estrategia B --salida v42_sequia_EB

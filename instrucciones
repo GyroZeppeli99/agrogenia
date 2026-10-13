@@ -1,0 +1,15 @@
+export GROQ_API_KEY="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"
+python pipeline_piloto.py --test-groq
+
+
+
+python pipeline_piloto.py --rasgo "tolerancia a sequía" --especie arroz --salida informe_arroz_seq
+python pipeline_piloto.py --rasgo "tolerancia a sequía" --especie tomate --salida informe_tomate_seq
+
+
+python pipeline_piloto.py --rasgo "tolerancia a sequía" --especie yuca --salida informe_yuca_seq
+python pipeline_piloto.py --rasgo "tolerancia a salinidad" --especie yuca --salida informe_yuca_sal
+python pipeline_piloto.py --rasgo "resistencia a enfermedades" --especie yuca --salida informe_yuca_enf
+python pipeline_piloto.py --rasgo "eficiencia de nitrógeno" --especie yuca --salida informe_yuca_nit
+python pipeline_piloto.py --rasgo "rendimiento" --especie yuca --salida informe_yuca_ren
+python pipeline_piloto.py --rasgo "tolerancia a calor" --especie yuca --salida informe_yuca_cal

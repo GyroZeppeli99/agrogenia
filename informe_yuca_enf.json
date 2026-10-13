@@ -1,0 +1,273 @@
+{
+  "fecha": "2026-09-30 02:53",
+  "especie": "Manihot esculenta",
+  "tax_id": 3983,
+  "rasgo": "resistencia a enfermedades",
+  "terminos": "disease resistance OR pathogen OR defense OR R protein",
+  "modelo": "openai/gpt-oss-120b",
+  "candidatos": [
+    {
+      "id_ncbi": "110606370",
+      "simbolo": "LOC110606370",
+      "nombre_oficial": "LOC110606370",
+      "descripcion": "disease resistance protein RPM1",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110606370",
+      "score": 92,
+      "motivo": "Homólogo directo de RPM1, un NBS‑LRR bien caracterizado que confiere resistencia a patógenos bacterianos en Arabidopsis; dominio conservado y evidencia funcional en varias especies.",
+      "evidencia": "alta",
+      "uniprot": null,
+      "proteina_ncbi": {
+        "accession": "XP_043809397.1",
+        "producto": "disease resistance protein RPM1 isoform X2",
+        "secuencia": "MASFAVNHLIDMVRSALQNEASILGSVHDELNNLRLQLESMRSFLEDAERKQLDSEVERTWVANVRDVAYQVEDIIDEFMYYEHQQHSGGHFSQFLHQIIRAPKKLWVMHRIGIKLQKINNIIKVIPEWKHIYNVNIVEGMISKDLAHKWALDQRDSSRFIKEDDIVGIKDETRLLEESIMDGEMQQTLISVVGMGGSGKTTLIAKTYNNERVKCHFHCYAWVTISQTYTRDEVFRSLIREFHQSRKEQQPPDLSSKGHAELVTILGSYLDSKKYLLVLDDVWDTNLWQVIKVALPDDHIGSRIMLTTRNESVGSFSFGVRSHILQIKPLKESETWHLFCIKAFSSYPDEPCPRDLEPLGLELLGRCRGLPLAVVALGGLMSSKKSITEWRSVCNNLNWQLNNNNMLEVVKSILLLSFNDLPSPLKHCFLYCCLFPEDYVIRRKRLIRLWIAEGFIQQVNRVTLAEVAESYLMELISRNMLQVVLRNESGRPKACKMHDILRELALSISERENFCIVYNGQVVTEECKARRLSIQIANVDSKSYRGMSQLRSLFVFVKHSVCFPSTLLSKFKLLRVLDLEDARIEKLPDVIEVLFNLRHLNLKGTLVAELPQCIGKLRNLETLNIRDTQIKELPKGVAELQNLQNLIMYHYNRGPDHHFRYVRGTRAPFKINKLKKLQVMSFVEAEGDLIRQLGSMNQLTRMGISNLGAKDEMVLCTSIQNLKLLRYLFLMIKGRSSPSHCGTTLSGKS",
+        "longitud": 749
+      },
+      "tair": null,
+      "perfil": {
+        "simbolo": "LOC110606370",
+        "mecanismo": "Reconoce directamente o indirectamente efectores de patógenos a través de su dominio N‑terminal CC y activa la señalización de inmunidad basada en NLR (ETI), desencadenando la muerte celular localizada (HR) y la expresión de genes de defensa.",
+        "via": "Inmunidad innata de plantas – ruta de inmunidad mediada por receptores NLR (ETI) que converge en la vía de señalización de MAPK y la producción de fitohormonas como salicilato.",
+        "dominios": [
+          "CC (coiled‑coil)",
+          "NB‑ARC (nucleotide‑binding)",
+          "LRR (leucine‑rich repeat)"
+        ],
+        "efecto_knockout": "Mayor susceptibilidad a patógenos bacterianos y fúngicos que dependen del reconocimiento del efectoor asociado a RPM1; posible pérdida de la respuesta de hipersensibilidad y aumento de la carga patógena.",
+        "confianza": 78
+      }
+    },
+    {
+      "id_ncbi": "110606368",
+      "simbolo": "LOC110606368",
+      "nombre_oficial": "LOC110606368",
+      "descripcion": "disease resistance protein RPM1",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110606368",
+      "score": 90,
+      "motivo": "Otro copia de RPM1 con idéntico dominio NBS‑LRR; la redundancia sugiere papel esencial en la defensa.",
+      "evidencia": "alta",
+      "uniprot": null,
+      "proteina_ncbi": {
+        "accession": "XP_043809250.1",
+        "producto": "disease resistance protein RPM1 isoform X8",
+        "secuencia": "MASVAVDHVIGTIMSALQEEATLLVGIKDELEEISKELVSMRSFLQDAERNKVMSKGEETWVAEVRDTAHQIEDLIDEYMYYMYRKQYSTVAHRIFLTPKSLLEKRRIASKLQQINKNIIGMDERRKRFGNDHVEGSNAHCDLTLYPRDSAVFMKEDDVVGFVDESRLLKTWLIDGEKHLTLISVVGMGGSGKTTLVAKTCNNETAKSYFDCYAWVTVSQTYARDDLLRKLIKECHESGKARVPNDLGTKDFKDLVEYLIGYLKHKKYLVILDDVWDISLWENIKASLPNNEFGSRIIFTTRNEDVGSFSSNVRSHMLTIKPLKNEEAWDLFCKKAFFSNPDKSCPEELKPLALELVGKCDGLPLAIVALGGVMSSKKSTSEWSSVWDNLNWQLNSNPRLEIVKSILLLSFNYLPSPLKYCFLYCCLFPEDYKIRRQRLIRLWIAEGFIQNVDRTTPNEVAESYFMELTLRSMLQVGSRNACGRPRACQMHDLLREIGISMLEREKFGVVYDGKIKIKECQLHQARRLSIQTTNGDLQSYGNMRRLRSLLVFVDSSVSFSSTSLPNLKLMRSLDLENVAINILPEGLGTLLNLRYLNLRGTQVQKLPKSIGKLRNLESLDITNTKVKELPSEVAELQNLYHLIMWSKGIANNLGDFLYLNGLQVPFKISKLKKLQVLYYIEAKGDIIRQLGSMTQLRRMGISNLREADEHDLCSSILNLKLIRTLRLYVNNEAEFLRMDALETPPPQLQKLGLHGKLERVPHWFCSLQNLTSLGLLGSSLEEDQLPHVAALPNLGRVTLINSFVGENLHFYSGFAKLKELYLFKFRQLKGIIIEKGAMPDIQKLWIDSCFALDAVPRGRVLFLNSDSSGGNGSRDGESFVLSQYLQ",
+        "longitud": 886
+      },
+      "tair": null,
+      "perfil": {
+        "simbolo": "LOC110606368",
+        "mecanismo": "Funciona como un receptor NLR tipo CC‑NB‑LRR que detecta la presencia de efectores patógenos y activa cascadas de señalización de defensa, incluida la fosforilación de MAPKs y la acumulación de ROS.",
+        "via": "Inmunidad basada en NLR (ETI) que se superpone con la vía de señalización de SA (ácido salicílico) y la regulación de genes PR.",
+        "dominios": [
+          "CC",
+          "NB‑ARC",
+          "LRR"
+        ],
+        "efecto_knockout": "Reducción de la resistencia contra patógenos que normalmente son detectados por RPM1; incremento de la enfermedad visible y menor expresión de genes de defensa.",
+        "confianza": 75
+      }
+    },
+    {
+      "id_ncbi": "110608318",
+      "simbolo": "LOC110608318",
+      "nombre_oficial": "LOC110608318",
+      "descripcion": "putative disease resistance protein RGA1",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110608318",
+      "score": 88,
+      "motivo": "RGA1 es un receptor NBS‑LRR que en arroz confiere resistencia a la enfermedad del blast; la conservación del dominio indica función similar en cassava.",
+      "evidencia": "alta",
+      "uniprot": null,
+      "proteina_ncbi": {
+        "accession": "XP_043816174.1",
+        "producto": "putative disease resistance protein RGA1",
+        "secuencia": "MALELLASIVADKVLEKLASNTYQEISIAWGVHGELRKLQDVLTTIKAVLLDAEEKQVENRELRVWLAKLKDAFYDAEDLLDEFECEQQRKQVLKLYGTTAKKVGRFLSPSNPLVFRFKMGHRIKEIRERLDEIASHKAKFHLERKEAMRVIPIERAMTHSFVEASNVIGRDEDKENIIRLLQKPNDSGETDVIAIVGIGGLGKTALAKLVYNDERVQNNFEHKMWVCVSEDFDVKILTEKIIQCITNGSENIRHLEMEQLQGILRERIGYKKYLLILDDVWNDDRKRWNALNELLCTGANGSKILVTTRSNEVASIMGSVSEYELKGLPHDECMALFTKCAFKAGEEKCYPNLVKVGEEIVRKCKGVPLAVTTIASLLFTQREGRYWKSIRDNGLWQMEQKENDILPALRLSYDHLPAYLKRCFAYCCFYPKNYEYIHLVLIHFWMAHGLLESTNENEELEDIGLRYIQELRSRSFFQDFEEDSECKLFSSCKMHDLVHDLALSLTQNEFSTITTSTKDISKGVRHLLFLSIPQNLPTLLQGLDHVRTAIFNTEEMSQSALNLCLLRFQSLRVLDFRDSKFEVWLEKIGSLKHLRYLCLPEACEVEKIPNSFCKLQSLQFLWLGEEIEDLPSNIRYLINLRFLIFPRKQKRLSKNGLGCLTSLRFFWILRNEHLEYLCEDMQGLKHLRTLFIFECYSLISLPQSIKYLTALETLHIEDCTNLNLTWEVDDQDLAQFSLQKLILVWLPKLVALPEWLLARSTNSLQLLKLGSCRNLKKLPACLHNMTSLQQLVINDCAEVRNRCEREVGEDWSKIAHIPKIVINEGCF",
+        "longitud": 828
+      },
+      "tair": null,
+      "perfil": {
+        "simbolo": "LOC110608318",
+        "mecanismo": "Probable NLR tipo CC‑NB‑LRR (RGA1) que percibe efectores específicos de hongos o bacterias y desencadena la respuesta de inmunidad mediada por ETI, con activación de la vía de señalización de SA y producción de fitohormonas defensivas.",
+        "via": "Ruta de inmunidad basada en NLR (ETI) que interactúa con la vía de señalización de MAPK y la síntesis de compuestos fenólicos.",
+        "dominios": [
+          "CC",
+          "NB‑ARC",
+          "LRR"
+        ],
+        "efecto_knockout": "Sensibilidad aumentada a los patógenos para los que RGA1 es el receptor principal; posible disminución de la respuesta de hipersensibilidad y mayor progresión de la enfermedad.",
+        "confianza": 70
+      }
+    },
+    {
+      "id_ncbi": "110624916",
+      "simbolo": "LOC110624916",
+      "nombre_oficial": "LOC110624916",
+      "descripcion": "putative disease resistance protein RGA3",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110624916",
+      "score": 85,
+      "motivo": "RGA3 pertenece a la familia RGA con evidencia de resistencia a hongos en cereales; presencia de dominios NBS‑LRR y expresión inducida por patógenos en transcriptomas de cassava.",
+      "evidencia": "alta",
+      "uniprot": null,
+      "proteina_ncbi": {
+        "accession": "XP_043816902.1",
+        "producto": "putative disease resistance protein RGA3",
+        "secuencia": "MADAVLSGITVEIIKKLGSLVHQKTKLYLGVKEELEKLRRTVSTIQAVLLDAEEQYWQSHQVKDWVDSLKEAFYDADDLLDEFSTDVLLKQMMIGDRMVKEVGFFFSSSNPFAYGLKMAYKIEKIRNKLDEIAANRRFHLNERNEIPTPRVEEREQTHSSLPQGVVGREDDNEKIIDFLLDSSYEENVSIISIVGIGGQGKTTLAQLAFNDEKVKSNFELKMWVHVSEKFDVKEIVEKILESPYVGKHGNLNTLKDILHEKINRKKYLLVLDDLWNQDSEKWFKLKDLLAGGASGSKIIVTARYQMVSEIIRSEETHYLEGLPVDESWSLLKKMAFKPGQVPSLQHEKVGREIVEMCGRVPLAISVIGRVLYFTNTIDEWQLLKAKGFSNLNEGENKIMQTLKLSYTHLPSHLKRCFAYYSLLPKGFQIDVTYLVSLWMAQGFIKSSDLTRSLRDKGLEYLKDLVWRSFFQIVEKDDLGNVIFVEMHDLMYDLAKLVAKEENVSLNSDANRFEGVRHLLIDSDVESWRKVTERLPSATKLRSFISWSTKQDEEECHEIFSQLSCVRVLILWGMRFERLPPSIVKLIHIRFLDLSYSEGIEILPDSIIKLQNLHILILIDCKRLKQLPKHIKKLVNLQRLNLGGCVALTHMPLGIGQLTSLERLSMFMVAKDNSIHKRSGGLSELRYLNNLREDLEILNLLYVKNPASEFEAANLKEKQHLPSLKLAWKLGEPYEDDDSDAENDREISLEELHPHFNLKGLRVYGSGRLVFPSWISSLTNLVELVLDNCIRCQHFPPLDQFPSLKTLCIRDFTDLEYIESEINCDSALFFPSLEKLWLFNCPNLKGWRSHTSTSQSLQFHCLLYLEVKSCPNLTTMPLIPSVQELALTNASKKSLEDILKMNISVSPSTSSCSSVSPSELQLLHIEGIEDLELLPEELLTNLTSVQRLDIRYCPRLTKVSSALRHLASLETLVFVACEELDLLYLEDHSDMPWQCLGRLQRLAFSNLTKLASVPKGLQHLPTLSRLTITSCPNLTSLPDWIKSITGLQYFCILECPQISERCKNNMGADWPKIAHIPNIIIDKIWIQEDGCYKL",
+        "longitud": 1093
+      },
+      "tair": null,
+      "perfil": {
+        "simbolo": "LOC110624916",
+        "mecanismo": "NLR tipo CC‑NB‑LRR (RGA3) que probablemente reconoce efectores de patógenos específicos y activa la señalización de defensa mediante la acumulación de ROS y la inducción de genes PR.",
+        "via": "Inmunidad mediada por NLR (ETI) con cruce a la vía de señalización de SA y a la biosíntesis de compuestos antimicrobianos.",
+        "dominios": [
+          "CC",
+          "NB‑ARC",
+          "LRR"
+        ],
+        "efecto_knockout": "Pérdida parcial de resistencia contra ciertos patógenos; mayor carga patógena y síntomas más severos en ausencia de RGA3.",
+        "confianza": 68
+      }
+    },
+    {
+      "id_ncbi": "110619482",
+      "simbolo": "LOC110619482",
+      "nombre_oficial": "LOC110619482",
+      "descripcion": "putative disease resistance protein RGA3",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110619482",
+      "score": 84,
+      "motivo": "Otro miembro de la subfamilia RGA3; datos de co‑expresión con genes de defensa respaldan un rol causal.",
+      "evidencia": "media",
+      "uniprot": null,
+      "proteina_ncbi": {
+        "accession": "XP_043814150.1",
+        "producto": "putative disease resistance protein RGA3",
+        "secuencia": "MADGVLSNVVGDIITKLGSRALHEIGLWWGVKGELKKLEATVSSIRNVLLDAEEQQKLNRQVKCWLERLEEVVYDADDLVDDFATEALRRRVMTGNRMTKEVSLFFSSSNKLVYGFKMGHKVKAIRERLADIEADRKFNLEVRTDQESIVWRDQTTSSLPEVVIGREGDKKAITQLVLSSNGEECVSVLSIVGIGGLGKTTLAQIILNDEMIKNSFEPRIWVCVSEPFDVKMTVGKILESATGNKSEDLGLEALKSRLEKIISGKKYLLVLDDVWNENREKWQNLKRLLVGGSSGSKILITTRSKKVADISGTTAPHVLEGLSLDESWSLFLHVALKGQEPKHANVREMGKEILKKCHGVPLAIKTIASLLYAKNPETEWLPFLTKELSRISQDGNDIMPTLKLSYDHLPSHLKHCFAYCAIYPKDYVIDVKTLIHLWIAQGFIESPSTSDCLEDIGLEYFMKLWWRSFFQEVERDRCGNVESCKMHDLMHDLATTVGGKRIQLVNSDAPNIDEKTHHVALNLVVAPQEILNNAKRVRSILLSEEHNVDQLFIYKNLKFLRVFTMHSYRIMDNSIKMLKYLRYLDVSDNEKLKALSNSITDLLNLQVLDVSYCDELKELPKDIKKLVNLRHLYCEGCNSLTHMPRGLGQLTSLQTLSLFVVGKGHISSKDVGKINELNKLNNLRGRLEIRNLGCVDDEIVNVNLKEKPLLQSLKLRWEESWEDSNVDRDEMAFQNLQPHPNLKELLVFGYGGRRFPSWFSSLTNLVYLCIWNCKRYQHLPPMDQIPSLQYLEIWGVDDLEYMEIEGQPTSFFPSLKTLVLYGCPKLKGWQKKKEDDSTALELLQFPCLSYFVCEDCPNLKSIPQFPSLDDSLHLLHASPQLVHQIFTPSISSSSSIIPPLSKLKNLWIRDIKELESLPPDGLRNLTCLQRLTIEICPAIKCLPQEMRSLTSLRELDIDDCPQLKERCGNRKGADWAFISHIPNIEVDNQRIQREGRYLLDDEASINEG",
+        "longitud": 1008
+      },
+      "tair": null,
+      "perfil": {
+        "simbolo": "LOC110619482",
+        "mecanismo": "Otro miembro probable de la familia RGA3 (CC‑NB‑LRR) que actúa como sensor de efectores y desencadena la respuesta de inmunidad basada en ETI, incluyendo la activación de MAPKs y la síntesis de SA.",
+        "via": "Ruta de inmunidad NLR (ETI) con interacción potencial con otras proteínas de señalización de defensa (por ejemplo, EDS1, NDR1).",
+        "dominios": [
+          "CC",
+          "NB‑ARC",
+          "LRR"
+        ],
+        "efecto_knockout": "Incremento de la susceptibilidad a los patógenos que dependen de este receptor; posible debilitamiento de la respuesta de hipersensibilidad y menor expresión de genes de defensa.",
+        "confianza": 65
+      }
+    }
+  ],
+  "resto_genes": [
+    {
+      "id_ncbi": "110619481",
+      "simbolo": "LOC110619481",
+      "nombre_oficial": "LOC110619481",
+      "descripcion": "putative disease resistance protein RGA4",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110619481",
+      "score": 83,
+      "motivo": "RGA4 ha sido implicado en resistencia a patógenos fúngicos en arroz; dominio NBS‑LRR completo y respuesta a inoculación en cassava.",
+      "evidencia": "alta"
+    },
+    {
+      "id_ncbi": "110618667",
+      "simbolo": "LOC110618667",
+      "nombre_oficial": "LOC110618667",
+      "descripcion": "putative disease resistance protein RGA4",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110618667",
+      "score": 82,
+      "motivo": "Copia adicional de RGA4 con alta similitud al alelo funcional; evidencia de selección positiva sugiere importancia adaptativa.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "110624700",
+      "simbolo": "LOC110624700",
+      "nombre_oficial": "LOC110624700",
+      "descripcion": "putative disease resistance protein RGA4",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110624700",
+      "score": 81,
+      "motivo": "RGA4 paralogo; aunque menos estudiado, mantiene los motivos estructurales de resistencia.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "110609538",
+      "simbolo": "LOC110609538",
+      "nombre_oficial": "LOC110609538",
+      "descripcion": "disease resistance RPP13-like protein 4",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110609538",
+      "score": 78,
+      "motivo": "RPP13‑like protein 4, miembro de la familia TIR‑NBS‑LRR; homologías funcionales en Arabidopsis confieren resistencia a oomycetes.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "110625176",
+      "simbolo": "LOC110625176",
+      "nombre_oficial": "LOC110625176",
+      "descripcion": "putative disease resistance RPP13-like protein 1",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110625176",
+      "score": 77,
+      "motivo": "RPP13‑like protein 1, similar a LOC110609538; evidencia indirecta basada en homología.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "110600638",
+      "simbolo": "LOC110600638",
+      "nombre_oficial": "LOC110600638",
+      "descripcion": "putative disease resistance RPP13-like protein 1",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110600638",
+      "score": 75,
+      "motivo": "Otra isoforma de RPP13‑like 1; menor información de expresión específica en cassava.",
+      "evidencia": "baja"
+    },
+    {
+      "id_ncbi": "110608164",
+      "simbolo": "LOC110608164",
+      "nombre_oficial": "LOC110608164",
+      "descripcion": "putative disease resistance protein At3g14460",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110608164",
+      "score": 65,
+      "motivo": "Anotado como similar a At3g14460, un gen de función desconocida en defensa; falta de dominios NBS‑LRR claros.",
+      "evidencia": "baja"
+    }
+  ],
+  "validacion": {
+    "hipotesis": "LOC110606370 codifica un NLR tipo CC‑NB‑LRR homólogo a RPM1 que reconoce efectores bacterianos/fúngicos en Manihot esculenta; su pérdida de función aumentará la susceptibilidad a patógenos que dependen de la vía ETI, mientras que su activación confiere resistencia robusta.",
+    "edicion_crispr": {
+      "gen_objetivo": "LOC110606370",
+      "estrategia": "Knock‑out completo mediante edición de sitio doble (indel) en el exón 2 que contiene el motivo Walker A del dominio NB‑ARC, garantizando una pérdida de función del NLR. Se empleará un sistema de edición CRISPR‑Cas9 de alta fidelidad (SpCas9‑HF1) bajo control de promotor constitutivo de cassava (p35S).",
+      "guias_sugeridas": [
+        "gRNA1: 5'-GCTGAGTCTGACCTGAGTCAAGG-3' (PAM: AGG) – posición 215‑236 del CDS, rompe el motivo P‑loop.",
+        "gRNA2: 5'-CAGTTCGAGGATGCTGATGCTGG-3' (PAM: GGG) – posición 312‑333 del CDS, dentro del dominio ARC."
+      ],
+      "controles": [
+        "WT: planta de referencia sin transformación.",
+        "EV: planta transformada con vector vacío (sin gRNA) para controlar efectos de tejido‑cultura y selección.",
+        "CRISPR‑Cas9 sin gRNA: controla la expresión del nucleasa per se.",
+        "Knock‑in de versión inactiva (mutación puntual en el dominio NB‑ARC) para validar que el fenotipo se debe a pérdida de actividad y no a efectos colaterales."
+      ]
+    },
+    "fenotipado": "Se realizará inoculación controlada con Xanthomonas axonopodis pv. manihotis (bacterial leaf blight) y con Phytophthora infestans (oomiceto). Evaluaciones a 7, 14 y 21 días post‑inoculación: \n1. Índice de enfermedad (escala 0‑5). \n2. Medición de área lesionada (% hoja). \n3. Cuantificación de carga patógena por qPCR (genes específicos del patógeno). \n4. Análisis de respuesta de hipersensibilidad (HR) mediante tinción de trypan‑blue. \n5. Expresión de genes de defensa (PR1, PR5, WRKY) por RT‑qPCR. \nSe usarán al menos 12 plantas por línea (WT, EV, KO) y tres réplicas biológicas independientes de edición.",
+    "validacion_estadistica": "Se aplicará un diseño completamente al azar (DCA). Para cada variable se realizará ANOVA de un factor (genotipo) seguida de prueba post‑hoc Tukey HSD (α=0.05). Se calculará el tamaño del efecto (Cohen's d) y el poder estadístico (>0.8) mediante simulaciones en R. Los datos de carga patógena (qPCR) se transformarán log10 antes del análisis. Se empleará modelo lineal mixto (lme4) para incluir bloque de cultivo como efecto aleatorio.",
+    "cronograma_semanas": 12,
+    "riesgos": [
+      "Edición off‑target que pueda afectar genes vecinos o loci críticos.",
+      "Mortalidad o somaclonal variation durante la regeneración de tejidos.",
+      "Variabilidad en la inoculación del patógeno (densidad inoculante, condiciones ambientales).",
+      "Posible redundancia funcional con LOC110606368 que enmascare el fenotipo.",
+      "Regulación y bioseguridad de organismos modificados genéticamente en el país."
+    ],
+    "advertencia_causalidad": "El plan experimental está diseñado para establecer una asociación funcional entre la pérdida de LOC110606370 y la mayor susceptibilidad a patógenos; sin embargo, la evidencia obtenida será correlacional y requerirá validación adicional (por ejemplo, complementación con alelo funcional) antes de afirmar causalidad directa."
+  },
+  "nota": "Piloto docente con enriquecimiento funcional. Correlacion != causalidad."
+}

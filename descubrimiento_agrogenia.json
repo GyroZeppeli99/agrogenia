@@ -1,0 +1,1807 @@
+{
+  "fecha": "2026-09-30 19:58",
+  "especie": "Manihot esculenta",
+  "tax_id": 3983,
+  "rasgo": "tolerancia a sequia",
+  "terminos_brazo_a": "drought OR dehydration OR water deficit OR desiccation OR ABA",
+  "modelo": "openai/gpt-oss-120b",
+  "embudo": {
+    "total": 59151,
+    "excluidas": 1469,
+    "candidatas": 57682,
+    "nivel_filtro": 3,
+    "con_dominios": 269,
+    "uso_hmmer": true
+  },
+  "noveles": [
+    {
+      "accession": "Manes.14G047368.1.p",
+      "descripcion": "pacid=50259916 transcript=Manes.14G047368.1 locus=Manes.14G047368 ID=Manes.14G047368.1.v8.1 annot-version=v8.1",
+      "secuencia": "MMKLPPGFRFQPTDEELVFEYLKRKVLSWPLPASIIPVINLCNYDPWDLPGDKEQERYFFSHREAKYRNGNRINRATASGYWKATGLDRQIGPSHKNTALGMKKTLVFYRGKAPHASRTDWIMHEYRLVSVGDVASNSFPQTKNSAQNSCDEIEKWVLCRIYLKKRNSEIDENCEDERVENAAVTYDQRRFFYFTRRDEIVFDSVSSSSSSSSSSGITEVSSNGEDLDEESSSSSCNFF*",
+      "longitud": 240,
+      "dominios_raw": [
+        {
+          "dominio": "NAM",
+          "accession": "PF02365.19"
+        }
+      ],
+      "dominios_estres": [
+        {
+          "dominio": "NAM",
+          "funcion": "familia NAC, senescencia y estres"
+        }
+      ],
+      "score_novel": 85,
+      "pista": "Dominio NAM (NAC transcription factor) asociado a regulación de respuestas a sequía",
+      "especulacion": "baja",
+      "estructura": {
+        "fuente": "ESMAtlas (verificar manualmente)",
+        "url": "https://esmatlas.com/search?q=Manes.14G047368.1.p"
+      },
+      "menciones_pmc": 0,
+      "es_novel": true
+    },
+    {
+      "accession": "Manes.14G053100.4.p",
+      "descripcion": "pacid=50259879 transcript=Manes.14G053100.4 locus=Manes.14G053100 ID=Manes.14G053100.4.v8.1 annot-version=v8.1",
+      "secuencia": "MECCSWFLLSCLLWSSLILGSHQLQSSQRQVLLQLRKHLEFPNLLEIWNDHGIDFCYISSSSQVNMSCQDNFVTELRITGDKPAKFDNSVGRVIPNQTLSENFSMDSFVVTLARLNSLRVLSLISLGLWGPLPDKIHRLSSLEYLDLSSNYLFGSVPPKISAMVKLQTLILDDNFFNDTVPNWFDSLSNLKILRLRNNQLKGPFPSSIQRINSLTYLVLSSNEISGKLPSLDALSNLHLLDLSGNHLDSKLPSMPKGLVTVVLSNNSFSGEIPHQYSQLGQLQYLDMSFNELSGTPPATIFTLPNISYLNLASNMLSGSLPDQLSCGSKLQFVDISNNSFTGRLPHCLRTESDDRVVKFDGNCLSTGLHHQRAESSCMVMPVKHKNSGGKDVGIVVGVAAGILVIVVLLAFGFLVLCRRYCPRGISEQHLLHKAVQENPAAGFPSDILNSARFISQAAKLGTQDLPACRSFALEELKEATKNFDNSTILGEGSYGKLYKGRLEDGTQVAIRCLPSSKKYSFRNLKLRLDLLAKLRHPHLVCLLGHCIDSGGQDDYRVNRVFLIFEYISNGSFHTRLYENSPGKVLDWSERLTVLIGVAKAVHFLHTGVIPGFFNNRLKTNNILLNEHGNAKLSDYGLSIISEEIVNCREGGEGFKSWQMARLEDDVYGFGFILLESLVGPSVSGRKDKLLLDELASCDSPDGRRKLISPIVLATCSQESLSIVLSITNKCICSESWSRPSFEDILWNLQYAAQIQATADGSKI*",
+      "longitud": 764,
+      "dominios_raw": [
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "PK_Tyr_Ser-Thr",
+          "accession": "PF07714.21"
+        },
+        {
+          "dominio": "Pkinase",
+          "accession": "PF00069.29"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        }
+      ],
+      "dominios_estres": [
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "Pkinase",
+          "funcion": "quinasa, senalizacion"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        }
+      ],
+      "score_novel": 78,
+      "pista": "Receptor tipo LRR‑kinasa (LRR + dominio Pkinase) típico de señalización de estrés hídrico",
+      "especulacion": "baja",
+      "estructura": {
+        "fuente": "ESMAtlas (verificar manualmente)",
+        "url": "https://esmatlas.com/search?q=Manes.14G053100.4.p"
+      },
+      "menciones_pmc": 0,
+      "es_novel": true
+    },
+    {
+      "accession": "Manes.14G053100.8.p",
+      "descripcion": "pacid=50259880 transcript=Manes.14G053100.8 locus=Manes.14G053100 ID=Manes.14G053100.8.v8.1 annot-version=v8.1",
+      "secuencia": "MECCSWFLLSCLLWSSLILGSHQLQSSQRQVLLQLRKHLEFPNLLEIWNDHGIDFCYISSSSQVNMSCQDNFVTELRITGDKPAKFDNSVGRVIPNQTLSENFSMDSFVVTLARLNSLRVLSLISLGLWGPLPDKIHRLSSLEYLDLSSNYLFGSVPPKISAMVKLQTLILDDNFFNDTVPNWFDSLSNLKILRLRNNQLKGPFPSSIQRINSLTYLVLSSNEISGKLPSLDALSNLHLLDLSGNHLDSKLPSMPKGLVTVVLSNNSFSGEIPHQYSQLGQLQYLDMSFNELSGTPPATIFTLPNISYLNLASNMLSGSLPDQLSCGSKLQFVDISNNSFTGRLPHCLRTESDDRVVKFDGNCLSTGLHHQRAESSCMVMPVKHKNSGGKDVGIVVGVAAGILVIVVLLAFGFLVLCRRYCPRGISEQHLLHKAVQENPAAGFPSDILNSARFISQAAKLGTQDLPACRSFALEELKEATKNFDNSTILGEGSYGKLYKGRLEDGTQVAIRCLPSSKKYSFRNLKLRLDLLAKLRHPHLVCLLGHCIDSGGQDDYRVNRVFLIFEYISNGSFHTRLYENSPGKVLDWSERLTVLIGVAKAVHFLHTGVIPGFFNNRLKTNNILLNEHGNAKLSDYGLSIISEEIVNCREGGEGFKSWQMARLEDDVYGFGFILLESLVGPSVSGRKDKLLLDELASCDSPDGRRKLISPIVLATCSQESLSIVLSITNKCICSESWSRPSFEDILWNLQYAAQIQATADGSKI*",
+      "longitud": 764,
+      "dominios_raw": [
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "PK_Tyr_Ser-Thr",
+          "accession": "PF07714.21"
+        },
+        {
+          "dominio": "Pkinase",
+          "accession": "PF00069.29"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        }
+      ],
+      "dominios_estres": [
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "Pkinase",
+          "funcion": "quinasa, senalizacion"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        }
+      ],
+      "score_novel": 78,
+      "pista": "Receptor tipo LRR‑kinasa (LRR + dominio Pkinase) típico de señalización de estrés hídrico",
+      "especulacion": "baja",
+      "estructura": {
+        "fuente": "ESMAtlas (verificar manualmente)",
+        "url": "https://esmatlas.com/search?q=Manes.14G053100.8.p"
+      },
+      "menciones_pmc": 0,
+      "es_novel": true
+    },
+    {
+      "accession": "Manes.14G053100.7.p",
+      "descripcion": "pacid=50259881 transcript=Manes.14G053100.7 locus=Manes.14G053100 ID=Manes.14G053100.7.v8.1 annot-version=v8.1",
+      "secuencia": "MECCSWFLLSCLLWSSLILGSHQLQSSQRQVLLQLRKHLEFPNLLEIWNDHGIDFCYISSSSQVNMSCQDNFVTELRITGDKPAKFDNSVGRVIPNQTLSENFSMDSFVVTLARLNSLRVLSLISLGLWGPLPDKIHRLSSLEYLDLSSNYLFGSVPPKISAMVKLQTLILDDNFFNDTVPNWFDSLSNLKILRLRNNQLKGPFPSSIQRINSLTYLVLSSNEISGKLPSLDALSNLHLLDLSGNHLDSKLPSMPKGLVTVVLSNNSFSGEIPHQYSQLGQLQYLDMSFNELSGTPPATIFTLPNISYLNLASNMLSGSLPDQLSCGSKLQFVDISNNSFTGRLPHCLRTESDDRVVKFDGNCLSTGLHHQRAESSCMVMPVKHKNSGGKDVGIVVGVAAGILVIVVLLAFGFLVLCRRYCPRGISEQHLLHKAVQENPAAGFPSDILNSARFISQAAKLGTQDLPACRSFALEELKEATKNFDNSTILGEGSYGKLYKGRLEDGTQVAIRCLPSSKKYSFRNLKLRLDLLAKLRHPHLVCLLGHCIDSGGQDDYRVNRVFLIFEYISNGSFHTRLYENSPGKVLDWSERLTVLIGVAKAVHFLHTGVIPGFFNNRLKTNNILLNEHGNAKLSDYGLSIISEEIVNCREGGEGFKSWQMARLEDDVYGFGFILLESLVGPSVSGRKDKLLLDELASCDSPDGRRKLISPIVLATCSQESLSIVLSITNKCICSESWSRPSFEDILWNLQYAAQIQATADGSKI*",
+      "longitud": 764,
+      "dominios_raw": [
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "PK_Tyr_Ser-Thr",
+          "accession": "PF07714.21"
+        },
+        {
+          "dominio": "Pkinase",
+          "accession": "PF00069.29"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        }
+      ],
+      "dominios_estres": [
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "Pkinase",
+          "funcion": "quinasa, senalizacion"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        }
+      ],
+      "score_novel": 75,
+      "pista": "Isoforma LRR‑kinasa con arquitectura similar a los candidatos anteriores",
+      "especulacion": "media",
+      "estructura": {
+        "fuente": "ESMAtlas (verificar manualmente)",
+        "url": "https://esmatlas.com/search?q=Manes.14G053100.7.p"
+      },
+      "menciones_pmc": 0,
+      "es_novel": true
+    },
+    {
+      "accession": "Manes.14G053100.6.p",
+      "descripcion": "pacid=50259882 transcript=Manes.14G053100.6 locus=Manes.14G053100 ID=Manes.14G053100.6.v8.1 annot-version=v8.1",
+      "secuencia": "MECCSWFLLSCLLWSSLILGSHQLQSSQRQVLLQLRKHLEFPNLLEIWNDHGIDFCYISSSSQVNMSCQDNFVTELRITGDKPAKFDNSVGRVIPNQTLSENFSMDSFVVTLARLNSLRVLSLISLGLWGPLPDKIHRLSSLEYLDLSSNYLFGSVPPKISAMVKLQTLILDDNFFNDTVPNWFDSLSNLKILRLRNNQLKGPFPSSIQRINSLTYLVLSSNEISGKLPSLDALSNLHLLDLSGNHLDSKLPSMPKGLVTVVLSNNSFSGEIPHQYSQLGQLQYLDMSFNELSGTPPATIFTLPNISYLNLASNMLSGSLPDQLSCGSKLQFVDISNNSFTGRLPHCLRTESDDRVVKFDGNCLSTGLHHQRAESSCMVMPVKHKNSGGKDVGIVVGVAAGILVIVVLLAFGFLVLCRRYCPRGISEQHLLHKAVQENPAAGFPSDILNSARFISQAAKLGTQDLPACRSFALEELKEATKNFDNSTILGEGSYGKLYKGRLEDGTQVAIRCLPSSKKYSFRNLKLRLDLLAKLRHPHLVCLLGHCIDSGGQDDYRVNRVFLIFEYISNGSFHTRLYENSPGKVLDWSERLTVLIGVAKAVHFLHTGVIPGFFNNRLKTNNILLNEHGNAKLSDYGLSIISEEIVNCREGGEGFKSWQMARLEDDVYGFGFILLESLVGPSVSGRKDKLLLDELASCDSPDGRRKLISPIVLATCSQESLSIVLSITNKCICSESWSRPSFEDILWNLQYAAQIQATADGSKI*",
+      "longitud": 764,
+      "dominios_raw": [
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "PK_Tyr_Ser-Thr",
+          "accession": "PF07714.21"
+        },
+        {
+          "dominio": "Pkinase",
+          "accession": "PF00069.29"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        }
+      ],
+      "dominios_estres": [
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "Pkinase",
+          "funcion": "quinasa, senalizacion"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        }
+      ],
+      "score_novel": 75,
+      "pista": "Isoforma LRR‑kinasa con arquitectura similar a los candidatos anteriores",
+      "especulacion": "media",
+      "estructura": {
+        "fuente": "ESMAtlas (verificar manualmente)",
+        "url": "https://esmatlas.com/search?q=Manes.14G053100.6.p"
+      },
+      "menciones_pmc": 0,
+      "es_novel": true
+    },
+    {
+      "accession": "Manes.14G053100.5.p",
+      "descripcion": "pacid=50259883 transcript=Manes.14G053100.5 locus=Manes.14G053100 ID=Manes.14G053100.5.v8.1 annot-version=v8.1",
+      "secuencia": "MECCSWFLLSCLLWSSLILGSHQLQSSQRQVLLQLRKHLEFPNLLEIWNDHGIDFCYISSSSQVNMSCQDNFVTELRITGDKPAKFDNSVGRVIPNQTLSENFSMDSFVVTLARLNSLRVLSLISLGLWGPLPDKIHRLSSLEYLDLSSNYLFGSVPPKISAMVKLQTLILDDNFFNDTVPNWFDSLSNLKILRLRNNQLKGPFPSSIQRINSLTYLVLSSNEISGKLPSLDALSNLHLLDLSGNHLDSKLPSMPKGLVTVVLSNNSFSGEIPHQYSQLGQLQYLDMSFNELSGTPPATIFTLPNISYLNLASNMLSGSLPDQLSCGSKLQFVDISNNSFTGRLPHCLRTESDDRVVKFDGNCLSTGLHHQRAESSCMVMPVKHKNSGGKDVGIVVGVAAGILVIVVLLAFGFLVLCRRYCPRGISEQHLLHKAVQENPAAGFPSDILNSARFISQAAKLGTQDLPACRSFALEELKEATKNFDNSTILGEGSYGKLYKGRLEDGTQVAIRCLPSSKKYSFRNLKLRLDLLAKLRHPHLVCLLGHCIDSGGQDDYRVNRVFLIFEYISNGSFHTRLYENSPGKVLDWSERLTVLIGVAKAVHFLHTGVIPGFFNNRLKTNNILLNEHGNAKLSDYGLSIISEEIVNCREGGEGFKSWQMARLEDDVYGFGFILLESLVGPSVSGRKDKLLLDELASCDSPDGRRKLISPIVLATCSQESLSIVLSITNKCICSESWSRPSFEDILWNLQYAAQIQATADGSKI*",
+      "longitud": 764,
+      "dominios_raw": [
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "PK_Tyr_Ser-Thr",
+          "accession": "PF07714.21"
+        },
+        {
+          "dominio": "Pkinase",
+          "accession": "PF00069.29"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        }
+      ],
+      "dominios_estres": [
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "Pkinase",
+          "funcion": "quinasa, senalizacion"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        }
+      ],
+      "score_novel": 75,
+      "pista": "Isoforma LRR‑kinasa con arquitectura similar a los candidatos anteriores",
+      "especulacion": "media",
+      "estructura": {
+        "fuente": "ESMAtlas (verificar manualmente)",
+        "url": "https://esmatlas.com/search?q=Manes.14G053100.5.p"
+      },
+      "menciones_pmc": 0,
+      "es_novel": true
+    },
+    {
+      "accession": "Manes.14G053100.10.p",
+      "descripcion": "pacid=50259884 transcript=Manes.14G053100.10 locus=Manes.14G053100 ID=Manes.14G053100.10.v8.1 annot-version=v8.1",
+      "secuencia": "MECCSWFLLSCLLWSSLILGSHQLQSSQRQVLLQLRKHLEFPNLLEIWNDHGIDFCYISSSSQVNMSCQDNFVTELRITGDKPAKFDNSVGRVIPNQTLSENFSMDSFVVTLARLNSLRVLSLISLGLWGPLPDKIHRLSSLEYLDLSSNYLFGSVPPKISAMVKLQTLILDDNFFNDTVPNWFDSLSNLKILRLRNNQLKGPFPSSIQRINSLTYLVLSSNEISGKLPSLDALSNLHLLDLSGNHLDSKLPSMPKGLVTVVLSNNSFSGEIPHQYSQLGQLQYLDMSFNELSGTPPATIFTLPNISYLNLASNMLSGSLPDQLSCGSKLQFVDISNNSFTGRLPHCLRTESDDRVVKFDGNCLSTGLHHQRAESSCMVMPVKHKNSGGKDVGIVVGVAAGILVIVVLLAFGFLVLCRRYCPRGISEQHLLHKAVQENPAAGFPSDILNSARFISQAAKLGTQDLPACRSFALEELKEATKNFDNSTILGEGSYGKLYKGRLEDGTQVAIRCLPSSKKYSFRNLKLRLDLLAKLRHPHLVCLLGHCIDSGGQDDYRVNRVFLIFEYISNGSFHTRLYENSPGKVLDWSERLTVLIGVAKAVHFLHTGVIPGFFNNRLKTNNILLNEHGNAKLSDYGLSIISEEIVNCRVEKALNHGKWQD*",
+      "longitud": 661,
+      "dominios_raw": [
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "PK_Tyr_Ser-Thr",
+          "accession": "PF07714.21"
+        },
+        {
+          "dominio": "Pkinase",
+          "accession": "PF00069.29"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        }
+      ],
+      "dominios_estres": [
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "Pkinase",
+          "funcion": "quinasa, senalizacion"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        }
+      ],
+      "score_novel": 75,
+      "pista": "Isoforma LRR‑kinasa con arquitectura similar a los candidatos anteriores",
+      "especulacion": "media",
+      "estructura": {
+        "fuente": "ESMAtlas (verificar manualmente)",
+        "url": "https://esmatlas.com/search?q=Manes.14G053100.10.p"
+      },
+      "menciones_pmc": 0,
+      "es_novel": true
+    },
+    {
+      "accession": "Manes.14G053100.9.p",
+      "descripcion": "pacid=50259885 transcript=Manes.14G053100.9 locus=Manes.14G053100 ID=Manes.14G053100.9.v8.1 annot-version=v8.1",
+      "secuencia": "MECCSWFLLSCLLWSSLILGSHQLQSSQRQVLLQLRKHLEFPNLLEIWNDHGIDFCYISSSSQVNMSCQDNFVTELRITGDKPAKFDNSVGRVIPNQTLSENFSMDSFVVTLARLNSLRVLSLISLGLWGPLPDKIHRLSSLEYLDLSSNYLFGSVPPKISAMVKLQTLILDDNFFNDTVPNWFDSLSNLKILRLRNNQLKGPFPSSIQRINSLTYLVLSSNEISGKLPSLDALSNLHLLDLSGNHLDSKLPSMPKGLVTVVLSNNSFSGEIPHQYSQLGQLQYLDMSFNELSGTPPATIFTLPNISYLNLASNMLSGSLPDQLSCGSKLQFVDISNNSFTGRLPHCLRTESDDRVVKFDGNCLSTGLHHQRAESSCMVMPVKHKNSGGKDVGIVVGVAAGILVIVVLLAFGFLVLCRRYCPRGISEQHLLHKAVQENPAAGFPSDILNSARFISQAAKLGTQDLPACRSFALEELKEATKNFDNSTILGEGSYGKLYKGRLEDGTQVAIRCLPSSKKYSFRNLKLRLDLLAKLRHPHLVCLLGHCIDSGGQDDYRVNRVFLIFEYISNGSFHTRLYENSPGKVLDWSERLTVLIGVAKAVHFLHTGVIPGFFNNRLKTNNILLNEHGNAKLSDYGLSIISEEIVNCRVEKALNHGKWQD*",
+      "longitud": 661,
+      "dominios_raw": [
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "PK_Tyr_Ser-Thr",
+          "accession": "PF07714.21"
+        },
+        {
+          "dominio": "Pkinase",
+          "accession": "PF00069.29"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        }
+      ],
+      "dominios_estres": [
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "Pkinase",
+          "funcion": "quinasa, senalizacion"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        }
+      ],
+      "score_novel": 75,
+      "pista": "Isoforma LRR‑kinasa con arquitectura similar a los candidatos anteriores",
+      "especulacion": "media",
+      "estructura": {
+        "fuente": "ESMAtlas (verificar manualmente)",
+        "url": "https://esmatlas.com/search?q=Manes.14G053100.9.p"
+      },
+      "menciones_pmc": 0,
+      "es_novel": true
+    },
+    {
+      "accession": "Manes.14G053100.12.p",
+      "descripcion": "pacid=50259886 transcript=Manes.14G053100.12 locus=Manes.14G053100 ID=Manes.14G053100.12.v8.1 annot-version=v8.1",
+      "secuencia": "MECCSWFLLSCLLWSSLILGSHQLQSSQRQVLLQLRKHLEFPNLLEIWNDHGIDFCYISSSSQVNMSCQDNFVTELRITGDKPAKFDNSVGRVIPNQTLSENFSMDSFVVTLARLNSLRVLSLISLGLWGPLPDKIHRLSSLEYLDLSSNYLFGSVPPKISAMVKLQTLILDDNFFNDTVPNWFDSLSNLKILRLRNNQLKGPFPSSIQRINSLTYLVLSSNEISGKLPSLDALSNLHLLDLSGNHLDSKLPSMPKGLVTVVLSNNSFSGEIPHQYSQLGQLQYLDMSFNELSGTPPATIFTLPNISYLNLASNMLSGSLPDQLSCGSKLQFVDISNNSFTGRLPHCLRTESDDRVVKFDGNCLSTGLHHQRAESSCMVMPVKHKNSGGKDVGIVVGVAAGILVIVVLLAFGFLVLCRRYCPRGISEQHLLHKAVQENPAAGFPSDILNSARFISQAAKLGTQDLPACRSFALEELKEATKNFDNSTILGEGSYGKLYKGRLEDGTQVAIRCLPSSKKYSFRNLKLRLDLLAKLRHPHLVCLLGHCIDSGGQDDYRVNRVFLIFEYISNGSFHTRLYGNF*",
+      "longitud": 581,
+      "dominios_raw": [
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        },
+        {
+          "dominio": "PK_Tyr_Ser-Thr",
+          "accession": "PF07714.21"
+        },
+        {
+          "dominio": "Pkinase",
+          "accession": "PF00069.29"
+        }
+      ],
+      "dominios_estres": [
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "Pkinase",
+          "funcion": "quinasa, senalizacion"
+        }
+      ],
+      "score_novel": 75,
+      "pista": "Isoforma LRR‑kinasa con arquitectura similar a los candidatos anteriores",
+      "especulacion": "media",
+      "estructura": {
+        "fuente": "ESMAtlas (verificar manualmente)",
+        "url": "https://esmatlas.com/search?q=Manes.14G053100.12.p"
+      },
+      "menciones_pmc": 0,
+      "es_novel": true
+    },
+    {
+      "accession": "Manes.14G053100.11.p",
+      "descripcion": "pacid=50259887 transcript=Manes.14G053100.11 locus=Manes.14G053100 ID=Manes.14G053100.11.v8.1 annot-version=v8.1",
+      "secuencia": "MECCSWFLLSCLLWSSLILGSHQLQSSQRQVLLQLRKHLEFPNLLEIWNDHGIDFCYISSSSQVNMSCQDNFVTELRITGDKPAKFDNSVGRVIPNQTLSENFSMDSFVVTLARLNSLRVLSLISLGLWGPLPDKIHRLSSLEYLDLSSNYLFGSVPPKISAMVKLQTLILDDNFFNDTVPNWFDSLSNLKILRLRNNQLKGPFPSSIQRINSLTYLVLSSNEISGKLPSLDALSNLHLLDLSGNHLDSKLPSMPKGLVTVVLSNNSFSGEIPHQYSQLGQLQYLDMSFNELSGTPPATIFTLPNISYLNLASNMLSGSLPDQLSCGSKLQFVDISNNSFTGRLPHCLRTESDDRVVKFDGNCLSTGLHHQRAESSCMVMPVKHKNSGGKDVGIVVGVAAGILVIVVLLAFGFLVLCRRYCPRGISEQHLLHKAVQENPAAGFPSDILNSARFISQAAKLGTQDLPACRSFALEELKEATKNFDNSTILGEGSYGKLYKGRLEDGTQVAIRCLPSSKKYSFRNLKLRLDLLAKLRHPHLVCLLGHCIDSGGQDDYRVNRVFLIFEYISNGSFHTRLYGNF*",
+      "longitud": 581,
+      "dominios_raw": [
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_1",
+          "accession": "PF00560.37"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "LRR_8",
+          "accession": "PF13855.10"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        },
+        {
+          "dominio": "LRR_4",
+          "accession": "PF12799.11"
+        },
+        {
+          "dominio": "PK_Tyr_Ser-Thr",
+          "accession": "PF07714.21"
+        },
+        {
+          "dominio": "Pkinase",
+          "accession": "PF00069.29"
+        }
+      ],
+      "dominios_estres": [
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_1",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_8",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "LRR_4",
+          "funcion": "repeticiones ricas en leucina, defensa"
+        },
+        {
+          "dominio": "Pkinase",
+          "funcion": "quinasa, senalizacion"
+        }
+      ],
+      "score_novel": 75,
+      "pista": "Isoforma LRR‑kinasa con arquitectura similar a los candidatos anteriores",
+      "especulacion": "media",
+      "estructura": {
+        "fuente": "ESMAtlas (verificar manualmente)",
+        "url": "https://esmatlas.com/search?q=Manes.14G053100.11.p"
+      },
+      "menciones_pmc": 0,
+      "es_novel": true
+    }
+  ],
+  "conocidos_brazo_a": [
+    {
+      "simbolo": "LOC110601996",
+      "descripcion": "protein EARLY-RESPONSIVE TO DEHYDRATION 7, chloroplastic"
+    },
+    {
+      "simbolo": "LOC122721460",
+      "descripcion": "protein C2-DOMAIN ABA-RELATED 11-like"
+    },
+    {
+      "simbolo": "LOC110616594",
+      "descripcion": "protein DEHYDRATION-INDUCED 19 homolog 6"
+    },
+    {
+      "simbolo": "LOC110599882",
+      "descripcion": "protein DEHYDRATION-INDUCED 19 homolog 6"
+    },
+    {
+      "simbolo": "LOC110623446",
+      "descripcion": "protein DEHYDRATION-INDUCED 19 homolog 3"
+    },
+    {
+      "simbolo": "LOC110621395",
+      "descripcion": "protein DEHYDRATION-INDUCED 19 homolog 3"
+    },
+    {
+      "simbolo": "LOC110612172",
+      "descripcion": "protein DEHYDRATION-INDUCED 19 homolog 4"
+    },
+    {
+      "simbolo": "LOC110605467",
+      "descripcion": "protein DEHYDRATION-INDUCED 19 homolog 4"
+    },
+    {
+      "simbolo": "LOC110602598",
+      "descripcion": "protein DEHYDRATION-INDUCED 19 homolog 4"
+    },
+    {
+      "simbolo": "LOC110619721",
+      "descripcion": "protein EARLY RESPONSIVE TO DEHYDRATION 15"
+    }
+  ],
+  "convergencias": [
+    {
+      "accession": "Manes.14G047368.1.p",
+      "converge_con": "LOC110619721",
+      "tipo_convergencia": "via",
+      "hipotesis": "El factor de transcripción NAC con dominio NAM probablemente regula la expresión de genes de respuesta temprana a la deshidratación (ERD), como LOC110619721, activando rutas de tolerancia a sequía.",
+      "confianza": 70
+    },
+    {
+      "accession": "Manes.14G053100.4.p",
+      "converge_con": "LOC122721460",
+      "tipo_convergencia": "via",
+      "hipotesis": "El receptor tipo LRR‑kinasa actúa como sensor de estrés hídrico en la membrana plasmática y desencadena cascadas de señalización que incluyen proteínas C2‑domain ABA‑related, como LOC122721460, modulando la respuesta al déficit hídrico.",
+      "confianza": 70
+    },
+    {
+      "accession": "Manes.14G053100.8.p",
+      "converge_con": "LOC122721460",
+      "tipo_convergencia": "via",
+      "hipotesis": "Isoforma del mismo LRR‑kinasa que percibe señales externas de sequía y activa vías de señalización ABA que convergen en la proteína C2‑domain ABA‑related (LOC122721460).",
+      "confianza": 70
+    },
+    {
+      "accession": "Manes.14G053100.7.p",
+      "converge_con": "LOC122721460",
+      "tipo_convergencia": "via",
+      "hipotesis": "Isoforma LRR‑kinasa que, mediante su dominio quinasa, transduce la señal de sequía hacia efectores como la proteína C2‑domain ABA‑related (LOC122721460).",
+      "confianza": 70
+    },
+    {
+      "accession": "Manes.14G053100.6.p",
+      "converge_con": "LOC122721460",
+      "tipo_convergencia": "via",
+      "hipotesis": "Isoforma LRR‑kinasa que participa en la percepción de estrés hídrico y en la activación de la vía ABA, compartiendo la ruta funcional con LOC122721460.",
+      "confianza": 70
+    },
+    {
+      "accession": "Manes.14G053100.5.p",
+      "converge_con": "LOC122721460",
+      "tipo_convergencia": "via",
+      "hipotesis": "Isoforma LRR‑kinasa que, a través de su dominio Pkinase, inicia la señalización de sequía que culmina en la activación de proteínas C2‑domain ABA‑related.",
+      "confianza": 70
+    },
+    {
+      "accession": "Manes.14G053100.10.p",
+      "converge_con": "LOC122721460",
+      "tipo_convergencia": "via",
+      "hipotesis": "Isoforma LRR‑kinasa con arquitectura típica de receptores de estrés hídrico, vinculada funcionalmente a la vía ABA representada por LOC122721460.",
+      "confianza": 70
+    },
+    {
+      "accession": "Manes.14G053100.9.p",
+      "converge_con": "LOC122721460",
+      "tipo_convergencia": "via",
+      "hipotesis": "Isoforma LRR‑kinasa que actúa como sensor de sequía y comunica la señal a componentes downstream como la proteína C2‑domain ABA‑related.",
+      "confianza": 70
+    },
+    {
+      "accession": "Manes.14G053100.12.p",
+      "converge_con": "LOC122721460",
+      "tipo_convergencia": "via",
+      "hipotesis": "Isoforma LRR‑kinasa cuya actividad quinasa está implicada en la transducción de la señal de déficit hídrico hacia la vía ABA, convergiendo con LOC122721460.",
+      "confianza": 70
+    },
+    {
+      "accession": "Manes.14G053100.11.p",
+      "converge_con": "LOC122721460",
+      "tipo_convergencia": "via",
+      "hipotesis": "Isoforma LRR‑kinasa que, mediante su dominio de leucina‑rica y quinasa, participa en la percepción y transmisión de la señal de sequía, compartiendo la ruta funcional con la proteína C2‑domain ABA‑related.",
+      "confianza": 70
+    }
+  ],
+  "nota": "Modo descubrimiento v3.1. Correlacion != causalidad; validar experimentalmente."
+}

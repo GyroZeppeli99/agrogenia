@@ -1,0 +1,71 @@
+Ahora, cuando lances una corrida en nohup, abres otra terminal y:
+bash
+
+cd ~/agrogenia
+./vigilar.sh v46_profunda_all
+
+Verás en vivo: en qué fase está, si hmmscan sigue vivo, cuántos lotes LLM van, y cuándo aparecen los .json/.md. Ya no dependes del buffering de stdout.
+
+
+✅ Verificación y corrida de prueba
+
+# 1) sintaxis
+python -c "import ast; ast.parse(open('pipeline_v4.6.1_pmc_estado.py').read()); print('Sintaxis OK')"
+
+# 2) humo barato (omite Groq pesado, verifica PMC + estado en vivo)
+PYTHONUNBUFFERED=1 nohup python -u pipeline_v4.6.1_pmc_estado.py \
+  --rasgo "tolerancia a sequia" \
+  --receptora yuca \
+  --estrategia B \
+  --modo exploracion \
+  --panel hibrido \
+  --pfam auto \
+  --hmmer-por-especie 1000 \
+  --top 5 \
+  --modelo rapido \
+  --no-compatibilidad \
+  --no-constructos \
+  --salida v461_humo \
+  > v461_humo.log 2>&1 &
+
+# 3) en OTRA terminal, vigila en vivo:
+./vigilar.sh v461_humo
+
+
+_____________________________
+
+
+cd ~/agrogenia
+
+PYTHONUNBUFFERED=1 nohup python -u pipeline_v4.6.1_pmc_estado.py \
+  --rasgo "tolerancia a sequia" \
+  --receptora yuca \
+  --estrategia B \
+  --modo exhaustivo \
+  --panel hibrido \
+  --pfam auto \
+  --hmmer-por-especie 5000 \
+  --max-proteinas-especie 50000 \
+  --pre-top-por-especie 80 \
+  --lote-llm 10 \
+  --llm-lotes 5 \
+  --top 10 \
+  --modelo rapido \
+  --no-compatibilidad \
+  --no-constructos \
+  --salida v461_exhaustivo_5000_seguro \
+  > v461_exhaustivo_5000_seguro.log 2>&1 &
+
+  Luego, en otra terminal:
+
+  cd ~/agrogenia
+tail -f v461_exhaustivo_5000_seguro.estado
+
+
+Y si quieres ver también el log tradicional:
+
+tail -f v461_exhaustivo_5000_seguro.log
+
+O con el vigilador:
+
+./vigilar.sh v461_exhaustivo_5000_seguro

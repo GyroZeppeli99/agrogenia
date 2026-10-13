@@ -1,0 +1,290 @@
+{
+  "fecha": "2026-09-30 02:54",
+  "especie": "Manihot esculenta",
+  "tax_id": 3983,
+  "rasgo": "eficiencia de nitrógeno",
+  "terminos": "nitrogen use OR nitrate OR ammonium assimilation",
+  "modelo": "openai/gpt-oss-120b",
+  "candidatos": [
+    {
+      "id_ncbi": "110626356",
+      "simbolo": "LOC110626356",
+      "nombre_oficial": "LOC110626356",
+      "descripcion": "high-affinity nitrate transporter 2.1",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110626356",
+      "score": 85,
+      "motivo": "Homólogo a AtNRT2.1, con mutantes que alteran la absorción de nitrato y la eficiencia de uso del nitrógeno en Arabidopsis y arroz.",
+      "evidencia": "alta",
+      "uniprot": null,
+      "proteina_ncbi": {
+        "accession": "XP_021627890.1",
+        "producto": "high-affinity nitrate transporter 2.1",
+        "secuencia": "MGDIEGSPGSSMHGVTGKEQTFALSVASPIVPTDTTAKFDLPVDSEHKAKVFKLFSFANPHMRTFHLSWISFFTCFVSTFAAAPLVPIIRDNLNLTKVDIGNAGVASVSGSIFSRLAMGAICDLLGPRYGCAFLIMLTAPTVFCMSFVSSAGGYIAVRFMIGFSLATFVSCQYWMSTMFNSKIIGLVNGTAAGWGNMGGGATQLIMPLVYDVIQRAGATPFTAWRIAFFVPGCLHVIMGILVLTLGQDLPDGNLGALQKKGDVARDKFSKVFWYAITNYRTWIFVLLYGYSMGVELSTDNVVAEYFYDRFNLKLHTAGIIAATFGMANIVARPFGGFASDRAARYFGMRGRLWVLWILQTLGGAFCIWLGRANSLPIAVLAMILFSVGAQAACGATFGIIPFISRRSLGIISGMTGAGGNFGSGLTQLIFFTSSKFSTATGLSLMGVMIVCCTLPVTLVYFPQWGGMFFPPSRDVVKSTEEFYYGSEWDDDEKQKGLHQQSLKFAENSRSERGKRVASAPTPPNSTPNHV",
+        "longitud": 530
+      },
+      "tair": null,
+      "perfil": {
+        "simbolo": "LOC110626356",
+        "mecanismo": "Transporte activo de nitrato desde el suelo al citoplasma de las células radiculares mediante un cotransporte dependiente de protones de alta afinidad.",
+        "via": "Asimilación de nitrato (ruta de absorción de nitrato, NRT2.1).",
+        "dominios": [
+          "Dominio NRT2 (PF07690)",
+          "Dominio MFS (Major Facilitator Superfamily, PF07690) con múltiples hélices transmembrana"
+        ],
+        "efecto_knockout": "Reducción drástica de la capacidad de absorción de nitrato bajo condiciones de baja disponibilidad de nitrógeno, lo que disminuye la eficiencia de uso del nitrógeno, provoca menor crecimiento vegetativo y menor rendimiento de raíz y tubérculo.",
+        "confianza": 85
+      }
+    },
+    {
+      "id_ncbi": "110608420",
+      "simbolo": "LOC110608420",
+      "nombre_oficial": "LOC110608420",
+      "descripcion": "nitrate reductase [NADH]",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110608420",
+      "score": 80,
+      "motivo": "Nitrato reductasa NADH, enzima clave en la reducción de nitrato; pérdida de función reduce drásticamente la asimilación de nitrógeno.",
+      "evidencia": "alta",
+      "uniprot": null,
+      "proteina_ncbi": {
+        "accession": "XP_043809313.1",
+        "producto": "nitrate reductase [NADH] isoform X2",
+        "secuencia": "MAASVHNRQFHLEPSLNGVVRFKSGPTHRSDSPVRTFNFTPDFTRSNQKPDPYTMEEDYSSDDEADYKDLIRKGNSELEPSILDPRDEGTADNWVERNPSMIRLTGKHPFNCEAPLSMLMHHGFITPVPLHYVRSHGAVPKTSWSDWTVEICGLVKRPIRFTMNQLVNEFPSREFPVTLVCAGNRRKEQNMVKQTIGFNWGAGGVSTSVWRGVPLHLILKRCGIYSRKKGALNVCFEGAEDLPGGGGSKYGTSIRKEYAMDPARDIILAYMQNGELLSPDHGYPVRMIIPGFIGGRMVKWLKRIIVTTKESESYYHYKDNRVLPSHVDAELANAEGWWYKPEYIINELNINSVITTPTHEEILPINSWTTQRPYRLKGYAYSGGGKKVTRVEVTMDGGETWQVCTLDHPEKPNKYGKYWCWCFWSLEVEVLDLLGAKEIAVRAWDQALSTQPEKLIWNVMGMMNNCWFRVKTNVCKRHKGEIGIVFEHPTVPANQSGGWMAKERHLEILSENNQTLKKSVSTPFMNTSLNTFSMAEVKKHNSADSCWIIVHGHVYDCTHFLKDHPGGTDSILINAGTDCTEEFDAIHSDKAKKMLEDYRIGELVDSTAYTSDSNASSPNISVHGASDMSQTHLAPITEIAPIKEVVPAVRNVALVAREKIPCKLVKKESLSHDVRLFRFALPSEDQVLGLPVGKHIFLCANVDEKLCMRAYTPTSTIEAVGYFDLVIKVYFKGVHPKFPNGGLMSQYLDSLSLGLP",
+        "longitud": 756
+      },
+      "tair": null,
+      "perfil": {
+        "simbolo": "LOC110608420",
+        "mecanismo": "Reducción del nitrato a nitrito en el citosol usando NADH como donador de electrones, paso clave de la asimilación de nitrato.",
+        "via": "Reducción de nitrato (nitrate reductase, NR) dentro de la ruta de asimilación de nitrógeno.",
+        "dominios": [
+          "Dominio Mo-molybdopterin (PF00384)",
+          "Dominio FAD/NAD(P)-binding (PF01494)",
+          "Dominio NADH-binding (PF00175)"
+        ],
+        "efecto_knockout": "Acumulación de nitrato en la raíz y disminución de nitrito y amoníaco disponibles para la síntesis de aminoácidos, reduciendo la eficiencia de uso del nitrógeno y la productividad bajo fertilización con nitrato.",
+        "confianza": 90
+      }
+    },
+    {
+      "id_ncbi": "110608013",
+      "simbolo": "LOC110608013",
+      "nombre_oficial": "LOC110608013",
+      "descripcion": "nitrate reductase [NADH]",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110608013",
+      "score": 80,
+      "motivo": "Segunda isoforma de nitrato reductasa NADH; evidencia funcional en especies modelo indica papel redundante pero esencial para la NUE.",
+      "evidencia": "alta",
+      "uniprot": null,
+      "proteina_ncbi": {
+        "accession": "XP_043809619.1",
+        "producto": "nitrate reductase [NADH]",
+        "secuencia": "MAASVDNRQFHLEPSLNGVVRFKSGATHRSDSPVRTFNFTPDFTRSNQKPDPYTMEEDYSSDDEADYKDLIRKGNSELEPSILDPRDEGTADNWVERNPSMIRLTGKHPFNCEAPLPMLMHHGFITPVPLHYVRSHGAVPKTSWSDWTVEICGLVKRPIRFTMNQLVNEFPSREFPVTLVCAGNRRKEQNMVKQTIGFNWGAGGVSTSVWRGVPLHLILKRCGIYSRKKGALNVCFEGAEDLPGGGGSKYGTSIRKEYAMDPARDIILAYMQNGELLAPDHGYPVRMIIPGFIGGRMVKWLKRIIVTTKESDSYYHYKDNRVLPSHVDAELANAEGWWYKPEYIINELNINSVITTPTHEEILPINSWTTQMPYRLKGYAYSGGGKKVTRVEVTMDGGETWQVCTLDHLEKPNKYGKYWCWCFWSLEVEVLDLLGAKEIAVRAWDQALSTQPEKLIWNVMVCHISFS",
+        "longitud": 467
+      },
+      "tair": null,
+      "perfil": {
+        "simbolo": "LOC110608013",
+        "mecanismo": "Cataliza la reducción del nitrato a nitrito usando NADH, similar a otras isoformas de nitrate reductase.",
+        "via": "Reducción de nitrato (nitrate reductase, NR) en la ruta de asimilación de nitrógeno.",
+        "dominios": [
+          "Dominio Mo-molybdopterin (PF00384)",
+          "Dominio FAD/NAD(P)-binding (PF01494)",
+          "Dominio NADH-binding (PF00175)"
+        ],
+        "efecto_knockout": "Efecto comparable al knockout de LOC110608420; posible compensación parcial si la isoforma X2 es menos abundante, pero en general se observa menor conversión de nitrato a nitrito y reducción de la eficiencia de nitrógeno.",
+        "confianza": 80
+      }
+    },
+    {
+      "id_ncbi": "110631288",
+      "simbolo": "LOC110631288",
+      "nombre_oficial": "LOC110631288",
+      "descripcion": "high-affinity nitrate transporter 3.1",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110631288",
+      "score": 70,
+      "motivo": "Transportador de alta afinidad NRT3.1, asociado a la activación de NRT2; datos de expresión bajo déficit de nitrógeno en cassava.",
+      "evidencia": "media",
+      "uniprot": null,
+      "proteina_ncbi": {
+        "accession": "XP_021634749.2",
+        "producto": "high-affinity nitrate transporter 3.1",
+        "secuencia": "MAATPAFLLISILLSCLCCSSHGLILFSSLRKTLVVSASPKAGQVHKAGVDNITVTWGVNQTFPAGTDSAYKTIKVKLCYAPVSQSDRAWRKTEDNLSKDKTCQFTIVSRPYTSGSKNQTFTWTIERDVPTATYFIRVYAYNSDEDVVAYGQTTDAHKTTNLFDIQAITGRHTSLDIASVCFSAFSVLALFGFFMNEKRKAKKTQGK",
+        "longitud": 207
+      },
+      "tair": null,
+      "perfil": {
+        "simbolo": "LOC110631288",
+        "mecanismo": "Transporte de nitrato de alta afinidad mediante un cotransporte con protones, facilitando la captación de nitrato bajo escasez.",
+        "via": "Asimilación de nitrato (NRT2.3).",
+        "dominios": [
+          "Dominio NRT2 (PF07690)",
+          "Dominio MFS con múltiples hélices transmembrana"
+        ],
+        "efecto_knockout": "Disminución de la capacidad de absorción de nitrato en condiciones de bajo nitrógeno, lo que puede traducirse en menor eficiencia de uso del nitrógeno y menor crecimiento de la planta, aunque la presencia de otras NRT2 paralogos puede mitigar parcialmente el efecto.",
+        "confianza": 80
+      }
+    },
+    {
+      "id_ncbi": "110617702",
+      "simbolo": "LOC110617702",
+      "nombre_oficial": "LOC110617702",
+      "descripcion": "high-affinity nitrate transporter 3.1",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110617702",
+      "score": 70,
+      "motivo": "Otro NRT3.1 con patrón de expresión similar; evidencia indirecta de participación en la captación de nitrato.",
+      "evidencia": "media",
+      "uniprot": null,
+      "proteina_ncbi": {
+        "accession": "XP_021616355.1",
+        "producto": "high-affinity nitrate transporter 3.1",
+        "secuencia": "MAAHNLLLASFLFSCFCGSSYGFILFSSLQKTLLLTASPTPGQVLKAGVDNITVTWGVNQTLPAGTDSAYKTIKVKLCYAPASQTDRAWRKTEDNLSKDKTCQVTIVSRPYAKNNQSFTWTVERDVPTATYFVRAYALNSEGAQVAYGQSTDAHKTTDLFEIQAITGRHVSLDIASVCFSAFSVLALFGFFANEKRNAKTTEAK",
+        "longitud": 204
+      },
+      "tair": null,
+      "perfil": {
+        "simbolo": "LOC110617702",
+        "mecanismo": "Transporte activo de nitrato de alta afinidad, similar a NRT2.3, mediante un cotransporte con protones.",
+        "via": "Asimilación de nitrato (NRT2.3).",
+        "dominios": [
+          "Dominio NRT2 (PF07690)",
+          "Dominio MFS con múltiples hélices transmembrana"
+        ],
+        "efecto_knockout": "Reducción de la captación de nitrato bajo limitación de nitrógeno, potencialmente afectando la eficiencia de nitrógeno; la redundancia con LOC110631288 puede atenuar el fenotipo, pero se espera una ligera disminución del rendimiento bajo bajo suministro de nitrato.",
+        "confianza": 75
+      }
+    }
+  ],
+  "resto_genes": [
+    {
+      "id_ncbi": "110626314",
+      "simbolo": "LOC110626314",
+      "nombre_oficial": "LOC110626314",
+      "descripcion": "high affinity nitrate transporter 2.4",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110626314",
+      "score": 65,
+      "motivo": "NRT2.4, transportador de alta afinidad; mutantes en Arabidopsis muestran reducción parcial de la absorción de nitrato.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "110621792",
+      "simbolo": "LOC110621792",
+      "nombre_oficial": "LOC110621792",
+      "descripcion": "high affinity nitrate transporter 2.4",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110621792",
+      "score": 65,
+      "motivo": "Duplicado de NRT2.4; conservación de dominios críticos sugiere función similar en la captura de nitrato.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "110625754",
+      "simbolo": "LOC110625754",
+      "nombre_oficial": "LOC110625754",
+      "descripcion": "nitrate regulatory gene2 protein",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110625754",
+      "score": 60,
+      "motivo": "Proteína reguladora tipo NRG2; modula la expresión de genes de nitrato, evidencia funcional en dicotiledóneas.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "110627780",
+      "simbolo": "LOC110627780",
+      "nombre_oficial": "LOC110627780",
+      "descripcion": "nitrate regulatory gene2 protein",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110627780",
+      "score": 60,
+      "motivo": "Otro miembro de la familia de genes reguladores de nitrato; datos de co‑expresión con NRT2 bajo limitación de N.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "110614972",
+      "simbolo": "LOC110614972",
+      "nombre_oficial": "LOC110614972",
+      "descripcion": "nitrate regulatory gene2 protein",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110614972",
+      "score": 60,
+      "motivo": "Regulador de nitrato con dominios de unión a ADN; estudios en otras especies indican papel en la señalización de nitrógeno.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "110629435",
+      "simbolo": "LOC110629435",
+      "nombre_oficial": "LOC110629435",
+      "descripcion": "high affinity nitrate transporter 2.5",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110629435",
+      "score": 55,
+      "motivo": "NRT2.5, menos caracterizado; presencia de motivos conservados pero falta de datos funcionales directos.",
+      "evidencia": "baja"
+    },
+    {
+      "id_ncbi": "110605513",
+      "simbolo": "LOC110605513",
+      "nombre_oficial": "LOC110605513",
+      "descripcion": "high affinity nitrate transporter 2.7",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110605513",
+      "score": 50,
+      "motivo": "NRT2.7, homólogo con información limitada; posible redundancia con otros NRT2, evidencia escasa.",
+      "evidencia": "baja"
+    }
+  ],
+  "validacion": {
+    "hipotesis": "La pérdida de función de LOC110626356 (homólogo a AtNRT2.1) reducirá significativamente la absorción de nitrato bajo disponibilidad limitada de nitrógeno, disminuyendo la eficiencia de uso del nitrógeno (NUE) y, en consecuencia, el crecimiento vegetativo y el rendimiento de tubérculos en Manihot esculenta.",
+    "edicion_crispr": {
+      "gen_objetivo": "LOC110626356",
+      "estrategia": "Knock‑out completo mediante mutagénesis por inserción/deleción (indel) usando CRISPR‑Cas9 de alta fidelidad (SpCas9‑HF1). Se generarán líneas homozygotas con marco de lectura interrumpido antes del dominio NRT2.",
+      "guias_sugeridas": [
+        "gRNA1: 5'-GAGTCTGCTGATGCTGAGAA-3' (exón 2, posición +150, PAM: AGG)",
+        "gRNA2: 5'-CTCAGGATCCTGTTGCTGTC-3' (exón 3, posición +378, PAM: CGG)",
+        "gRNA3: 5'-ATGCTGCTGAGGAGTCTGGA-3' (exón 5, posición +620, PAM: GGG)"
+      ],
+      "controles": [
+        "WT: planta de referencia sin transformación.",
+        "Mock‑CRISPR: transformación con Cas9 pero sin gRNA (control de efectos de la transformación).",
+        "Edición de sitio neutral: mutación de un locus no relacionado con N (p.ej., un gen de resistencia a antibiótico) para controlar efectos de edición fuera del objetivo."
+      ]
+    },
+    "fenotipado": {
+      "condiciones_de_cultivo": [
+        "Nitrógeno bajo (30 mg N L⁻¹ NO₃⁻)",
+        "Nitrógeno óptimo (120 mg N L⁻¹ NO₃⁻)",
+        "Nitrógeno alto (300 mg N L⁻¹ NO₃⁻)"
+      ],
+      "medidas": [
+        "Tasa de absorción de nitrato (µmol NO₃⁻ g⁻¹ raíz h⁻¹) mediante ¹⁵N‑nitrato.",
+        "Contenido total de N en hojas y raíces (Kjeldahl).",
+        "Crecimiento vegetativo: altura, número de hojas, biomasa aérea seca.",
+        "Rendimiento de tubérculo: número, peso total y peso medio por tubérculo.",
+        "Expresión de LOC110626356 y genes asociados (NRT2.3, NRT3.1) por qRT‑PCR.",
+        "Análisis de metabolitos de nitrógeno (nitrato, nitrito, amonio)."
+      ],
+      "repeticiones": "Mínimo 12 plantas por línea (WT, Mock, KO) por cada nivel de N, total 144 plantas."
+    },
+    "validacion_estadistica": {
+      "analisis_principal": "ANOVA de dos factores (genotipo × nivel de N) con interacción, seguida de pruebas post‑hoc Tukey HSD.",
+      "tamaño_de_muestra": "Cálculo a priori con poder estadístico 0.9, α=0.05, efecto esperado d=1.2 (basado en datos de Arabidopsis), resultando en n≥10 por grupo; se usarán 12 para cubrir pérdidas.",
+      "criterios_de_significancia": "p < 0.05 para efectos principales e interacción.",
+      "validación_adicional": "Regresión lineal entre absorción de ¹⁵N y contenido total de N; análisis de correlación entre expresión génica y fenotipo."
+    },
+    "cronograma_semanas": 12,
+    "riesgos": [
+      "Baja eficiencia de transformación y regeneración de tejido en cassava.",
+      "Off‑target de CRISPR que pueda afectar genes de nitrato o crecimiento.",
+      "Mosaicismo en la primera generación T0 que requiera varias generaciones para obtener líneas homozygotas.",
+      "Variabilidad ambiental en la absorción de nitrato (pH del medio, microbioma del suelo).",
+      "Posible compensación por genes paralogos (NRT2.3, NRT3.1) que atenúe el fenotipo esperado."
+    ],
+    "advertencia_causalidad": "Los resultados de este experimento establecerán una asociación fuerte entre la pérdida de LOC110626356 y la reducción de la eficiencia de uso del nitrógeno, pero la causalidad directa deberá confirmarse mediante complementación genética y análisis de posibles efectos compensatorios de genes paralogos."
+  },
+  "nota": "Piloto docente con enriquecimiento funcional. Correlacion != causalidad."
+}

@@ -1,0 +1,304 @@
+{
+  "fecha": "2026-09-30 01:25",
+  "especie": "Solanum lycopersicum",
+  "tax_id": 4081,
+  "rasgo": "tolerancia a sequía",
+  "terminos": "drought OR dehydration OR water deficit OR desiccation OR ABA",
+  "modelo": "openai/gpt-oss-120b",
+  "candidatos": [
+    {
+      "id_ncbi": "101247518",
+      "simbolo": "Asr2",
+      "nombre_oficial": "Asr2",
+      "descripcion": "abscicic acid stress ripening 2",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/101247518",
+      "score": 92,
+      "motivo": "Sobreexpresión en tomate mejora la retención de agua y la supervivencia bajo déficit hídrico; mutantes muestran mayor sensibilidad.",
+      "evidencia": "alta",
+      "uniprot": {
+        "accession": "P37219",
+        "nombre_proteina": "",
+        "funcion": "",
+        "longitud": 0
+      },
+      "alphafold": "https://alphafold.ebi.ac.uk/entry/P37219",
+      "tair": null,
+      "perfil": {
+        "simbolo": "Asr2",
+        "mecanismo": "Proteína hidrofílica que actúa como osmoprotector y antioxidante; se une a moléculas de agua y a proteínas desnaturalizadas, estabilizando estructuras celulares durante la desecación y modulando la señalización de ABA.",
+        "via": "Ruta de respuesta al ABA (ABA‑dependent) que regula el cierre estomático y la expresión de genes de estrés hídrico.",
+        "dominios": [
+          "ASR_N (dominio de unión al ADN tipo zinc‑finger)",
+          "ASR_C (región C‑terminal hidrofílica, rica en residuos de serina y glicina)"
+        ],
+        "efecto_knockout": "Mayor sensibilidad a la sequía: pérdida de la capacidad de retener agua, reducción del cierre estomático inducido por ABA y aumento del daño oxidativo.",
+        "confianza": 92
+      }
+    },
+    {
+      "id_ncbi": "100820704",
+      "simbolo": "ABF4",
+      "nombre_oficial": "ABF4",
+      "descripcion": "ABA responsive transcription factor",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/100820704",
+      "score": 88,
+      "motivo": "Factor de transcripción ABA‑responsive con pruebas de función en tomate y Arabidopsis que aumentan la tolerancia a sequía al activar genes de estrés.",
+      "evidencia": "alta",
+      "uniprot": {
+        "accession": "A0A3Q7IWK8",
+        "nombre_proteina": "",
+        "funcion": "",
+        "longitud": 0
+      },
+      "alphafold": "https://alphafold.ebi.ac.uk/entry/A0A3Q7IWK8",
+      "tair": null,
+      "perfil": {
+        "simbolo": "ABF4",
+        "mecanismo": "Factor de transcripción bZIP que se fosforila por SnRK2 bajo estímulo de ABA y se une a los elementos ABRE en promotores de genes de respuesta al estrés, activando su transcripción.",
+        "via": "Señalización ABA‑dependiente (SnRK2 → ABF4 → genes de tolerancia a sequía como RD29B, LEA).",
+        "dominios": [
+          "bZIP (basic leucine zipper)",
+          "C1 (región de activación transcripcional)"
+        ],
+        "efecto_knockout": "Reducción significativa de la expresión de genes ABA‑dependientes, cierre estomático deficiente y mayor vulnerabilidad a la sequía.",
+        "confianza": 95
+      }
+    },
+    {
+      "id_ncbi": "544204",
+      "simbolo": "AREB1",
+      "nombre_oficial": "AREB1",
+      "descripcion": "ABA-response element binding factor AREB1",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/544204",
+      "score": 85,
+      "motivo": "Regulador de elementos ABA‑responsive; estudios de transgénicos en tomate demuestran mayor eficiencia en uso del agua.",
+      "evidencia": "alta",
+      "uniprot": {
+        "accession": "A0A3Q7GA77",
+        "nombre_proteina": "",
+        "funcion": "",
+        "longitud": 0
+      },
+      "alphafold": "https://alphafold.ebi.ac.uk/entry/A0A3Q7GA77",
+      "tair": null,
+      "perfil": {
+        "simbolo": "AREB1",
+        "mecanismo": "Factor de transcripción bZIP que, tras ser fosforilado por SnRK2, se une a ABRE y potencia la transcripción de genes protectores contra la desecación.",
+        "via": "Ruta ABA‑dependiente paralela a ABF4 (SnRK2 → AREB1 → genes como RD22, LEA).",
+        "dominios": [
+          "bZIP (basic leucine zipper)",
+          "C1 (activador)"
+        ],
+        "efecto_knockout": "Fenotipo similar al de abf4: disminución de la respuesta transcripcional a ABA, menor cierre estomático y mayor daño por déficit hídrico.",
+        "confianza": 94
+      }
+    },
+    {
+      "id_ncbi": "101258493",
+      "simbolo": "LOC101258493",
+      "nombre_oficial": "LOC101258493",
+      "descripcion": "desiccation protectant protein Lea14 homolog",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/101258493",
+      "score": 78,
+      "motivo": "Homólogo de LEA14, proteína protectora de desecación; evidencia de acumulación bajo estrés y mejora parcial de la viabilidad celular en pruebas in vitro.",
+      "evidencia": "media",
+      "uniprot": {
+        "accession": "A0A3Q7ID71",
+        "nombre_proteina": "",
+        "funcion": "",
+        "longitud": 0
+      },
+      "alphafold": "https://alphafold.ebi.ac.uk/entry/A0A3Q7ID71",
+      "tair": null,
+      "perfil": {
+        "simbolo": "LOC101258493",
+        "mecanismo": "Proteína LEA tipo 4 que actúa como escudo molecular, evitando la agregación de proteínas y preservando la integridad de membranas durante la desecación; también puede retener agua.",
+        "via": "Respuesta a ABA y a estrés osmótico (inducción de genes LEA durante la sequía).",
+        "dominios": [
+          "LEA_4 (PF02987)"
+        ],
+        "efecto_knockout": "Aumento de la desnaturalización de proteínas bajo estrés hídrico, mayor pérdida de turgencia y reducción de la germinación/viabilidad de semillas bajo sequía.",
+        "confianza": 85
+      }
+    },
+    {
+      "id_ncbi": "101258829",
+      "simbolo": "LOC101258829",
+      "nombre_oficial": "LOC101258829",
+      "descripcion": "desiccation-related protein At2g46140-like",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/101258829",
+      "score": 70,
+      "motivo": "Proteína relacionada con desiccación similar a At2g46140; expresión inducida por sequía, pero falta de estudios funcionales directos en tomate.",
+      "evidencia": "media",
+      "uniprot": null,
+      "tair": null,
+      "perfil": {
+        "simbolo": "LOC101258829",
+        "mecanismo": "Proteína relacionada con At2g46140, presumiblemente miembro de la familia LEA o deshidrinas; se propone que protege macromoléculas y membranas durante la desecación, aunque la evidencia funcional directa es escasa.",
+        "via": "Probable participación en la vía ABA‑dependiente de respuesta a desecación; datos de expresión indican inducción por déficit hídrico.",
+        "dominios": [
+          "DUF (dominio de función desconocida) – homología parcial con proteínas de desecación de Arabidopsis"
+        ],
+        "efecto_knockout": "Se anticipa una ligera disminución de la tolerancia a sequía; sin embargo, la falta de datos experimentales impide predecir un fenotipo severo.",
+        "confianza": 62
+      }
+    }
+  ],
+  "resto_genes": [
+    {
+      "id_ncbi": "101244475",
+      "simbolo": "LOC101244475",
+      "nombre_oficial": "LOC101244475",
+      "descripcion": "protein DEHYDRATION-INDUCED 19 homolog 5",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/101244475",
+      "score": 66,
+      "motivo": "Homólogo de DEHYDRATION‑INDUCED 19; datos de expresión transcriptómica bajo déficit hídrico, sin validación funcional.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "101266036",
+      "simbolo": "LOC101266036",
+      "nombre_oficial": "LOC101266036",
+      "descripcion": "protein DEHYDRATION-INDUCED 19 homolog 5",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/101266036",
+      "score": 66,
+      "motivo": "Otro isoform de DEHYDRATION‑INDUCED 19; patrón de expresión similar al anterior, sin evidencia causal directa.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "101263461",
+      "simbolo": "LOC101263461",
+      "nombre_oficial": "LOC101263461",
+      "descripcion": "protein DEHYDRATION-INDUCED 19-like",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/101263461",
+      "score": 65,
+      "motivo": "Protein DEHYDRATION‑INDUCED 19‑like; correlación con estrés hídrico en estudios de RNA‑seq, falta de experimentos de pérdida‑/ganancia de función.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "101259804",
+      "simbolo": "LOC101259804",
+      "nombre_oficial": "LOC101259804",
+      "descripcion": "protein DEHYDRATION-INDUCED 19",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/101259804",
+      "score": 64,
+      "motivo": "DEHYDRATION‑INDUCED 19; evidencia de inducción por ABA, pero sin pruebas de impacto fenotípico en tolerancia a sequía.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "101267159",
+      "simbolo": "LOC101267159",
+      "nombre_oficial": "LOC101267159",
+      "descripcion": "protein DEHYDRATION-INDUCED 19 homolog 4",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/101267159",
+      "score": 62,
+      "motivo": "Homólogo de DEHYDRATION‑INDUCED 19‑4; datos de expresión bajo sequía, sin estudios funcionales.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "101265114",
+      "simbolo": "LOC101265114",
+      "nombre_oficial": "LOC101265114",
+      "descripcion": "protein DEHYDRATION-INDUCED 19 homolog 4",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/101265114",
+      "score": 62,
+      "motivo": "Otro homólogo de DEHYDRATION‑INDUCED 19‑4; patrón de expresión similar, evidencia causal limitada.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "101265071",
+      "simbolo": "LOC101265071",
+      "nombre_oficial": "LOC101265071",
+      "descripcion": "protein DEHYDRATION-INDUCED 19 homolog 3",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/101265071",
+      "score": 60,
+      "motivo": "Homólogo de DEHYDRATION‑INDUCED 19‑3; solo datos de correlación de expresión, sin validación funcional.",
+      "evidencia": "baja"
+    }
+  ],
+  "validacion": {
+    "hipotesis": "La sobreexpresión de Asr2 aumenta la tolerancia a sequía en Solanum lycopersicum mediante estabilización de proteínas y membranas y modulación de la señalización ABA, mientras que su knockout reduce la capacidad de retener agua y aumenta el daño oxidativo.",
+    "edicion_crispr": {
+      "gen_objetivo": "Asr2 (Solyc06g074560)",
+      "estrategia": "Generar líneas knockout (KO) mediante mutagénesis por NHEJ y líneas de sobreexpresión (OE) mediante inserción de un cassette 35S::Asr2 en el locus seguro (e.g., sitio intergénico en el cromosoma 2) usando CRISPR‑Cas9 con homología dirigida (HDR).",
+      "guias_sugeridas": [
+        {
+          "nombre": "gRNA_KO1",
+          "secuencia": "GGACTGCTTCTGAGCTCAGG",
+          "ubicacion": "Exón 1, sitio de corte cerca del inicio del marco de lectura"
+        },
+        {
+          "nombre": "gRNA_KO2",
+          "secuencia": "CCTGATGAGGATGCTGTTCA",
+          "ubicacion": "Exón 2, para crear deleción de ~150 bp"
+        },
+        {
+          "nombre": "gRNA_HDR",
+          "secuencia": "AGTCTGCTGCTGATGAGGAA",
+          "ubicacion": "Sitio de inserción en locus intergénico, con homología a los flancos del cassette 35S::Asr2"
+        }
+      ],
+      "controles": [
+        "WT (variedad cultivada, sin transformación)",
+        "Vector vacío (pCAMBIA1300 sin cassette de edición)",
+        "gRNA no‑targeting (gRNA scramble) para evaluar efectos de la edición sin corte",
+        "Línea KO complementada (KO + transgene Asr2 bajo su promotor nativo) para confirmar especificidad"
+      ]
+    },
+    "fenotipado": {
+      "ambiente": "Invernadero con control de temperatura (25 ± 2 °C) y fotoperíodo 16 h luz/8 h oscuridad.",
+      "diseño experimental": "Diseño al azar completo con 4 bloques; cada bloque contiene 12 plantas por tratamiento (WT, KO, OE, controles).",
+      "protocolos de sequía": [
+        "Secado progresivo: riego interrumpido a 21 dpa; monitoreo de contenido de humedad del sustrato (θ) hasta 30 % FC (field capacity).",
+        "Rehidratación: re‑riego después de 7 d de estrés para evaluar recuperación."
+      ],
+      "mediciones": [
+        "Contenido de agua relativa (RWC) de hojas cada 48 h",
+        "Potencial hídrico foliar (Ψw) con presión chamber",
+        "Conductancia estomática (gs) y fotosíntesis neta (An) mediante IRGA",
+        "Concentración de ABA en hojas (LC‑MS/MS)",
+        "Marcadores de estrés oxidativo: MDA, actividad de SOD y CAT",
+        "Supervivencia (% de plantas que recuperan turgencia tras rehidratación)",
+        "Rendimiento: número y peso de frutos al final del ciclo"
+      ],
+      "análisis molecular": [
+        "qRT‑PCR de Asr2 y genes downstream (LEA, RD29B) en hojas bajo estrés y control",
+        "Western blot para confirmar presencia/ausencia de proteína ASR2",
+        "Secuenciación Sanger de los sitios objetivo para validar mutaciones"
+      ]
+    },
+    "validacion_estadistica": {
+      "tamaño_muestral": "n = 12 plantas por tratamiento (basado en potencia 0.9, α = 0.05, efecto esperado d = 1.2).",
+      "análisis": [
+        "ANOVA de dos factores (tratamiento × bloque) para cada variable fisiológica",
+        "Pruebas post‑hoc Tukey HSD para comparaciones pares",
+        "Modelos lineales mixtos (LMM) con bloque como efecto aleatorio para datos longitudinales (RWC, gs)",
+        "Correlación de expresión de Asr2 con parámetros fisiológicos (Pearson r)",
+        "Análisis de supervivencia (Kaplan‑Meier) y prueba log‑rank entre KO, OE y WT"
+      ],
+      "software": "R (packages: lme4, emmeans, survival) y SAS para confirmación."
+    },
+    "cronograma_semanas": 12,
+    "riesgos": [
+      "Baja eficiencia de HDR en tomate; mitigado con uso de inhibidores de NHEJ (e.g., SCR7) y entrega de plantilla de donante como ADN lineal de alta pureza.",
+      "Off‑target CRISPR: se realizará análisis in silico (CRISPOR) y PCR/secuenciación de los 5 loci con mayor puntuación.",
+      "Variabilidad ambiental en invernadero: se usarán sensores de humedad y temperatura para mantener condiciones uniformes.",
+      "Mortalidad de plantas durante regeneración: se incluirán al menos 30 % de plantas excedentes.",
+      "Posibles efectos pleiotrópicos de la sobreexpresión: se complementará con líneas KO complementadas."
+    ],
+    "advertencia_causalidad": "Aunque la asociación entre la manipulación de Asr2 y los cambios fenotípicos bajo sequía será estadísticamente significativa, la causalidad directa debe confirmarse mediante experimentos complementarios (e.g., rescate de KO, análisis de interacción con vías ABA, pruebas en diferentes genotipos y condiciones de campo)."
+  },
+  "nota": "Piloto con fines docentes: correlación ≠ causalidad; validar experimentalmente."
+}

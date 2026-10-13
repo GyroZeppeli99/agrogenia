@@ -1,0 +1,307 @@
+{
+  "fecha": "2026-09-30 01:00",
+  "especie": "Arabidopsis thaliana",
+  "tax_id": 3702,
+  "rasgo": "tolerancia a salinidad",
+  "terminos": "salt tolerance OR salinity OR sodium transport OR SOS",
+  "modelo": "openai/gpt-oss-120b",
+  "candidatos": [
+    {
+      "id_ncbi": "814729",
+      "simbolo": "SOS1",
+      "nombre_oficial": "SOS1",
+      "descripcion": "sodium proton exchanger, putative (NHX7) (SOS1)",
+      "resumen": "Encodes a plasma membrane-localized Na+/H+ antiporter SOS1. Functions in the extrusion of toxic Na+ from cells and is essential for plant salt tolerance. Has 12 predicted transmembrane domains in the N-terminal region and a long cytoplasmic tail of approx. 700 aa at the C-terminal side. SOS1 interacts through its predicted cytoplasmic tail with RCD1, a regulator of oxidative-stress responses, suggesting that SOS1 might function in oxidative-stress tolerance.",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/814729",
+      "score": 95,
+      "motivo": "Antiporter Na+/H+ de membrana plasmática esencial; mutantes son hipersensibles y su sobreexpresión mejora la tolerancia.",
+      "evidencia": "alta",
+      "uniprot": {
+        "accession": "M5BEQ9",
+        "nombre_proteina": "",
+        "funcion": "",
+        "longitud": 0
+      },
+      "alphafold": "https://alphafold.ebi.ac.uk/entry/M5BEQ9",
+      "tair": null,
+      "perfil": {
+        "simbolo": "SOS1",
+        "mecanismo": "Antiporter Na⁺/H⁺ localizado en la membrana plasmática que expulsa Na⁺ al exterior a cambio de H⁺, activado por el complejo de señalización SOS (SOS2‑SOS3).",
+        "via": "Vía SOS (SOS2/SOS3 protein kinases → activación de SOS1) dentro de la respuesta general a estrés salino y regulación de la homeostasis iónica.",
+        "dominios": [
+          "Dominio de intercambio Na⁺/H⁺ (CPA1, ~12 hélices transmembrana)",
+          "Región C‑terminal citosólica con sitio de fosforilación por SOS2",
+          "Motivo de unión a calmodulina (en algunas especies)"
+        ],
+        "efecto_knockout": "Hipersensibilidad a la salinidad: acumulación de Na⁺ en el citosol, inhibición del crecimiento radicular y de la germinación, y muerte prematura bajo condiciones de 50‑100 mM NaCl.",
+        "confianza": 95
+      }
+    },
+    {
+      "id_ncbi": "826623",
+      "simbolo": "HKT1",
+      "nombre_oficial": "HKT1",
+      "descripcion": "high-affinity K+ transporter 1",
+      "resumen": "encodes a sodium transporter (HKT1) expressed in xylem parenchyma cells. Mutants over-accumulate sodium in shoot tissue and have increased sodium in the xylem sap and reduced sodium in phloem sap and roots.",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/826623",
+      "score": 92,
+      "motivo": "Transportador de alta afinidad para K+ y Na+ que regula la recirculación de Na+; mutantes alteran la acumulación de Na+ y la tolerancia.",
+      "evidencia": "alta",
+      "uniprot": {
+        "accession": "M5BED3",
+        "nombre_proteina": "",
+        "funcion": "",
+        "longitud": 0
+      },
+      "alphafold": "https://alphafold.ebi.ac.uk/entry/M5BED3",
+      "tair": null,
+      "perfil": {
+        "simbolo": "HKT1",
+        "mecanismo": "Transportador de alta afinidad para K⁺/Na⁺ que recupera Na⁺ del xilema y lo recircula al tejido radicular, limitando su transporte a la parte aérea.",
+        "via": "Ruta de recirculación de Na⁺ (xilema‑floema) dentro de la respuesta al estrés salino; interactúa con la vía SOS y con la regulación de la presión osmótica.",
+        "dominios": [
+          "Dominio Trk/HKT (4 repeticiones de 5‑TM)",
+          "Sitio selectivo de Na⁺ (motivo GYG)",
+          "C‑terminal citosólica con posibles sitios de fosforilación"
+        ],
+        "efecto_knockout": "Aumento de la concentración de Na⁺ en hojas, mayor toxicidad salina y reducción del rendimiento bajo estrés salino; la planta muestra mayor sensibilidad a 75‑100 mM NaCl.",
+        "confianza": 92
+      }
+    },
+    {
+      "id_ncbi": "832773",
+      "simbolo": "NHX1",
+      "nombre_oficial": "NHX1",
+      "descripcion": "Na+/H+ exchanger 1",
+      "resumen": "Encodes a vacuolar sodium/proton antiporter involved in salt tolerance, ion homeostasis, and leaf development.",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/832773",
+      "score": 90,
+      "motivo": "Antiporter vacuolar Na+/H+; pérdida de función causa sensibilidad y su sobreexpresión confiere mayor tolerancia.",
+      "evidencia": "alta",
+      "uniprot": {
+        "accession": "Q68KI4",
+        "nombre_proteina": "",
+        "funcion": "",
+        "longitud": 0
+      },
+      "alphafold": "https://alphafold.ebi.ac.uk/entry/Q68KI4",
+      "tair": null,
+      "perfil": {
+        "simbolo": "NHX1",
+        "mecanismo": "Antiporter Na⁺/H⁺ localizado en la tonoplasta que transporta Na⁺ al vacuolo a cambio de H⁺, contribuyendo al almacenamiento de Na⁺ y al ajuste osmótico.",
+        "via": "Vía de sequestro vacuolar de iones (homeostasis iónica y osmótica) dentro de la respuesta al estrés salino; funciona en conjunto con la bomba V‑ATPasa para generar el gradiente de protones.",
+        "dominios": [
+          "Dominio Na⁺/H⁺ exchanger (CPA1, ~12 TM)",
+          "Región C‑terminal citosólica reguladora (interacción con calmodulina y fosforilación)",
+          "Motivo de unión a fosfato (en algunos ortólogos)"
+        ],
+        "efecto_knockout": "Reducción de la capacidad de sequestro vacuolar de Na⁺, lo que lleva a una mayor toxicidad citosólica y a una sensibilidad moderada‑alta a la salinidad (defectos de crecimiento a >75 mM NaCl).",
+        "confianza": 90
+      }
+    },
+    {
+      "id_ncbi": "819665",
+      "simbolo": "NHX2",
+      "nombre_oficial": "NHX2",
+      "descripcion": "sodium hydrogen exchanger 2",
+      "resumen": "Encodes a vacuolar K+/H+ exchanger essential for active K+ uptake at the tonoplast and involved in regulating stomatal closure.",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/819665",
+      "score": 80,
+      "motivo": "Antiporter vacuolar con datos de mutantes que presentan sensibilidad moderada al NaCl y mejora al sobreexpresarse.",
+      "evidencia": "media",
+      "uniprot": {
+        "accession": "Q56XP4",
+        "nombre_proteina": "",
+        "funcion": "",
+        "longitud": 0
+      },
+      "alphafold": "https://alphafold.ebi.ac.uk/entry/Q56XP4",
+      "tair": null,
+      "perfil": {
+        "simbolo": "NHX2",
+        "mecanismo": "Antiporter Na⁺/H⁺/K⁺ localizado principalmente en endosomas y en la tonoplasta de células jóvenes; su papel principal parece ser la regulación del pH y del K⁺ intracelular, con una contribución menor al manejo de Na⁺.",
+        "via": "Vía de regulación del pH endosomal y de homeostasis de K⁺; participa indirectamente en la tolerancia a la salinidad al mantener la función vesicular bajo estrés iónico.",
+        "dominios": [
+          "Dominio Na⁺/H⁺ exchanger (CPA1)",
+          "Región C‑terminal citosólica con posibles sitios de interacción con proteínas de tráfico vesicular"
+        ],
+        "efecto_knockout": "Fenotipo leve o ausente bajo condiciones normales; bajo alta salinidad puede observarse una ligera reducción del crecimiento radicular y una menor capacidad de ajuste osmótico, reflejando redundancia con NHX1 y NHX3.",
+        "confianza": 78
+      }
+    },
+    {
+      "id_ncbi": "835640",
+      "simbolo": "NHX3",
+      "nombre_oficial": "NHX3",
+      "descripcion": "Na+/H+ (sodium hydrogen) exchanger 3",
+      "resumen": "member of Sodium proton exchanger family",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/835640",
+      "score": 78,
+      "motivo": "Similar a NHX2; evidencia funcional en tolerancia a salinidad pero menos robusta que NHX1/2.",
+      "evidencia": "media",
+      "uniprot": {
+        "accession": "Q8S398",
+        "nombre_proteina": "",
+        "funcion": "",
+        "longitud": 0
+      },
+      "alphafold": "https://alphafold.ebi.ac.uk/entry/Q8S398",
+      "tair": null,
+      "perfil": {
+        "simbolo": "NHX3",
+        "mecanismo": "Antiporter Na⁺/H⁺/K⁺ con localización predominantemente en la tonoplasta de tejidos vegetativos; similar a NHX2, su contribución directa al manejo de Na⁺ es limitada, pero ayuda al equilibrio iónico y al pH vacuolar.",
+        "via": "Vía de homeostasis vacuolar de iones y pH; colabora con NHX1 en la regulación osmótica bajo estrés salino.",
+        "dominios": [
+          "Dominio Na⁺/H⁺ exchanger (CPA1)",
+          "Región C‑terminal citosólica reguladora"
+        ],
+        "efecto_knockout": "Efecto sutil; en combinación con mutaciones en NHX1 o NHX2 se potencia la sensibilidad a la salinidad, indicando redundancia funcional.",
+        "confianza": 75
+      }
+    }
+  ],
+  "resto_genes": [
+    {
+      "id_ncbi": "839666",
+      "simbolo": "STZ",
+      "nombre_oficial": "STZ",
+      "descripcion": "salt tolerance zinc finger",
+      "resumen": "Related to Cys2/His2-type zinc-finger proteins found in higher plants. Compensated for a subset of calcineurin deficiency in yeast. Salt tolerance produced by ZAT10 appeared to be partially dependent on ENA1/PMR2, a P-type ATPase required for Li+ and Na+ efflux in yeast. The protein is localized to the nucleus, acts as a transcriptional repressor and is responsive to chitin oligomers. Also involved in response to photooxidative stress.",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/839666",
+      "score": 75,
+      "motivo": "Zinc finger (ZAT10) inducido por estrés salino; sobreexpresión aumenta la tolerancia, aunque el mecanismo es indirecto.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "819811",
+      "simbolo": "NHX4",
+      "nombre_oficial": "NHX4",
+      "descripcion": "sodium hydrogen exchanger 4",
+      "resumen": "member of Sodium proton exchanger family",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/819811",
+      "score": 70,
+      "motivo": "Antiporter endosomal; estudios muestran participación en homeostasis iónica bajo estrés salino, pero la evidencia es parcial.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "843890",
+      "simbolo": "BBX21",
+      "nombre_oficial": "BBX21",
+      "descripcion": "salt tolerance homolog2",
+      "resumen": "Encodes a B-box zinc finger transcription factor BBX21 (also named STH2/salt tolerance homolog2 and LHUS/long hypocotyl under shade). Interacts with COP1 to control de-etiolation. Also genetically interacts with COP1 to regulate shade avoidance.",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/843890",
+      "score": 68,
+      "motivo": "Factor de transcripción B‑box implicado en la respuesta a luz y estrés; datos de expresión y fenotipos de mutantes sugieren un rol moderado.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "841878",
+      "simbolo": "NHX5",
+      "nombre_oficial": "NHX5",
+      "descripcion": "sodium hydrogen exchanger 5",
+      "resumen": "Encodes an endosomal Na(+)/H(+) antiporter: AT1G54370 (NHX5), AT1G79610 (NHX6). Double knockout nhx5 nhx6 showed reduced growth, with smaller and fewer cells and increased sensitivity to salinity.",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/841878",
+      "score": 65,
+      "motivo": "Antiporter endosomal; contribuye a la regulación del pH y al tráfico vesicular bajo salinidad, con evidencia funcional limitada.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "817696",
+      "simbolo": "STH",
+      "nombre_oficial": "STH",
+      "descripcion": "salt tolerance homologue",
+      "resumen": "a B-box zinc finger protein that interacts with COP1. contains a novel 11 amino acid motif at the C-terminus (also found at the N-terminus of HY5) that is involved in the COP1 interaction.",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/817696",
+      "score": 55,
+      "motivo": "Homólogo de tolerancia a salinidad con poca caracterización funcional; datos mayormente basados en expresión diferencial.",
+      "evidencia": "baja"
+    },
+    {
+      "id_ncbi": "828311",
+      "simbolo": "KT2/3",
+      "nombre_oficial": "KT2/3",
+      "descripcion": "potassium transport 2/3",
+      "resumen": "Encodes AKT2, a photosynthate- and light-dependent inward rectifying potassium channel with unique gating properties that are regulated by phosphorylation. Expressed in guard cell protoplasts and in the phloem and xylem of aerial portions of the plant. The channel can coassemble with another K+ channel, KAT1, in vitro. In guard cells, AKT2/3 is responsible for the Ca2+ sensitivity of the K+ uptake channel. In the phloem, it regulates the sucrose/H+ symporters via the phloem potential. AKT2 belon",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/828311",
+      "score": 50,
+      "motivo": "Transportador de potasio con escasa información directa sobre su implicación en la tolerancia a NaCl.",
+      "evidencia": "baja"
+    },
+    {
+      "id_ncbi": "841755",
+      "simbolo": "AT1G53210",
+      "nombre_oficial": "AT1G53210",
+      "descripcion": "sodium/calcium exchanger family protein / calcium-binding EF hand family protein",
+      "resumen": "Encodes a Na+/Ca 2+ exchanger-like protein that participates in the maintenance of Ca 2+ homeostasis.",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/841755",
+      "score": 45,
+      "motivo": "Proteína de familia intercambiadora Na+/Ca2+; no hay estudios funcionales claros que la vinculen causalmente a la tolerancia a salinidad.",
+      "evidencia": "baja"
+    }
+  ],
+  "validacion": {
+    "hipotesis": "La sobreexpresión dirigida de SOS1 en la membrana plasmática de Arabidopsis thaliana aumentará la capacidad de expulsar Na⁺ al exterior, reduciendo la acumulación citosólica de Na⁺ y mejorando la tolerancia a la salinidad; por el contrario, la pérdida de función de SOS1 provocará hipersensibilidad a NaCl.",
+    "edicion_crispr": {
+      "gen_objetivo": "SOS1 (AT1G01580)",
+      "estrategia": "Se emplearán dos enfoques paralelos: (1) knockout mediante mutagénesis de inserción/deleción en el exón 1 usando Cas9 nuclease; (2) inserción de un promotor constitutivo fuerte (UBQ10) justo upstream del ATG mediante HDR para generar una línea de sobreexpresión endógena. Además, se diseñará una línea de activación CRISPR‑a (dCas9‑VP64) con guías dirigidas al promotor nativo como alternativa transgénica.",
+      "guias_sugeridas": [
+        {
+          "nombre": "KO_exon1",
+          "seq": "GGACTTCTGAGCTGAGCTCA",
+          "pam": "AGG",
+          "objetivo": "Corte en el exon 1 para generar indel que cause frameshift temprano."
+        },
+        {
+          "nombre": "HDR_promotor_upstream",
+          "seq": "CTGAGGATGCTGCTTCTGGA",
+          "pam": "CGG",
+          "objetivo": "Corte ~30 bp upstream del ATG para facilitar inserción por HDR del cassette UBQ10‑Nos terminator."
+        },
+        {
+          "nombre": "CRISPRa_promotor",
+          "seq": "AGCTGCTGATGATGCTGCTC",
+          "pam": "TGG",
+          "objetivo": "Reclutamiento de dCas9‑VP64 al promotor nativo para activación transcripcional."
+        }
+      ],
+      "controles": [
+        "WT Col‑0 (sin transformación).",
+        "Línea transformada con vector vacío (sin guía).",
+        "Línea con guía no dirigida (scrambled) para evaluar efectos de edición fuera del objetivo.",
+        "Línea CRISPR‑a sin dominio activador (dCas9 solo) para descartar efectos de unión al ADN."
+      ]
+    },
+    "fenotipado": {
+      "parametros": [
+        "Tasa de germinación bajo 0, 50, 100 y 150 mM NaCl (48 h).",
+        "Longitud de raíz primaria y laterales a los 7 y 14 días post‑germinación.",
+        "Masa fresca y seca de tallo y hojas a los 21 días.",
+        "Contenido iónico (Na⁺ y K⁺) en raíces y hojas mediante flame photometry o ICP‑MS.",
+        "Fv/Fm y ΦPSII (fluorescencia de clorofila) como indicadores de estrés fotosintético.",
+        "Supervivencia y % de plantas con clorosis visible a 14 días bajo 150 mM NaCl."
+      ],
+      "diseño_experimental": "Diseño completamente aleatorizado con bloques de 3 réplicas; cada bloque contiene 12 plantas por genotipo y condición de salinidad. Los experimentos se repetirán en tres ciclos biológicos independientes.",
+      "metodologia": "Plántulas se sembrarán en placas de agar con medio MS suplementado con la concentración de NaCl correspondiente. Para análisis de ion se cosecharán tejidos a los 14 días, se lavarán con solución de etanol 70 % para eliminar Na⁺ superficial y se secarán antes del análisis."
+    },
+    "validacion_estadistica": {
+      "tamano_muestral": "n = 12 plantas por genotipo‑condición (potencia >0.8 para detectar diferencias del 20 % con α = 0.05).",
+      "analisis": [
+        "ANOVA de dos factores (genotipo × concentración de NaCl) seguida de pruebas post‑hoc Tukey HSD.",
+        "Modelos lineales mixtos para datos de tiempo‑serie (longitud de raíz) con bloque como efecto aleatorio.",
+        "Regresión lineal para correlacionar contenido iónico (Na⁺/K⁺) con parámetros de crecimiento.",
+        "Corrección de Bonferroni para comparaciones múltiples cuando sea necesario."
+      ],
+      "software": "R (paquetes ‘lme4’, ‘emmeans’, ‘ggplot2’) y/o SAS."
+    },
+    "cronograma_semanas": 12,
+    "riesgos": [
+      "Ediciones off‑target que puedan afectar genes relacionados con la homeostasis iónica.",
+      "Baja eficiencia de HDR para inserción del promotor; se mitigará con inhibidores de NHEJ (e.g., SCR7) y uso de líneas con alta actividad de recombinación.",
+      "Silenciamiento transgénico o epigenético de la copia insertada.",
+      "Variabilidad ambiental en la fase de fenotipado (temperatura, humedad) que podría enmascarar efectos genéticos.",
+      "Posible pleiotropía de la sobreexpresión de SOS1 que afecte crecimiento bajo condiciones no salinas."
+    ],
+    "advertencia_causalidad": "Aunque la asociación entre la manipulación de SOS1 y los cambios fenotípicos bajo salinidad será estadísticamente significativa, la causalidad directa debe confirmarse mediante complementación (reintroducción del alelo WT en knock‑outs) y análisis de vías downstream (p. ej., actividad de SOS2/SOS3)."
+  },
+  "nota": "Piloto con fines docentes: correlación ≠ causalidad; validar experimentalmente."
+}

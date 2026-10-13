@@ -1,0 +1,15 @@
+agrogenia/
+├── README.md                    # Descripción + 7 capacidades + figura de robustez
+├── LICENSE                      # MIT
+├── .gitignore                   # dbs/, proteomas_*, *.estado, *.log
+├── pipeline_v5.2_dominios_y_consenso.py
+├── consenso_multi_corrida.py
+├── dbs/
+│   └── Pfam-sequia.hmm          # o descargar bajo demanda
+├── resultados/
+│   ├── v51_fresa_exh_sep_microbios.json
+│   ├── v51_fresa_exh_auto.json
+│   ├── v52_fresa_triple.json
+│   └── consenso_fresa_3_corridas.md   ← figura del paper
+└── docs/
+    └── presentacion_agrogenia_v5.1.html

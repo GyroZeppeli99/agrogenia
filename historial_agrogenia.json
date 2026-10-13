@@ -1,0 +1,116 @@
+[
+  {
+    "accession": "Manes.14G047368.1.p",
+    "rasgo": "tolerancia a sequia",
+    "especie": "Manihot esculenta",
+    "score": 85,
+    "fecha": "2026-09-30 19:08"
+  },
+  {
+    "accession": "Manes.14G053100.4.p",
+    "rasgo": "tolerancia a sequia",
+    "especie": "Manihot esculenta",
+    "score": 78,
+    "fecha": "2026-09-30 19:08"
+  },
+  {
+    "accession": "Manes.14G053100.8.p",
+    "rasgo": "tolerancia a sequia",
+    "especie": "Manihot esculenta",
+    "score": 78,
+    "fecha": "2026-09-30 19:08"
+  },
+  {
+    "accession": "Manes.14G047368.1.p",
+    "rasgo": "tolerancia a sequia",
+    "especie": "Manihot esculenta",
+    "score": 85,
+    "fecha": "2026-09-30 19:58"
+  },
+  {
+    "accession": "Manes.14G053100.4.p",
+    "rasgo": "tolerancia a sequia",
+    "especie": "Manihot esculenta",
+    "score": 78,
+    "fecha": "2026-09-30 19:58"
+  },
+  {
+    "accession": "Manes.14G053100.8.p",
+    "rasgo": "tolerancia a sequia",
+    "especie": "Manihot esculenta",
+    "score": 78,
+    "fecha": "2026-09-30 19:58"
+  },
+  {
+    "accession": "Manes.14G044700.1.p",
+    "locus": "Manes.14G044700",
+    "rasgo": "tolerancia a sequia",
+    "especie": "Manihot esculenta",
+    "score": 92,
+    "fecha": "2026-09-30 20:44"
+  },
+  {
+    "accession": "Manes.07G043100.5.p",
+    "locus": "Manes.07G043100",
+    "rasgo": "tolerancia a sequia",
+    "especie": "Manihot esculenta",
+    "score": 85,
+    "fecha": "2026-09-30 20:44"
+  },
+  {
+    "accession": "Manes.14G095800.1.p",
+    "locus": "Manes.14G095800",
+    "rasgo": "tolerancia a sequia",
+    "especie": "Manihot esculenta",
+    "score": 83,
+    "fecha": "2026-09-30 20:44"
+  },
+  {
+    "accession": "Manes.07G142400.1.p",
+    "locus": "Manes.07G142400",
+    "rasgo": "tolerancia a salinidad",
+    "especie": "Manihot esculenta",
+    "score": 92,
+    "fecha": "2026-10-01 00:09"
+  },
+  {
+    "accession": "Manes.07G012700.1.p",
+    "locus": "Manes.07G012700",
+    "rasgo": "tolerancia a salinidad",
+    "especie": "Manihot esculenta",
+    "score": 92,
+    "fecha": "2026-10-01 00:09"
+  },
+  {
+    "accession": "Manes.14G044700.1.p",
+    "locus": "Manes.14G044700",
+    "rasgo": "tolerancia a salinidad",
+    "especie": "Manihot esculenta",
+    "score": 88,
+    "fecha": "2026-10-01 00:09"
+  },
+  {
+    "accession": "Manes.07G142400.1.p",
+    "locus": "Manes.07G142400",
+    "rasgo": "tolerancia a calor",
+    "especie": "Manihot esculenta",
+    "score": 82,
+    "fecha": "2026-10-01 00:50"
+  },
+  {
+    "accession": "Manes.14G044700.1.p",
+    "locus": "Manes.14G044700",
+    "rasgo": "tolerancia a calor",
+    "especie": "Manihot esculenta",
+    "score": 80,
+    "fecha": "2026-10-01 00:50"
+  },
+  {
+    "accession": "Manes.07G012700.1.p",
+    "locus": "Manes.07G012700",
+    "rasgo": "tolerancia a calor",
+    "especie": "Manihot esculenta",
+    "score": 80,
+    "fecha": "2026-10-01 00:50"
+  }
+]

@@ -1,0 +1,299 @@
+{
+  "fecha": "2026-09-30 01:01",
+  "especie": "Arabidopsis thaliana",
+  "tax_id": 3702,
+  "rasgo": "resistencia a enfermedades",
+  "terminos": "disease resistance OR pathogen OR defense OR R protein",
+  "modelo": "openai/gpt-oss-120b",
+  "candidatos": [
+    {
+      "id_ncbi": "827397",
+      "simbolo": "SNC1",
+      "nombre_oficial": "SNC1",
+      "descripcion": "TIR-NBS-LRR class disease resistance protein",
+      "resumen": "Encodes a Toll Interleukin1 receptor-nucleotide binding-Leu- rich repeat-type resistance gene (TIR-NB-LRR-type) involved in the salicylic acid-dependent defense response pathway. Mutant plants constitutively express pathogenesis-related (PR) genes and are pathogen resistant. Resistance signaling in snc1 requires EDS1, MOS3 and PAD4.",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/827397",
+      "score": 95,
+      "motivo": "Mutaciones causan auto‑inmunidad y sobreexpresión confiere resistencia a varios patógenos; pruebas genéticas y de transgénesis robustas.",
+      "evidencia": "alta",
+      "uniprot": {
+        "accession": "O23530",
+        "nombre_proteina": "",
+        "funcion": "",
+        "longitud": 0
+      },
+      "alphafold": "https://alphafold.ebi.ac.uk/entry/O23530",
+      "tair": null,
+      "perfil": {
+        "simbolo": "SNC1",
+        "mecanismo": "Reconoce directamente o indirectamente avirulencia de patógenos a través de su dominio TIR, activando la señalización de inmunidad basada en SA y provocando la respuesta de hipersensibilidad (HR).",
+        "via": "Inmunidad mediada por receptores de resistencia (R) tipo TIR‑NBS‑LRR; ruta de señalización de ácido salicílico (SA) y MAPKs.",
+        "dominios": [
+          "TIR",
+          "NB-ARC",
+          "LRR"
+        ],
+        "efecto_knockout": "Mayor susceptibilidad a patógenos como Pseudomonas syringae pv. maculicola y a ciertos hongos; reducción de la respuesta de HR y de la acumulación de SA.",
+        "confianza": 88
+      }
+    },
+    {
+      "id_ncbi": "819889",
+      "simbolo": "RPM1",
+      "nombre_oficial": "RPM1",
+      "descripcion": "NB-ARC domain-containing disease resistance protein",
+      "resumen": "Contains an N-terminal tripartite nucleotide binding site and a C-terminal tandem array of leucine-rich repeats. Confers resistance to Pseudomonas syringae strains that carry the avirulence genes avrB and avrRpm1.",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/819889",
+      "score": 93,
+      "motivo": "R‑gene clásica que reconoce AvrRpm1/AvrB; mutantes pierden resistencia y transgenes restauran la respuesta.",
+      "evidencia": "alta",
+      "uniprot": {
+        "accession": "L7S0N9",
+        "nombre_proteina": "",
+        "funcion": "",
+        "longitud": 0
+      },
+      "alphafold": "https://alphafold.ebi.ac.uk/entry/L7S0N9",
+      "tair": null,
+      "perfil": {
+        "simbolo": "RPM1",
+        "mecanismo": "Detecta la presencia de los efectores bacterianos AvrRpm1 y AvrB mediante vigilancia indirecta de la fosforilación de la proteína RIN4, lo que desencadena la activación del dominio NB‑ARC y la señalización de ETI.",
+        "via": "Inmunidad basada en NBS‑LRR (clase CC‑NBS‑LRR); señalización a través de MAPKs y vía de SA/JA cruzada.",
+        "dominios": [
+          "CC",
+          "NB-ARC",
+          "LRR"
+        ],
+        "efecto_knockout": "Pérdida de resistencia contra Pseudomonas syringae pv. tomato que porta AvrRpm1 o AvrB; aumento de la colonización bacteriana y ausencia de HR.",
+        "confianza": 90
+      }
+    },
+    {
+      "id_ncbi": "837775",
+      "simbolo": "RPS5",
+      "nombre_oficial": "RPS5",
+      "descripcion": "Disease resistance protein (CC-NBS-LRR class) family",
+      "resumen": "Resistance gene, mediates resistance against the bacterial pathogen Pseudomonas syringae. Contains a putative nucleotide binding site composed of kinase-1a (or P-loop), kinase-2a, and putative kinase-3a domains, 13 imperfect leucine-rich repeats, a potential leucine zipper, and two uncharacterized motifs that are well conserved in products of previously isolated R genes. Confers resistance to Pseudomonas syringae strains that express avrPphB.",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/837775",
+      "score": 92,
+      "motivo": "Detecta la proteasa AvrPphB; evidencia de pérdida de función y de complemento funcional en plantas transgénicas.",
+      "evidencia": "alta",
+      "uniprot": {
+        "accession": "Q38JZ6",
+        "nombre_proteina": "",
+        "funcion": "",
+        "longitud": 0
+      },
+      "alphafold": "https://alphafold.ebi.ac.uk/entry/Q38JZ6",
+      "tair": null,
+      "perfil": {
+        "simbolo": "RPS5",
+        "mecanismo": "Reconoce la modificación del objetivo de efecto AvrPphB (la quinasa PBS1) mediante vigilancia indirecta; la liberación de PBS1 activa el dominio NB‑ARC de RPS5 y desencadena la respuesta de ETI.",
+        "via": "Inmunidad CC‑NBS‑LRR; señalización de SA y activación de MAPK cascades que conducen a la expresión de genes de defensa.",
+        "dominios": [
+          "CC",
+          "NB-ARC",
+          "LRR"
+        ],
+        "efecto_knockout": "Sensibilidad aumentada a Pseudomonas syringae que expresa AvrPphB; disminución de la HR y de la expresión de PR (proteínas de ruta) genes.",
+        "confianza": 87
+      }
+    },
+    {
+      "id_ncbi": "828715",
+      "simbolo": "RPS2",
+      "nombre_oficial": "RPS2",
+      "descripcion": "NB-ARC domain-containing disease resistance protein",
+      "resumen": "Encodes a plasma membrane protein with leucine-rich repeat, leucine zipper, and P loop domains that confers resistance to Pseudomonas syringae infection by interacting with the avirulence gene avrRpt2. RPS2 protein interacts directly with plasma membrane associated protein RIN4 and this interaction is disrupted by avrRpt2.",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/828715",
+      "score": 91,
+      "motivo": "Reconoce AvrRpt2; mutantes son susceptibles y la reintroducción del gen restaura la resistencia.",
+      "evidencia": "alta",
+      "uniprot": {
+        "accession": "A3FB66",
+        "nombre_proteina": "",
+        "funcion": "",
+        "longitud": 0
+      },
+      "alphafold": "https://alphafold.ebi.ac.uk/entry/A3FB66",
+      "tair": null,
+      "perfil": {
+        "simbolo": "RPS2",
+        "mecanismo": "Detecta la presencia del efectoor AvrRpt2 mediante vigilancia de la proteína objetivo RIN4; la degradación de RIN4 libera a RPS2 para activar su dominio NB‑ARC y la señalización de defensa.",
+        "via": "Inmunidad CC‑NBS‑LRR; vía de SA y generación de ROS (especies reactivas de oxígeno) como parte de la respuesta de ETI.",
+        "dominios": [
+          "CC",
+          "NB-ARC",
+          "LRR"
+        ],
+        "efecto_knockout": "Mayor susceptibilidad a Pseudomonas syringae pv. tomato con AvrRpt2; reducción de la HR y de la acumulación de ROS y SA.",
+        "confianza": 86
+      }
+    },
+    {
+      "id_ncbi": "834562",
+      "simbolo": "RRS1",
+      "nombre_oficial": "RRS1",
+      "descripcion": "Disease resistance protein (TIR-NBS-LRR class)",
+      "resumen": "Confers resistance to Ralstonia solanacearum. Similar to NBLS-TIR resistance genes,and also contains similarity to transcription factors. Interacts with pathogen effector protein AvrPop2.",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/834562",
+      "score": 90,
+      "motivo": "Funciona con RPS4 contra bacterias y hongos; estudios de mutantes y de interacción proteína‑proteína demuestran causalidad.",
+      "evidencia": "alta",
+      "uniprot": {
+        "accession": "C4B7M5",
+        "nombre_proteina": "",
+        "funcion": "",
+        "longitud": 0
+      },
+      "alphafold": "https://alphafold.ebi.ac.uk/entry/C4B7M5",
+      "tair": null,
+      "perfil": {
+        "simbolo": "RRS1",
+        "mecanismo": "Forma un complejo con la proteína WRKY41 (RRS1‑R) y detecta la presencia del efector AvrRps4 (bacteriano) o PopP2 (fungal) mediante interacción directa con su dominio TIR; la activación conduce a la señalización de ETI y a la transcripción de genes de defensa.",
+        "via": "Inmunidad TIR‑NBS‑LRR; señalización de SA y regulación de la transcripción mediante factores WRKY.",
+        "dominios": [
+          "TIR",
+          "NB-ARC",
+          "LRR",
+          "WRKY (c-terminal)"
+        ],
+        "efecto_knockout": "Pérdida de resistencia contra bacterias que expresan AvrRps4 y contra el hongo Ralstonia solanacearum que secreta PopP2; aumento de la carga patógena y ausencia de respuesta de HR.",
+        "confianza": 84
+      }
+    }
+  ],
+  "resto_genes": [
+    {
+      "id_ncbi": "834561",
+      "simbolo": "RPS4",
+      "nombre_oficial": "RPS4",
+      "descripcion": "Disease resistance protein (TIR-NBS-LRR class) family",
+      "resumen": "RPS4 belongs to the Toll/interleukin-1 receptor (TIR)-nucleotide binding site (NBS)-Leu-rich repeat (LRR) class of disease resistance (R) genes. Confers specific resistance to Pseudomonas syringae pv. tomato carrying the avirulence gene AvrRPS4. Produces alternative transcripts with truncated open reading frames.",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/834561",
+      "score": 90,
+      "motivo": "Parte del par RRS1/RPS4; mutantes son vulnerables a Pseudomonas y a Fusarium, y la expresión ectópica confiere resistencia.",
+      "evidencia": "alta"
+    },
+    {
+      "id_ncbi": "842733",
+      "simbolo": "NPR1",
+      "nombre_oficial": "NPR1",
+      "descripcion": "regulatory protein (NPR1)",
+      "resumen": "This gene is a key regulator of the salicylic acid (SA)-mediated systemic acquired resistance (SAR) pathway. It is similar to the transcription factor inhibitor I kappa B, and contains ankyrin repeats. It confers resistance to the pathogens Pseudomonas syringae and Peronospora parasitica in a dosage-dependent fashion. Although transgenic Arabidopsis plants overexpressing NPR1 acquire enhanced sensitivity to SA and (benzothiadiazole) BTH, they display no obvious detrimental morphological changes ",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/842733",
+      "score": 88,
+      "motivo": "Regulador maestro de la resistencia sistémica adquirida; npr1 pierde SAR y la sobreexpresión aumenta la resistencia.",
+      "evidencia": "alta"
+    },
+    {
+      "id_ncbi": "823573",
+      "simbolo": "RPP1",
+      "nombre_oficial": "RPP1",
+      "descripcion": "Disease resistance protein (TIR-NBS-LRR class) family",
+      "resumen": "Encodes a TIR-NB-LRR R-protein RPP1 that confers resistance to Peronospora parasitica (downy mildew).",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/823573",
+      "score": 86,
+      "motivo": "R‑gene contra Peronospora parasitica; evidencia genética de resistencia específica y de pérdida de función.",
+      "evidencia": "alta"
+    },
+    {
+      "id_ncbi": "834367",
+      "simbolo": "RPP8",
+      "nombre_oficial": "RPP8",
+      "descripcion": "Disease resistance protein (CC-NBS-LRR class) family",
+      "resumen": "Confers resistance to Peronospora parasitica. In arabidopsis ecotype Dijon-17, HRT-mediated signaling is dependent on light for the induction of hypersensitive response and resistance to turnip crinkle virus.",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/834367",
+      "score": 85,
+      "motivo": "Confirma resistencia a oomicetos; mutantes y alelos naturales muestran correlación fuerte con fenotipo.",
+      "evidencia": "alta"
+    },
+    {
+      "id_ncbi": "827403",
+      "simbolo": "RPP5",
+      "nombre_oficial": "RPP5",
+      "descripcion": "Disease resistance protein (TIR-NBS-LRR class) family",
+      "resumen": "Contains a putative nucleotide binding site and leucine-rich repeats. Similar to the plant resistance genes N and L6, and to the toll and interleukin-1 receptors. Confers resistance to Peronospora parasitica.",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/827403",
+      "score": 84,
+      "motivo": "Implica resistencia a downy mildew; datos de mutantes y de alelos naturales, aunque la penetrancia varía.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "835513",
+      "simbolo": "CNGC4",
+      "nombre_oficial": "CNGC4",
+      "descripcion": "cyclic nucleotide-gated cation channel 4",
+      "resumen": "member of Cyclic nucleotide gated channel family, downstream component of the signaling pathways leading to HR resistance. mutant plants exhibit gene-for-gene disease resistance against avirulent Pseudomonas syringae despite the near-complete absence of the hypersensitive response (HR). Salicylic acid accumulation in dnd2 mutants is completely PAD4-independent.",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/835513",
+      "score": 80,
+      "motivo": "Canal iónico necesario para la señalización de Ca²⁺ en respuesta a patógenos; loss‑of‑function reduce resistencia, pero no es un R‑gene clásico.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "823806",
+      "simbolo": "RPP13",
+      "nombre_oficial": "RPP13",
+      "descripcion": "NB-ARC domain-containing disease resistance protein",
+      "resumen": "Confers resistance to the biotrophic oomycete, Peronospora parasitica. Encodes an NBS-LRR type R protein with a putative amino-terminal leucine zipper. Fungal protein ATR13 induces RPP13 gene expression and disease resistance.",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/823806",
+      "score": 80,
+      "motivo": "Proporciona resistencia cuantitativa contra Peronospora; evidencia basada en asociación de alelos y pruebas de complemento parcial.",
+      "evidencia": "media"
+    }
+  ],
+  "validacion": {
+    "hipotesis": "La activación o sobreexpresión de SNC1 confiere resistencia broad‑spectrum contra patógenos bacterianos y fúngicos en Arabidopsis thaliana mediante la vía TIR‑NBS‑LRR y la señalización de ácido salicílico (SA).",
+    "edicion_crispr": {
+      "gen_objetivo": "SNC1 (AT4G16950)",
+      "estrategia": "Generar tres líneas: (1) knockout completo (frameshift) para confirmar la pérdida de resistencia; (2) sobreexpresión mediante inserción de un promotor 35S fuerte delante del CDS; (3) edición puntual de la variante autoactiva SNC1‑D (Gly→Asp en posición 169) para reproducir la resistencia sin efectos de auto‑inmunidad excesiva.",
+      "guias_sugeridas": [
+        "gRNA1: 5'-GGACTTCTGCTGCTGATGAG-3' (exón 2, sitio de corte +3 del codón de inicio, para knockout)",
+        "gRNA2: 5'-CCTGAGCTTCTGAGGAGTCA-3' (exón 4, cerca del dominio NB‑ARC, para inserción de promotor 35S mediante HDR)",
+        "gRNA3: 5'-ATGAGGAGGATGAGCTGCTC-3' (exón 7, posición 169, para sustitución G169D mediante HDR)"
+      ],
+      "controles": [
+        "WT Col‑0 (sin edición)",
+        "línea CRISPR‑Cas9 sin guía (vector vacío) para descartar efectos de transformación",
+        "knockout de un gen no relacionado (ej. ACT2) como control de edición off‑target"
+      ]
+    },
+    "fenotipado": {
+      "ensayos_de_enfermedad": [
+        {
+          "patógeno": "Pseudomonas syringae pv. maculicola (DC3000)",
+          "metodo": "infiltración de 10⁵ CFU/mL en hojas 4‑5, recuento de colonias a 0 y 3 dpi, evaluación de HR visual y fluorescencia de ROS (DCFDA)."
+        },
+        {
+          "patógeno": "Botrytis cinerea",
+          "metodo": "aplicación de 5 µL de esporas (10⁴ conidiosporas/mL) en discos de hoja, medida del diámetro de lesión a 72 hpi."
+        }
+      ],
+      "mediciones_moleculares": [
+        "Cuantificación de SA libre y conjugada por LC‑MS/MS a 24 hpi.",
+        "Expresión de genes marcadores PR1, PR2 y NPR1 por qRT‑PCR (ΔΔCt) en hojas inoculadas.",
+        "Western blot de SNC1 (si se dispone de anticuerpo) para confirmar niveles de proteína."
+      ],
+      "fenotipos_de_auto‑inmunidad": [
+        "Observación de necrosis espontánea en plantas sin patógeno.",
+        "Medición de crecimiento vegetativo (altura, biomasa seca) como indicador de penalización de fitness."
+      ],
+      "repeticiones": "Mínimo 8 plantas por línea y condición, con tres experimentos biológicos independientes."
+    },
+    "validacion_estadistica": {
+      "analisis_principal": "ANOVA de dos factores (genotipo × tratamiento) seguida de pruebas post‑hoc Tukey HSD para comparar cargas bacterianas, diámetros de lesión y niveles de SA.",
+      "pruebas_adicionales": "t‑test pareado para comparar WT vs knockout y WT vs sobreexpresión en cada patógeno; análisis de regresión lineal para correlacionar expresión de PR1 y carga patógena.",
+      "umbral_significancia": "p < 0.05, corrección de Bonferroni cuando se realicen múltiples comparaciones.",
+      "software": "R (packages: lme4, multcomp, ggplot2) y GraphPad Prism para visualización."
+    },
+    "cronograma_semanas": 12,
+    "riesgos": [
+      "Efectos de auto‑inmunidad excesiva en líneas sobreexpresoras que pueden reducir la viabilidad y confundir la interpretación de resistencia.",
+      "Baja eficiencia de HDR en Arabidopsis; se mitigará con uso de constructos de reparación con homología larga (1‑2 kb) y selección de marcadores de resistencia a herbicida.",
+      "Posibles off‑targets de CRISPR; se realizará secuenciación de los loci predichos y se usarán guías con puntuación alta (CFD).",
+      "Variabilidad ambiental en los ensayos de patógenos; se mantendrán condiciones de crecimiento controladas (22 °C, 16 h luz/8 h oscuridad, humedad 60 %)."
+    ],
+    "advertencia_causalidad": "Los resultados experimentales podrán sugerir una asociación entre la actividad de SNC1 y la resistencia observada, pero la causalidad directa sólo se confirmará si los fenotipos de resistencia se reverten de manera consistente en los knockout y se reproducen en las líneas editadas sin efectos colaterales."
+  },
+  "nota": "Piloto con fines docentes: correlación ≠ causalidad; validar experimentalmente."
+}

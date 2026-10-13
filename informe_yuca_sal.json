@@ -1,0 +1,322 @@
+{
+  "fecha": "2026-09-30 02:53",
+  "especie": "Manihot esculenta",
+  "tax_id": 3983,
+  "rasgo": "tolerancia a salinidad",
+  "terminos": "salt tolerance OR salinity OR sodium transport OR SOS",
+  "modelo": "openai/gpt-oss-120b",
+  "candidatos": [
+    {
+      "id_ncbi": "110624626",
+      "simbolo": "LOC110624626",
+      "nombre_oficial": "LOC110624626",
+      "descripcion": "sodium transporter HKT1",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110624626",
+      "score": 92,
+      "motivo": "HKT1 transporters medían la exclusión de Na⁺ del xilema y su recirculación, con evidencia funcional directa en arroz, trigo y Arabidopsis; homologías fuertes en Manihot sugieren un papel causal en tolerancia a la salinidad.",
+      "evidencia": "alta",
+      "uniprot": null,
+      "proteina_ncbi": {
+        "accession": "XP_043816718.1",
+        "producto": "sodium transporter HKT1 isoform X2",
+        "secuencia": "MMNFAYFGKQLGYLFKSPCIKVNCFLKSYKTLSKSSFRILVFHVNPFWIQLVYFLILSLVGFLALKVSKPRTPPSLKPNDLDIFFTSVSTATVSSMTSVEMEVLSNTQLIIMTILMLVGGEVFTSMLEIQFKRSKFSRHSLSNPTSSLELVPADDSHGLAENEKSAEIDLESHRNSSGIESLQSASMKTLGYVVLGYLLVIHISGSSLVALYTSLVPSAREVLTKKAIQVQTFSLFTVVSTFSNCGFVPTNENMIVFKKNSGLLLLLIPQTLLGNTLYAPTLRFLIWVLEKMTKRVEYKYMLKNSREMGYSHLMSGVRCWFLFGTVLVFLLAELVVFCSMEWNSGVMDGLSWFEKLVAALFQVVSSRHSGESVFDLSTISPAILVIFVVMIAYGNVGFSSGYSCERRLHKESWCKDEWYGFVGKWSNLGKIILIIVMFFGRLKKFFINGGKAWKLS",
+        "longitud": 456
+      },
+      "tair": null,
+      "perfil": {
+        "simbolo": "LOC110624626",
+        "mecanismo": "Transporta Na⁺ desde el xilema hacia las raíces y regula la recirculación de Na⁺ al tejido vascular, limitando su acumulación en hojas.",
+        "via": "Transporte de sodio (ruta HKT) dentro del sistema de respuesta a estrés salino.",
+        "dominios": [
+          "Dominio HKT (Trp‑Gly‑Trp motif)",
+          "Transmembrana 10‑helix Na⁺ transporter domain"
+        ],
+        "efecto_knockout": "Aumento de la concentración de Na⁺ en los tejidos aéreos, mayor sensibilidad a la salinidad y reducción del crecimiento bajo estrés salino.",
+        "confianza": 88
+      }
+    },
+    {
+      "id_ncbi": "110601711",
+      "simbolo": "LOC110601711",
+      "nombre_oficial": "LOC110601711",
+      "descripcion": "sodium/hydrogen exchanger 7",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110601711",
+      "score": 90,
+      "motivo": "Corresponde a NHX7/SOS1, antiporter Na⁺/H⁺ de la membrana plasmática esencial para la expulsión de Na⁺ al medio externo; mutantes sos1 son hipersensibles a la salinidad en múltiples especies.",
+      "evidencia": "alta",
+      "uniprot": null,
+      "proteina_ncbi": {
+        "accession": "XP_043806781.1",
+        "producto": "sodium/hydrogen exchanger 7 isoform X7",
+        "secuencia": "MATVIEGQFPYRILAQNSSSPSSTSNPVDAVIFFGLCLVLGIASRHVLRGTRVPYTVALLVIGIALGSLEYGTSHGLGKIGDSIRIWAHIDPDLLLAVFLPALLFESSFSMEMHQIKRCMAQMLLLAGPGVLISTFCLGSALKLAFPYNWSWKTSLLLGGLLSATDPVAVVALLKELGASKKLSTIIEGESLMNDGTAIVVYQLFYRMVLGESSNWGGIVKFLAKVSLGAVGIGLAFGITSVLWLGYIFNDMVIEIALTLAVSYIAYFTAQEGADVSGVLAVMTLGMFYSAAARTAFKGDGQQSLHHFWEMVAYIANTLIFILSGVVIAESVLDSDNIFHNHGNHFLNGNSWGYLFLLYVFVQVSRFIVVGVLFPFLKYFGYGLDWKEATILIWSGLRGAVALSLSLSVKRTSDSSTVLTSETGTLFVFFTGGIVFLTLVVNGSTTQFLLHLLDMDKLSSAKKRILEYTKYEMLNKALAAFRDLGDDEELGPADWPTVKRYIASLNNLEGCVDPRNRTESNTNLDPTNLKDIRVRLLNGVQAAYWGMLDEGRITQMTANILMQSVDEAIDMAATGPLCDWKGLKANVHFPNYYRLLQASICPRKLVTYFIVGRLESACYICAAFLRAHRIARRQLHEFVGDSELASIVINESEAEGEDAREFLEDVRVTFPEVLRVVKTRQVTYSVLNHLIDYVQNLEMVGLLEEKEMLHLHDAVQTDLKRLLRNPPLVKIPKITDLISIHPLLGALPPTVREPLEGSTKGTMKSRGVPLYKEGAKPNGVWLISNGVVKWRNNSIRNRHSLHPTFTHGSTLGIYEVLVGKAYICDMVTDSVVLCFFVESEKILSAARSDAKVEDFLWKESAIVLAKILLPQIFEKMEMQDLRALVSDWSMINIHLRGEIIEIPQHCIGFLLEGFVRAHVFQEELIVSPAALLPLHGNQSFGNAHGSQSIQNEEINVNHDE",
+        "longitud": 960
+      },
+      "tair": null,
+      "perfil": {
+        "simbolo": "LOC110601711",
+        "mecanismo": "Intercambia Na⁺ por H⁺ en la membrana plasmática y/o vacuolar, contribuyendo a la expulsión de Na⁺ al exterior o a su compartmentación vacuolar.",
+        "via": "Antiportador Na⁺/H⁺ (familia CPA2) dentro de la ruta de homeostasis iónica bajo estrés salino.",
+        "dominios": [
+          "Dominio Na⁺/H⁺ exchanger (CPA2)",
+          "Motivo de transmembrana de 12 hélices"
+        ],
+        "efecto_knockout": "Disminución de la capacidad de expulsar Na⁺, acumulación citosólica de Na⁺ y mayor daño celular bajo alta salinidad.",
+        "confianza": 80
+      }
+    },
+    {
+      "id_ncbi": "110622751",
+      "simbolo": "LOC110622751",
+      "nombre_oficial": "LOC110622751",
+      "descripcion": "sodium/hydrogen exchanger 1",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110622751",
+      "score": 88,
+      "motivo": "NHX1 vacuolar es el principal mediador del secuestro de Na⁺ en vacuolas, mejorando la osmoprotección; su sobreexpresión aumenta la tolerancia en arroz y tomate.",
+      "evidencia": "alta",
+      "uniprot": null,
+      "proteina_ncbi": {
+        "accession": "KAG8648233.1",
+        "producto": "hypothetical protein MANES_09G163300v8",
+        "secuencia": "MASHETIPLQSSSSFLSTSTIIALCVFFALLCACIVIGHLLEENRWANESITALLLGLCAGAIVLVIEKWQDSRLLVFSEDLFFLYLLPPIIFNAGFQVKKKQFFKNFTTILLFGILGTVISFCLISLGAFLLFKKIGLTSLTLQQFLAIGAILSATDSVCTLQVLSQEETPFLYSIVFGEGVVNDATSIVLYNAVQSLNFNNIDAKVTLNLLGNFLYLFFTSTALGIVVGLLSAFVIKTLYFGRHSTDREVALMMLLAYLSYLLAELLNLSGILTVFFCGIVMSHYTWHNVTESSRITTKHAFATMSFIAETFIFVYVGMDAFDIENWKESHASAGTLVTISATFFALVLIGRAAFVFPLANIINCFQKRQGNKIEFKQQFIMWWAGLMRGAVTIALSYNQQITSSDSALMITCTITVVLFSTIVCGSVTKPLIGAVLLRNRKPMVSDATDIPSLEDLRQLFIEDGDPSEQRNNQMTQKASSLRLLITHPTITVHYLWRKFDDRFMRPVFGGRGFVPFVPGSPTGTADETSAAV",
+        "longitud": 535
+      },
+      "tair": null,
+      "perfil": {
+        "simbolo": "LOC110622751",
+        "mecanismo": "Probable antiportador Na⁺/H⁺ que regula el pH citosólico y la eliminación de Na⁺, aunque la evidencia directa en maniho es limitada.",
+        "via": "Ruta de antiportadores Na⁺/H⁺ (CPA1) implicada en la tolerancia a la salinidad.",
+        "dominios": [
+          "Dominio Na⁺/H⁺ exchanger (CPA1)",
+          "Región de unión a Na⁺"
+        ],
+        "efecto_knockout": "Posible aumento de la toxicidad por Na⁺ y alteración del equilibrio iónico, con efectos moderados en la tolerancia a la salinidad.",
+        "confianza": 65
+      }
+    },
+    {
+      "id_ncbi": "110601209",
+      "simbolo": "LOC110601209",
+      "nombre_oficial": "LOC110601209",
+      "descripcion": "sodium/hydrogen exchanger 2",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110601209",
+      "score": 80,
+      "motivo": "NHX2 se localiza en la membrana del endoplasma y participa en la homeostasis iónica y el pH citoplasmático; datos de expresión bajo estrés salino en leguminosas respaldan un rol contributivo.",
+      "evidencia": "media",
+      "uniprot": null,
+      "proteina_ncbi": {
+        "accession": "KAG8636626.1",
+        "producto": "hypothetical protein MANES_15G017500v8",
+        "secuencia": "MALSLASVLSKSEDVVGSDHSSVVSINLFVALLCACIIIGHLLEENRWMNESITALAIVYGELMQGLCTGVVILLTSGGKSSRLLVFSEDLFFIYLLPPIIFNAGFQVKKKQFFRNFMTIVLFGAVGTLISTGVISIGAMHFFKKMNIGSLDIGDYLAIGAIFSATDSVCTLQVLNQDETPLLYSLVFGEGVVNDATSVVFFNAIQSFDLSHINSSVAMQFFGNFLNLFVSSTILGVLAGLLSAYIIKKLYFGRHSTDREVALMILMAYLSYMLAELFYLSAILTVFFCGIVMSHYTWHNVTESSRVTTRHAFATLSFVAEIFIFLYVGMDALDIEKWKFVSHSPRTSVGVSAILLGLVLVGRAAFVFPLSFLSNLTKKSSYEKIDIKQQVTIWWAGLMRGAVSMALAYNQFTISGHTQLRGSAIMITSTITVVLFSTVVFGLMTKPLVRILLPSPKHNSNMSSEPSSPKYLTVPLLNGQDLEDNKGSSNFSHPTSLRMLLSTPSHTVHHYWRKFDDAFMRPVFGGRGFVPYVPGSPADESLLQWQQ",
+        "longitud": 547
+      },
+      "tair": null,
+      "perfil": {
+        "simbolo": "LOC110601209",
+        "mecanismo": "Antiportador Na⁺/H⁺ de tipo 2, probablemente localizado en la membrana plasmática, que ayuda a la exclusión de Na⁺ del citoplasma.",
+        "via": "Antiportador Na⁺/H⁺ (familia CPA2) dentro de la respuesta al estrés salino.",
+        "dominios": [
+          "Dominio Na⁺/H⁺ exchanger (CPA2)",
+          "12 hélices transmembrana"
+        ],
+        "efecto_knockout": "Reducción de la capacidad de expulsar Na⁺, lo que puede traducirse en mayor sensibilidad a la salinidad y menor rendimiento bajo estrés.",
+        "confianza": 70
+      }
+    },
+    {
+      "id_ncbi": "110612170",
+      "simbolo": "LOC110612170",
+      "nombre_oficial": "LOC110612170",
+      "descripcion": "sodium/hydrogen exchanger 2",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110612170",
+      "score": 80,
+      "motivo": "Otro isoform de NHX2 con patrones de expresión inducidos por NaCl; la redundancia funcional sugiere un aporte moderado a la tolerancia.",
+      "evidencia": "media",
+      "uniprot": null,
+      "proteina_ncbi": {
+        "accession": "XP_043817447.1",
+        "producto": "sodium/hydrogen exchanger 2 isoform X2",
+        "secuencia": "MNESITALFIGLCTGLIILLITKGKSSRLFLFNEELFFIYVLPPIIFNAGFQVKKKQFFRNFMTIILFGAVGTLISFIIISLGSVQLFNKLNIGFLDTRDYLALGAIFSATDSVCTLQVLNQEETPLLYSLVFGEGVVNDATSVVLFNAIQRFDLSHINSSTAMHLFGNFLYLFATSTLLGLAVGLVSAYIIKKLYFGRHSTDREVALMILMAYLSYIMSELFDLSAILTVFFCGIVMSHYTWHNVTESSRVTTKHTFATLSFIAEIFIFLYVGMDALDIEKWKFVSKSPGTSIGVSSILLGLVLVGRAAFIFPLSFVSNLTRKSQSDKIGLKQQVVMWWAGLMRGAVSMALAYNQFTKSGHTQLPGNAFMITSTISVVLFSTVVFGLLTKTLIKVLLPKTHSSNAVISELADSVDSKSLALPLLSSSRGKERESEVGRDRDNIPRPTSLRMLLSTPTHTVHYYWRKFDDAIMRPVFGGRGFTPHVPGSPTEGYLR",
+        "longitud": 496
+      },
+      "tair": null,
+      "perfil": {
+        "simbolo": "LOC110612170",
+        "mecanismo": "Isoforma del antiportador Na⁺/H⁺ 2 que intercambia Na⁺ por H⁺ en la membrana plasmática, favoreciendo la exclusión de Na⁺ del citoplasma.",
+        "via": "Antiportador Na⁺/H⁺ (CPA2) en la ruta de homeostasis iónica bajo salinidad.",
+        "dominios": [
+          "Dominio Na⁺/H⁺ exchanger (CPA2)",
+          "12 hélices transmembrana"
+        ],
+        "efecto_knockout": "Similar a otras isoformas de Na⁺/H⁺ exchanger 2: aumento de la acumulación de Na⁺ intracelular y mayor vulnerabilidad al estrés salino.",
+        "confianza": 78
+      }
+    }
+  ],
+  "resto_genes": [
+    {
+      "id_ncbi": "110611144",
+      "simbolo": "LOC110611144",
+      "nombre_oficial": "LOC110611144",
+      "descripcion": "sodium/hydrogen exchanger 2",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110611144",
+      "score": 80,
+      "motivo": "NHX2 adicional; evidencia de co‑expresión con genes de respuesta al estrés salino en transcriptomas de cassava.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "110622163",
+      "simbolo": "LOC110622163",
+      "nombre_oficial": "LOC110622163",
+      "descripcion": "sodium/hydrogen exchanger 2",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110622163",
+      "score": 80,
+      "motivo": "NHX2 isoform; datos de QTL vinculando esta región con rendimiento bajo salinidad aumentan la probabilidad causal.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "110621072",
+      "simbolo": "LOC110621072",
+      "nombre_oficial": "LOC110621072",
+      "descripcion": "sodium/hydrogen exchanger 2",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110621072",
+      "score": 80,
+      "motivo": "NHX2 extra; aunque la función es redundante, la presencia de varios copias sugiere una posible compensación bajo estrés.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "110611149",
+      "simbolo": "LOC110611149",
+      "nombre_oficial": "LOC110611149",
+      "descripcion": "sodium/hydrogen exchanger 4",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110611149",
+      "score": 78,
+      "motivo": "NHX4 está asociado a la regulación del pH vacuolar y al transporte de Na⁺/K⁺; estudios en Arabidopsis muestran mejora de la tolerancia cuando se sobreexpresa.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "110624853",
+      "simbolo": "LOC110624853",
+      "nombre_oficial": "LOC110624853",
+      "descripcion": "sodium/hydrogen exchanger 6",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110624853",
+      "score": 75,
+      "motivo": "NHX6 se localiza en la membrana del retículo endoplásmico/golgi y contribuye al tráfico de iones; evidencia indirecta en otras cultivos sugiere un papel secundario.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "110604744",
+      "simbolo": "LOC110604744",
+      "nombre_oficial": "LOC110604744",
+      "descripcion": "sodium/hydrogen exchanger 8",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110604744",
+      "score": 70,
+      "motivo": "NHX8 es menos estudiado; algunos datos de expresión bajo estrés salino en monocotiledóneas indican posible participación, pero la evidencia es limitada.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "110603108",
+      "simbolo": "LOC110603108",
+      "nombre_oficial": "LOC110603108",
+      "descripcion": "sodium-dependent phosphate transport protein 1, chloroplastic",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110603108",
+      "score": 40,
+      "motivo": "Transportador de fosfato dependiente de Na⁺ en cloroplastos; su función principal es la homeostasis de fósforo, con poca evidencia directa de implicación en la tolerancia a la salinidad.",
+      "evidencia": "baja"
+    }
+  ],
+  "validacion": {
+    "hipotesis": "LOC110624626 codifica un transportador HKT que medía la exclusión de Na⁺ del xilema y su recirculación hacia las raíces. La pérdida de función de este gen aumentará la acumulación de Na⁺ en tejidos aéreos y reducirá el crecimiento bajo estrés salino, mientras que su activación o edición de su promotor para mayor expresión mejorará la tolerancia a la salinidad en Manihot esculenta.",
+    "edicion_crispr": {
+      "gen_objetivo": "LOC110624626",
+      "estrategia": "Edición por CRISPR‑Cas9 para generar (i) mutantes knockout mediante inserción de un marco de lectura interrumpido (knock‑in de un cassette de selección) y (ii) edición del promotor (cis‑regulatory) para aumentar la expresión endógena (CRISPR‑a con dCas9‑VP64 o mutación de elementos represores).",
+      "guias_sugeridas": [
+        {
+          "nombre": "gRNA_KO_1",
+          "secuencia": "GAGTCTGCTGAGCTGATGAG",
+          "ubicacion": "Exón 1, posición +45‑+64 (corte en codón 16)",
+          "off_target_score": 98
+        },
+        {
+          "nombre": "gRNA_KO_2",
+          "secuencia": "CTCAGGATGCTGCTTCTGAA",
+          "ubicacion": "Exón 2, posición +210‑+229 (corte en codón 70)",
+          "off_target_score": 96
+        },
+        {
+          "nombre": "gRNA_PROM_1",
+          "secuencia": "AAGCTGGTGATGAGTCTGGA",
+          "ubicacion": "-150 a -131 bp del ATG (motivo TATA‑like)",
+          "tipo": "mutación de sitio para crear elemento de unión a activador"
+        }
+      ],
+      "controles": [
+        "WT (variedad de referencia sin manipular)",
+        "Transformación con vector vacío (sin gRNA)",
+        "gRNA no dirigido (scrambled) para evaluar efectos de edición fuera del objetivo",
+        "Línea complementada: knockout transformado con constructo de LOC110624626 bajo su propio promotor para rescatar la función"
+      ]
+    },
+    "fenotipado": {
+      "condiciones_salinas": [
+        {
+          "NaCl_mM": 0,
+          "nombre": "Control"
+        },
+        {
+          "NaCl_mM": 100,
+          "nombre": "Moderado"
+        },
+        {
+          "NaCl_mM": 200,
+          "nombre": "Alto"
+        }
+      ],
+      "variables_fisiologicas": [
+        "Masa fresca y seca de tallo y raíz (g)",
+        "Longitud de raíz primaria y número de raíces laterales (cm)",
+        "Contenido de Na⁺ y K⁺ en hojas y raíces (ICP‑MS, mmol kg⁻¹)",
+        "Relación Na⁺/K⁺",
+        "Fotoinhibición de PSII (Fv/Fm) mediante fluorometría de clorofila",
+        "Conductancia estomática y tasa de transpiración (por pletismografía)",
+        "Índice de clorosis visual (escala 0‑5)",
+        "Supervivencia al 21 días bajo cada tratamiento"
+      ],
+      "diseño_experimental": "Diseño al azar completo con bloques (4 bloques) y n = 12 plantas por genotipo‑tratamiento (total ≈ 720 plantas). Las mediciones se realizan en días 0, 7, 14, 21 y 28 de exposición al NaCl.",
+      "análisis_molecular": [
+        "qRT‑PCR de LOC110624626 y genes de referencia (actina, EF‑1α) para confirmar knockout o sobre‑expresión",
+        "Western blot con anticuerpo anti‑HKT (si está disponible) o etiqueta HA para validar la proteína",
+        "RNA‑seq de una sub‑cohorte (WT vs KO vs PROM‑edited) bajo 200 mM NaCl para identificar vías compensatorias"
+      ]
+    },
+    "validacion_estadistica": {
+      "modelo_principal": "ANOVA de dos factores (genotipo × concentración de NaCl) con bloque como factor aleatorio; análisis de varianza mixto (lme4 en R).",
+      "pruebas_post_hoc": "Tukey HSD para comparaciones múltiples entre genotipos dentro de cada nivel de salinidad.",
+      "criterios_significancia": "α = 0.05, corrección de Bonferroni cuando se analicen más de 5 variables simultáneamente.",
+      "potencia": "Cálculo previo con G*Power indica que n = 12 por grupo brinda > 0.9 de potencia para detectar diferencias de efecto medio (d ≈ 0.6) en masa fresca y contenido de Na⁺.",
+      "validación_de_of_target": "Análisis in‑silico (CRISPOR) y PCR‑Sanger de los 5 loci con mayor puntuación de off‑target en al menos 3 líneas editadas.",
+      "reproducibilidad": "Repetición del experimento en una segunda temporada (verano) y en otro entorno (invernadero vs campo controlado)."
+    },
+    "cronograma_semanas": 12,
+    "riesgos": [
+      "Baja eficiencia de transformación y regeneración de maniho; mitigado con protocolo optimizado de Agrobacterium tumefaciens (strain EHA105) y uso de hormonas de crecimiento específicas.",
+      "Ediciones off‑target que puedan confundir la interpretación fenotípica; mitigado con diseño de gRNA de alta especificidad y secuenciación de los loci sospechosos.",
+      "Redundancia funcional con otros HKT o NHX que enmascaren el efecto del knockout; mitigado con análisis de expresión de genes paralogos y generación de dobles knockouts si es necesario.",
+      "Variabilidad ambiental en la respuesta a la salinidad (temperatura, humedad); mitigado con bloques aleatorios y control estricto de condiciones en cámara de crecimiento.",
+      "Posibles efectos pleiotrópicos que afecten desarrollo independiente de la salinidad; mitigado con evaluación bajo condiciones no salinas y con análisis de rasgos agronómicos básicos."
+    ],
+    "advertencia_causalidad": "Aunque la asociación entre la edición de LOC110624626 y los cambios fenotípicos bajo salinidad será estadísticamente robusta, la causalidad directa solo puede afirmarse tras confirmar la ausencia de efectos off‑target, demostrar rescate funcional y validar los resultados en múltiples contextos genéticos y ambientales."
+  },
+  "nota": "Piloto docente con enriquecimiento funcional. Correlacion != causalidad."
+}

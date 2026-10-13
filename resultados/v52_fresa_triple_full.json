@@ -1,0 +1,5385 @@
+{
+  "fecha": "2026-10-12 17:04",
+  "rasgo": "tolerancia a sequia",
+  "receptora": "Fragaria vesca",
+  "receptora_input": "fresa",
+  "receptora_tax_id": 57918,
+  "receptora_tipo": "eucariota",
+  "receptora_lineage": "",
+  "receptora_proteoma": "proteomas_receptor/proteoma_Fragaria_vesca.faa",
+  "receptora_proteinas": 31492,
+  "estrategia": "B (diversidad equilibrada)",
+  "modo": "exhaustivo",
+  "panel_modo": "hibrido",
+  "max_proteinas_especie": 50000,
+  "modo_detalle": "exhaustivo: pre-ranqueo heuristico + LLM por lotes",
+  "pre_top_por_especie": 80,
+  "lote_llm": 8,
+  "llm_lotes": 6,
+  "pfam_modo": "auto",
+  "pfam_base": "sub-base:sequia",
+  "pfam_ruta": "/home/elrob/agrogenia/dbs/Pfam-sequia.hmm",
+  "donantes_validos": [
+    {
+      "nombre": "Xerophyta viscosa",
+      "tax_id": 90708,
+      "tipo": "planta",
+      "adaptacion": "Planta resurrección que tolera desecación extrema mediante LEA, HSP y protección de membranas.",
+      "genes_clave": [
+        "LEA",
+        "HSP90",
+        "DREB2A"
+      ]
+    },
+    {
+      "nombre": "Selaginella moellendorffii",
+      "tax_id": 88036,
+      "tipo": "planta",
+      "adaptacion": "Planta resurrección con estabilización de membranas y protección antioxidante durante desecación.",
+      "genes_clave": [
+        "LEA",
+        "sucrose phosphate synthase",
+        "antioxidant"
+      ],
+      "alternativa_de": "Selaginella lepidophylla"
+    },
+    {
+      "nombre": "Craterostigma plantagineum",
+      "tax_id": 4153,
+      "tipo": "planta",
+      "adaptacion": "Planta resurrección modelo para tolerancia a desecación y recuperación tras rehidratación.",
+      "genes_clave": [
+        "LEA",
+        "DREB",
+        "CPK"
+      ]
+    },
+    {
+      "nombre": "Eutrema salsugineum",
+      "tax_id": 72664,
+      "tipo": "planta",
+      "adaptacion": "Crucífera halófita/xerófita con regulación osmótica y ABA eficiente.",
+      "genes_clave": [
+        "DREB2A",
+        "NCED3",
+        "SOS1"
+      ]
+    },
+    {
+      "nombre": "Sorghum bicolor",
+      "tax_id": 4558,
+      "tipo": "planta",
+      "adaptacion": "Cereal C4 tolerante a sequía con cierre estomático rápido y acumulación de osmólitos.",
+      "genes_clave": [
+        "NAC",
+        "DREB",
+        "PP2C",
+        "TPP"
+      ]
+    },
+    {
+      "nombre": "Bacillus subtilis",
+      "tax_id": 1423,
+      "tipo": "bacteria",
+      "adaptacion": "Bacteria del suelo productora de osmoprotectores, trehalosa, prolina y biofilm.",
+      "genes_clave": [
+        "otsA",
+        "proP",
+        "betA",
+        "eps"
+      ]
+    },
+    {
+      "nombre": "Pseudomonas fluorescens",
+      "tax_id": 294,
+      "tipo": "bacteria",
+      "adaptacion": "Rhizobacteria promotora del crecimiento que mejora retención de agua en rizosfera.",
+      "genes_clave": [
+        "trehalose synthase",
+        "ACC deaminase",
+        "exopolysaccharide"
+      ]
+    },
+    {
+      "nombre": "Trichoderma harzianum",
+      "tax_id": 5544,
+      "tipo": "hongo",
+      "adaptacion": "Hongo benéfico que induce tolerancia a sequía en plantas mediante señalización y osmoprotectores.",
+      "genes_clave": [
+        "TPS1",
+        "HOG1",
+        "chaperone"
+      ]
+    },
+    {
+      "nombre": "Halobacterium salinarum",
+      "tax_id": 2242,
+      "tipo": "arquea",
+      "adaptacion": "Arquea extrema con protección frente a desecación y estrés osmótico.",
+      "genes_clave": [
+        "Dps",
+        "trehalose",
+        "bacteriorhodopsin",
+        "chaperone"
+      ]
+    },
+    {
+      "nombre": "Zea mays",
+      "tax_id": 4577,
+      "tipo": "planta",
+      "adaptacion": "Evita la sequía mediante un sistema radicular profundo y ajuste osmótico",
+      "genes_clave": [
+        "ZmDREB2A",
+        "ZmNCED1",
+        "ZmPIP1"
+      ]
+    },
+    {
+      "nombre": "Oryza sativa",
+      "tax_id": 4530,
+      "tipo": "planta",
+      "adaptacion": "Tolerancia a la sequía a través de señalización ABA y expresión de proteínas LEA",
+      "genes_clave": [
+        "OsDREB2B",
+        "OsNCED2",
+        "OsLEA3"
+      ]
+    },
+    {
+      "nombre": "Amaranthus hypochondriacus",
+      "tax_id": 28502,
+      "tipo": "planta",
+      "adaptacion": "Halofita con síntesis de osmólitos y uso eficiente del agua bajo condiciones salinas y secas",
+      "genes_clave": [
+        "SeDREB2",
+        "SeNCED1",
+        "SePIP1"
+      ],
+      "alternativa_de": "Salicornia europaea"
+    },
+    {
+      "nombre": "Selenicereus undatus",
+      "tax_id": 176265,
+      "tipo": "planta",
+      "adaptacion": "Cacto suculento con fotosíntesis CAM y tejidos de almacenamiento de agua",
+      "genes_clave": [
+        "OfDREB2A",
+        "OfNCED3",
+        "OfPIP2"
+      ],
+      "alternativa_de": "Opuntia ficus-indica"
+    }
+  ],
+  "donantes_descartados": [
+    {
+      "nombre": "Selaginella lepidophylla",
+      "razon": "Sin genoma; reemplazada por Selaginella moellendorffii"
+    },
+    {
+      "nombre": "Salicornia europaea",
+      "razon": "Sin genoma; reemplazada por Amaranthus hypochondriacus"
+    },
+    {
+      "nombre": "Opuntia ficus-indica",
+      "razon": "Sin genoma; reemplazada por Selenicereus undatus"
+    }
+  ],
+  "candidatos": [
+    {
+      "accession": "CAD36023.1",
+      "descripcion": "transcription factor R18",
+      "secuencia": "MESSEEDHHDGFDSDEDYTDGSSMENSDYEVLGEVSSTFLNLQIKGKAKSRIVKSTKDNLEEGVEVEKTGGPELSKEDQKCYETILTMVEGGQVESLKVDQCKIYLRKHKLRLTGNKATLIQRIKEHTCIVNGGGEKKYPVSSFVLNCKGDACLGDVVMFEQNVYEMFNLASRSAAGPPCGKRLVAGRIIKESYGAAKQQHTFTIEVLWSKGEKPLPPLHPLLIKGRNLYKLKTLRQKWEDEGEREKILLEKHSRGDVARCHRDARIERREMRKKAINAEANRGTRKQNNGPIHSTNHEKRISGSVKQKDLITDLDDTSFHHKKQNYPGASGSNSGNQGNHYRPPPIGIPSTILPPFVRINSCGFDRSFQPTSLSNINMSRTNFLHHLVHPRDQRQHVQSRDYVRNQICRYYAQGRCHFGDRCKYLHELPVEYD",
+      "longitud": 434,
+      "especie_donante": "Craterostigma plantagineum",
+      "tipo_donante": "planta",
+      "proteoma_count": 112,
+      "dominios_raw": [
+        {
+          "dominio": "zf-CCCH_4"
+        },
+        {
+          "dominio": "zf-CCCH"
+        },
+        {
+          "dominio": "zf_CCCH_4"
+        },
+        {
+          "dominio": "zf-CCCH_2"
+        }
+      ],
+      "dominios_relevantes": [
+        "zf-CCCH_4",
+        "zf-CCCH",
+        "zf_CCCH_4",
+        "zf-CCCH_2"
+      ],
+      "pre_score": 33,
+      "score_transferencia": 93,
+      "mecanismo": "Factor de transcripción R18 de Craterostigma plantagineum activa redes de genes asociados a la tolerancia a la desecación, incluyendo proteínas LEA, vías de biosíntesis de osmoprotectores (prolina, trehalosa) y señalización ABA, reforzando la capacidad de la planta receptora para mantener la integridad celular bajo déficit hídrico.",
+      "riesgos": [
+        "Regulación ectópica de genes nativos de Fragaria vesca que pueden afectar el desarrollo y la producción de frutos.",
+        "Posible alteración del balance hormonal (ABA, auxinas) provocando retraso en la floración o crecimiento.",
+        "Carga metabólica por sobreexpresión de proteínas de respuesta al estrés."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 13,
+        "ids": [
+          "200157098",
+          "304752950",
+          "304752949",
+          "304752948",
+          "304752947"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 35,
+        "fuentes": [
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "Factor R18 es un regulador específico de Craterostigma; no se ha identificado un ortólogo directo en Fragaria vesca, por lo que su introducción requeriría transgénesis. El riesgo es medio porque la sobreexpresión de un TF ajeno puede alterar redes de genes no previstas.",
+      "promotor": "promotor inducible por sequía (pRD29A) o CaMV 35S si se desea expresión constitutiva moderada",
+      "localizacion": "núcleo (añadir señal NLS al C‑terminus)",
+      "codon_opt": "si",
+      "notas_constructo": "Optimizar codones para Fragaria vesca; incluir un intrón de primera generación para mejorar la expresión; usar terminador tNOS; considerar añadir un epítopo FLAG para detección."
+    },
+    {
+      "accession": "AAZ72653.1",
+      "descripcion": "bZIP2 protein",
+      "secuencia": "MATNPRSTSPLSDIDGERQRKRKLSNRESARRSRMRKQQRLDELTAQATQLKEENKKLREMIDGSNQLYLSAASENSVLRAQAAELADRLKSLNTLLRIASDVSGLAFDIPDVPDALAEPWQMPCAVLPVAASADMFQY",
+      "longitud": 139,
+      "especie_donante": "Craterostigma plantagineum",
+      "tipo_donante": "planta",
+      "proteoma_count": 112,
+      "dominios_raw": [
+        {
+          "dominio": "bZIP_1"
+        },
+        {
+          "dominio": "bZIP_2"
+        }
+      ],
+      "dominios_relevantes": [
+        "bZIP_1",
+        "bZIP_2"
+      ],
+      "pre_score": 43,
+      "score_transferencia": 92,
+      "mecanismo": "Factor de transcripción bZIP que regula genes sensibles a ABA, promueve la síntesis de osmoprotectores (prolina, azúcares), activa vías de antioxidantes y refuerza la arquitectura de la cutícula, confiriendo tolerancia a la sequía.",
+      "riesgos": [
+        "Posible sobreexpresión de rutas de estrés que reduzca el crecimiento y rendimiento bajo condiciones no secas.",
+        "Interferencia con la regulación endógena de bZIP en F. vesca, pudiendo alterar procesos de desarrollo floral."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 13,
+        "ids": [
+          "200157098",
+          "304752950",
+          "304752949",
+          "304752948",
+          "304752947"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 35,
+        "fuentes": [
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "si",
+      "estrategia": "edicion_genica",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "Los bZIP son una familia amplia y existen varios miembros en F. vesca con alta similitud. Se puede editar el regulador endógeno (p.ej., mediante edición de promotores) para aumentar su actividad. El riesgo es medio por posibles efectos pleiotrópicos en la respuesta ABA.",
+      "promotor": "promotor inducible por ABA (pABRC) o CaMV 35S de bajo nivel para minimizar efectos pleiotrópicos",
+      "localizacion": "núcleo (señal NLS incorporada)",
+      "codon_opt": "si",
+      "notas_constructo": "Codificar con preferencia de codones de F. vesca; incluir un intrón de maíz para aumentar la expresión; usar terminador t35S; posible fusión con dominio activador VP16 para reforzar la actividad transcripcional."
+    },
+    {
+      "accession": "XP_025876545.2",
+      "descripcion": "probable glutathione S-transferase GSTU6 isoform X2",
+      "secuencia": "MAGEGDDQLKLLGLWVSPYTHRVKLALSFKGLSYEYVEEDLSNKSELLLSTNPVHKKVPVLIHNGKPICESQVIVQYLDEEFPNSGVSLLPSDSYDRAIARFWAAYINDKSSMGKTEEERAEALKQTLEAVANLETAFKECSKGKPFFGGDTVGYLDVSLGAMIGWMRAGEALHGRRTFDATRSPLLNAWMERFAALDAAKAAMPDNNKLVEFVRVRRAAAANN",
+      "longitud": 224,
+      "especie_donante": "Oryza sativa",
+      "tipo_donante": "planta",
+      "proteoma_count": 43323,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_N_4"
+        },
+        {
+          "dominio": "GST_C_3"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N",
+        "GST_N_3",
+        "GST_N_2",
+        "GST_C_2",
+        "GST_C",
+        "GST_N_4",
+        "GST_C_3"
+      ],
+      "pre_score": 318,
+      "score_transferencia": 90,
+      "mecanismo": "Glutatión S‑transferasa GSTU6 de Oryza sativa cataliza la conjugación de glutatión a metabolitos reactivos generados por estrés oxidativo durante la sequía, mejorando la detoxificación de peróxidos y manteniendo la homeostasis redox en tejidos fotosintéticos.",
+      "riesgos": [
+        "Acumulación de conjugados de glutatión que podrían interferir con rutas metabólicas secundarias.",
+        "Posible competencia con GSTs endógenas de Fragaria vesca, alterando la regulación natural del sistema antioxidante."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 20,
+        "ids": [
+          "200302253",
+          "200347843",
+          "200313726",
+          "200332733",
+          "200315654"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 35,
+        "fuentes": [
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "si",
+      "estrategia": "edicion_genica",
+      "riesgo_compatibility": "bajo",
+      "justificacion_compat": "GSTU6 pertenece a la subfamilia GSTU, presente en F. vesca (p.ej., FvGSTU1). La edición de la versión nativa para elevar su expresión es factible y con bajo riesgo, ya que los GST son enzimas de detoxificación bien conservadas.",
+      "promotor": "promotor constitutivo CaMV 35S o promotor foliar (pRBCS) para alta expresión en tejidos fotosintéticos",
+      "localizacion": "citosol (GSTU6 es citosólico); opción de añadir péptido de señal a cloroplasto si se desea detoxificación directa en el organelo",
+      "codon_opt": "si",
+      "notas_constructo": "Optimizar para dicot; añadir péptido de localización cloroplástica (cTP) solo si se decide dirigirse al cloroplasto; usar terminador t35S; incluir marcador de selección hpt."
+    },
+    {
+      "accession": "XP_006392370.1",
+      "descripcion": "probable elongation factor 1-gamma 2",
+      "secuencia": "MALVLHTYKGNKGAYKALIAAEYVGVKIEEPSNFQMGVTNKSPEFLKMNPIGKVPVLETPEGPIFESNAIARYVSRLNGENSLNGSSLIDYAHIEQWIDFATLEIDANMLRWFAPRMGFAPFSAPAEEAAIAGLNRGLDALNTHLASNTYLVGHSVTLADIVTICNLNLGFATVMTKSFTSAFPHVERYFWTMVNQPNFKKVIGDAKQTEAVPPVPSKKAAQPAKPKEEPKKAAPVAEAPKPVAEEEEAPKPKAKNPLDLLPPSPMVLDEWKRLYSNTKSNFREVAIKGFWDMYDPEGYSLWFCDYKYNDENTVSFVTLNKVGGFLQRMDLARKYAFGKMLICGSEGPFKVKGLWLFRGPEIPKFIMDEVYDMELYEWTKVDISDEAQKERVSQMIEDAEPFEGEALLDAKCFK",
+      "longitud": 414,
+      "especie_donante": "Eutrema salsugineum",
+      "tipo_donante": "planta",
+      "proteoma_count": 33721,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_C_3"
+        },
+        {
+          "dominio": "GST_N_5"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N",
+        "GST_C",
+        "GST_N_2",
+        "GST_N_3",
+        "GST_C_2",
+        "GST_C_3",
+        "GST_N_5"
+      ],
+      "pre_score": 318,
+      "score_transferencia": 88,
+      "mecanismo": "Probable elongation factor 1‑gamma 2 con dominios GST de Eutrema salsugineum actúa como GST no‑clásico, proporcionando capacidad de unión a glutatión y detoxificación de especies reactivas de oxígeno, lo que reduce el daño celular bajo déficit hídrico.",
+      "riesgos": [
+        "Posible interferencia con la maquinaria de traducción al sobreexpresar un factor de elongación.",
+        "Riesgo de desequilibrio en la reserva de glutatión libre."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 10,
+        "partners": [
+          "V4KUZ8_EUTSA",
+          "V4LE23_EUTSA",
+          "V4M9J2_EUTSA",
+          "V4MFX4_EUTSA",
+          "V4KDT6_EUTSA",
+          "V4L5M6_EUTSA",
+          "V4N578_EUTSA",
+          "V4N969_EUTSA",
+          "V4KFB6_EUTSA",
+          "V4NP17_EUTSA"
+        ],
+        "encontrado": true
+      },
+      "val_geo": {
+        "datasets": 3,
+        "ids": [
+          "200067745",
+          "301655114",
+          "301655113"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 55,
+        "fuentes": [
+          "interacciones",
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "La combinación de EF1‑gamma2 con dominios GST es poco común en rosáceas; no se ha encontrado un ortólogo claro en F. vesca. Su introducción como transgén puede aportar actividad GST, pero el riesgo es medio por posible interferencia con la traducción y la homeostasis de glutatión.",
+      "promotor": "promotor constitutivo CaMV 35S o promotor de raíz (pRCc) si se busca protección en sistemas vasculares",
+      "localizacion": "citosol (EF1‑γ2 con dominios GST actúa en el citosol)",
+      "codon_opt": "si",
+      "notas_constructo": "Codificar con preferencia de codones de F. vesca; incluir un intrón de Arabidopsis para mejorar la expresión; usar terminador tNOS; considerar una etiqueta HA para seguimiento de la proteína."
+    },
+    {
+      "accession": "AAZ72654.1",
+      "descripcion": "bZIP1 protein",
+      "secuencia": "MATNPRSTSPLSDIDGERQRKRKLSNRESARRSRMRKQQRLDELTAQATQLKEENKKLREMIDGSNQLYLSVASENSVLRAQATELADRLKSLNALLRVASDVSGLAFDIPDVPDALAEPLQMPCSVLPITASADMFQY",
+      "longitud": 139,
+      "especie_donante": "Craterostigma plantagineum",
+      "tipo_donante": "planta",
+      "proteoma_count": 112,
+      "dominios_raw": [
+        {
+          "dominio": "bZIP_1"
+        },
+        {
+          "dominio": "bZIP_2"
+        }
+      ],
+      "dominios_relevantes": [
+        "bZIP_1",
+        "bZIP_2"
+      ],
+      "pre_score": 43,
+      "score_transferencia": 88,
+      "mecanismo": "Factor de transcripción bZIP1 que activa la vía de señalización ABA y regula genes de respuesta al estrés hídrico (osmoprotectantes, proteínas de choque, cierre estomático).",
+      "riesgos": [
+        "Posibles efectos pleiotrópicos sobre desarrollo y floración por regulación de genes no‑deseados.",
+        "Alteración del balance hormonal que podría reducir rendimiento bajo condiciones no estresantes."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 13,
+        "ids": [
+          "200157098",
+          "304752950",
+          "304752949",
+          "304752948",
+          "304752947"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 35,
+        "fuentes": [
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "si",
+      "estrategia": "edicion_genica",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "bZIP1 tiene varios paralogos en F. vesca. La edición del regulador endógeno (p.ej., activación de cis‑elementos) es viable; sin embargo, la modulación de la señal ABA puede producir efectos secundarios en el desarrollo, de ahí un riesgo medio.",
+      "promotor": "promotor inducible por sequía/ABA (pRD29A) o CaMV 35S de bajo nivel",
+      "localizacion": "núcleo (añadir NLS)",
+      "codon_opt": "si",
+      "notas_constructo": "Optimizar codones para F. vesca; incluir intrón de primera generación; usar terminador t35S; posible fusión con dominio de activación fuerte (por ejemplo, EDLL) para potenciar la respuesta al estrés."
+    },
+    {
+      "accession": "XP_002467609.2",
+      "descripcion": "uncharacterized protein LOC8063162",
+      "secuencia": "MAGGGDELKLLGSWASPFVIRVKLALSFKGLSCYENIEEEDLYYNKSELLLKSNPVHKQVPVLIHNGKSICESQLVVQYIDETFTTSDPSLLAVEPYERAMARFWGAYIDDKLFASAFQVRRAKTEEEKAEALKQTIAAVETLEAAFKEISKGKPFFGGDSVGYLDIVLGGFIPMVYYGEARYGIKLFDDTRSPLLVAWVERFGALDAAKAILPDVDKLVEYSEMKQARAAAMAAGHYDITAEPRLTILASHVSPWGRRLQGLSGVIDLDSSGMARDGGELKLLGLWSSPFVTRAKLALQIKGLSYEYVEEDLGNKSELLLSSNPVHKVVPVLIHNGKPVCESSVIVQYIDDAFAGTGPSILAADPYQRAVARFWAAYLEDKIVTPWRRVFMVKTDEEKAEVMRQTIAAVAVLEDGLKECSGGQGPFFAGDSVGYVDVLLGGMVSWLKAAEPLSGDKIIDAAKTPLLAAWMERFCELDAAKAVLQDVDAVVEYARALQARIAAATANNQ",
+      "longitud": 509,
+      "especie_donante": "Sorghum bicolor",
+      "tipo_donante": "planta",
+      "proteoma_count": 39249,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_N_4"
+        },
+        {
+          "dominio": "GST_N_4"
+        },
+        {
+          "dominio": "GST_C_3"
+        },
+        {
+          "dominio": "GST_C_3"
+        },
+        {
+          "dominio": "GST_C_5"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N",
+        "GST_N",
+        "GST_N_3",
+        "GST_N_3",
+        "GST_N_2",
+        "GST_N_2",
+        "GST_C",
+        "GST_C",
+        "GST_C_2",
+        "GST_C_2",
+        "GST_N_4",
+        "GST_N_4",
+        "GST_C_3",
+        "GST_C_3",
+        "GST_C_5"
+      ],
+      "pre_score": 538,
+      "score_transferencia": 85,
+      "mecanismo": "Aumenta la capacidad antioxidante de la planta mediante la conjugación de glutatión a especies reactivas de oxígeno (ROS) y a metabolitos tóxicos generados durante el estrés hídrico; contribuye a la regulación de la señalización de ácido abscísico (ABA) y a la protección de proteínas y membranas.",
+      "riesgos": [
+        "Posible sobrecarga del pool de glutatión, afectando otras rutas metabólicas.",
+        "Interacción no prevista con GST endógenos de F. vesca que podría alterar la homeostasis redox."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 20,
+        "ids": [
+          "200274752",
+          "200276121",
+          "200262062",
+          "200218642",
+          "200178993"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 35,
+        "fuentes": [
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "si",
+      "estrategia": "edicion_genica",
+      "riesgo_compatibility": "bajo",
+      "justificacion_compat": "Los GST de tipo U están ampliamente conservados; F. vesca posee genes homólogos con >80 % de identidad. Mejorar su expresión mediante edición presenta bajo riesgo, pues la función antioxidante es esencial y bien tolerada.",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_024006402.1",
+      "descripcion": "glutathione S-transferase F14",
+      "secuencia": "MELHLRMFHTAFLVRSAGFKNIAKTKSFLSNLNPFGQVPVLEDGDLKLFESKAITRYLAEQYKDQGTNLLPDDPKKRSIISMWMEVDTNQFLPVASTLIKELIIKPYQGLATDFTSVQEGKEKLSEILNIYETRLGESPYLAGESFTLADLHHLPPIQYLLNTEEEELKNLIYSRPNVAAWVEKMKSRPAWLKAVAMEEHILDLMNRRRLPKQLDSSCHESTVVAQKTAMVVIANN",
+      "longitud": 236,
+      "especie_donante": "Eutrema salsugineum",
+      "tipo_donante": "planta",
+      "proteoma_count": 33721,
+      "dominios_raw": [
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_C_3"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_C_6"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_C",
+        "GST_N",
+        "GST_C_3",
+        "GST_N_2",
+        "GST_N_3",
+        "GST_C_2",
+        "GST_C_6"
+      ],
+      "pre_score": 318,
+      "score_transferencia": 85,
+      "mecanismo": "GST F14 de Eutrema salsugineum aumenta la capacidad de conjugación de glutatión, detoxificando especies reactivas de oxígeno y productos de peroxidación lipídica generados durante la sequía; además modula la señalización hormonal (ABA) favoreciendo la retención de agua.",
+      "riesgos": [
+        "Posible agotamiento de la reserva de glutatión si se sobreexpresa",
+        "Interferencia con la regulación endógena de GSTs de Fragaria vesca"
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 3,
+        "ids": [
+          "200067745",
+          "301655114",
+          "301655113"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 15,
+        "fuentes": [
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "si",
+      "estrategia": "edicion_genica",
+      "riesgo_compatibility": "bajo",
+      "justificacion_compat": "GSTF14 es parte de la familia F de GST, presente en F. vesca. La edición del gen nativo para aumentar su actividad es segura y de bajo riesgo.",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_006400210.1",
+      "descripcion": "glutathione S-transferase DHAR3, chloroplastic",
+      "secuencia": "MISLRLQPSTAGVLSASVSRAGFIKRCGSTKPGRIGRFRTMAMAATPLEICVKASITTPNKLGDCPFCQRVLLTMEEKHVPYDMRMVDLSNKPEWFLQISPEGKVPVVKFDEKWVPDSDVITQSLEEKYPEPPLATPPEKASVGSKIFSTFIGFLKSKDPGDGTEQVLLDELSTFNDYIKENGPFINGEKISAADLSLGPKLYHMKIALGHFKNWSVPDSLSFVKSYMENVFSRESFAKTRGQTEDVIAGWKPKVMG",
+      "longitud": 257,
+      "especie_donante": "Eutrema salsugineum",
+      "tipo_donante": "planta",
+      "proteoma_count": 33721,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "Glutaredoxin"
+        },
+        {
+          "dominio": "GST_N_4"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_C_3"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N_3",
+        "GST_N_2",
+        "GST_N",
+        "Glutaredoxin",
+        "GST_N_4",
+        "GST_C_2",
+        "GST_C_3"
+      ],
+      "pre_score": 293,
+      "score_transferencia": 85,
+      "mecanismo": "Glutatión S‑transferasa cloroplástica que detoxifica especies reactivas de oxígeno generadas durante la sequía mediante conjugación con glutatión, manteniendo la redox celular.",
+      "riesgos": [
+        "Consumo excesivo de glutatión libre, pudiendo comprometer otras vías antioxidantes.",
+        "Posible interacción con la vía de síntesis de glutatión de la fresa."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 10,
+        "partners": [
+          "V4KNT4_EUTSA",
+          "V4N4G9_EUTSA",
+          "V4M0Q0_EUTSA",
+          "V4LRU6_EUTSA",
+          "V4MMF1_EUTSA",
+          "V4LBR4_EUTSA",
+          "V4KGV3_EUTSA",
+          "V4L6M9_EUTSA",
+          "V4MX87_EUTSA",
+          "V4LHQ4_EUTSA"
+        ],
+        "encontrado": true
+      },
+      "val_geo": {
+        "datasets": 3,
+        "ids": [
+          "200067745",
+          "301655114",
+          "301655113"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 55,
+        "fuentes": [
+          "interacciones",
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "si",
+      "estrategia": "edicion_genica",
+      "riesgo_compatibility": "bajo",
+      "justificacion_compat": "Los GST cloroplásticos son conservados en rosáceas; existe un ortólogo en F. vesca con alta similitud. Su mejora mediante edición presenta bajo riesgo.",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "AAN34791.1",
+      "descripcion": "Grp94",
+      "secuencia": "MRNWSIPPALVLLLLISLSAIPDGGRKLHANAEESRDADELVDPPKVEEKIAGVHGGLSTDADVAKREAESMSRKNLRSNAEKFEFQAEVSRLMDIIINSLYSNKDIFLRELISNASDALDKIRFLSLTDKEVLGEGDNTKLEIMIKLDKEKKILSIRDRGIGMTKEDLIKNLGTIAKSGTSAFVEKMQTGGDLNLIGQFGVGFYSVYLVSDYVEVISKHNDDKQYVWESKADGAFAISEDTWNEPLGRGTEIRLHLRDEAKEYLDESKLKELVKKYSEFINFPIYLWASKEVDVEVPSDEEESSDVEEKSESESSEEEIEEDDAEKKPKTKTVKETTYEWELLNDVKAIWLRSPKEVTDEEYTKFYHSLAKDFSDEKPLAWSHFSAEGDVEFKAVLFVPPKAPHDLYESYYNSRKSNLKLYVRRVFISDEFDELLPKYLSFLMGLVDSDTLPLNVSREMLQQHSSLKTIKKKLIRKALDMIRKIADEDPDESDKDHSEEAGEENEKKGLYTKFWNEFGKSIKLGIIEDAQNRNRLAKLLRFETTKSDGKLTSLDKYISRMKPGQKDIFYLTGTSKEQLEKSPFLEGLKKKDYEVIFFTDPVDEYLMQYLMDYEDKKFQNVSKEGLKIGKESKIKDLKESFKELTSWWKEALSSENVDSVKISNRLDNTPCVVVTSKYGWSANMEKIMQSQTLSDASKQAYMRGKRVLEINPRHPIIKELRERVAVDPQDENIKQTAKLIYQTALMESGFLMNDPKEFATSIYSSVKSSLNISPDAKVEEEEDTDEPEVEEKESASSKGSEEAEDFSAKDEL",
+      "longitud": 812,
+      "especie_donante": "Xerophyta viscosa",
+      "tipo_donante": "planta",
+      "proteoma_count": 260,
+      "dominios_raw": [
+        {
+          "dominio": "HSP90"
+        }
+      ],
+      "dominios_relevantes": [
+        "HSP90"
+      ],
+      "pre_score": -2,
+      "score_transferencia": 85,
+      "mecanismo": "Proteína HSP90 (Grp94) actúa como chaperona que estabiliza proteínas desnaturalizadas durante el estrés hídrico, mantiene la actividad de enzimas clave y facilita la señalización de receptores hormonales (p. ej., ABA).",
+      "riesgos": [
+        "Expresión elevada de HSP90 puede consumir ATP y afectar la homeostasis energética.",
+        "Riesgo de interacción no específica con proteínas nativas, generando posibles efectos dominantes negativos."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 0,
+        "ids": []
+      },
+      "soporte_multifuente": {
+        "score": 0,
+        "fuentes": []
+      },
+      "tiene_ortologo": "si",
+      "estrategia": "edicion_genica",
+      "riesgo_compatibility": "bajo",
+      "justificacion_compat": "HSP90/Grp94 es una chaperona esencial y altamente conservada; F. vesca posee varios genes HSP90. La edición para reforzar su expresión es de bajo riesgo.",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_024540135.1",
+      "descripcion": "glutathione S-transferase 2",
+      "secuencia": "MKLYTFWGSSCGWRVRLALALKGIPYEYQAVGFANGRLDDEFSKINPLGMVPALETEEDGLLIDSVAIVEYLEEKYPEKPLLPKNVKQRATIRQIVNLVASNIQPLQSGGRVMNMIKEKLGDEERLKWAQHWVVIGFNALEEIVKKTSGKYCFGDTLTLADVFVIPQIGNAERYKVDMTPYPTLRRLKEELHKLEEVRQSVPRLQPDFPTE",
+      "longitud": 211,
+      "especie_donante": "Selaginella moellendorffii",
+      "tipo_donante": "planta",
+      "proteoma_count": 45318,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_C_3"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_N_4"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N_3",
+        "GST_N_2",
+        "GST_N",
+        "GST_C_3",
+        "GST_C_2",
+        "GST_C",
+        "GST_N_4"
+      ],
+      "pre_score": 318,
+      "score_transferencia": 82,
+      "mecanismo": "Glutatión S‑transferasa 2 de Selaginella moellendorffii facilita la conjugación de glutatión a compuestos tóxicos y la eliminación de peróxidos, contribuyendo a la protección de la membrana y la fotosíntesis durante la sequía.",
+      "riesgos": [
+        "Incompatibilidad parcial de señalización de localización subcelular (p.ej., citosol vs cloroplasto).",
+        "Posible sobrecarga del ciclo de glutatión."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 0,
+        "ids": []
+      },
+      "soporte_multifuente": {
+        "score": 0,
+        "fuentes": []
+      },
+      "tiene_ortologo": "si",
+      "estrategia": "edicion_genica",
+      "riesgo_compatibility": "bajo",
+      "justificacion_compat": "GST2 es una clase de GST presente en F. vesca. La manipulación del gen nativo para mayor actividad antioxidante es segura y con bajo riesgo.",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "AAP22171.1",
+      "descripcion": "putative dehydrin",
+      "secuencia": "MEGYGNHQHHNVDEYGNPLPVGYGEGYGHQNMQRPGEYYGNQGYGGHQHGAYSGPGYQQDYGSGPRLQRSGSSTSSEDDGYGGRRKKGLKNRIMENLPGRR",
+      "longitud": 101,
+      "especie_donante": "Xerophyta viscosa",
+      "tipo_donante": "planta",
+      "proteoma_count": 260,
+      "dominios_raw": [
+        {
+          "dominio": "Dehydrin"
+        }
+      ],
+      "dominios_relevantes": [
+        "Dehydrin"
+      ],
+      "pre_score": 3,
+      "score_transferencia": 82,
+      "mecanismo": "Dehidrina (proteína LEA) que se acumula en el citoplasma y en membranas, estabilizando estructuras celulares y previniendo la agregación de proteínas durante la desecación.",
+      "riesgos": [
+        "Sobre‑expresión podría modificar la osmolaridad intracelular y afectar la absorción de agua bajo riego normal."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 1,
+        "novel": false,
+        "articulos": [
+          {
+            "titulo": "A molecular physiological review of vegetative desiccation tolerance in the resurrection plant Xerophyta viscosa (Baker)",
+            "anio": "2015",
+            "fuente": "MED"
+          }
+        ],
+        "estado": "1 menciones",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 0,
+        "ids": []
+      },
+      "soporte_multifuente": {
+        "score": 25,
+        "fuentes": [
+          "literatura"
+        ]
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "NP_001130206.1",
+      "descripcion": "uncharacterized LOC100191300",
+      "secuencia": "MRSLRAAQTLVSRSLFSARHLSGAASPATAAAAGARWCAAPAPPPRSPLPSSRVMPAGVAGAVSFSLTFATVAAAEAKAKERPQPDLLPQNVVLYQYQACPFCNKVRAFLDYHDIPYKVVEVNPLSKKELKWSDYKKVPILTVDGEQLVDSSDIINILQSRINPNEELTSDEEAKWRRWVDEHLVHVLSPNIYRTTSEALESFDYIAKHGNFSFTERFAVKYAGAAAMYMVSKKLKKKYNITDERASLYDAANTWIDALNGRDFLGGSKPNLADLAVFGVLRPIRYLRAGKDMVENTEIGDWYRRMEDAVGEPSRIQDAEGN",
+      "longitud": 322,
+      "especie_donante": "Zea mays",
+      "tipo_donante": "planta",
+      "proteoma_count": 49996,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "Glutaredoxin"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_N_4"
+        },
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_C_3"
+        },
+        {
+          "dominio": "GST_C_6"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N_3",
+        "Glutaredoxin",
+        "GST_N_2",
+        "GST_N_4",
+        "GST_N",
+        "GST_C_2",
+        "GST_C",
+        "GST_C_3",
+        "GST_C_6"
+      ],
+      "pre_score": 383,
+      "score_transferencia": 80,
+      "mecanismo": "Detoxificación de compuestos oxidativos y de productos de peroxidación lipídica mediante actividad GST; mejora la respuesta al ABA y favorece la acumulación de osmólitos que mantienen la turgencia celular bajo déficit hídrico.",
+      "riesgos": [
+        "Expresión alta puede generar consumo energético excesivo.",
+        "Riesgo de formación de conjugados de glutatión que interfieran con vías metabólicas secundarias."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 20,
+        "ids": [
+          "200329265",
+          "200318738",
+          "200207858",
+          "200282587",
+          "200294039"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 35,
+        "fuentes": [
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_035815535.1",
+      "descripcion": "glutathione dehydroascorbate reductase4 isoform X2",
+      "secuencia": "MAVLLRSTSAAASTAGPSSALLATTFRRSRGCLLPRAAPQRRLYVARASAQPLEVCAKESITIPGRLGDCPFTQRVLLTIEEKHLPYDLKLVDLANKPDWLFEINPEGKVPIVKLEEKWIGDSDVITQALEEKYPEPPLATPPEKASVGSKIFSTFIGFLKSKDPSDGTEEALLNELTSFDSYLKDNGPFINGGIISAADLSLGPKLYHMEITLGHYKNWSVPDSLSYVKTYMKERERGVDWRMEGLDAKVCRMAVICT",
+      "longitud": 259,
+      "especie_donante": "Zea mays",
+      "tipo_donante": "planta",
+      "proteoma_count": 49996,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_N_4"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N_2",
+        "GST_N_3",
+        "GST_N",
+        "GST_C_2",
+        "GST_N_4"
+      ],
+      "pre_score": 228,
+      "score_transferencia": 80,
+      "mecanismo": "Glutatión deshidroascorbato reductasa que regenera ascorbato a partir de su forma oxidada, reforzando la capacidad antioxidante bajo estrés hídrico.",
+      "riesgos": [
+        "Desbalance en la relación ascorbato/ácido dehidroascorbico.",
+        "Posible carga metabólica adicional en cloroplastos."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 20,
+        "ids": [
+          "200329265",
+          "200318738",
+          "200207858",
+          "200282587",
+          "200294039"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 35,
+        "fuentes": [
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_015612592.1",
+      "descripcion": "probable glutathione S-transferase GSTU1",
+      "secuencia": "MADEVVLLDLWVSPFGQRCRIALAEKGVEYEYSEQSLADKSDLLLRSNPVHKKVPVLLHAGRPVCESLVILEYIDETWPPEPEKKKESPRLLPSDPYARARARFWADYVDKKLFDCQTRLWKLRAGDAAHEQAKRDMAEALGTLEAELGEGDYFGGEAFGYLDVVLVPFVAWFHAYERLAGFAVAEICPRLVAWGERCKGRDSVAKTLTDPEKVYEFALYLKAKFGAK",
+      "longitud": 228,
+      "especie_donante": "Oryza sativa",
+      "tipo_donante": "planta",
+      "proteoma_count": 43323,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_C_5"
+        },
+        {
+          "dominio": "GST_C_3"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N",
+        "GST_N_3",
+        "GST_N_2",
+        "GST_C_2",
+        "GST_C",
+        "GST_C_5",
+        "GST_C_3"
+      ],
+      "pre_score": 318,
+      "score_transferencia": 78,
+      "mecanismo": "GSTU1 de arroz está implicada en la eliminación de peróxidos y en la modulación de la señalización de ABA, lo que reduce el daño celular durante sequías prolongadas.",
+      "riesgos": [
+        "Posible incompatibilidad con reguladores de GST propios de F. vesca.",
+        "Riesgo de inmunogenicidad si la proteína es altamente divergente."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 20,
+        "ids": [
+          "200302253",
+          "200347843",
+          "200313726",
+          "200332733",
+          "200315654"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 35,
+        "fuentes": [
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_066161079.1",
+      "descripcion": "probable glutathione S-transferase GSTU6",
+      "secuencia": "MAAEDELKLLGFWASPYVCRVKLALHLKGLIYDYVKEDVFTNKSELLLSCNPVHAKVPVLIHNGKPICESQVIVQYIDEVFPDAGVTLLPADPHDRAAARFWAAYIDDKLLPPWVHAYRGKTDEEKAERMKQTLAVVDALETAMEECSKGNAFFGGDTVGYVDVALGGLLSWLHGTEELCGAKILDAAKTPLLSAWARRFGELDAANAALPDVGRLVEFCKMRHVELEAAEAAAARN",
+      "longitud": 237,
+      "especie_donante": "Oryza sativa",
+      "tipo_donante": "planta",
+      "proteoma_count": 43323,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_N_4"
+        },
+        {
+          "dominio": "GST_C_3"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N",
+        "GST_N_3",
+        "GST_N_2",
+        "GST_C",
+        "GST_C_2",
+        "GST_N_4",
+        "GST_C_3"
+      ],
+      "pre_score": 318,
+      "score_transferencia": 78,
+      "mecanismo": "Glutatión S‑transferasa (GSTU6) de arroz cataliza la conjugación de glutatión a compuestos reactivos y detoxifica especies de oxígeno reactivo (ROS) acumuladas bajo déficit hídrico, mejorando la capacidad antioxidante de la planta.",
+      "riesgos": [
+        "Acumulación de conjugados de glutatión que podrían interferir con el metabolismo secundario.",
+        "Posible agotamiento de glutatión libre, comprometiendo otras vías de defensa."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 20,
+        "ids": [
+          "200302253",
+          "200347843",
+          "200313726",
+          "200332733",
+          "200315654"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 35,
+        "fuentes": [
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_002451782.1",
+      "descripcion": "elongation factor 1-gamma 2",
+      "secuencia": "MALVLHAGSANKNAFKTLIAAEYSGVKVELAKDFQMGVSNKTPEFLKMNPIGKVPVLETPDGPVFESNAIARYVTRLKADNPLYGSSLIDYAHIEQWMDFATTEVDANTGKWLYPRMGFYPYAAVTEESAIAALKRAFGSLNTHLASNTFLVGHSVTLADIVLTCNLYLGFSRILTKSFTSEFPHVERYFWTMVNQPNFKKVIGDVKQAEAVPPVPKKAAPAKEQKPKEAKKEAQKEAPKPKVAEKPAEEEEAPKPKPKNPLDLLPPSKMILDDWKRLYSNTKTNFREVAIKGFWDMYDPEGYSLWFCDYKYNDENTVSFVTLNKVGGFLQRMDLCRKYAFGKMLVVGSEPPFKVKGLWLFRGSEIPKFVMDEVYDMELYEWTKVDLSDEAQKERVNAMIEDQEPFEGEALLDAKCFK",
+      "longitud": 418,
+      "especie_donante": "Sorghum bicolor",
+      "tipo_donante": "planta",
+      "proteoma_count": 39249,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_C_3"
+        },
+        {
+          "dominio": "GST_N_5"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N",
+        "GST_C",
+        "GST_N_2",
+        "GST_N_3",
+        "GST_C_2",
+        "GST_C_3",
+        "GST_N_5"
+      ],
+      "pre_score": 318,
+      "score_transferencia": 78,
+      "mecanismo": "Glutatión S‑transferasa que participa en la detoxificación de compuestos tóxicos y en la mitigación del estrés oxidativo asociado a la sequía.",
+      "riesgos": [
+        "Riesgo de agotamiento de glutatión si la expresión es muy alta.",
+        "Posible interferencia con rutas metabólicas de fenilpropanoides en la fresa."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 10,
+        "partners": [
+          "C5WWP8_SORBI",
+          "C5X4T4_SORBI",
+          "C5XE07_SORBI",
+          "SORBI_3K024000",
+          "A0A194YJY9",
+          "A0A1B6PAS0",
+          "A0A1Z5RG34",
+          "C5XBK5_SORBI",
+          "C5YKL8_SORBI",
+          "Sb2635s002010"
+        ],
+        "encontrado": true
+      },
+      "val_geo": {
+        "datasets": 20,
+        "ids": [
+          "200274752",
+          "200276121",
+          "200262062",
+          "200218642",
+          "200178993"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 75,
+        "fuentes": [
+          "interacciones",
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_002459355.1",
+      "descripcion": "glutathione S-transferase 3",
+      "secuencia": "MATSEDADHQVTVVDFWANGFGMRARIALRELGVAFRYVEEDLRVRERSELVRRMNPVHRSVPILIHGGRPVCGSVNILQYVDEVWGPTLFPRDPLQRAHARFWADFVDQKVFSTQTRFLKSKGDEKEAAKGELLEQLKRLEEVLGDKTFFAGDEFGFLDAVLIPFSSMFHGYEQHGGFDLDVECPSLMSWVRRCKERKSVKGVLPDEDKMYELHKKWYGIE",
+      "longitud": 222,
+      "especie_donante": "Sorghum bicolor",
+      "tipo_donante": "planta",
+      "proteoma_count": 39249,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_C_6"
+        },
+        {
+          "dominio": "GST_C_3"
+        },
+        {
+          "dominio": "GST_C_5"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N",
+        "GST_C_2",
+        "GST_C",
+        "GST_N_3",
+        "GST_N_2",
+        "GST_C_6",
+        "GST_C_3",
+        "GST_C_5"
+      ],
+      "pre_score": 363,
+      "score_transferencia": 76,
+      "mecanismo": "GST de Sorghum bicolor con actividad amplia contra peróxidos y herbicidas; aumenta la capacidad de escudo antioxidante y protege membranas celulares durante la sequía.",
+      "riesgos": [
+        "Expresión heteróloga puede generar productos de conjugación no nativos que alteren la calidad del fruto.",
+        "Riesgo de interacción con vías de detoxificación propias, provocando desequilibrios metabólicos."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 10,
+        "partners": [
+          "C5YYX3_SORBI",
+          "A0A1Z5R0E4",
+          "A0A194YI68",
+          "C5X3B9_SORBI",
+          "A0A1B6PLA9",
+          "C5XPZ6_SORBI",
+          "A0A1B6PCZ5",
+          "C5Y710_SORBI",
+          "A0A194YU12",
+          "A0A1Z5S774"
+        ],
+        "encontrado": true
+      },
+      "val_geo": {
+        "datasets": 20,
+        "ids": [
+          "200274752",
+          "200276121",
+          "200262062",
+          "200218642",
+          "200178993"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 75,
+        "fuentes": [
+          "interacciones",
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_002966448.1",
+      "descripcion": "glutathione S-transferase U19",
+      "secuencia": "MSKDSVKLLNIWPSMFGLRVHYALDLKGVSYEYQEESLSNKSKELLEANPIYAKIPVLIHNGKPICESLVIVDYIDSVWPGSHKLLPEDPYEKAVARFWADFGDKKLYDAGNQLIQAMGEEHKKAGEDFKWALMKIDEALGTIAPGKPFFGGDAMNFADVGLAPFICRFKGYQKVGGFVLPGPEEWPNLYKWVDAVNSVDAIKKSTPSPDEVAEFAEVLRKRVLGAA",
+      "longitud": 227,
+      "especie_donante": "Selaginella moellendorffii",
+      "tipo_donante": "planta",
+      "proteoma_count": 45318,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_C_5"
+        },
+        {
+          "dominio": "GST_C"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N",
+        "GST_N_3",
+        "GST_N_2",
+        "GST_C_2",
+        "GST_C_5",
+        "GST_C"
+      ],
+      "pre_score": 273,
+      "score_transferencia": 75,
+      "mecanismo": "GST U19 de Selaginella moellendorffii provee actividad de transferencia de glutatión que neutraliza ROS y compuestos tóxicos acumulados bajo déficit hídrico, mejorando la estabilidad de membranas y la homeostasis redox.",
+      "riesgos": [
+        "Consumo elevado de glutatión y posibles efectos en la síntesis de compuestos secundarios",
+        "Riesgo de interacción no deseada con rutas de metabolismo de fenilpropanoides propias de la fresa"
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 3,
+        "partners": [
+          "D8RPJ6_SELML",
+          "D8SMA1_SELML",
+          "DHAR1"
+        ],
+        "encontrado": true
+      },
+      "val_geo": {
+        "datasets": 0,
+        "ids": []
+      },
+      "soporte_multifuente": {
+        "score": 15,
+        "fuentes": [
+          "interacciones"
+        ]
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_020405652.1",
+      "descripcion": "glutathione transferase 8 isoform X1",
+      "secuencia": "MAPPMKVYGWAVSPWMARALVCLEEAGADYEIVPMSRCGGDHRRPEHLAKNPFGEIPVLEDGDLTLYQSRAIARYVLRKLKPELLREGDLEGSAMVDAWMEVEAHHMEPALWPIIRHSIIGQYVGRDRDHQAVIDENLDRLRKVLPAYEARLSVCKYLAGDVISAADLCHFGFMRYFMATEYAGLVHAYPHVKAWWDALLARPSVQKVMAGMPPDFGYASGNIP",
+      "longitud": 224,
+      "especie_donante": "Zea mays",
+      "tipo_donante": "planta",
+      "proteoma_count": 49996,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_C_3"
+        },
+        {
+          "dominio": "GST_C_2"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N",
+        "GST_C",
+        "GST_N_2",
+        "GST_N_3",
+        "GST_C_3",
+        "GST_C_2"
+      ],
+      "pre_score": 273,
+      "score_transferencia": 74,
+      "mecanismo": "GST8 de maíz, similar a otras GST de clase Tau, participa en la eliminación de ROS y en la regulación de la señalización de hormonas de estrés, contribuyendo a la tolerancia a la sequía.",
+      "riesgos": [
+        "Posible competencia con GST nativas de F. vesca, reduciendo la eficiencia global del sistema antioxidante.",
+        "Expresión excesiva puede afectar la síntesis de compuestos fenólicos."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 20,
+        "ids": [
+          "200329265",
+          "200318738",
+          "200207858",
+          "200282587",
+          "200294039"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 35,
+        "fuentes": [
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_006416732.1",
+      "descripcion": "glutathione S-transferase U25",
+      "secuencia": "MADEVILLDFWPSMFGMRTRIALEEKNIKFDYREQDLFNKSSILLEMNPVHKKIPVLIHNGKPVCESLIQIEYIDETWPTKNPLLPSDPYQRAQARFWGDFIDKKVYSATRLIWGAKGEEQEEGKKEFIELLKTLESELGDKIYFGGETFGYVDIALIGFYSWFEAYEKLGNFSIEPECPKLSAWAKRCAQRESVAKFLPASDKVTKFVPELRKKIGLE",
+      "longitud": 219,
+      "especie_donante": "Eutrema salsugineum",
+      "tipo_donante": "planta",
+      "proteoma_count": 33721,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_C_3"
+        },
+        {
+          "dominio": "GST_N_4"
+        },
+        {
+          "dominio": "GST_C_6"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N",
+        "GST_N_2",
+        "GST_N_3",
+        "GST_C_2",
+        "GST_C",
+        "GST_C_3",
+        "GST_N_4",
+        "GST_C_6"
+      ],
+      "pre_score": 363,
+      "score_transferencia": 72,
+      "mecanismo": "Glutatión S‑transferasa U25 que aumenta la capacidad de detoxificación de especies reactivas de oxígeno y de compuestos electófilos generados durante el estrés por sequía, manteniendo la homeostasis redox.",
+      "riesgos": [
+        "Consumo elevado de glutatión libre, pudiendo limitar otras rutas antioxidantes.",
+        "Posible conjugación de metabolitos esenciales, alterando vías metabólicas secundarias."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 10,
+        "partners": [
+          "V4M5D0_EUTSA",
+          "V4M8P6_EUTSA",
+          "V4M8Z3_EUTSA",
+          "V4LPA0_EUTSA",
+          "V4KAW8_EUTSA",
+          "V4MHF8_EUTSA",
+          "V4LBW7_EUTSA",
+          "V4K412_EUTSA",
+          "V4KQD7_EUTSA",
+          "V4L0U5_EUTSA"
+        ],
+        "encontrado": true
+      },
+      "val_geo": {
+        "datasets": 3,
+        "ids": [
+          "200067745",
+          "301655114",
+          "301655113"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 55,
+        "fuentes": [
+          "interacciones",
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_002968645.2",
+      "descripcion": "uncharacterized protein LOC9651507",
+      "secuencia": "MAMALASCAPAVSGRSISASGSIASRKKRFHCMASTAEVSSWEELSEKVSRLPGYNAAAAAARLPNVQQRDFGDTSIAQVVFYRDNSSWCPYCQRVWLQLEEKRIPYKVEKINMNCYGPKPAWYLEKVPSGLLPALELKGRLLTESLDIMLILEEAFPERHPLLPPKGSPKANAVDGLLRLERLLAGAWLSRLRSFWTKPGQFERAMDDVDGALAKFGGPFFLGDTFSLVDAVYAPFLERIAASMPYWQGVMIRGETRWPHLQAWFDAMDAKPSYQAVKSDDYTITHTLEPQIGACRALPAGEAYRAKVDGKDGSWDLPLKAEVTAWGREEGNGNKAEAAQTLVDNNAAVVGFALRALNSDEKYRESVDLGFRCVAQALVDGVESATPPAVPQHFSREVAKAAAYLRDKVGVPRDLSYPAARQLRAHLHWLVKALGSELYQ",
+      "longitud": 441,
+      "especie_donante": "Selaginella moellendorffii",
+      "tipo_donante": "planta",
+      "proteoma_count": 45318,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_C_5"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "Glutaredoxin"
+        },
+        {
+          "dominio": "GST_C_3"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N_2",
+        "GST_N_3",
+        "GST_C_2",
+        "GST_C_5",
+        "GST_C",
+        "GST_N",
+        "Glutaredoxin",
+        "GST_C_3"
+      ],
+      "pre_score": 338,
+      "score_transferencia": 70,
+      "mecanismo": "GST de Selaginella ayuda a mantener la redox celular bajo estrés deshidratante y puede participar en la síntesis de compuestos protectores como flavonoides.",
+      "riesgos": [
+        "Dominio adicional de glutatión reductasa podría interferir con rutas nativas.",
+        "Expresión en tejido frutal podría alterar el perfil de metabolitos secundarios."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 10,
+        "partners": [
+          "D8SC66_SELML",
+          "D8S946_SELML",
+          "DHAR1",
+          "D8S7N0_SELML",
+          "D8T402_SELML",
+          "D8QMW3_SELML",
+          "D8RPL5_SELML",
+          "D8SMC0_SELML",
+          "D8QVY2_SELML",
+          "D8S8Z4_SELML"
+        ],
+        "encontrado": true
+      },
+      "val_geo": {
+        "datasets": 0,
+        "ids": []
+      },
+      "soporte_multifuente": {
+        "score": 40,
+        "fuentes": [
+          "interacciones"
+        ]
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_021303416.1",
+      "descripcion": "protein IN2-1 homolog B-like",
+      "secuencia": "MATAAAPDDSTVRETTKAEEVLPPTLGSGSQPPNLFDGTTRLYISYICPYVQRVWIARNFKGLQEKIQLVAIDLQDKPAWFLEKVYPPGKVPVLEHNGNIIAESLDLLSYLDANFEGPKLFPGDQDPAKQAFADELIANSDSIIIALFRAGRAYAEGQGDDDISKLLAPALDKVEESLGRFSDGPFLLGQSMSAVDMVYAPFIERFKDFFAAVKHYDMTQERPKLKEWIEELNKIDAYTATWGDRRLQLAALMNKFGIQSPVA",
+      "longitud": 263,
+      "especie_donante": "Sorghum bicolor",
+      "tipo_donante": "planta",
+      "proteoma_count": 39249,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_C_5"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_C_3"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N_3",
+        "GST_N_2",
+        "GST_C_2",
+        "GST_N",
+        "GST_C_5",
+        "GST_C",
+        "GST_C_3"
+      ],
+      "pre_score": 318,
+      "score_transferencia": 70,
+      "mecanismo": "Proteína homóloga IN2‑1 B‑like de Sorghum bicolor contiene dominios GST que aumentan la capacidad de detoxificación de metabolitos de estrés y regulan la señalización de estrés abiótico mediante conjugación de glutatión.",
+      "riesgos": [
+        "Posible desbalance en la red de GSTs nativas",
+        "Carga metabólica adicional por síntesis de la proteína"
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 10,
+        "partners": [
+          "A0A1Z5R0E4",
+          "A0A194YI68",
+          "C5X3B9_SORBI",
+          "C5YYX3_SORBI",
+          "A0A1B6PLA9",
+          "C5XPZ6_SORBI",
+          "A0A1B6PCZ5",
+          "C5Y710_SORBI",
+          "A0A194YU12",
+          "A0A1Z5S774"
+        ],
+        "encontrado": true
+      },
+      "val_geo": {
+        "datasets": 20,
+        "ids": [
+          "200274752",
+          "200276121",
+          "200262062",
+          "200218642",
+          "200178993"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 75,
+        "fuentes": [
+          "interacciones",
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_002465909.2",
+      "descripcion": "glutathione S-transferase F11",
+      "secuencia": "MAAPVTVYGPVISPAVARVAACLLEKDVPFQIEPVDMSKGEHKSPSFLKLQPFGQVPAFKDHLTTVFESRAICRYICDQYADRGNQALFGKKEDGAVGRAAIEQWIESEGQSFNPPSLAIIFQLAFAPMMGRATDLAVVEQNEAKLAKVLDVYDQRLGESQYFAGDDFSLADLVHLPNADFLVNRTNKAGLITERKNLARWWDDVSARPAWKKLAFIPHLSHLGIRQDPAVIAENEDKLKQVLDVYDEILSKNEYLAGDEFTLADLSHLPNSHYIVNTERGRKLFTNKKNVAKWYDKLSKLETWKQVVKMQKEHPGAFE",
+      "longitud": 319,
+      "especie_donante": "Sorghum bicolor",
+      "tipo_donante": "planta",
+      "proteoma_count": 39249,
+      "dominios_raw": [
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_C_3"
+        },
+        {
+          "dominio": "GST_C_3"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_C_6"
+        },
+        {
+          "dominio": "GST_C_6"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_C",
+        "GST_C",
+        "GST_N",
+        "GST_N_2",
+        "GST_C_3",
+        "GST_C_3",
+        "GST_C_2",
+        "GST_C_2",
+        "GST_N_3",
+        "GST_C_6",
+        "GST_C_6"
+      ],
+      "pre_score": 418,
+      "score_transferencia": 68,
+      "mecanismo": "Glutatión S‑transferasa F11 que participa en la eliminación de peróxidos y compuestos tóxicos generados por estrés hídrico, reforzando la defensa antioxidante.",
+      "riesgos": [
+        "Desbalance del pool de glutatión si la expresión es muy alta.",
+        "Riesgo de interacción con rutas de metabolismo de fenilpropanoides propias de la fresa."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 10,
+        "partners": [
+          "A0A1B6QR57",
+          "C5XZD3_SORBI",
+          "A0A1Z5R0E4",
+          "C5X3B9_SORBI",
+          "A0A194YU12",
+          "A0A1B6PLA9",
+          "C5XPZ6_SORBI",
+          "A0A1Z5S774",
+          "C5WWX0_SORBI",
+          "A0A1B6PCZ5"
+        ],
+        "encontrado": true
+      },
+      "val_geo": {
+        "datasets": 20,
+        "ids": [
+          "200274752",
+          "200276121",
+          "200262062",
+          "200218642",
+          "200178993"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 75,
+        "fuentes": [
+          "interacciones",
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_035821990.1",
+      "descripcion": "glutathione transferase 7 isoform X1",
+      "secuencia": "MSPPVKILGHYASPYSHRVEAALRLKGVPYELVQEDLGNKSELLLAKNPVHKKVPVLLHGDRAVCESLLIVEYVDEAFDGPSILPADPHDRAVARFWANFLDTKPFWLAYWAEGEAQKAVVKEAKENLALLEAQLGGKSFFGGDTPGYLDIAACALGPWIGVLEEVTGVALLDADEFPALCQWARDYSSSEALRPCLPDRDRLVAYFTENKEKYKTFAKATLHQ",
+      "longitud": 224,
+      "especie_donante": "Zea mays",
+      "tipo_donante": "planta",
+      "proteoma_count": 49996,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_N_4"
+        },
+        {
+          "dominio": "GST_C_6"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N_3",
+        "GST_N",
+        "GST_N_2",
+        "GST_C",
+        "GST_C_2",
+        "GST_N_4",
+        "GST_C_6"
+      ],
+      "pre_score": 318,
+      "score_transferencia": 65,
+      "mecanismo": "Glutatión transferasa 7 que cataliza la conjugación de glutatión a metabolitos reactivos, reduciendo el daño oxidativo asociado a la sequía.",
+      "riesgos": [
+        "Posible agotamiento de glutatión bajo estrés prolongado.",
+        "Efectos desconocidos sobre la síntesis de compuestos secundarios de la fresa."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 20,
+        "ids": [
+          "200329265",
+          "200318738",
+          "200207858",
+          "200282587",
+          "200294039"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 35,
+        "fuentes": [
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_024518211.1",
+      "descripcion": "glutathione S-transferase 2",
+      "secuencia": "MRLYTFWGSSCGWRVRLALALKGIPYEYQAVGFANGRLDDEFSKINPLGMVPALETEEDGLLIDSVAIVEYLEEKYPEKPLLPKNVKQRATIRQIVNLVASNIQPLQSGGRVMNMIKEKLGDEERLKWAQHWVVIGFNALEEIVKKTSGKYCFGDTLTLADVFVIPQIGNAERYKVDMTPYPTLRRLKEELHKLEEVRQSVPRLQPDFPTE",
+      "longitud": 211,
+      "especie_donante": "Selaginella moellendorffii",
+      "tipo_donante": "planta",
+      "proteoma_count": 45318,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_C_3"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_N_4"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N_3",
+        "GST_N_2",
+        "GST_N",
+        "GST_C_3",
+        "GST_C_2",
+        "GST_C",
+        "GST_N_4"
+      ],
+      "pre_score": 318,
+      "score_transferencia": 60,
+      "mecanismo": "Glutatión S‑transferasa 2 que mejora la capacidad de detoxificación de especies reactivas y compuestos de estrés, contribuyendo a la tolerancia a la sequía.",
+      "riesgos": [
+        "Riesgo moderado de interferencia con rutas metabólicas propias de la planta.",
+        "Posible carga metabólica por sobreexpresión sostenida."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 0,
+        "ids": []
+      },
+      "soporte_multifuente": {
+        "score": 0,
+        "fuentes": []
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_024772657.1",
+      "descripcion": "hypothetical protein M431DRAFT_557611",
+      "secuencia": "MATNAIDFYSHRDGPNPWKNIILFEELGIPYNATYLTFGDANGGVEHEDFLKKNPAGRVPWIKDPTTGIELTESNLISEYLVDHYDKKGIFSVEGEQNQLLVKQWLGFQAASQGPFFAQVTLVKRTITTVDRALKGKEYLVGDKITLADLAYIPWDLALDTVLQGDEESATAEGRKKLWPDWFAWHNRVLQRPSVQKMLAIQRKAQGKE",
+      "longitud": 209,
+      "especie_donante": "Trichoderma harzianum",
+      "tipo_donante": "hongo",
+      "proteoma_count": 14065,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_C_3"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_N_4"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N",
+        "GST_N_3",
+        "GST_N_2",
+        "GST_C_3",
+        "GST_C",
+        "GST_C_2",
+        "GST_N_4"
+      ],
+      "pre_score": 318,
+      "score_transferencia": 70,
+      "mecanismo": "GST hipotético de Trichoderma harzianum; aunque de origen fúngico, los GST de esta especie pueden aportar actividad de detoxificación de ROS y de metabolitos de estrés, mejorando la resiliencia hídrica.",
+      "riesgos": [
+        "Riesgo de incorrecto plegamiento o falta de cofactores en células vegetales.",
+        "Posible respuesta inmunológica del huésped contra proteína fúngica."
+      ],
+      "grupo_reino": "microorganismo",
+      "categoria_biotecnologica": "microorganismo_candidato",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 0,
+        "ids": []
+      },
+      "soporte_multifuente": {
+        "score": 0,
+        "fuentes": []
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_024772748.1",
+      "descripcion": "hypothetical protein M431DRAFT_88590",
+      "secuencia": "MAPTLYIADDTCSRAAQLVANELDIEHQLVHFDVFGKSTSSGEDFTAINPLLYVPALKLDNETRDIISETIIICSYFADQKPEAGLVPAAGTLERVKYDQFLVQLATEIAQKHIPLMRKLMTPEGVEFHSNKLQKAYKLLDDRLAKTPYLFGDNLTVADAYVWGTFWNSRSGVDLSHLENLAAWKTRLEARPAAIKTIKDEAEVVAVHKAQIAASA",
+      "longitud": 216,
+      "especie_donante": "Trichoderma harzianum",
+      "tipo_donante": "hongo",
+      "proteoma_count": 14065,
+      "dominios_raw": [
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_C_3"
+        },
+        {
+          "dominio": "GST_C_6"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_N"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_C_2",
+        "GST_N_2",
+        "GST_C",
+        "GST_C_3",
+        "GST_C_6",
+        "GST_N_3",
+        "GST_N"
+      ],
+      "pre_score": 318,
+      "score_transferencia": 65,
+      "mecanismo": "GST hipotética de Trichoderma harzianum posee dominios GST que pueden aportar actividad de detoxificación de ROS y compuestos fenólicos, mejorando la tolerancia al estrés oxidativo asociado a la sequía.",
+      "riesgos": [
+        "Expresión en planta puede requerir adaptación de señal de localización (p.ej., secreción vs citosol).",
+        "Riesgo de respuesta inmunológica o alergenicidad por proteína fúngica."
+      ],
+      "grupo_reino": "microorganismo",
+      "categoria_biotecnologica": "microorganismo_candidato",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 0,
+        "ids": []
+      },
+      "soporte_multifuente": {
+        "score": 0,
+        "fuentes": []
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_024778146.1",
+      "descripcion": "hypothetical protein M431DRAFT_76952",
+      "secuencia": "MDFYFIPDTCALAVHIACHEANIPLQLREIERSPTGLRIKTTTAIPSDYMSLNPKQKVPAMGLPNGSILTETQAILQYIAWELAPAAHNGDLLPKSGLERWRALELLNFITTEIHKAFSPLFNPDMSSKHRERAIKDLGRAFTILQDTLGEKEFLIGQEISVLDCYAWTLLSWTRVFDDVDLAEWPSLVRYRQKILQRPSVQKALEEERLVFVF",
+      "longitud": 214,
+      "especie_donante": "Trichoderma harzianum",
+      "tipo_donante": "hongo",
+      "proteoma_count": 14065,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_C_3"
+        },
+        {
+          "dominio": "GST_C_6"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N_2",
+        "GST_C",
+        "GST_C_2",
+        "GST_N_3",
+        "GST_N",
+        "GST_C_3",
+        "GST_C_6"
+      ],
+      "pre_score": 318,
+      "score_transferencia": 60,
+      "mecanismo": "GST fúngico puede aportar actividad de detoxificación de compuestos fenólicos y ROS, mejorando la tolerancia al estrés oxidativo asociado a la sequía.",
+      "riesgos": [
+        "Posible incorrecta plegadura o glicosilación en planta.",
+        "Riesgo de activar respuestas de defensa contra hongos."
+      ],
+      "grupo_reino": "microorganismo",
+      "categoria_biotecnologica": "microorganismo_candidato",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 0,
+        "ids": []
+      },
+      "soporte_multifuente": {
+        "score": 0,
+        "fuentes": []
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "WP_205251170.1",
+      "descripcion": "MULTISPECIES: glutathione S-transferase family protein",
+      "secuencia": "MGRMIDGDWRTEADMNEHSDDGAFERDTTSFRNWVGDDVPPAAGRYHLYVSYACPWAHRTLLVRALLGLEDAISVSVVDPVRYDQGWTFDPEKPGCTPDHVFGGTHLRDVYTEADPEYTGRVTVPVLYDTDADTIVNNESEEIMRMLDVAFDDHAARDVDLYPEGYRDEVDRLIEDIYDPINNGVYRAGFADSQRAYDNAVDDLFEALAHYDDVLAEQRYLAGDVLTEADVAMFTTLYRFDEVYHTHFKCNRKRISDYDNLWPYLRELCQLPGVADTLYMEHVKQHYYRSHGHLNPKRLVPTGPNPAFFAPHDRDELPGGPPAALDQ",
+      "longitud": 327,
+      "especie_donante": "Halobacterium salinarum",
+      "tipo_donante": "arquea",
+      "proteoma_count": 14624,
+      "dominios_raw": [
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_C_3"
+        },
+        {
+          "dominio": "GST_C_6"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_C_2",
+        "GST_N_2",
+        "GST_C",
+        "GST_N_3",
+        "GST_N_3",
+        "GST_C_3",
+        "GST_C_6"
+      ],
+      "pre_score": 298,
+      "score_transferencia": 60,
+      "mecanismo": "Glutatión S‑transferasa de origen arqueal que podría aportar actividad detoxificante frente a ROS, aunque su cinética y especificidad difieren de las GST vegetales.",
+      "riesgos": [
+        "Posible incorrecta plegadura o falta de cofactores en células vegetales.",
+        "Riesgo inmunogénico o toxicidad por productos intermedios no nativos."
+      ],
+      "grupo_reino": "microorganismo",
+      "categoria_biotecnologica": "microorganismo_candidato",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 0,
+        "ids": []
+      },
+      "soporte_multifuente": {
+        "score": 0,
+        "fuentes": []
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_024773116.1",
+      "descripcion": "hypothetical protein M431DRAFT_509707",
+      "secuencia": "MSDPTYTIYSYFRSSCSARLRMVLNLKGIEYELIPVNLLKNEHLTSEHKARNPTATVPLLIRTAGDGSVFKIGQSVAAIEFLEETHPQGHHILPPASNPEARAATRALAGIIACDLQPVTNMKIMKRLRAMGANAEQWNKEIMTEILEAYESAVKDWAGEYSVGDEITLADVCLLPAVWNAQRYGVDLDQFPIITRISEKLGQHPAIIKAHWQNQPDTPEELRAK",
+      "longitud": 225,
+      "especie_donante": "Trichoderma harzianum",
+      "tipo_donante": "hongo",
+      "proteoma_count": 14065,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_C_3"
+        },
+        {
+          "dominio": "GST_C_2"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N_2",
+        "GST_N",
+        "GST_N_3",
+        "GST_C",
+        "GST_C_3",
+        "GST_C_2"
+      ],
+      "pre_score": 273,
+      "score_transferencia": 60,
+      "mecanismo": "Proteína hipotética con dominios GST de Trichoderma harzianum puede aportar actividad de conjugación de glutatión que protege contra el daño oxidativo inducido por sequía y potencialmente secreta compuestos protectores al entorno radicular.",
+      "riesgos": [
+        "Posible glicosilación o plegamiento incorrecto en células vegetales",
+        "Riesgo de respuesta inmunológica o alergenicidad"
+      ],
+      "grupo_reino": "microorganismo",
+      "categoria_biotecnologica": "microorganismo_candidato",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 0,
+        "ids": []
+      },
+      "soporte_multifuente": {
+        "score": 0,
+        "fuentes": []
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    }
+  ],
+  "separacion_reinos": true,
+  "top_planta": 20,
+  "top_microbios": 10,
+  "candidatos_planta": [
+    {
+      "accession": "CAD36023.1",
+      "descripcion": "transcription factor R18",
+      "secuencia": "MESSEEDHHDGFDSDEDYTDGSSMENSDYEVLGEVSSTFLNLQIKGKAKSRIVKSTKDNLEEGVEVEKTGGPELSKEDQKCYETILTMVEGGQVESLKVDQCKIYLRKHKLRLTGNKATLIQRIKEHTCIVNGGGEKKYPVSSFVLNCKGDACLGDVVMFEQNVYEMFNLASRSAAGPPCGKRLVAGRIIKESYGAAKQQHTFTIEVLWSKGEKPLPPLHPLLIKGRNLYKLKTLRQKWEDEGEREKILLEKHSRGDVARCHRDARIERREMRKKAINAEANRGTRKQNNGPIHSTNHEKRISGSVKQKDLITDLDDTSFHHKKQNYPGASGSNSGNQGNHYRPPPIGIPSTILPPFVRINSCGFDRSFQPTSLSNINMSRTNFLHHLVHPRDQRQHVQSRDYVRNQICRYYAQGRCHFGDRCKYLHELPVEYD",
+      "longitud": 434,
+      "especie_donante": "Craterostigma plantagineum",
+      "tipo_donante": "planta",
+      "proteoma_count": 112,
+      "dominios_raw": [
+        {
+          "dominio": "zf-CCCH_4"
+        },
+        {
+          "dominio": "zf-CCCH"
+        },
+        {
+          "dominio": "zf_CCCH_4"
+        },
+        {
+          "dominio": "zf-CCCH_2"
+        }
+      ],
+      "dominios_relevantes": [
+        "zf-CCCH_4",
+        "zf-CCCH",
+        "zf_CCCH_4",
+        "zf-CCCH_2"
+      ],
+      "pre_score": 33,
+      "score_transferencia": 93,
+      "mecanismo": "Factor de transcripción R18 de Craterostigma plantagineum activa redes de genes asociados a la tolerancia a la desecación, incluyendo proteínas LEA, vías de biosíntesis de osmoprotectores (prolina, trehalosa) y señalización ABA, reforzando la capacidad de la planta receptora para mantener la integridad celular bajo déficit hídrico.",
+      "riesgos": [
+        "Regulación ectópica de genes nativos de Fragaria vesca que pueden afectar el desarrollo y la producción de frutos.",
+        "Posible alteración del balance hormonal (ABA, auxinas) provocando retraso en la floración o crecimiento.",
+        "Carga metabólica por sobreexpresión de proteínas de respuesta al estrés."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 13,
+        "ids": [
+          "200157098",
+          "304752950",
+          "304752949",
+          "304752948",
+          "304752947"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 35,
+        "fuentes": [
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "Factor R18 es un regulador específico de Craterostigma; no se ha identificado un ortólogo directo en Fragaria vesca, por lo que su introducción requeriría transgénesis. El riesgo es medio porque la sobreexpresión de un TF ajeno puede alterar redes de genes no previstas.",
+      "promotor": "promotor inducible por sequía (pRD29A) o CaMV 35S si se desea expresión constitutiva moderada",
+      "localizacion": "núcleo (añadir señal NLS al C‑terminus)",
+      "codon_opt": "si",
+      "notas_constructo": "Optimizar codones para Fragaria vesca; incluir un intrón de primera generación para mejorar la expresión; usar terminador tNOS; considerar añadir un epítopo FLAG para detección."
+    },
+    {
+      "accession": "AAZ72653.1",
+      "descripcion": "bZIP2 protein",
+      "secuencia": "MATNPRSTSPLSDIDGERQRKRKLSNRESARRSRMRKQQRLDELTAQATQLKEENKKLREMIDGSNQLYLSAASENSVLRAQAAELADRLKSLNTLLRIASDVSGLAFDIPDVPDALAEPWQMPCAVLPVAASADMFQY",
+      "longitud": 139,
+      "especie_donante": "Craterostigma plantagineum",
+      "tipo_donante": "planta",
+      "proteoma_count": 112,
+      "dominios_raw": [
+        {
+          "dominio": "bZIP_1"
+        },
+        {
+          "dominio": "bZIP_2"
+        }
+      ],
+      "dominios_relevantes": [
+        "bZIP_1",
+        "bZIP_2"
+      ],
+      "pre_score": 43,
+      "score_transferencia": 92,
+      "mecanismo": "Factor de transcripción bZIP que regula genes sensibles a ABA, promueve la síntesis de osmoprotectores (prolina, azúcares), activa vías de antioxidantes y refuerza la arquitectura de la cutícula, confiriendo tolerancia a la sequía.",
+      "riesgos": [
+        "Posible sobreexpresión de rutas de estrés que reduzca el crecimiento y rendimiento bajo condiciones no secas.",
+        "Interferencia con la regulación endógena de bZIP en F. vesca, pudiendo alterar procesos de desarrollo floral."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 13,
+        "ids": [
+          "200157098",
+          "304752950",
+          "304752949",
+          "304752948",
+          "304752947"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 35,
+        "fuentes": [
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "si",
+      "estrategia": "edicion_genica",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "Los bZIP son una familia amplia y existen varios miembros en F. vesca con alta similitud. Se puede editar el regulador endógeno (p.ej., mediante edición de promotores) para aumentar su actividad. El riesgo es medio por posibles efectos pleiotrópicos en la respuesta ABA.",
+      "promotor": "promotor inducible por ABA (pABRC) o CaMV 35S de bajo nivel para minimizar efectos pleiotrópicos",
+      "localizacion": "núcleo (señal NLS incorporada)",
+      "codon_opt": "si",
+      "notas_constructo": "Codificar con preferencia de codones de F. vesca; incluir un intrón de maíz para aumentar la expresión; usar terminador t35S; posible fusión con dominio activador VP16 para reforzar la actividad transcripcional."
+    },
+    {
+      "accession": "XP_025876545.2",
+      "descripcion": "probable glutathione S-transferase GSTU6 isoform X2",
+      "secuencia": "MAGEGDDQLKLLGLWVSPYTHRVKLALSFKGLSYEYVEEDLSNKSELLLSTNPVHKKVPVLIHNGKPICESQVIVQYLDEEFPNSGVSLLPSDSYDRAIARFWAAYINDKSSMGKTEEERAEALKQTLEAVANLETAFKECSKGKPFFGGDTVGYLDVSLGAMIGWMRAGEALHGRRTFDATRSPLLNAWMERFAALDAAKAAMPDNNKLVEFVRVRRAAAANN",
+      "longitud": 224,
+      "especie_donante": "Oryza sativa",
+      "tipo_donante": "planta",
+      "proteoma_count": 43323,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_N_4"
+        },
+        {
+          "dominio": "GST_C_3"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N",
+        "GST_N_3",
+        "GST_N_2",
+        "GST_C_2",
+        "GST_C",
+        "GST_N_4",
+        "GST_C_3"
+      ],
+      "pre_score": 318,
+      "score_transferencia": 90,
+      "mecanismo": "Glutatión S‑transferasa GSTU6 de Oryza sativa cataliza la conjugación de glutatión a metabolitos reactivos generados por estrés oxidativo durante la sequía, mejorando la detoxificación de peróxidos y manteniendo la homeostasis redox en tejidos fotosintéticos.",
+      "riesgos": [
+        "Acumulación de conjugados de glutatión que podrían interferir con rutas metabólicas secundarias.",
+        "Posible competencia con GSTs endógenas de Fragaria vesca, alterando la regulación natural del sistema antioxidante."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 20,
+        "ids": [
+          "200302253",
+          "200347843",
+          "200313726",
+          "200332733",
+          "200315654"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 35,
+        "fuentes": [
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "si",
+      "estrategia": "edicion_genica",
+      "riesgo_compatibility": "bajo",
+      "justificacion_compat": "GSTU6 pertenece a la subfamilia GSTU, presente en F. vesca (p.ej., FvGSTU1). La edición de la versión nativa para elevar su expresión es factible y con bajo riesgo, ya que los GST son enzimas de detoxificación bien conservadas.",
+      "promotor": "promotor constitutivo CaMV 35S o promotor foliar (pRBCS) para alta expresión en tejidos fotosintéticos",
+      "localizacion": "citosol (GSTU6 es citosólico); opción de añadir péptido de señal a cloroplasto si se desea detoxificación directa en el organelo",
+      "codon_opt": "si",
+      "notas_constructo": "Optimizar para dicot; añadir péptido de localización cloroplástica (cTP) solo si se decide dirigirse al cloroplasto; usar terminador t35S; incluir marcador de selección hpt."
+    },
+    {
+      "accession": "XP_006392370.1",
+      "descripcion": "probable elongation factor 1-gamma 2",
+      "secuencia": "MALVLHTYKGNKGAYKALIAAEYVGVKIEEPSNFQMGVTNKSPEFLKMNPIGKVPVLETPEGPIFESNAIARYVSRLNGENSLNGSSLIDYAHIEQWIDFATLEIDANMLRWFAPRMGFAPFSAPAEEAAIAGLNRGLDALNTHLASNTYLVGHSVTLADIVTICNLNLGFATVMTKSFTSAFPHVERYFWTMVNQPNFKKVIGDAKQTEAVPPVPSKKAAQPAKPKEEPKKAAPVAEAPKPVAEEEEAPKPKAKNPLDLLPPSPMVLDEWKRLYSNTKSNFREVAIKGFWDMYDPEGYSLWFCDYKYNDENTVSFVTLNKVGGFLQRMDLARKYAFGKMLICGSEGPFKVKGLWLFRGPEIPKFIMDEVYDMELYEWTKVDISDEAQKERVSQMIEDAEPFEGEALLDAKCFK",
+      "longitud": 414,
+      "especie_donante": "Eutrema salsugineum",
+      "tipo_donante": "planta",
+      "proteoma_count": 33721,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_C_3"
+        },
+        {
+          "dominio": "GST_N_5"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N",
+        "GST_C",
+        "GST_N_2",
+        "GST_N_3",
+        "GST_C_2",
+        "GST_C_3",
+        "GST_N_5"
+      ],
+      "pre_score": 318,
+      "score_transferencia": 88,
+      "mecanismo": "Probable elongation factor 1‑gamma 2 con dominios GST de Eutrema salsugineum actúa como GST no‑clásico, proporcionando capacidad de unión a glutatión y detoxificación de especies reactivas de oxígeno, lo que reduce el daño celular bajo déficit hídrico.",
+      "riesgos": [
+        "Posible interferencia con la maquinaria de traducción al sobreexpresar un factor de elongación.",
+        "Riesgo de desequilibrio en la reserva de glutatión libre."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 10,
+        "partners": [
+          "V4KUZ8_EUTSA",
+          "V4LE23_EUTSA",
+          "V4M9J2_EUTSA",
+          "V4MFX4_EUTSA",
+          "V4KDT6_EUTSA",
+          "V4L5M6_EUTSA",
+          "V4N578_EUTSA",
+          "V4N969_EUTSA",
+          "V4KFB6_EUTSA",
+          "V4NP17_EUTSA"
+        ],
+        "encontrado": true
+      },
+      "val_geo": {
+        "datasets": 3,
+        "ids": [
+          "200067745",
+          "301655114",
+          "301655113"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 55,
+        "fuentes": [
+          "interacciones",
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "La combinación de EF1‑gamma2 con dominios GST es poco común en rosáceas; no se ha encontrado un ortólogo claro en F. vesca. Su introducción como transgén puede aportar actividad GST, pero el riesgo es medio por posible interferencia con la traducción y la homeostasis de glutatión.",
+      "promotor": "promotor constitutivo CaMV 35S o promotor de raíz (pRCc) si se busca protección en sistemas vasculares",
+      "localizacion": "citosol (EF1‑γ2 con dominios GST actúa en el citosol)",
+      "codon_opt": "si",
+      "notas_constructo": "Codificar con preferencia de codones de F. vesca; incluir un intrón de Arabidopsis para mejorar la expresión; usar terminador tNOS; considerar una etiqueta HA para seguimiento de la proteína."
+    },
+    {
+      "accession": "AAZ72654.1",
+      "descripcion": "bZIP1 protein",
+      "secuencia": "MATNPRSTSPLSDIDGERQRKRKLSNRESARRSRMRKQQRLDELTAQATQLKEENKKLREMIDGSNQLYLSVASENSVLRAQATELADRLKSLNALLRVASDVSGLAFDIPDVPDALAEPLQMPCSVLPITASADMFQY",
+      "longitud": 139,
+      "especie_donante": "Craterostigma plantagineum",
+      "tipo_donante": "planta",
+      "proteoma_count": 112,
+      "dominios_raw": [
+        {
+          "dominio": "bZIP_1"
+        },
+        {
+          "dominio": "bZIP_2"
+        }
+      ],
+      "dominios_relevantes": [
+        "bZIP_1",
+        "bZIP_2"
+      ],
+      "pre_score": 43,
+      "score_transferencia": 88,
+      "mecanismo": "Factor de transcripción bZIP1 que activa la vía de señalización ABA y regula genes de respuesta al estrés hídrico (osmoprotectantes, proteínas de choque, cierre estomático).",
+      "riesgos": [
+        "Posibles efectos pleiotrópicos sobre desarrollo y floración por regulación de genes no‑deseados.",
+        "Alteración del balance hormonal que podría reducir rendimiento bajo condiciones no estresantes."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 13,
+        "ids": [
+          "200157098",
+          "304752950",
+          "304752949",
+          "304752948",
+          "304752947"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 35,
+        "fuentes": [
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "si",
+      "estrategia": "edicion_genica",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "bZIP1 tiene varios paralogos en F. vesca. La edición del regulador endógeno (p.ej., activación de cis‑elementos) es viable; sin embargo, la modulación de la señal ABA puede producir efectos secundarios en el desarrollo, de ahí un riesgo medio.",
+      "promotor": "promotor inducible por sequía/ABA (pRD29A) o CaMV 35S de bajo nivel",
+      "localizacion": "núcleo (añadir NLS)",
+      "codon_opt": "si",
+      "notas_constructo": "Optimizar codones para F. vesca; incluir intrón de primera generación; usar terminador t35S; posible fusión con dominio de activación fuerte (por ejemplo, EDLL) para potenciar la respuesta al estrés."
+    },
+    {
+      "accession": "XP_002467609.2",
+      "descripcion": "uncharacterized protein LOC8063162",
+      "secuencia": "MAGGGDELKLLGSWASPFVIRVKLALSFKGLSCYENIEEEDLYYNKSELLLKSNPVHKQVPVLIHNGKSICESQLVVQYIDETFTTSDPSLLAVEPYERAMARFWGAYIDDKLFASAFQVRRAKTEEEKAEALKQTIAAVETLEAAFKEISKGKPFFGGDSVGYLDIVLGGFIPMVYYGEARYGIKLFDDTRSPLLVAWVERFGALDAAKAILPDVDKLVEYSEMKQARAAAMAAGHYDITAEPRLTILASHVSPWGRRLQGLSGVIDLDSSGMARDGGELKLLGLWSSPFVTRAKLALQIKGLSYEYVEEDLGNKSELLLSSNPVHKVVPVLIHNGKPVCESSVIVQYIDDAFAGTGPSILAADPYQRAVARFWAAYLEDKIVTPWRRVFMVKTDEEKAEVMRQTIAAVAVLEDGLKECSGGQGPFFAGDSVGYVDVLLGGMVSWLKAAEPLSGDKIIDAAKTPLLAAWMERFCELDAAKAVLQDVDAVVEYARALQARIAAATANNQ",
+      "longitud": 509,
+      "especie_donante": "Sorghum bicolor",
+      "tipo_donante": "planta",
+      "proteoma_count": 39249,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_N_4"
+        },
+        {
+          "dominio": "GST_N_4"
+        },
+        {
+          "dominio": "GST_C_3"
+        },
+        {
+          "dominio": "GST_C_3"
+        },
+        {
+          "dominio": "GST_C_5"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N",
+        "GST_N",
+        "GST_N_3",
+        "GST_N_3",
+        "GST_N_2",
+        "GST_N_2",
+        "GST_C",
+        "GST_C",
+        "GST_C_2",
+        "GST_C_2",
+        "GST_N_4",
+        "GST_N_4",
+        "GST_C_3",
+        "GST_C_3",
+        "GST_C_5"
+      ],
+      "pre_score": 538,
+      "score_transferencia": 85,
+      "mecanismo": "Aumenta la capacidad antioxidante de la planta mediante la conjugación de glutatión a especies reactivas de oxígeno (ROS) y a metabolitos tóxicos generados durante el estrés hídrico; contribuye a la regulación de la señalización de ácido abscísico (ABA) y a la protección de proteínas y membranas.",
+      "riesgos": [
+        "Posible sobrecarga del pool de glutatión, afectando otras rutas metabólicas.",
+        "Interacción no prevista con GST endógenos de F. vesca que podría alterar la homeostasis redox."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 20,
+        "ids": [
+          "200274752",
+          "200276121",
+          "200262062",
+          "200218642",
+          "200178993"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 35,
+        "fuentes": [
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "si",
+      "estrategia": "edicion_genica",
+      "riesgo_compatibility": "bajo",
+      "justificacion_compat": "Los GST de tipo U están ampliamente conservados; F. vesca posee genes homólogos con >80 % de identidad. Mejorar su expresión mediante edición presenta bajo riesgo, pues la función antioxidante es esencial y bien tolerada.",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_024006402.1",
+      "descripcion": "glutathione S-transferase F14",
+      "secuencia": "MELHLRMFHTAFLVRSAGFKNIAKTKSFLSNLNPFGQVPVLEDGDLKLFESKAITRYLAEQYKDQGTNLLPDDPKKRSIISMWMEVDTNQFLPVASTLIKELIIKPYQGLATDFTSVQEGKEKLSEILNIYETRLGESPYLAGESFTLADLHHLPPIQYLLNTEEEELKNLIYSRPNVAAWVEKMKSRPAWLKAVAMEEHILDLMNRRRLPKQLDSSCHESTVVAQKTAMVVIANN",
+      "longitud": 236,
+      "especie_donante": "Eutrema salsugineum",
+      "tipo_donante": "planta",
+      "proteoma_count": 33721,
+      "dominios_raw": [
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_C_3"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_C_6"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_C",
+        "GST_N",
+        "GST_C_3",
+        "GST_N_2",
+        "GST_N_3",
+        "GST_C_2",
+        "GST_C_6"
+      ],
+      "pre_score": 318,
+      "score_transferencia": 85,
+      "mecanismo": "GST F14 de Eutrema salsugineum aumenta la capacidad de conjugación de glutatión, detoxificando especies reactivas de oxígeno y productos de peroxidación lipídica generados durante la sequía; además modula la señalización hormonal (ABA) favoreciendo la retención de agua.",
+      "riesgos": [
+        "Posible agotamiento de la reserva de glutatión si se sobreexpresa",
+        "Interferencia con la regulación endógena de GSTs de Fragaria vesca"
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 3,
+        "ids": [
+          "200067745",
+          "301655114",
+          "301655113"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 15,
+        "fuentes": [
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "si",
+      "estrategia": "edicion_genica",
+      "riesgo_compatibility": "bajo",
+      "justificacion_compat": "GSTF14 es parte de la familia F de GST, presente en F. vesca. La edición del gen nativo para aumentar su actividad es segura y de bajo riesgo.",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_006400210.1",
+      "descripcion": "glutathione S-transferase DHAR3, chloroplastic",
+      "secuencia": "MISLRLQPSTAGVLSASVSRAGFIKRCGSTKPGRIGRFRTMAMAATPLEICVKASITTPNKLGDCPFCQRVLLTMEEKHVPYDMRMVDLSNKPEWFLQISPEGKVPVVKFDEKWVPDSDVITQSLEEKYPEPPLATPPEKASVGSKIFSTFIGFLKSKDPGDGTEQVLLDELSTFNDYIKENGPFINGEKISAADLSLGPKLYHMKIALGHFKNWSVPDSLSFVKSYMENVFSRESFAKTRGQTEDVIAGWKPKVMG",
+      "longitud": 257,
+      "especie_donante": "Eutrema salsugineum",
+      "tipo_donante": "planta",
+      "proteoma_count": 33721,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "Glutaredoxin"
+        },
+        {
+          "dominio": "GST_N_4"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_C_3"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N_3",
+        "GST_N_2",
+        "GST_N",
+        "Glutaredoxin",
+        "GST_N_4",
+        "GST_C_2",
+        "GST_C_3"
+      ],
+      "pre_score": 293,
+      "score_transferencia": 85,
+      "mecanismo": "Glutatión S‑transferasa cloroplástica que detoxifica especies reactivas de oxígeno generadas durante la sequía mediante conjugación con glutatión, manteniendo la redox celular.",
+      "riesgos": [
+        "Consumo excesivo de glutatión libre, pudiendo comprometer otras vías antioxidantes.",
+        "Posible interacción con la vía de síntesis de glutatión de la fresa."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 10,
+        "partners": [
+          "V4KNT4_EUTSA",
+          "V4N4G9_EUTSA",
+          "V4M0Q0_EUTSA",
+          "V4LRU6_EUTSA",
+          "V4MMF1_EUTSA",
+          "V4LBR4_EUTSA",
+          "V4KGV3_EUTSA",
+          "V4L6M9_EUTSA",
+          "V4MX87_EUTSA",
+          "V4LHQ4_EUTSA"
+        ],
+        "encontrado": true
+      },
+      "val_geo": {
+        "datasets": 3,
+        "ids": [
+          "200067745",
+          "301655114",
+          "301655113"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 55,
+        "fuentes": [
+          "interacciones",
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "si",
+      "estrategia": "edicion_genica",
+      "riesgo_compatibility": "bajo",
+      "justificacion_compat": "Los GST cloroplásticos son conservados en rosáceas; existe un ortólogo en F. vesca con alta similitud. Su mejora mediante edición presenta bajo riesgo.",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "AAN34791.1",
+      "descripcion": "Grp94",
+      "secuencia": "MRNWSIPPALVLLLLISLSAIPDGGRKLHANAEESRDADELVDPPKVEEKIAGVHGGLSTDADVAKREAESMSRKNLRSNAEKFEFQAEVSRLMDIIINSLYSNKDIFLRELISNASDALDKIRFLSLTDKEVLGEGDNTKLEIMIKLDKEKKILSIRDRGIGMTKEDLIKNLGTIAKSGTSAFVEKMQTGGDLNLIGQFGVGFYSVYLVSDYVEVISKHNDDKQYVWESKADGAFAISEDTWNEPLGRGTEIRLHLRDEAKEYLDESKLKELVKKYSEFINFPIYLWASKEVDVEVPSDEEESSDVEEKSESESSEEEIEEDDAEKKPKTKTVKETTYEWELLNDVKAIWLRSPKEVTDEEYTKFYHSLAKDFSDEKPLAWSHFSAEGDVEFKAVLFVPPKAPHDLYESYYNSRKSNLKLYVRRVFISDEFDELLPKYLSFLMGLVDSDTLPLNVSREMLQQHSSLKTIKKKLIRKALDMIRKIADEDPDESDKDHSEEAGEENEKKGLYTKFWNEFGKSIKLGIIEDAQNRNRLAKLLRFETTKSDGKLTSLDKYISRMKPGQKDIFYLTGTSKEQLEKSPFLEGLKKKDYEVIFFTDPVDEYLMQYLMDYEDKKFQNVSKEGLKIGKESKIKDLKESFKELTSWWKEALSSENVDSVKISNRLDNTPCVVVTSKYGWSANMEKIMQSQTLSDASKQAYMRGKRVLEINPRHPIIKELRERVAVDPQDENIKQTAKLIYQTALMESGFLMNDPKEFATSIYSSVKSSLNISPDAKVEEEEDTDEPEVEEKESASSKGSEEAEDFSAKDEL",
+      "longitud": 812,
+      "especie_donante": "Xerophyta viscosa",
+      "tipo_donante": "planta",
+      "proteoma_count": 260,
+      "dominios_raw": [
+        {
+          "dominio": "HSP90"
+        }
+      ],
+      "dominios_relevantes": [
+        "HSP90"
+      ],
+      "pre_score": -2,
+      "score_transferencia": 85,
+      "mecanismo": "Proteína HSP90 (Grp94) actúa como chaperona que estabiliza proteínas desnaturalizadas durante el estrés hídrico, mantiene la actividad de enzimas clave y facilita la señalización de receptores hormonales (p. ej., ABA).",
+      "riesgos": [
+        "Expresión elevada de HSP90 puede consumir ATP y afectar la homeostasis energética.",
+        "Riesgo de interacción no específica con proteínas nativas, generando posibles efectos dominantes negativos."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 0,
+        "ids": []
+      },
+      "soporte_multifuente": {
+        "score": 0,
+        "fuentes": []
+      },
+      "tiene_ortologo": "si",
+      "estrategia": "edicion_genica",
+      "riesgo_compatibility": "bajo",
+      "justificacion_compat": "HSP90/Grp94 es una chaperona esencial y altamente conservada; F. vesca posee varios genes HSP90. La edición para reforzar su expresión es de bajo riesgo.",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_024540135.1",
+      "descripcion": "glutathione S-transferase 2",
+      "secuencia": "MKLYTFWGSSCGWRVRLALALKGIPYEYQAVGFANGRLDDEFSKINPLGMVPALETEEDGLLIDSVAIVEYLEEKYPEKPLLPKNVKQRATIRQIVNLVASNIQPLQSGGRVMNMIKEKLGDEERLKWAQHWVVIGFNALEEIVKKTSGKYCFGDTLTLADVFVIPQIGNAERYKVDMTPYPTLRRLKEELHKLEEVRQSVPRLQPDFPTE",
+      "longitud": 211,
+      "especie_donante": "Selaginella moellendorffii",
+      "tipo_donante": "planta",
+      "proteoma_count": 45318,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_C_3"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_N_4"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N_3",
+        "GST_N_2",
+        "GST_N",
+        "GST_C_3",
+        "GST_C_2",
+        "GST_C",
+        "GST_N_4"
+      ],
+      "pre_score": 318,
+      "score_transferencia": 82,
+      "mecanismo": "Glutatión S‑transferasa 2 de Selaginella moellendorffii facilita la conjugación de glutatión a compuestos tóxicos y la eliminación de peróxidos, contribuyendo a la protección de la membrana y la fotosíntesis durante la sequía.",
+      "riesgos": [
+        "Incompatibilidad parcial de señalización de localización subcelular (p.ej., citosol vs cloroplasto).",
+        "Posible sobrecarga del ciclo de glutatión."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 0,
+        "ids": []
+      },
+      "soporte_multifuente": {
+        "score": 0,
+        "fuentes": []
+      },
+      "tiene_ortologo": "si",
+      "estrategia": "edicion_genica",
+      "riesgo_compatibility": "bajo",
+      "justificacion_compat": "GST2 es una clase de GST presente en F. vesca. La manipulación del gen nativo para mayor actividad antioxidante es segura y con bajo riesgo.",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "AAP22171.1",
+      "descripcion": "putative dehydrin",
+      "secuencia": "MEGYGNHQHHNVDEYGNPLPVGYGEGYGHQNMQRPGEYYGNQGYGGHQHGAYSGPGYQQDYGSGPRLQRSGSSTSSEDDGYGGRRKKGLKNRIMENLPGRR",
+      "longitud": 101,
+      "especie_donante": "Xerophyta viscosa",
+      "tipo_donante": "planta",
+      "proteoma_count": 260,
+      "dominios_raw": [
+        {
+          "dominio": "Dehydrin"
+        }
+      ],
+      "dominios_relevantes": [
+        "Dehydrin"
+      ],
+      "pre_score": 3,
+      "score_transferencia": 82,
+      "mecanismo": "Dehidrina (proteína LEA) que se acumula en el citoplasma y en membranas, estabilizando estructuras celulares y previniendo la agregación de proteínas durante la desecación.",
+      "riesgos": [
+        "Sobre‑expresión podría modificar la osmolaridad intracelular y afectar la absorción de agua bajo riego normal."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 1,
+        "novel": false,
+        "articulos": [
+          {
+            "titulo": "A molecular physiological review of vegetative desiccation tolerance in the resurrection plant Xerophyta viscosa (Baker)",
+            "anio": "2015",
+            "fuente": "MED"
+          }
+        ],
+        "estado": "1 menciones",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 0,
+        "ids": []
+      },
+      "soporte_multifuente": {
+        "score": 25,
+        "fuentes": [
+          "literatura"
+        ]
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "NP_001130206.1",
+      "descripcion": "uncharacterized LOC100191300",
+      "secuencia": "MRSLRAAQTLVSRSLFSARHLSGAASPATAAAAGARWCAAPAPPPRSPLPSSRVMPAGVAGAVSFSLTFATVAAAEAKAKERPQPDLLPQNVVLYQYQACPFCNKVRAFLDYHDIPYKVVEVNPLSKKELKWSDYKKVPILTVDGEQLVDSSDIINILQSRINPNEELTSDEEAKWRRWVDEHLVHVLSPNIYRTTSEALESFDYIAKHGNFSFTERFAVKYAGAAAMYMVSKKLKKKYNITDERASLYDAANTWIDALNGRDFLGGSKPNLADLAVFGVLRPIRYLRAGKDMVENTEIGDWYRRMEDAVGEPSRIQDAEGN",
+      "longitud": 322,
+      "especie_donante": "Zea mays",
+      "tipo_donante": "planta",
+      "proteoma_count": 49996,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "Glutaredoxin"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_N_4"
+        },
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_C_3"
+        },
+        {
+          "dominio": "GST_C_6"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N_3",
+        "Glutaredoxin",
+        "GST_N_2",
+        "GST_N_4",
+        "GST_N",
+        "GST_C_2",
+        "GST_C",
+        "GST_C_3",
+        "GST_C_6"
+      ],
+      "pre_score": 383,
+      "score_transferencia": 80,
+      "mecanismo": "Detoxificación de compuestos oxidativos y de productos de peroxidación lipídica mediante actividad GST; mejora la respuesta al ABA y favorece la acumulación de osmólitos que mantienen la turgencia celular bajo déficit hídrico.",
+      "riesgos": [
+        "Expresión alta puede generar consumo energético excesivo.",
+        "Riesgo de formación de conjugados de glutatión que interfieran con vías metabólicas secundarias."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 20,
+        "ids": [
+          "200329265",
+          "200318738",
+          "200207858",
+          "200282587",
+          "200294039"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 35,
+        "fuentes": [
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_035815535.1",
+      "descripcion": "glutathione dehydroascorbate reductase4 isoform X2",
+      "secuencia": "MAVLLRSTSAAASTAGPSSALLATTFRRSRGCLLPRAAPQRRLYVARASAQPLEVCAKESITIPGRLGDCPFTQRVLLTIEEKHLPYDLKLVDLANKPDWLFEINPEGKVPIVKLEEKWIGDSDVITQALEEKYPEPPLATPPEKASVGSKIFSTFIGFLKSKDPSDGTEEALLNELTSFDSYLKDNGPFINGGIISAADLSLGPKLYHMEITLGHYKNWSVPDSLSYVKTYMKERERGVDWRMEGLDAKVCRMAVICT",
+      "longitud": 259,
+      "especie_donante": "Zea mays",
+      "tipo_donante": "planta",
+      "proteoma_count": 49996,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_N_4"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N_2",
+        "GST_N_3",
+        "GST_N",
+        "GST_C_2",
+        "GST_N_4"
+      ],
+      "pre_score": 228,
+      "score_transferencia": 80,
+      "mecanismo": "Glutatión deshidroascorbato reductasa que regenera ascorbato a partir de su forma oxidada, reforzando la capacidad antioxidante bajo estrés hídrico.",
+      "riesgos": [
+        "Desbalance en la relación ascorbato/ácido dehidroascorbico.",
+        "Posible carga metabólica adicional en cloroplastos."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 20,
+        "ids": [
+          "200329265",
+          "200318738",
+          "200207858",
+          "200282587",
+          "200294039"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 35,
+        "fuentes": [
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_015612592.1",
+      "descripcion": "probable glutathione S-transferase GSTU1",
+      "secuencia": "MADEVVLLDLWVSPFGQRCRIALAEKGVEYEYSEQSLADKSDLLLRSNPVHKKVPVLLHAGRPVCESLVILEYIDETWPPEPEKKKESPRLLPSDPYARARARFWADYVDKKLFDCQTRLWKLRAGDAAHEQAKRDMAEALGTLEAELGEGDYFGGEAFGYLDVVLVPFVAWFHAYERLAGFAVAEICPRLVAWGERCKGRDSVAKTLTDPEKVYEFALYLKAKFGAK",
+      "longitud": 228,
+      "especie_donante": "Oryza sativa",
+      "tipo_donante": "planta",
+      "proteoma_count": 43323,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_C_5"
+        },
+        {
+          "dominio": "GST_C_3"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N",
+        "GST_N_3",
+        "GST_N_2",
+        "GST_C_2",
+        "GST_C",
+        "GST_C_5",
+        "GST_C_3"
+      ],
+      "pre_score": 318,
+      "score_transferencia": 78,
+      "mecanismo": "GSTU1 de arroz está implicada en la eliminación de peróxidos y en la modulación de la señalización de ABA, lo que reduce el daño celular durante sequías prolongadas.",
+      "riesgos": [
+        "Posible incompatibilidad con reguladores de GST propios de F. vesca.",
+        "Riesgo de inmunogenicidad si la proteína es altamente divergente."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 20,
+        "ids": [
+          "200302253",
+          "200347843",
+          "200313726",
+          "200332733",
+          "200315654"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 35,
+        "fuentes": [
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_066161079.1",
+      "descripcion": "probable glutathione S-transferase GSTU6",
+      "secuencia": "MAAEDELKLLGFWASPYVCRVKLALHLKGLIYDYVKEDVFTNKSELLLSCNPVHAKVPVLIHNGKPICESQVIVQYIDEVFPDAGVTLLPADPHDRAAARFWAAYIDDKLLPPWVHAYRGKTDEEKAERMKQTLAVVDALETAMEECSKGNAFFGGDTVGYVDVALGGLLSWLHGTEELCGAKILDAAKTPLLSAWARRFGELDAANAALPDVGRLVEFCKMRHVELEAAEAAAARN",
+      "longitud": 237,
+      "especie_donante": "Oryza sativa",
+      "tipo_donante": "planta",
+      "proteoma_count": 43323,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_N_4"
+        },
+        {
+          "dominio": "GST_C_3"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N",
+        "GST_N_3",
+        "GST_N_2",
+        "GST_C",
+        "GST_C_2",
+        "GST_N_4",
+        "GST_C_3"
+      ],
+      "pre_score": 318,
+      "score_transferencia": 78,
+      "mecanismo": "Glutatión S‑transferasa (GSTU6) de arroz cataliza la conjugación de glutatión a compuestos reactivos y detoxifica especies de oxígeno reactivo (ROS) acumuladas bajo déficit hídrico, mejorando la capacidad antioxidante de la planta.",
+      "riesgos": [
+        "Acumulación de conjugados de glutatión que podrían interferir con el metabolismo secundario.",
+        "Posible agotamiento de glutatión libre, comprometiendo otras vías de defensa."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 20,
+        "ids": [
+          "200302253",
+          "200347843",
+          "200313726",
+          "200332733",
+          "200315654"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 35,
+        "fuentes": [
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_002451782.1",
+      "descripcion": "elongation factor 1-gamma 2",
+      "secuencia": "MALVLHAGSANKNAFKTLIAAEYSGVKVELAKDFQMGVSNKTPEFLKMNPIGKVPVLETPDGPVFESNAIARYVTRLKADNPLYGSSLIDYAHIEQWMDFATTEVDANTGKWLYPRMGFYPYAAVTEESAIAALKRAFGSLNTHLASNTFLVGHSVTLADIVLTCNLYLGFSRILTKSFTSEFPHVERYFWTMVNQPNFKKVIGDVKQAEAVPPVPKKAAPAKEQKPKEAKKEAQKEAPKPKVAEKPAEEEEAPKPKPKNPLDLLPPSKMILDDWKRLYSNTKTNFREVAIKGFWDMYDPEGYSLWFCDYKYNDENTVSFVTLNKVGGFLQRMDLCRKYAFGKMLVVGSEPPFKVKGLWLFRGSEIPKFVMDEVYDMELYEWTKVDLSDEAQKERVNAMIEDQEPFEGEALLDAKCFK",
+      "longitud": 418,
+      "especie_donante": "Sorghum bicolor",
+      "tipo_donante": "planta",
+      "proteoma_count": 39249,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_C_3"
+        },
+        {
+          "dominio": "GST_N_5"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N",
+        "GST_C",
+        "GST_N_2",
+        "GST_N_3",
+        "GST_C_2",
+        "GST_C_3",
+        "GST_N_5"
+      ],
+      "pre_score": 318,
+      "score_transferencia": 78,
+      "mecanismo": "Glutatión S‑transferasa que participa en la detoxificación de compuestos tóxicos y en la mitigación del estrés oxidativo asociado a la sequía.",
+      "riesgos": [
+        "Riesgo de agotamiento de glutatión si la expresión es muy alta.",
+        "Posible interferencia con rutas metabólicas de fenilpropanoides en la fresa."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 10,
+        "partners": [
+          "C5WWP8_SORBI",
+          "C5X4T4_SORBI",
+          "C5XE07_SORBI",
+          "SORBI_3K024000",
+          "A0A194YJY9",
+          "A0A1B6PAS0",
+          "A0A1Z5RG34",
+          "C5XBK5_SORBI",
+          "C5YKL8_SORBI",
+          "Sb2635s002010"
+        ],
+        "encontrado": true
+      },
+      "val_geo": {
+        "datasets": 20,
+        "ids": [
+          "200274752",
+          "200276121",
+          "200262062",
+          "200218642",
+          "200178993"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 75,
+        "fuentes": [
+          "interacciones",
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_002459355.1",
+      "descripcion": "glutathione S-transferase 3",
+      "secuencia": "MATSEDADHQVTVVDFWANGFGMRARIALRELGVAFRYVEEDLRVRERSELVRRMNPVHRSVPILIHGGRPVCGSVNILQYVDEVWGPTLFPRDPLQRAHARFWADFVDQKVFSTQTRFLKSKGDEKEAAKGELLEQLKRLEEVLGDKTFFAGDEFGFLDAVLIPFSSMFHGYEQHGGFDLDVECPSLMSWVRRCKERKSVKGVLPDEDKMYELHKKWYGIE",
+      "longitud": 222,
+      "especie_donante": "Sorghum bicolor",
+      "tipo_donante": "planta",
+      "proteoma_count": 39249,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_C_6"
+        },
+        {
+          "dominio": "GST_C_3"
+        },
+        {
+          "dominio": "GST_C_5"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N",
+        "GST_C_2",
+        "GST_C",
+        "GST_N_3",
+        "GST_N_2",
+        "GST_C_6",
+        "GST_C_3",
+        "GST_C_5"
+      ],
+      "pre_score": 363,
+      "score_transferencia": 76,
+      "mecanismo": "GST de Sorghum bicolor con actividad amplia contra peróxidos y herbicidas; aumenta la capacidad de escudo antioxidante y protege membranas celulares durante la sequía.",
+      "riesgos": [
+        "Expresión heteróloga puede generar productos de conjugación no nativos que alteren la calidad del fruto.",
+        "Riesgo de interacción con vías de detoxificación propias, provocando desequilibrios metabólicos."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 10,
+        "partners": [
+          "C5YYX3_SORBI",
+          "A0A1Z5R0E4",
+          "A0A194YI68",
+          "C5X3B9_SORBI",
+          "A0A1B6PLA9",
+          "C5XPZ6_SORBI",
+          "A0A1B6PCZ5",
+          "C5Y710_SORBI",
+          "A0A194YU12",
+          "A0A1Z5S774"
+        ],
+        "encontrado": true
+      },
+      "val_geo": {
+        "datasets": 20,
+        "ids": [
+          "200274752",
+          "200276121",
+          "200262062",
+          "200218642",
+          "200178993"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 75,
+        "fuentes": [
+          "interacciones",
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_002966448.1",
+      "descripcion": "glutathione S-transferase U19",
+      "secuencia": "MSKDSVKLLNIWPSMFGLRVHYALDLKGVSYEYQEESLSNKSKELLEANPIYAKIPVLIHNGKPICESLVIVDYIDSVWPGSHKLLPEDPYEKAVARFWADFGDKKLYDAGNQLIQAMGEEHKKAGEDFKWALMKIDEALGTIAPGKPFFGGDAMNFADVGLAPFICRFKGYQKVGGFVLPGPEEWPNLYKWVDAVNSVDAIKKSTPSPDEVAEFAEVLRKRVLGAA",
+      "longitud": 227,
+      "especie_donante": "Selaginella moellendorffii",
+      "tipo_donante": "planta",
+      "proteoma_count": 45318,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_C_5"
+        },
+        {
+          "dominio": "GST_C"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N",
+        "GST_N_3",
+        "GST_N_2",
+        "GST_C_2",
+        "GST_C_5",
+        "GST_C"
+      ],
+      "pre_score": 273,
+      "score_transferencia": 75,
+      "mecanismo": "GST U19 de Selaginella moellendorffii provee actividad de transferencia de glutatión que neutraliza ROS y compuestos tóxicos acumulados bajo déficit hídrico, mejorando la estabilidad de membranas y la homeostasis redox.",
+      "riesgos": [
+        "Consumo elevado de glutatión y posibles efectos en la síntesis de compuestos secundarios",
+        "Riesgo de interacción no deseada con rutas de metabolismo de fenilpropanoides propias de la fresa"
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 3,
+        "partners": [
+          "D8RPJ6_SELML",
+          "D8SMA1_SELML",
+          "DHAR1"
+        ],
+        "encontrado": true
+      },
+      "val_geo": {
+        "datasets": 0,
+        "ids": []
+      },
+      "soporte_multifuente": {
+        "score": 15,
+        "fuentes": [
+          "interacciones"
+        ]
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_020405652.1",
+      "descripcion": "glutathione transferase 8 isoform X1",
+      "secuencia": "MAPPMKVYGWAVSPWMARALVCLEEAGADYEIVPMSRCGGDHRRPEHLAKNPFGEIPVLEDGDLTLYQSRAIARYVLRKLKPELLREGDLEGSAMVDAWMEVEAHHMEPALWPIIRHSIIGQYVGRDRDHQAVIDENLDRLRKVLPAYEARLSVCKYLAGDVISAADLCHFGFMRYFMATEYAGLVHAYPHVKAWWDALLARPSVQKVMAGMPPDFGYASGNIP",
+      "longitud": 224,
+      "especie_donante": "Zea mays",
+      "tipo_donante": "planta",
+      "proteoma_count": 49996,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_C_3"
+        },
+        {
+          "dominio": "GST_C_2"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N",
+        "GST_C",
+        "GST_N_2",
+        "GST_N_3",
+        "GST_C_3",
+        "GST_C_2"
+      ],
+      "pre_score": 273,
+      "score_transferencia": 74,
+      "mecanismo": "GST8 de maíz, similar a otras GST de clase Tau, participa en la eliminación de ROS y en la regulación de la señalización de hormonas de estrés, contribuyendo a la tolerancia a la sequía.",
+      "riesgos": [
+        "Posible competencia con GST nativas de F. vesca, reduciendo la eficiencia global del sistema antioxidante.",
+        "Expresión excesiva puede afectar la síntesis de compuestos fenólicos."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 20,
+        "ids": [
+          "200329265",
+          "200318738",
+          "200207858",
+          "200282587",
+          "200294039"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 35,
+        "fuentes": [
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_006416732.1",
+      "descripcion": "glutathione S-transferase U25",
+      "secuencia": "MADEVILLDFWPSMFGMRTRIALEEKNIKFDYREQDLFNKSSILLEMNPVHKKIPVLIHNGKPVCESLIQIEYIDETWPTKNPLLPSDPYQRAQARFWGDFIDKKVYSATRLIWGAKGEEQEEGKKEFIELLKTLESELGDKIYFGGETFGYVDIALIGFYSWFEAYEKLGNFSIEPECPKLSAWAKRCAQRESVAKFLPASDKVTKFVPELRKKIGLE",
+      "longitud": 219,
+      "especie_donante": "Eutrema salsugineum",
+      "tipo_donante": "planta",
+      "proteoma_count": 33721,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_C_3"
+        },
+        {
+          "dominio": "GST_N_4"
+        },
+        {
+          "dominio": "GST_C_6"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N",
+        "GST_N_2",
+        "GST_N_3",
+        "GST_C_2",
+        "GST_C",
+        "GST_C_3",
+        "GST_N_4",
+        "GST_C_6"
+      ],
+      "pre_score": 363,
+      "score_transferencia": 72,
+      "mecanismo": "Glutatión S‑transferasa U25 que aumenta la capacidad de detoxificación de especies reactivas de oxígeno y de compuestos electófilos generados durante el estrés por sequía, manteniendo la homeostasis redox.",
+      "riesgos": [
+        "Consumo elevado de glutatión libre, pudiendo limitar otras rutas antioxidantes.",
+        "Posible conjugación de metabolitos esenciales, alterando vías metabólicas secundarias."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 10,
+        "partners": [
+          "V4M5D0_EUTSA",
+          "V4M8P6_EUTSA",
+          "V4M8Z3_EUTSA",
+          "V4LPA0_EUTSA",
+          "V4KAW8_EUTSA",
+          "V4MHF8_EUTSA",
+          "V4LBW7_EUTSA",
+          "V4K412_EUTSA",
+          "V4KQD7_EUTSA",
+          "V4L0U5_EUTSA"
+        ],
+        "encontrado": true
+      },
+      "val_geo": {
+        "datasets": 3,
+        "ids": [
+          "200067745",
+          "301655114",
+          "301655113"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 55,
+        "fuentes": [
+          "interacciones",
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_002968645.2",
+      "descripcion": "uncharacterized protein LOC9651507",
+      "secuencia": "MAMALASCAPAVSGRSISASGSIASRKKRFHCMASTAEVSSWEELSEKVSRLPGYNAAAAAARLPNVQQRDFGDTSIAQVVFYRDNSSWCPYCQRVWLQLEEKRIPYKVEKINMNCYGPKPAWYLEKVPSGLLPALELKGRLLTESLDIMLILEEAFPERHPLLPPKGSPKANAVDGLLRLERLLAGAWLSRLRSFWTKPGQFERAMDDVDGALAKFGGPFFLGDTFSLVDAVYAPFLERIAASMPYWQGVMIRGETRWPHLQAWFDAMDAKPSYQAVKSDDYTITHTLEPQIGACRALPAGEAYRAKVDGKDGSWDLPLKAEVTAWGREEGNGNKAEAAQTLVDNNAAVVGFALRALNSDEKYRESVDLGFRCVAQALVDGVESATPPAVPQHFSREVAKAAAYLRDKVGVPRDLSYPAARQLRAHLHWLVKALGSELYQ",
+      "longitud": 441,
+      "especie_donante": "Selaginella moellendorffii",
+      "tipo_donante": "planta",
+      "proteoma_count": 45318,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_C_5"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "Glutaredoxin"
+        },
+        {
+          "dominio": "GST_C_3"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N_2",
+        "GST_N_3",
+        "GST_C_2",
+        "GST_C_5",
+        "GST_C",
+        "GST_N",
+        "Glutaredoxin",
+        "GST_C_3"
+      ],
+      "pre_score": 338,
+      "score_transferencia": 70,
+      "mecanismo": "GST de Selaginella ayuda a mantener la redox celular bajo estrés deshidratante y puede participar en la síntesis de compuestos protectores como flavonoides.",
+      "riesgos": [
+        "Dominio adicional de glutatión reductasa podría interferir con rutas nativas.",
+        "Expresión en tejido frutal podría alterar el perfil de metabolitos secundarios."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 10,
+        "partners": [
+          "D8SC66_SELML",
+          "D8S946_SELML",
+          "DHAR1",
+          "D8S7N0_SELML",
+          "D8T402_SELML",
+          "D8QMW3_SELML",
+          "D8RPL5_SELML",
+          "D8SMC0_SELML",
+          "D8QVY2_SELML",
+          "D8S8Z4_SELML"
+        ],
+        "encontrado": true
+      },
+      "val_geo": {
+        "datasets": 0,
+        "ids": []
+      },
+      "soporte_multifuente": {
+        "score": 40,
+        "fuentes": [
+          "interacciones"
+        ]
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_021303416.1",
+      "descripcion": "protein IN2-1 homolog B-like",
+      "secuencia": "MATAAAPDDSTVRETTKAEEVLPPTLGSGSQPPNLFDGTTRLYISYICPYVQRVWIARNFKGLQEKIQLVAIDLQDKPAWFLEKVYPPGKVPVLEHNGNIIAESLDLLSYLDANFEGPKLFPGDQDPAKQAFADELIANSDSIIIALFRAGRAYAEGQGDDDISKLLAPALDKVEESLGRFSDGPFLLGQSMSAVDMVYAPFIERFKDFFAAVKHYDMTQERPKLKEWIEELNKIDAYTATWGDRRLQLAALMNKFGIQSPVA",
+      "longitud": 263,
+      "especie_donante": "Sorghum bicolor",
+      "tipo_donante": "planta",
+      "proteoma_count": 39249,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_C_5"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_C_3"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N_3",
+        "GST_N_2",
+        "GST_C_2",
+        "GST_N",
+        "GST_C_5",
+        "GST_C",
+        "GST_C_3"
+      ],
+      "pre_score": 318,
+      "score_transferencia": 70,
+      "mecanismo": "Proteína homóloga IN2‑1 B‑like de Sorghum bicolor contiene dominios GST que aumentan la capacidad de detoxificación de metabolitos de estrés y regulan la señalización de estrés abiótico mediante conjugación de glutatión.",
+      "riesgos": [
+        "Posible desbalance en la red de GSTs nativas",
+        "Carga metabólica adicional por síntesis de la proteína"
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 10,
+        "partners": [
+          "A0A1Z5R0E4",
+          "A0A194YI68",
+          "C5X3B9_SORBI",
+          "C5YYX3_SORBI",
+          "A0A1B6PLA9",
+          "C5XPZ6_SORBI",
+          "A0A1B6PCZ5",
+          "C5Y710_SORBI",
+          "A0A194YU12",
+          "A0A1Z5S774"
+        ],
+        "encontrado": true
+      },
+      "val_geo": {
+        "datasets": 20,
+        "ids": [
+          "200274752",
+          "200276121",
+          "200262062",
+          "200218642",
+          "200178993"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 75,
+        "fuentes": [
+          "interacciones",
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_002465909.2",
+      "descripcion": "glutathione S-transferase F11",
+      "secuencia": "MAAPVTVYGPVISPAVARVAACLLEKDVPFQIEPVDMSKGEHKSPSFLKLQPFGQVPAFKDHLTTVFESRAICRYICDQYADRGNQALFGKKEDGAVGRAAIEQWIESEGQSFNPPSLAIIFQLAFAPMMGRATDLAVVEQNEAKLAKVLDVYDQRLGESQYFAGDDFSLADLVHLPNADFLVNRTNKAGLITERKNLARWWDDVSARPAWKKLAFIPHLSHLGIRQDPAVIAENEDKLKQVLDVYDEILSKNEYLAGDEFTLADLSHLPNSHYIVNTERGRKLFTNKKNVAKWYDKLSKLETWKQVVKMQKEHPGAFE",
+      "longitud": 319,
+      "especie_donante": "Sorghum bicolor",
+      "tipo_donante": "planta",
+      "proteoma_count": 39249,
+      "dominios_raw": [
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_C_3"
+        },
+        {
+          "dominio": "GST_C_3"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_C_6"
+        },
+        {
+          "dominio": "GST_C_6"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_C",
+        "GST_C",
+        "GST_N",
+        "GST_N_2",
+        "GST_C_3",
+        "GST_C_3",
+        "GST_C_2",
+        "GST_C_2",
+        "GST_N_3",
+        "GST_C_6",
+        "GST_C_6"
+      ],
+      "pre_score": 418,
+      "score_transferencia": 68,
+      "mecanismo": "Glutatión S‑transferasa F11 que participa en la eliminación de peróxidos y compuestos tóxicos generados por estrés hídrico, reforzando la defensa antioxidante.",
+      "riesgos": [
+        "Desbalance del pool de glutatión si la expresión es muy alta.",
+        "Riesgo de interacción con rutas de metabolismo de fenilpropanoides propias de la fresa."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 10,
+        "partners": [
+          "A0A1B6QR57",
+          "C5XZD3_SORBI",
+          "A0A1Z5R0E4",
+          "C5X3B9_SORBI",
+          "A0A194YU12",
+          "A0A1B6PLA9",
+          "C5XPZ6_SORBI",
+          "A0A1Z5S774",
+          "C5WWX0_SORBI",
+          "A0A1B6PCZ5"
+        ],
+        "encontrado": true
+      },
+      "val_geo": {
+        "datasets": 20,
+        "ids": [
+          "200274752",
+          "200276121",
+          "200262062",
+          "200218642",
+          "200178993"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 75,
+        "fuentes": [
+          "interacciones",
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_035821990.1",
+      "descripcion": "glutathione transferase 7 isoform X1",
+      "secuencia": "MSPPVKILGHYASPYSHRVEAALRLKGVPYELVQEDLGNKSELLLAKNPVHKKVPVLLHGDRAVCESLLIVEYVDEAFDGPSILPADPHDRAVARFWANFLDTKPFWLAYWAEGEAQKAVVKEAKENLALLEAQLGGKSFFGGDTPGYLDIAACALGPWIGVLEEVTGVALLDADEFPALCQWARDYSSSEALRPCLPDRDRLVAYFTENKEKYKTFAKATLHQ",
+      "longitud": 224,
+      "especie_donante": "Zea mays",
+      "tipo_donante": "planta",
+      "proteoma_count": 49996,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_N_4"
+        },
+        {
+          "dominio": "GST_C_6"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N_3",
+        "GST_N",
+        "GST_N_2",
+        "GST_C",
+        "GST_C_2",
+        "GST_N_4",
+        "GST_C_6"
+      ],
+      "pre_score": 318,
+      "score_transferencia": 65,
+      "mecanismo": "Glutatión transferasa 7 que cataliza la conjugación de glutatión a metabolitos reactivos, reduciendo el daño oxidativo asociado a la sequía.",
+      "riesgos": [
+        "Posible agotamiento de glutatión bajo estrés prolongado.",
+        "Efectos desconocidos sobre la síntesis de compuestos secundarios de la fresa."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 20,
+        "ids": [
+          "200329265",
+          "200318738",
+          "200207858",
+          "200282587",
+          "200294039"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 35,
+        "fuentes": [
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_024518211.1",
+      "descripcion": "glutathione S-transferase 2",
+      "secuencia": "MRLYTFWGSSCGWRVRLALALKGIPYEYQAVGFANGRLDDEFSKINPLGMVPALETEEDGLLIDSVAIVEYLEEKYPEKPLLPKNVKQRATIRQIVNLVASNIQPLQSGGRVMNMIKEKLGDEERLKWAQHWVVIGFNALEEIVKKTSGKYCFGDTLTLADVFVIPQIGNAERYKVDMTPYPTLRRLKEELHKLEEVRQSVPRLQPDFPTE",
+      "longitud": 211,
+      "especie_donante": "Selaginella moellendorffii",
+      "tipo_donante": "planta",
+      "proteoma_count": 45318,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_C_3"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_N_4"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N_3",
+        "GST_N_2",
+        "GST_N",
+        "GST_C_3",
+        "GST_C_2",
+        "GST_C",
+        "GST_N_4"
+      ],
+      "pre_score": 318,
+      "score_transferencia": 60,
+      "mecanismo": "Glutatión S‑transferasa 2 que mejora la capacidad de detoxificación de especies reactivas y compuestos de estrés, contribuyendo a la tolerancia a la sequía.",
+      "riesgos": [
+        "Riesgo moderado de interferencia con rutas metabólicas propias de la planta.",
+        "Posible carga metabólica por sobreexpresión sostenida."
+      ],
+      "grupo_reino": "planta",
+      "categoria_biotecnologica": "gen_vegetal_transferible",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 0,
+        "ids": []
+      },
+      "soporte_multifuente": {
+        "score": 0,
+        "fuentes": []
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    }
+  ],
+  "candidatos_microorganismo": [
+    {
+      "accession": "XP_024772657.1",
+      "descripcion": "hypothetical protein M431DRAFT_557611",
+      "secuencia": "MATNAIDFYSHRDGPNPWKNIILFEELGIPYNATYLTFGDANGGVEHEDFLKKNPAGRVPWIKDPTTGIELTESNLISEYLVDHYDKKGIFSVEGEQNQLLVKQWLGFQAASQGPFFAQVTLVKRTITTVDRALKGKEYLVGDKITLADLAYIPWDLALDTVLQGDEESATAEGRKKLWPDWFAWHNRVLQRPSVQKMLAIQRKAQGKE",
+      "longitud": 209,
+      "especie_donante": "Trichoderma harzianum",
+      "tipo_donante": "hongo",
+      "proteoma_count": 14065,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_C_3"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_N_4"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N",
+        "GST_N_3",
+        "GST_N_2",
+        "GST_C_3",
+        "GST_C",
+        "GST_C_2",
+        "GST_N_4"
+      ],
+      "pre_score": 318,
+      "score_transferencia": 70,
+      "mecanismo": "GST hipotético de Trichoderma harzianum; aunque de origen fúngico, los GST de esta especie pueden aportar actividad de detoxificación de ROS y de metabolitos de estrés, mejorando la resiliencia hídrica.",
+      "riesgos": [
+        "Riesgo de incorrecto plegamiento o falta de cofactores en células vegetales.",
+        "Posible respuesta inmunológica del huésped contra proteína fúngica."
+      ],
+      "grupo_reino": "microorganismo",
+      "categoria_biotecnologica": "microorganismo_candidato",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 0,
+        "ids": []
+      },
+      "soporte_multifuente": {
+        "score": 0,
+        "fuentes": []
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_024772748.1",
+      "descripcion": "hypothetical protein M431DRAFT_88590",
+      "secuencia": "MAPTLYIADDTCSRAAQLVANELDIEHQLVHFDVFGKSTSSGEDFTAINPLLYVPALKLDNETRDIISETIIICSYFADQKPEAGLVPAAGTLERVKYDQFLVQLATEIAQKHIPLMRKLMTPEGVEFHSNKLQKAYKLLDDRLAKTPYLFGDNLTVADAYVWGTFWNSRSGVDLSHLENLAAWKTRLEARPAAIKTIKDEAEVVAVHKAQIAASA",
+      "longitud": 216,
+      "especie_donante": "Trichoderma harzianum",
+      "tipo_donante": "hongo",
+      "proteoma_count": 14065,
+      "dominios_raw": [
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_C_3"
+        },
+        {
+          "dominio": "GST_C_6"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_N"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_C_2",
+        "GST_N_2",
+        "GST_C",
+        "GST_C_3",
+        "GST_C_6",
+        "GST_N_3",
+        "GST_N"
+      ],
+      "pre_score": 318,
+      "score_transferencia": 65,
+      "mecanismo": "GST hipotética de Trichoderma harzianum posee dominios GST que pueden aportar actividad de detoxificación de ROS y compuestos fenólicos, mejorando la tolerancia al estrés oxidativo asociado a la sequía.",
+      "riesgos": [
+        "Expresión en planta puede requerir adaptación de señal de localización (p.ej., secreción vs citosol).",
+        "Riesgo de respuesta inmunológica o alergenicidad por proteína fúngica."
+      ],
+      "grupo_reino": "microorganismo",
+      "categoria_biotecnologica": "microorganismo_candidato",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 0,
+        "ids": []
+      },
+      "soporte_multifuente": {
+        "score": 0,
+        "fuentes": []
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_024778146.1",
+      "descripcion": "hypothetical protein M431DRAFT_76952",
+      "secuencia": "MDFYFIPDTCALAVHIACHEANIPLQLREIERSPTGLRIKTTTAIPSDYMSLNPKQKVPAMGLPNGSILTETQAILQYIAWELAPAAHNGDLLPKSGLERWRALELLNFITTEIHKAFSPLFNPDMSSKHRERAIKDLGRAFTILQDTLGEKEFLIGQEISVLDCYAWTLLSWTRVFDDVDLAEWPSLVRYRQKILQRPSVQKALEEERLVFVF",
+      "longitud": 214,
+      "especie_donante": "Trichoderma harzianum",
+      "tipo_donante": "hongo",
+      "proteoma_count": 14065,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_C_3"
+        },
+        {
+          "dominio": "GST_C_6"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N_2",
+        "GST_C",
+        "GST_C_2",
+        "GST_N_3",
+        "GST_N",
+        "GST_C_3",
+        "GST_C_6"
+      ],
+      "pre_score": 318,
+      "score_transferencia": 60,
+      "mecanismo": "GST fúngico puede aportar actividad de detoxificación de compuestos fenólicos y ROS, mejorando la tolerancia al estrés oxidativo asociado a la sequía.",
+      "riesgos": [
+        "Posible incorrecta plegadura o glicosilación en planta.",
+        "Riesgo de activar respuestas de defensa contra hongos."
+      ],
+      "grupo_reino": "microorganismo",
+      "categoria_biotecnologica": "microorganismo_candidato",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 0,
+        "ids": []
+      },
+      "soporte_multifuente": {
+        "score": 0,
+        "fuentes": []
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "WP_205251170.1",
+      "descripcion": "MULTISPECIES: glutathione S-transferase family protein",
+      "secuencia": "MGRMIDGDWRTEADMNEHSDDGAFERDTTSFRNWVGDDVPPAAGRYHLYVSYACPWAHRTLLVRALLGLEDAISVSVVDPVRYDQGWTFDPEKPGCTPDHVFGGTHLRDVYTEADPEYTGRVTVPVLYDTDADTIVNNESEEIMRMLDVAFDDHAARDVDLYPEGYRDEVDRLIEDIYDPINNGVYRAGFADSQRAYDNAVDDLFEALAHYDDVLAEQRYLAGDVLTEADVAMFTTLYRFDEVYHTHFKCNRKRISDYDNLWPYLRELCQLPGVADTLYMEHVKQHYYRSHGHLNPKRLVPTGPNPAFFAPHDRDELPGGPPAALDQ",
+      "longitud": 327,
+      "especie_donante": "Halobacterium salinarum",
+      "tipo_donante": "arquea",
+      "proteoma_count": 14624,
+      "dominios_raw": [
+        {
+          "dominio": "GST_C_2"
+        },
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_C_3"
+        },
+        {
+          "dominio": "GST_C_6"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_C_2",
+        "GST_N_2",
+        "GST_C",
+        "GST_N_3",
+        "GST_N_3",
+        "GST_C_3",
+        "GST_C_6"
+      ],
+      "pre_score": 298,
+      "score_transferencia": 60,
+      "mecanismo": "Glutatión S‑transferasa de origen arqueal que podría aportar actividad detoxificante frente a ROS, aunque su cinética y especificidad difieren de las GST vegetales.",
+      "riesgos": [
+        "Posible incorrecta plegadura o falta de cofactores en células vegetales.",
+        "Riesgo inmunogénico o toxicidad por productos intermedios no nativos."
+      ],
+      "grupo_reino": "microorganismo",
+      "categoria_biotecnologica": "microorganismo_candidato",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 0,
+        "ids": []
+      },
+      "soporte_multifuente": {
+        "score": 0,
+        "fuentes": []
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_024773116.1",
+      "descripcion": "hypothetical protein M431DRAFT_509707",
+      "secuencia": "MSDPTYTIYSYFRSSCSARLRMVLNLKGIEYELIPVNLLKNEHLTSEHKARNPTATVPLLIRTAGDGSVFKIGQSVAAIEFLEETHPQGHHILPPASNPEARAATRALAGIIACDLQPVTNMKIMKRLRAMGANAEQWNKEIMTEILEAYESAVKDWAGEYSVGDEITLADVCLLPAVWNAQRYGVDLDQFPIITRISEKLGQHPAIIKAHWQNQPDTPEELRAK",
+      "longitud": 225,
+      "especie_donante": "Trichoderma harzianum",
+      "tipo_donante": "hongo",
+      "proteoma_count": 14065,
+      "dominios_raw": [
+        {
+          "dominio": "GST_N_2"
+        },
+        {
+          "dominio": "GST_N"
+        },
+        {
+          "dominio": "GST_N_3"
+        },
+        {
+          "dominio": "GST_C"
+        },
+        {
+          "dominio": "GST_C_3"
+        },
+        {
+          "dominio": "GST_C_2"
+        }
+      ],
+      "dominios_relevantes": [
+        "GST_N_2",
+        "GST_N",
+        "GST_N_3",
+        "GST_C",
+        "GST_C_3",
+        "GST_C_2"
+      ],
+      "pre_score": 273,
+      "score_transferencia": 60,
+      "mecanismo": "Proteína hipotética con dominios GST de Trichoderma harzianum puede aportar actividad de conjugación de glutatión que protege contra el daño oxidativo inducido por sequía y potencialmente secreta compuestos protectores al entorno radicular.",
+      "riesgos": [
+        "Posible glicosilación o plegamiento incorrecto en células vegetales",
+        "Riesgo de respuesta inmunológica o alergenicidad"
+      ],
+      "grupo_reino": "microorganismo",
+      "categoria_biotecnologica": "microorganismo_candidato",
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": [],
+        "estado": "NOVEL",
+        "consultado": true,
+        "error": ""
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 0,
+        "ids": []
+      },
+      "soporte_multifuente": {
+        "score": 0,
+        "fuentes": []
+      },
+      "tiene_ortologo": "no_se",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    }
+  ],
+  "genes_brazo_a": [
+    {
+      "simbolo": "LOC105349251",
+      "descripcion": "heat shock 70 kDa protein-like"
+    },
+    {
+      "simbolo": "LOC101312933",
+      "descripcion": "heat shock cognate 70 kDa protein-like"
+    },
+    {
+      "simbolo": "LOC101312639",
+      "descripcion": "heat shock cognate 70 kDa protein-like"
+    },
+    {
+      "simbolo": "LOC101297476",
+      "descripcion": "heat shock cognate 70 kDa protein 2-like"
+    },
+    {
+      "simbolo": "LOC101294000",
+      "descripcion": "heat shock 70 kDa protein"
+    },
+    {
+      "simbolo": "LOC101291669",
+      "descripcion": "heat shock cognate 70 kDa protein 2-like"
+    },
+    {
+      "simbolo": "LOC101291093",
+      "descripcion": "heat shock cognate 70 kDa protein 2"
+    },
+    {
+      "simbolo": "LOC101314995",
+      "descripcion": "18.1 kDa class I heat shock protein-like"
+    },
+    {
+      "simbolo": "LOC101314220",
+      "descripcion": "18.1 kDa class I heat shock protein-like"
+    },
+    {
+      "simbolo": "LOC101313245",
+      "descripcion": "15.7 kDa heat shock protein, peroxisomal"
+    }
+  ],
+  "nota": "Busqueda trans-especie V5.0 orquestada por LLM. Validacion experimental requerida."
+}

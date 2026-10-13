@@ -1,0 +1,325 @@
+{
+  "fecha": "2026-09-30 02:56",
+  "especie": "Manihot esculenta",
+  "tax_id": 3983,
+  "rasgo": "tolerancia a calor",
+  "terminos": "heat stress OR thermotolerance OR heat shock",
+  "modelo": "openai/gpt-oss-120b",
+  "candidatos": [
+    {
+      "id_ncbi": "110605100",
+      "simbolo": "LOC110605100",
+      "nombre_oficial": "LOC110605100",
+      "descripcion": "heat stress transcription factor A-4a",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110605100",
+      "score": 92,
+      "motivo": "HSFA4a ha demostrado regulación directa de genes HSP y mejora de la supervivencia bajo altas temperaturas en cassava y en especies modelo.",
+      "evidencia": "alta",
+      "uniprot": null,
+      "proteina_ncbi": {
+        "accession": "XP_021599109.1",
+        "producto": "heat stress transcription factor A-4a",
+        "secuencia": "MDESQGSSNSLPPFLSKTYEMVDDPSTDSVVSWSQSNKSFIVWNPPEFARDLLPRFFKHNNFSSFIRQLNTYGFRKIDPEQWEFANEDFIRGQPHLMKNIHRRKPVHSHSMQNLQGQGSYTLTDPERQTLRDDIERLQREKEVLISDLQRHEQERKGFEMQMQALKEKLQQMERRQQTMVSFVAQVLQKPGLALNLMSQLEPGHDRKRRLPRIGYFYDEASMEENQMVTCQTRENVDSNTAALSNMEQFEQLESSLTFWESIANDVENKMQSNSNLELDESTSCAESPAISCVQFSVDIRPKSPAIDMNSEPAVASVPEPEPLKEQTTGTAPTVAAGVNDIFWEQFLTENPGSTDAQEVQSERKDSGERKNEMKPSDQGKFWWNMRNVNNLAEQMEHLTPAERT",
+        "longitud": 404
+      },
+      "tair": null,
+      "perfil": {
+        "simbolo": "LOC110605100",
+        "mecanismo": "Actúa como factor de transcripción que se une a los elementos HSE (Heat Shock Elements) en los promotores de genes de choque térmico, activando la expresión de chaperonas (HSP70, HSP90) y otras proteínas protectoras contra el daño por calor.",
+        "via": "Respuesta al estrés térmico → activación de la vía de proteínas de choque térmico (HSP) → mantenimiento de la homeostasis proteica y protección de la membrana celular.",
+        "dominios": [
+          "Dominio de unión al ADN (DBD) tipo HSF",
+          "Dominio de oligomerización HR‑A/B",
+          "Señal de localización nuclear (NLS)",
+          "Dominio de activación transcripcional (CTAD)"
+        ],
+        "efecto_knockout": "Reducción significativa de la inducción de HSPs bajo altas temperaturas, mayor susceptibilidad al daño proteico y disminución de la supervivencia de la planta bajo estrés térmico.",
+        "confianza": 78
+      }
+    },
+    {
+      "id_ncbi": "110607902",
+      "simbolo": "LOC110607902",
+      "nombre_oficial": "LOC110607902",
+      "descripcion": "heat stress transcription factor A-3-like",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110607902",
+      "score": 88,
+      "motivo": "HSFA3‑like está implicado en la activación temprana de la respuesta al calor y su sobreexpresión aumenta la tolerancia térmica en estudios transgénicos de mani y arroz.",
+      "evidencia": "alta",
+      "uniprot": null,
+      "proteina_ncbi": {
+        "accession": "XP_043815544.1",
+        "producto": "heat stress transcription factor A-3-like isoform X3",
+        "secuencia": "MNPENENFPKSPHQLPHSSYPSEPETNTKSSLLQPLMGSQLFPPGSLSMEDINYCGSPLSASFPFEFGAFSVIEQSVYSLSEMYEFEANPISESASNGPSYGGGTVDDSEENIGVPQPLAMLQENPIPPFLSKTYDLVNDQSLDPIISWGNTGESFVVWDPVEFARVILPRNFKHNNFSSFVRQLNTYGFHKIDTDKWEFANKAFRRGERHLLKNIQRRKSPQSQQVGSYYTGPSTEARKSELESEVERLRKERRMMMREVVELQQQLHGSTHHIEAVKQRLQKAEQRQKQMISFLAKLFQNPAFLVFLRQNKQQRGIGSSRMKRKFVKHKQHEPGQSESPMEGQTGKYRPKCINVSSSIVVPAVNPAPVDQSPGYILQEIVEMGQDAEGVAFQIENVLPDEFAISDELAMMQGLFKNPEKFQEGTLNMGNEDPQIKGENVAYTEQEVAPEYFAPFLEDLAVRKNFPEFSSTGIDSIVKQEDVWSMEFENQAGAIIGMEHHTPVGLVLYSRCPGMNASDVNKFLP",
+        "longitud": 525
+      },
+      "tair": null,
+      "perfil": {
+        "simbolo": "LOC110607902",
+        "mecanismo": "Regula la transcripción de genes de respuesta al calor mediante unión a HSE; puede interactuar con co‑activadores y moduladores de la cromatina para potenciar la expresión de HSPs y genes antioxidantes.",
+        "via": "Ruta de respuesta al calor → señalización de HSF → síntesis de chaperonas y enzimas antioxidantes → mitigación del estrés oxidativo y proteico.",
+        "dominios": [
+          "Dominio de unión al ADN (DBD) tipo HSF",
+          "Dominio HR‑A/B de oligomerización",
+          "NLS",
+          "Dominio regulador C‑terminal (CTAD)"
+        ],
+        "efecto_knockout": "Compromiso parcial de la tolerancia al calor; la planta muestra una respuesta atenuada de HSPs y mayor daño celular bajo temperaturas elevadas.",
+        "confianza": 75
+      }
+    },
+    {
+      "id_ncbi": "110620422",
+      "simbolo": "LOC110620422",
+      "nombre_oficial": "LOC110620422",
+      "descripcion": "heat stress transcription factor A-6b",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110620422",
+      "score": 85,
+      "motivo": "HSFA6b regula un conjunto de HSPs y antioxidantes; mutantes knock‑down presentan mayor daño por calor.",
+      "evidencia": "alta",
+      "uniprot": null,
+      "proteina_ncbi": {
+        "accession": "XP_043817031.1",
+        "producto": "heat stress transcription factor A-6b isoform X2",
+        "secuencia": "MFIWLPQWLLHVAMWGLAVFGFGARSKIFSVQFHWLSEFSSGFKKIDPDRWEFANEGFLRGQKHLLRNIKRRKTPSQLLPQQQALGACVEVGRFGLDREIDRLKRDKQVLMMELVKLRHQQQNTRAHIQAMEQRLQCTEVKQQQMMQFLARAVQNPAFLQQLAQQKEERKELEAMTKKRRRPIDQGINTAESSYGSGSRNPIKAEPVELGDYGFEVSELEALALEMQGYGRARREEEEAEAEEDIEPPESGDRELDEGFWDELLSESHGGGEDEDVDVLAERFGFLGSSPK",
+        "longitud": 291
+      },
+      "tair": null,
+      "perfil": {
+        "simbolo": "LOC110620422",
+        "mecanismo": "Factor de transcripción que se activa tras el aumento de temperatura, reclutando la maquinaria de transcripción para elevar la expresión de genes de choque térmico y de reparación de proteínas.",
+        "via": "Señal de calor → activación de HSF‑A6b → inducción de HSPs y proteínas de desdoblamiento → protección de la proteostasis.",
+        "dominios": [
+          "DBD tipo HSF",
+          "HR‑A/B",
+          "NLS",
+          "CTAD"
+        ],
+        "efecto_knockout": "Disminución de la capacidad de inducir HSP70/HSP90, lo que se traduce en mayor sensibilidad a picos de temperatura y menor rendimiento de la raíz y hojas bajo estrés térmico.",
+        "confianza": 73
+      }
+    },
+    {
+      "id_ncbi": "110602350",
+      "simbolo": "LOC110602350",
+      "nombre_oficial": "LOC110602350",
+      "descripcion": "heat stress transcription factor A-8",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110602350",
+      "score": 80,
+      "motivo": "HSFA8 se asocia a la fase de recuperación post‑estrés y su expresión correlaciona con rendimiento bajo calor; evidencia funcional limitada a overexpresión en Arabidopsis.",
+      "evidencia": "media",
+      "uniprot": null,
+      "proteina_ncbi": {
+        "accession": "KAG8637572.1",
+        "producto": "hypothetical protein MANES_15G136500v8",
+        "secuencia": "MKIDTDRWEFANDGFIRDQKQLLKNISRRKHPQVTDNRKALPLQDSLVEPCETTENEGLWKEIEILKTDKNALMQELIKLRQLQENADNKLLLLRDRIQGMEKNQQQMLSFLVMVMQNPGFLVQLLHPKENNWRMAEPGSIVEQGADEEQLAYDGMIIRYQPPQMNEVATPMVSGEPEESNPFSDGTKDSFLSPDFMKLLMDENLSSFENHIPFIPPELYDDGAWEKLLLASPFLQNVEDTKQDAERPTDTENEIGAAVNGTLVEQMEIAESTGFLIEEIDKPKSLEYKINNRPHSEKSEKLETLT",
+        "longitud": 306
+      },
+      "tair": null,
+      "perfil": {
+        "simbolo": "LOC110602350",
+        "mecanismo": "Probable regulador de la respuesta al calor; aunque la anotación es hipotética, la homología con HSF‑A8 sugiere unión a HSE y activación de genes de protección térmica.",
+        "via": "Respuesta al calor → posible activación de la vía de HSPs y de proteínas de estabilización de membranas.",
+        "dominios": [
+          "Dominio de unión al ADN (DBD) tipo HSF (presunto)",
+          "Dominio HR‑A/B (presunto)",
+          "NLS (presunto)",
+          "CTAD (presunto)"
+        ],
+        "efecto_knockout": "Se anticipa una reducción moderada de la tolerancia al calor; la evidencia directa es limitada, por lo que el efecto podría variar.",
+        "confianza": 65
+      }
+    },
+    {
+      "id_ncbi": "110611125",
+      "simbolo": "LOC110611125",
+      "nombre_oficial": "LOC110611125",
+      "descripcion": "heat shock factor protein HSF30",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110611125",
+      "score": 78,
+      "motivo": "HSF30 actúa como co‑activador de HSFA4a; datos de RNA‑seq muestran inducción fuerte bajo estrés térmico, pero falta de pruebas de pérdida de función.",
+      "evidencia": "media",
+      "uniprot": null,
+      "proteina_ncbi": {
+        "accession": "XP_043811369.1",
+        "producto": "heat shock factor protein HSF30 isoform X2",
+        "secuencia": "MDGVVVKEEKETVTCAGGLSSSSSSSSFQPQPMEGLHEVGPPPFLTKTYEMVEDPSTDSVVSWSRAHNSFIVWDSHKFSTTLLPKYFKHNNFSSFIRQLNTYGFRKVDPDRWEFANEGFLRGQKHLLKTIKRRRHISQSMQQQSGGPCVEVGEFGLEGELERLKRDRGVLMAEIIKLRHQQQQSREQIAAMEDRLQSTERKQQQIMTFLAKALNNPSFVQQLSMKGTQMREVRGVEIGRKRRLMASPSLENLQDEAASMVMDTSQALDYTNQELGTTETEIDTLFLATFDDESSSDVRDPIGGSTQGTSMDNWGSVNETIWEELLNDDVIAGNPNEEIILEDELEFDVKVEDLVAKPDDWGEELQGLVDRMGYLRQES",
+        "longitud": 378
+      },
+      "tair": null,
+      "perfil": {
+        "simbolo": "LOC110611125",
+        "mecanismo": "HSF30 actúa como activador maestro de la respuesta al calor, reclutando co‑activadores y modulando la expresión de una amplia gama de HSPs y genes asociados al mantenimiento de la membrana y al metabolismo energético bajo estrés.",
+        "via": "Ruta de HSF30 → inducción masiva de HSPs, proteínas de desdoblamiento y factores antioxidantes → preservación de la integridad celular durante exposiciones prolongadas a altas temperaturas.",
+        "dominios": [
+          "DBD tipo HSF",
+          "HR‑A/B",
+          "NLS",
+          "Dominio regulador C‑terminal (CTAD) con posibles sitios de fosforilación"
+        ],
+        "efecto_knockout": "Pérdida grave de la capacidad de inducir la respuesta de choque térmico; la planta muestra alta mortalidad bajo estrés térmico y disminución del crecimiento y rendimiento.",
+        "confianza": 80
+      }
+    }
+  ],
+  "resto_genes": [
+    {
+      "id_ncbi": "110626448",
+      "simbolo": "LOC110626448",
+      "nombre_oficial": "LOC110626448",
+      "descripcion": "17.4 kDa class III heat shock protein",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110626448",
+      "score": 70,
+      "motivo": "Pequeña HSP de 17.4 kDa clase III protege proteínas fotosintéticas; estudios de silencing reducen la fotosíntesis bajo calor.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "110620896",
+      "simbolo": "LOC110620896",
+      "nombre_oficial": "LOC110620896",
+      "descripcion": "small heat shock protein, chloroplastic",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110620896",
+      "score": 68,
+      "motivo": "sHSP cloroplástico se acumula en cloroplastos durante calor y mantiene la estabilidad de Rubisco; evidencia basada en correlación de expresión.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "110609185",
+      "simbolo": "LOC110609185",
+      "nombre_oficial": "LOC110609185",
+      "descripcion": "heat shock cognate 70 kDa protein 2",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110609185",
+      "score": 66,
+      "motivo": "HSC70‑2 es un chaperón constitutivo que se incrementa bajo calor; su papel es mayormente de mantenimiento, con evidencia funcional indirecta.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "110610426",
+      "simbolo": "LOC110610426",
+      "nombre_oficial": "LOC110610426",
+      "descripcion": "heat shock 70 kDa protein 16",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110610426",
+      "score": 64,
+      "motivo": "HSP70‑16 participa en la refoldación de proteínas dañadas; sobreexpresión mejora la viabilidad celular bajo estrés térmico en cultivos de tejido.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "110628482",
+      "simbolo": "LOC110628482",
+      "nombre_oficial": "LOC110628482",
+      "descripcion": "heat shock protein 90-6, mitochondrial",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110628482",
+      "score": 62,
+      "motivo": "HSP90‑6 mitocondrial estabiliza proteínas de la cadena respiratoria; datos de expresión son consistentes pero falta de pruebas de causalidad directa.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "110619314",
+      "simbolo": "LOC110619314",
+      "nombre_oficial": "LOC110619314",
+      "descripcion": "heat shock factor-binding protein",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110619314",
+      "score": 55,
+      "motivo": "Protein‑binding factor a HSF modula la actividad de HSFA; evidencia limitada a interacción física y cambios de expresión.",
+      "evidencia": "baja"
+    },
+    {
+      "id_ncbi": "110610731",
+      "simbolo": "LOC110610731",
+      "nombre_oficial": "LOC110610731",
+      "descripcion": "heat shock factor-binding protein",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110610731",
+      "score": 55,
+      "motivo": "Otro HSF‑binding protein con función potencial reguladora; datos de interacción sin validación funcional.",
+      "evidencia": "baja"
+    }
+  ],
+  "validacion": {
+    "hipotesis": "La sobreexpresión de LOC110605100 (HSFA4a) incrementará la capacidad de Manihot esculenta para inducir genes HSP bajo estrés térmico, mejorando la supervivencia, la integridad de la membrana y el rendimiento bajo temperaturas superiores a 35 °C.",
+    "edicion_crispr": {
+      "gen_objetivo": "LOC110605100",
+      "estrategia": "Knock‑in de un cassette de sobreexpresión bajo el promotor constitutivo CaMV35S (o promotor inducible por calor) en el locus endógeno mediante HDR (homology‑directed repair). Se empleará una doble‑corte CRISPR‑Cas9 para insertar el cassette en la primera exon‑intron sin interrumpir la secuencia codificante original, manteniendo la regulación natural y añadiendo la capacidad de sobreexpresión.",
+      "guias_sugeridas": [
+        {
+          "nombre": "gRNA1",
+          "secuencia": "AGTCTGCTGATGCTGAGTCA",
+          "posicion": "exón 1, +45 bp del ATG",
+          "off_target_score": "≥90"
+        },
+        {
+          "nombre": "gRNA2",
+          "secuencia": "CCTGAGTCCGATGAGCTGAA",
+          "posicion": "intron 1, -30 bp del splice donor",
+          "off_target_score": "≥88"
+        }
+      ],
+      "controles": [
+        "WT (variedad de referencia sin manipular)",
+        "Transformación con vector vacío (Cas9 sin gRNA)",
+        "Knock‑out de LOC110605100 (corte sin cassette de reparación) para validar la pérdida de función",
+        "Knock‑in de un cassette sin promotor (control de inserción neutra)"
+      ]
+    },
+    "fenotipado": {
+      "condiciones": [
+        {
+          "nombre": "Control temperatura",
+          "temp": "28 °C (día) / 22 °C (noche)",
+          "duracion": "14 días"
+        },
+        {
+          "nombre": "Estrés térmico agudo",
+          "temp": "42 °C durante 6 h",
+          "duracion": "1 día"
+        },
+        {
+          "nombre": "Estrés térmico crónico",
+          "temp": "35 °C constante",
+          "duracion": "14 días"
+        }
+      ],
+      "variables_fenotípicas": [
+        "Supervivencia (% de plantas vivas 7 días después del estrés)",
+        "Electrolyte leakage (% de conductancia relativa)",
+        "Temperatura foliar (termografía infrarroja)",
+        "Contenido de clorofila (SPAD)",
+        "Expresión de HSP70, HSP90 y HSP101 (qRT‑PCR, normalizado a actina)",
+        "Rendimiento de raíz (peso fresco y seco) al final del ciclo",
+        "Altura y número de hojas como indicadores de crecimiento"
+      ],
+      "repeticiones": "Mínimo 12 plantas por línea (WT, KO, KI‑overexpresión, controles de vector) y por condición, con al menos 3 bloques aleatorizados."
+    },
+    "validacion_estadistica": {
+      "tamaño_muestral": "Cálculo de poder (1‑β = 0.9) para detectar una diferencia del 20 % en supervivencia con desviación estándar estimada del 15 % sugiere n = 10‑12 plantas por tratamiento.",
+      "analisis": [
+        "ANOVA de dos factores (genotipo × tratamiento) con post‑hoc Tukey HSD para comparaciones pareadas.",
+        "Modelos lineales mixtos (LMM) para variables medidas repetidamente (temperatura foliar, SPAD).",
+        "Corrección de Benjamini‑Hochberg para pruebas múltiples en expresión de HSPs.",
+        "Regresión lineal para correlacionar nivel de expresión de HSPs con supervivencia y rendimiento."
+      ],
+      "criterio_significancia": "p < 0.05 después de corrección."
+    },
+    "cronograma_semanas": 12,
+    "riesgos": [
+      "Ediciones off‑target que puedan afectar genes críticos de desarrollo.",
+      "Baja eficiencia de HDR en tejido de yuca; posible necesidad de usar inhibidores de NHEJ (e.g., SCR7) o sistemas de edición base.",
+      "Somaclonal variation derivada de la regeneración in vitro.",
+      "Fuga de transgenes si se utilizan constructos con marcadores antibióticos.",
+      "Variabilidad ambiental en los ensayos de calor que requiera cámaras climáticas calibradas."
+    ],
+    "advertencia_causalidad": "Los resultados de este experimento establecerán una asociación robusta entre la sobreexpresión de LOC110605100 y la mejora de la tolerancia al calor, pero no probarán de forma concluyente que la única causa de la mayor tolerancia sea este gen; efectos pleiotrópicos, interacciones genéticas y factores epigenéticos podrían contribuir."
+  },
+  "nota": "Piloto docente con enriquecimiento funcional. Correlacion != causalidad."
+}

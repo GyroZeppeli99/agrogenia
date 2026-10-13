@@ -1,0 +1,13 @@
+FASE 0-3 · (sin cambios: orquestación, resolución, ingesta, dominios)
+FASE 4   · Priorización LLM (sin cambios)
+FASE 5   · 🆕 VALIDACIÓN MULTI-FUENTE (Europe PMC + STRING + GEO)
+FASE 6   · Compatibilidad (antes FASE 5)
+FASE 7   · Diseño de constructo (antes FASE 6)
+FASE 8   · Brazo A (antes FASE 7)
+
+
+# Verificar sintaxis
+python -c "import ast; ast.parse(open('pipeline_v4.2_validacion.py').read()); print('Sintaxis OK')"
+
+# Ejecutar
+python pipeline_v4.2_validacion.py --rasgo "tolerancia a sequia" --receptora yuca --salida v42_sequia

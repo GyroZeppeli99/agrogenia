@@ -1,0 +1,1856 @@
+{
+  "fecha": "2026-09-30 20:08",
+  "especie": "Manihot esculenta",
+  "tax_id": 3983,
+  "rasgo": "tolerancia a sequia",
+  "terminos_brazo_a": "drought OR dehydration OR water deficit OR desiccation OR ABA",
+  "modelo": "openai/gpt-oss-120b",
+  "version": "3.2",
+  "embudo": {
+    "total": 59151,
+    "excluidas": 27682,
+    "candidatas": 31469,
+    "nivel_filtro": 3,
+    "loci_unicos": 31469,
+    "escaneadas_hmmer": 500,
+    "con_dominios": 68,
+    "uso_hmmer": true
+  },
+  "noveles": [
+    {
+      "accession": "Manes.07G008990.1.p",
+      "descripcion": "pacid=50263347 transcript=Manes.07G008990.1 locus=Manes.07G008990 ID=Manes.07G008990.1.v8.1 annot-version=v8.1",
+      "secuencia": "MADGVLSNVVGNIITKLGSRALDEIGLWWGVKGELKKLDATVSSIRNVLLDAEEQQKLNRQVKGWLERLEEVVYDADDLIDDFATEALRRRVMTGNRMTKEVSLFFSSSNQLVYGFKMGHKIKVIRESLADIQGDRNFNLEVRTDQERIVWRDQTESSLPEVVIGREGDKNAITELVLSNSEESVSILSIVGIGGLGKTTLAQIIFNDELIKNSFERRIWVCVSDPFNVKMIVRKILESATEKKPEDLELEALKSQLGRIIDGKKYLLVLDDVWNENREQWQNLKRLLVGGSSGSKILITTRSKKVADIPSTMAPHVLEGLSPDESWFLFLRVALEGQVPKNANAREIGEEILKKCCGVPLAIKTIAGLL*",
+      "longitud": 371,
+      "locus_base": "Manes.07G008990",
+      "dominios_raw": [
+        {
+          "dominio": "NB-ARC",
+          "accession": "PF00931.26"
+        },
+        {
+          "dominio": "Rx_N",
+          "accession": "PF18052.5"
+        },
+        {
+          "dominio": "AAA_22",
+          "accession": "PF13401.10"
+        },
+        {
+          "dominio": "AAA_16",
+          "accession": "PF13191.10"
+        },
+        {
+          "dominio": "NACHT",
+          "accession": "PF05729.16"
+        }
+      ],
+      "dominios_estres": [
+        {
+          "dominio": "NACHT",
+          "funcion": "familia NAC, senescencia y estres"
+        }
+      ],
+      "score_novel": 84,
+      "pista": "dominio NACHT (NOD‑like receptor) asociado a señalización de estrés",
+      "especulacion": "media",
+      "estructura": {
+        "fuente": "ESMAtlas (verificar)",
+        "url": "https://esmatlas.com/search?q=Manes.07G008990.1.p"
+      },
+      "menciones_pmc": 0,
+      "es_novel": true
+    },
+    {
+      "accession": "Manes.06G051300.1.p",
+      "descripcion": "pacid=50266246 transcript=Manes.06G051300.1 locus=Manes.06G051300 ID=Manes.06G051300.1.v8.1 annot-version=v8.1",
+      "secuencia": "MCSFFGLEMDNYQGDLTDIVRGSAGALGQSDISPVSNWEFPSDPLSLSSSSSAMEDNRDNVFGDPFVNMRDPLLYELNVAAGSGYFSSSNSTDHMLSTSLEDISNDFSGANTSNILAHKVFEEEMDKNPCNIFSRIQISQNNPTKLPASPCDSPVVASASASASSSSPRGFKASMVSIDMINTNISKTCLIDNAGPVQISSPRNLGIKRRKSQAKKVVCIPAPAAANSRPSSGEVVPSDLWAWRKYGQKPIKGSPYPRGYYRCSSSKGCSARKQVERSRTDPNMLVITYTSEHNHPWPTQRNALAGSTRSQPLKNNAGASKSSPSSQAQKTTNTKEEQKESNNDTLSPTFVCGSSTASTSVKEEIEDIEKQMEMDDANQFSEGFPYRPAIQADSNQSEDFFADLGGIETDPLDLLFSQGFTPDEQKESKALDPFGFFNWPGDTNTTTTTTTPNNNNNNNISFGETKRDS*",
+      "longitud": 470,
+      "locus_base": "Manes.06G051300",
+      "dominios_raw": [
+        {
+          "dominio": "WRKY",
+          "accession": "PF03106.19"
+        }
+      ],
+      "dominios_estres": [
+        {
+          "dominio": "WRKY",
+          "funcion": "factor WRKY, defensa"
+        }
+      ],
+      "score_novel": 82,
+      "pista": "dominio WRKY, factor de transcripción clásico en respuesta a sequía",
+      "especulacion": "baja",
+      "estructura": {
+        "fuente": "ESMAtlas (verificar)",
+        "url": "https://esmatlas.com/search?q=Manes.06G051300.1.p"
+      },
+      "menciones_pmc": 0,
+      "es_novel": true
+    },
+    {
+      "accession": "Manes.07G043100.5.p",
+      "descripcion": "pacid=50263827 transcript=Manes.07G043100.5 locus=Manes.07G043100 ID=Manes.07G043100.5.v8.1 annot-version=v8.1",
+      "secuencia": "MGIMGSFFKFSGHCFDVLAWPLFALVYPLYASIQAIETNSISDTQKLISYWVCFSLILLFENAFSELLECLPWWTYIKVLIVGCLVTPHFEGSLYVYKHIVHPCLSIDLHVLLNELVNVMAVLKQEKVLAEAKNAKDTAGEALQNLTALKPEFEESKGVQKDISSVEMTENQKLALTKQPEFEVSKVVQKDISSMEITKSQESALTKQLQFGQLEPDFTPSGNRTTAPLDFTGTTPTWFAARGLPDVLLPSNNVQNEWTCAVCQVTTPSEADLISHLHGRRHESACEKLKAYNQTSKSKVSSASAMENANAAESRGNSPDTKQTHKPWTCATCHVTTTNKADLVSHFQGSRHKDALEKLTAKFQTSENKTHSALAAIAGDVPNIPWTCAVCQVTTTSEADLISHLHGRRHESACEKLKAYNQTSKRKVSSASAMENANAAESRGNSPDTKQTHKPWTCATCHVTTTNKADLVSHFQGLRHEDALEKLKAKFQTSEDKTNSALAAIAGRDVPNIPWTCAVCQLKITNLASLVSHLEGRRHEDACNSYQAKIKSIKSWWCTICNISCSSEGNMKSHLMGSKHLTNARAQQQT*",
+      "longitud": 591,
+      "locus_base": "Manes.07G043100",
+      "dominios_raw": [
+        {
+          "dominio": "zf-met",
+          "accession": "PF12874.11"
+        },
+        {
+          "dominio": "zf-met",
+          "accession": "PF12874.11"
+        },
+        {
+          "dominio": "zf-met",
+          "accession": "PF12874.11"
+        },
+        {
+          "dominio": "zf-met",
+          "accession": "PF12874.11"
+        },
+        {
+          "dominio": "zf-met",
+          "accession": "PF12874.11"
+        },
+        {
+          "dominio": "zf-met",
+          "accession": "PF12874.11"
+        },
+        {
+          "dominio": "TB2_DP1_HVA22",
+          "accession": "PF03134.23"
+        },
+        {
+          "dominio": "zf-C2H2_jaz",
+          "accession": "PF12171.12"
+        },
+        {
+          "dominio": "zf-C2H2_jaz",
+          "accession": "PF12171.12"
+        },
+        {
+          "dominio": "zf-C2H2_jaz",
+          "accession": "PF12171.12"
+        },
+        {
+          "dominio": "zf-C2H2_jaz",
+          "accession": "PF12171.12"
+        },
+        {
+          "dominio": "zf-C2H2_2",
+          "accession": "PF12756.11"
+        },
+        {
+          "dominio": "zf-C2H2_2",
+          "accession": "PF12756.11"
+        },
+        {
+          "dominio": "zf-C2H2_2",
+          "accession": "PF12756.11"
+        },
+        {
+          "dominio": "zf-C2H2_2",
+          "accession": "PF12756.11"
+        },
+        {
+          "dominio": "zf-C2H2_2",
+          "accession": "PF12756.11"
+        },
+        {
+          "dominio": "SLATT_1",
+          "accession": "PF18181.5"
+        },
+        {
+          "dominio": "zf-C2H2",
+          "accession": "PF00096.30"
+        }
+      ],
+      "dominios_estres": [
+        {
+          "dominio": "zf-C2H2_jaz",
+          "funcion": "dominio C2, senalizacion calcio/ABA"
+        },
+        {
+          "dominio": "zf-C2H2_jaz",
+          "funcion": "dedo de zinc, regulacion transcripcional"
+        },
+        {
+          "dominio": "zf-C2H2_jaz",
+          "funcion": "dominio C2, senalizacion calcio/ABA"
+        },
+        {
+          "dominio": "zf-C2H2_jaz",
+          "funcion": "dedo de zinc, regulacion transcripcional"
+        },
+        {
+          "dominio": "zf-C2H2_jaz",
+          "funcion": "dominio C2, senalizacion calcio/ABA"
+        },
+        {
+          "dominio": "zf-C2H2_jaz",
+          "funcion": "dedo de zinc, regulacion transcripcional"
+        },
+        {
+          "dominio": "zf-C2H2_jaz",
+          "funcion": "dominio C2, senalizacion calcio/ABA"
+        },
+        {
+          "dominio": "zf-C2H2_jaz",
+          "funcion": "dedo de zinc, regulacion transcripcional"
+        },
+        {
+          "dominio": "zf-C2H2_2",
+          "funcion": "dominio C2, senalizacion calcio/ABA"
+        },
+        {
+          "dominio": "zf-C2H2_2",
+          "funcion": "dedo de zinc, regulacion transcripcional"
+        },
+        {
+          "dominio": "zf-C2H2_2",
+          "funcion": "dominio C2, senalizacion calcio/ABA"
+        },
+        {
+          "dominio": "zf-C2H2_2",
+          "funcion": "dedo de zinc, regulacion transcripcional"
+        },
+        {
+          "dominio": "zf-C2H2_2",
+          "funcion": "dominio C2, senalizacion calcio/ABA"
+        },
+        {
+          "dominio": "zf-C2H2_2",
+          "funcion": "dedo de zinc, regulacion transcripcional"
+        },
+        {
+          "dominio": "zf-C2H2_2",
+          "funcion": "dominio C2, senalizacion calcio/ABA"
+        },
+        {
+          "dominio": "zf-C2H2_2",
+          "funcion": "dedo de zinc, regulacion transcripcional"
+        },
+        {
+          "dominio": "zf-C2H2_2",
+          "funcion": "dominio C2, senalizacion calcio/ABA"
+        },
+        {
+          "dominio": "zf-C2H2_2",
+          "funcion": "dedo de zinc, regulacion transcripcional"
+        },
+        {
+          "dominio": "zf-C2H2",
+          "funcion": "dominio C2, senalizacion calcio/ABA"
+        },
+        {
+          "dominio": "zf-C2H2",
+          "funcion": "dedo de zinc, regulacion transcripcional"
+        }
+      ],
+      "score_novel": 80,
+      "pista": "múltiples dominios zf‑C2H2_jaz, zinc‑finger reguladores de estrés hídrico",
+      "especulacion": "media",
+      "estructura": {
+        "fuente": "ESMAtlas (verificar)",
+        "url": "https://esmatlas.com/search?q=Manes.07G043100.5.p"
+      },
+      "menciones_pmc": 0,
+      "es_novel": true
+    },
+    {
+      "accession": "Manes.05G061300.1.p",
+      "descripcion": "pacid=50279322 transcript=Manes.05G061300.1 locus=Manes.05G061300 ID=Manes.05G061300.1.v8.1 annot-version=v8.1",
+      "secuencia": "MARSFSNAKFLSAFITKTINGRGFSAAAPQGVVPNVPKGGASTVKKIAEEKIASSEKVAWIPDPRTGCYRPENVAKEIDAAELRAMLLKKH*",
+      "longitud": 92,
+      "locus_base": "Manes.05G061300",
+      "dominios_raw": [
+        {
+          "dominio": "LEA_3",
+          "accession": "PF03242.17"
+        }
+      ],
+      "dominios_estres": [
+        {
+          "dominio": "LEA_3",
+          "funcion": "proteinas LEA, deshidratacion"
+        }
+      ],
+      "score_novel": 78,
+      "pista": "dominio LEA_3, proteína de respuesta a deshidratación",
+      "especulacion": "baja",
+      "estructura": {
+        "fuente": "ESMAtlas (verificar)",
+        "url": "https://esmatlas.com/search?q=Manes.05G061300.1.p"
+      },
+      "menciones_pmc": 0,
+      "es_novel": true
+    },
+    {
+      "accession": "Manes.14G092100.1.p",
+      "descripcion": "pacid=50260150 transcript=Manes.14G092100.1 locus=Manes.14G092100 ID=Manes.14G092100.1.v8.1 annot-version=v8.1",
+      "secuencia": "MSTSKNYYSSLLKFCCEDRSQIQAKRLHCHIIKNLRNPEPFLYNNLINAYGKLGNIKYARRLFEEMPLPNHFSWNTILSVYSKYGHLSKMQEIFNRMPSRDGVTWNSLISGYACYGSVFDALKAYNSMLRDGAVHLNRITFSTMLVLASSQGCIDLGRQIHGQIEKFGFGSYVFVGSPLVDMYAKTGLIYEAKQVFDGMPERNVVMHNTMITGLLRCGMVEDSKRLFHGMKETDSISWTTMITGLVQNGMEREAIDLFRQMKLEGLSLDQYTFGSVLTACGGLTALEEGKQVHAFIIRSDYMANIFVGSALVDMYCKCKIIQYAEAIFKKMTRKNVVTWTAMLVGYGQNGFSEEAVRIFVDMQRNGIEPDYFTLASVISSCANLSSLEEGSQFHCRAIVSGLISFVTVSNALITFYGKCGSPVDSRCLFNEMNFRDEVSWTALVSGYAQFGKVNETIALFEEMLVHGLKPDAVTFIGVLSACSRAGLVERGQQYFESMSKEHGIIPVLDHYTCMIDLFSRAGKLEAARSFISKMPFHPDAIGWSTLLSSCRLYGNLEIGKWAAQSLLELEPQNPAGYILLSSIYAAKGKWNDVAQLRKGMRERGARKEPGCSWIKYKNKIHIFSADDCSSPFSDKIYAELDKLNEKMIEEGYVPDASSVLHDVEESAKIQMLNYHSEKLAIAFGLIFIPRGLPIRIVKNLRVCGDCHNATKYISKITQREILVRDSARFHLFKDGTCSCGDFW*",
+      "longitud": 744,
+      "locus_base": "Manes.14G092100",
+      "dominios_raw": [
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_1",
+          "accession": "PF12854.11"
+        },
+        {
+          "dominio": "PPR_1",
+          "accession": "PF12854.11"
+        },
+        {
+          "dominio": "PPR_1",
+          "accession": "PF12854.11"
+        },
+        {
+          "dominio": "PPR_1",
+          "accession": "PF12854.11"
+        },
+        {
+          "dominio": "PPR_1",
+          "accession": "PF12854.11"
+        },
+        {
+          "dominio": "PPR_1",
+          "accession": "PF12854.11"
+        },
+        {
+          "dominio": "PPR_1",
+          "accession": "PF12854.11"
+        },
+        {
+          "dominio": "PPR_1",
+          "accession": "PF12854.11"
+        },
+        {
+          "dominio": "PPR_1",
+          "accession": "PF12854.11"
+        },
+        {
+          "dominio": "DYW_deaminase",
+          "accession": "PF14432.10"
+        },
+        {
+          "dominio": "E_motif",
+          "accession": "PF20431.2"
+        },
+        {
+          "dominio": "PPR_3",
+          "accession": "PF13812.10"
+        },
+        {
+          "dominio": "PPR_3",
+          "accession": "PF13812.10"
+        },
+        {
+          "dominio": "PPR_3",
+          "accession": "PF13812.10"
+        },
+        {
+          "dominio": "PPR_3",
+          "accession": "PF13812.10"
+        },
+        {
+          "dominio": "PPR_long",
+          "accession": "PF17177.8"
+        },
+        {
+          "dominio": "PPR_long",
+          "accession": "PF17177.8"
+        }
+      ],
+      "dominios_estres": [
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_1",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_1",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_1",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_1",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_1",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_1",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_1",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_1",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_1",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_3",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_3",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_3",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_3",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_long",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_long",
+          "funcion": "pentatricopeptido, organulos"
+        }
+      ],
+      "score_novel": 77,
+      "pista": "gran número de dominios PPR (pentatricopeptide repeat) implicados en regulación post‑transcripcional bajo estrés",
+      "especulacion": "alta",
+      "estructura": {
+        "fuente": "ESMAtlas (verificar)",
+        "url": "https://esmatlas.com/search?q=Manes.14G092100.1.p"
+      },
+      "menciones_pmc": 0,
+      "es_novel": true
+    },
+    {
+      "accession": "Manes.08G165200.1.p",
+      "descripcion": "pacid=50286102 transcript=Manes.08G165200.1 locus=Manes.08G165200 ID=Manes.08G165200.1.v8.1 annot-version=v8.1",
+      "secuencia": "MACTGVLAFVSPPSKVCKTTTSLPCSLHHSPSTTCAASTNEQQLDISETTTNARQKFSYSRASPSVRWPNLKLSETYPSPNTLFNAPSPPPTHLVDEMPESKGEDGTRNVGSAESLEVDDETQERLGRRSRTRVKKMNKLALKRAKDWRERVKFCTDRILGLKPDQFVADVLDDRKVQMTPTDFCFVVKWVGQENWQRALEVYEWLNLRHWYSPNARMLATILAVLGKANQEALAVEIFARAEASVGNTVQVYNSMMGVYARTGRFNKVQELLDLMRERECEPDLVSFNTLINARLKAGAMMPNVAMELLNEVRRSGLRPDTITYNTLISACSRESNLKEAMKVFDAMEAQRCQPDLWTYNAMISVYGRCGLSGKAEQLFKELESKGFYPDAVTYNSLLYAFAREGNVDKVKEVCEEMVNMGFSKDEMTYNTIIHMYGKQGQHDLALQLYNDMKLSGRTPDAITYTVLIDSLGKANKMAEAASVMSGMLDTGVKPTLRTYSALICGYAKAGKRVEAEETFDCMVKSGIRPDQLAYSVMLDIFLRFNEEKKAMMLYKEMVRDGITPDPTVYGVMLQNLGRENKVEDIERVIRDMEEIKGMNPQSIASILVKGECYDSAAKMLRLAIGGNCEIDHENLLSILSSFSSSGRHSEALDLLKFFKEHAPRSNKLVTEASIVTLCKAKQLDAALKEYNSMREFGWFSGSCTIYESLIQSCEENELTAEASQIFCDMRFNGVKPSDSLYQRMVLLYCEMCFPETAHYLIDLAEIEGIPFDNISIHVAIIETYGNLKLWQKAESLVGNLRQRCMTVDRKVWNALIQAYAASGCYERARAVFNTMMRDGPSPTVDSINGLLQALIVDGRLEELYVVIQELQDLGFKISKSSILLMLDAFARAGNIFEVKKIYHGMKAAGYFPTMHLYRIMIGLLCRGKRVRDVEAMVSEMEEAGFRPDLSIWNSMLRLYTGIDDFRKTTQIYQRIKQDGLEPDEDTYNTLIIMYCRDHRPEEGLSLMHEMRRVGLEPKLDTYKSLIAAFGKQQLVVQAEELFEELRSKGSKLDRSFYHIMMKIFRNSGNHSKAEKLLSMMKDAGVEPTIATMHLLMVSYGSSGQPQEAEKVLTNLKESGLDLSTLPYSSVIDAYLKNGDYNVGIQKLMEMKKEGVEPDHRIWTCFVRAASLSQHTHEAIILLNALQDSGFDLPIRLLKERSESLVSEVDQCLEMLEDMEDNAAFNFVNALEDLLWAFELRATASWVFQLAVKRSIYSHDVFRVADQDWGADFRKLSGGAALVSLTLWLDHMQDASLQGYPASPKSVVLITGTAEYNMVSLDKTLKACLWEMGSPFLPCKTRSGLLIAKAHSLRMWLKDSPFCLDLELKDSPSLPESNSMQLIEGCFIRRGLVPAFKEITEKLGFVRPKKFAKLALLSDDRRGKAIEADIQGRKEKLEKVKNKVELWRKKKIRKLRKRKPIQRVVPSNPKEIKIDYQTVK*",
+      "longitud": 1481,
+      "locus_base": "Manes.08G165200",
+      "dominios_raw": [
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR_3",
+          "accession": "PF13812.10"
+        },
+        {
+          "dominio": "PPR_3",
+          "accession": "PF13812.10"
+        },
+        {
+          "dominio": "PPR_3",
+          "accession": "PF13812.10"
+        },
+        {
+          "dominio": "PPR_3",
+          "accession": "PF13812.10"
+        },
+        {
+          "dominio": "PPR_3",
+          "accession": "PF13812.10"
+        },
+        {
+          "dominio": "PPR_3",
+          "accession": "PF13812.10"
+        },
+        {
+          "dominio": "PPR_3",
+          "accession": "PF13812.10"
+        },
+        {
+          "dominio": "PPR_3",
+          "accession": "PF13812.10"
+        },
+        {
+          "dominio": "PPR_3",
+          "accession": "PF13812.10"
+        },
+        {
+          "dominio": "PPR_3",
+          "accession": "PF13812.10"
+        },
+        {
+          "dominio": "PPR_3",
+          "accession": "PF13812.10"
+        },
+        {
+          "dominio": "PPR_3",
+          "accession": "PF13812.10"
+        },
+        {
+          "dominio": "PPR_1",
+          "accession": "PF12854.11"
+        },
+        {
+          "dominio": "PPR_1",
+          "accession": "PF12854.11"
+        },
+        {
+          "dominio": "PPR_1",
+          "accession": "PF12854.11"
+        },
+        {
+          "dominio": "PPR_1",
+          "accession": "PF12854.11"
+        },
+        {
+          "dominio": "PPR_1",
+          "accession": "PF12854.11"
+        },
+        {
+          "dominio": "PPR_1",
+          "accession": "PF12854.11"
+        },
+        {
+          "dominio": "PPR_1",
+          "accession": "PF12854.11"
+        },
+        {
+          "dominio": "PPR_1",
+          "accession": "PF12854.11"
+        },
+        {
+          "dominio": "PPR_1",
+          "accession": "PF12854.11"
+        },
+        {
+          "dominio": "PPR_1",
+          "accession": "PF12854.11"
+        },
+        {
+          "dominio": "PPR_long",
+          "accession": "PF17177.8"
+        },
+        {
+          "dominio": "PPR_long",
+          "accession": "PF17177.8"
+        },
+        {
+          "dominio": "PPR_long",
+          "accession": "PF17177.8"
+        },
+        {
+          "dominio": "PPR_long",
+          "accession": "PF17177.8"
+        },
+        {
+          "dominio": "PPR_long",
+          "accession": "PF17177.8"
+        },
+        {
+          "dominio": "PPR_long",
+          "accession": "PF17177.8"
+        },
+        {
+          "dominio": "PPR_long",
+          "accession": "PF17177.8"
+        },
+        {
+          "dominio": "PPR_long",
+          "accession": "PF17177.8"
+        },
+        {
+          "dominio": "MRP-S27",
+          "accession": "PF10037.13"
+        },
+        {
+          "dominio": "MRP-S27",
+          "accession": "PF10037.13"
+        },
+        {
+          "dominio": "ATP13",
+          "accession": "PF12921.11"
+        },
+        {
+          "dominio": "Vps39_1",
+          "accession": "PF10366.13"
+        }
+      ],
+      "dominios_estres": [
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_3",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_3",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_3",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_3",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_3",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_3",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_3",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_3",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_3",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_3",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_3",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_3",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_1",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_1",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_1",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_1",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_1",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_1",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_1",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_1",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_1",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_1",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_long",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_long",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_long",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_long",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_long",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_long",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_long",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_long",
+          "funcion": "pentatricopeptido, organulos"
+        }
+      ],
+      "score_novel": 77,
+      "pista": "extensa serie de dominios PPR, poco caracterizada en yuca",
+      "especulacion": "alta",
+      "estructura": {
+        "fuente": "ESMAtlas (verificar)",
+        "url": "https://esmatlas.com/search?q=Manes.08G165200.1.p"
+      },
+      "menciones_pmc": 0,
+      "es_novel": true
+    },
+    {
+      "accession": "Manes.17G093600.8.p",
+      "descripcion": "pacid=50289200 transcript=Manes.17G093600.8 locus=Manes.17G093600 ID=Manes.17G093600.8.v8.1 annot-version=v8.1",
+      "secuencia": "MPLLKPQIHHSIPFLSSPTDALLADKALTLLKRHPYHLNSLSSHFTPDAASCLLLKSQHDQTLTLKFINWAQPYPFFDPRSKCIALHILTRFKLYKPAQTLAQDLAMSTTDDTGSFVFQCLKETYHFCNSSSAVFDLVVKSYSHLNFTDKALNIVNLAKFNGFMPGVLSYNAIIDSVIRCQKPIRFAEEVYGEMIASGVSLNVYSYNILIRGFVRAGNLKMGLRFFKEMEGNGCLPNVVTYNTMIDAYCKLNRIDEAFSLLRSMGSKGLEPNLITYNMVINGLCREGRMKETSEILAEMRQKGYVPDEVTYNTLVNGYCKDGNFHQALVLHAEMVRNGLSPNVVTYTSLINGMCKAGNLNRAMEFFDQMHVRGLHPNERTYTTLINGFAQQGFLNEAYRVLNEMIRSGFTPSIVTYNALIKGHCVLGRTEEAVGLLQDMVGKGLSPDVVSYSTIIAGFSCNQELERAFQMKLEMVEKGVLPDAITYSSLIQGLCEQRKLTEACDLFQEMLTMRLPPDEFTYTSLINAYCEEGDLKKALHLHDEMIQKGFLPDIVTYNVLINGLNKQARTKEAKRLLLKLFYDESIPSEVTYNTLIENCCNIEFKSVVALMKGFCMKGLMDEADRVFESMIERNHKPNEAVYNVIIHGHCRGGNVQKAYKLYREMVHFGFVPHTVTIIALVKSLFSEGMNEELNQVVENILRSCKLTDAELAKVLVEINHKEGNMDVVFNVLTEMAKDGLIPSGGIGNPPNPRERSV*",
+      "longitud": 757,
+      "locus_base": "Manes.17G093600",
+      "dominios_raw": [
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_2",
+          "accession": "PF13041.10"
+        },
+        {
+          "dominio": "PPR_1",
+          "accession": "PF12854.11"
+        },
+        {
+          "dominio": "PPR_1",
+          "accession": "PF12854.11"
+        },
+        {
+          "dominio": "PPR_1",
+          "accession": "PF12854.11"
+        },
+        {
+          "dominio": "PPR_1",
+          "accession": "PF12854.11"
+        },
+        {
+          "dominio": "PPR_1",
+          "accession": "PF12854.11"
+        },
+        {
+          "dominio": "PPR_1",
+          "accession": "PF12854.11"
+        },
+        {
+          "dominio": "PPR_1",
+          "accession": "PF12854.11"
+        },
+        {
+          "dominio": "PPR_1",
+          "accession": "PF12854.11"
+        },
+        {
+          "dominio": "PPR_1",
+          "accession": "PF12854.11"
+        },
+        {
+          "dominio": "PPR_1",
+          "accession": "PF12854.11"
+        },
+        {
+          "dominio": "PPR_1",
+          "accession": "PF12854.11"
+        },
+        {
+          "dominio": "PPR_1",
+          "accession": "PF12854.11"
+        },
+        {
+          "dominio": "PPR_1",
+          "accession": "PF12854.11"
+        },
+        {
+          "dominio": "PPR_1",
+          "accession": "PF12854.11"
+        },
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR",
+          "accession": "PF01535.24"
+        },
+        {
+          "dominio": "PPR_3",
+          "accession": "PF13812.10"
+        },
+        {
+          "dominio": "PPR_3",
+          "accession": "PF13812.10"
+        },
+        {
+          "dominio": "PPR_3",
+          "accession": "PF13812.10"
+        },
+        {
+          "dominio": "PPR_3",
+          "accession": "PF13812.10"
+        },
+        {
+          "dominio": "PPR_3",
+          "accession": "PF13812.10"
+        },
+        {
+          "dominio": "PPR_3",
+          "accession": "PF13812.10"
+        },
+        {
+          "dominio": "PPR_3",
+          "accession": "PF13812.10"
+        },
+        {
+          "dominio": "PPR_3",
+          "accession": "PF13812.10"
+        },
+        {
+          "dominio": "PPR_long",
+          "accession": "PF17177.8"
+        },
+        {
+          "dominio": "PPR_long",
+          "accession": "PF17177.8"
+        },
+        {
+          "dominio": "PPR_long",
+          "accession": "PF17177.8"
+        },
+        {
+          "dominio": "PPR_long",
+          "accession": "PF17177.8"
+        },
+        {
+          "dominio": "PPR_long",
+          "accession": "PF17177.8"
+        },
+        {
+          "dominio": "PPR_long",
+          "accession": "PF17177.8"
+        },
+        {
+          "dominio": "MRP-S27",
+          "accession": "PF10037.13"
+        },
+        {
+          "dominio": "MRP-S27",
+          "accession": "PF10037.13"
+        },
+        {
+          "dominio": "AEP1",
+          "accession": "PF17049.9"
+        }
+      ],
+      "dominios_estres": [
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_2",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_1",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_1",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_1",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_1",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_1",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_1",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_1",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_1",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_1",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_1",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_1",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_1",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_1",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_1",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_3",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_3",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_3",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_3",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_3",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_3",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_3",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_3",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_long",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_long",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_long",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_long",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_long",
+          "funcion": "pentatricopeptido, organulos"
+        },
+        {
+          "dominio": "PPR_long",
+          "funcion": "pentatricopeptido, organulos"
+        }
+      ],
+      "score_novel": 76,
+      "pista": "repetidos dominios PPR, potencial regulador de expresión mitocondrial bajo sequía",
+      "especulacion": "alta",
+      "estructura": {
+        "fuente": "ESMAtlas (verificar)",
+        "url": "https://esmatlas.com/search?q=Manes.17G093600.8.p"
+      },
+      "menciones_pmc": 0,
+      "es_novel": true
+    },
+    {
+      "accession": "Manes.06G111800.1.p",
+      "descripcion": "pacid=50267625 transcript=Manes.06G111800.1 locus=Manes.06G111800 ID=Manes.06G111800.1.v8.1 annot-version=v8.1",
+      "secuencia": "MEMERVTEFPLAHLDRRPRKRARLGWDVSQVPKAQVGIFCGQEVGSITSYASSGATPDHIISSSLFVKGVARNGSPPWREDDKDGHYMFAIGENLTSRYKIHSKMGEGTFGQVLECWDRERKEMVAIKIVRGIKKYREAAMIEIEVLQQLGKHDKGGNRCVQIRNWFDYRNHICIVFEKLGPSLYDFLRKNNYRSFPIDLVREIGRQLLECVAFMHDLHLIHTDLKPENILLVSADYIKVLDYKGSSRAPKESSYLKRVPKSSAIKVIDFGSTTYERQDQNYIVSTRHYRAPEVILGLGWSYPCDIWSVGCILVELCTGEALFQTHENLEHLAMMERVFGPLPQHMLKRIDRHAEKYIRRGRLDWPEGATSRESIKAVLKLPRLQNLVMQHVDHSAGDLIHLLQGLLRYEPSDRLTAREALRHPFFTGDHLRR*",
+      "longitud": 434,
+      "locus_base": "Manes.06G111800",
+      "dominios_raw": [
+        {
+          "dominio": "Pkinase",
+          "accession": "PF00069.29"
+        },
+        {
+          "dominio": "PK_Tyr_Ser-Thr",
+          "accession": "PF07714.21"
+        }
+      ],
+      "dominios_estres": [
+        {
+          "dominio": "Pkinase",
+          "funcion": "quinasa, senalizacion"
+        }
+      ],
+      "score_novel": 74,
+      "pista": "dominio Pkinase, quinasa de señalización de estrés",
+      "especulacion": "media",
+      "estructura": {
+        "fuente": "ESMAtlas (verificar)",
+        "url": "https://esmatlas.com/search?q=Manes.06G111800.1.p"
+      },
+      "menciones_pmc": 0,
+      "es_novel": true
+    },
+    {
+      "accession": "Manes.07G097200.1.p",
+      "descripcion": "pacid=50265283 transcript=Manes.07G097200.1 locus=Manes.07G097200 ID=Manes.07G097200.1.v8.1 annot-version=v8.1",
+      "secuencia": "MCKSRKGTDVNNSLTPKSRPSRSASAANPSSSLSSSSSSNYPSFNYPSSSVNYSSSGFFNHNKDTSKSSSSSISSKLSLKSLKEAFLPENPHIYEFADICRATNNFLAKPFSSSSTSTSWRCQIRRKEVIIFQRKFRRRDPIELPELQQRLSIICRSHHSSLIKLLGAATSGNCIYLVYEFVNGANLATCLRNPQNPSYTILSNWLSRMQVATDIAHGLDYIHHCAASNSGFIHNHIKSSSILVAEDSLNAKICHFGTADLCGELEGSERSEARTLGRSNSKGMKIEGTRGYMSPEFQANGIVTQKCDVYAFGVVVLELVSGEEALRYVFDESSGGFSRVSVIEKAREAVDSGAGGVRSWVDRRLKDSYPVDVAEKMVVVGLECVVEDPEKRPDMEQVAVRVSKLYLESKNWAEKIGKKLHATAGPGSKMD*",
+      "longitud": 432,
+      "locus_base": "Manes.07G097200",
+      "dominios_raw": [
+        {
+          "dominio": "PK_Tyr_Ser-Thr",
+          "accession": "PF07714.21"
+        },
+        {
+          "dominio": "Pkinase",
+          "accession": "PF00069.29"
+        }
+      ],
+      "dominios_estres": [
+        {
+          "dominio": "Pkinase",
+          "funcion": "quinasa, senalizacion"
+        }
+      ],
+      "score_novel": 73,
+      "pista": "dominio Pkinase, quinasa poco anotada",
+      "especulacion": "media",
+      "estructura": {
+        "fuente": "ESMAtlas (verificar)",
+        "url": "https://esmatlas.com/search?q=Manes.07G097200.1.p"
+      },
+      "menciones_pmc": 0,
+      "es_novel": true
+    },
+    {
+      "accession": "Manes.06G011500.4.p",
+      "descripcion": "pacid=50265713 transcript=Manes.06G011500.4 locus=Manes.06G011500 ID=Manes.06G011500.4.v8.1 annot-version=v8.1",
+      "secuencia": "MKLGLNRETGIHQFLTSWRSADDPGTGDYVLDINLKGSPQGILYKGTKRYWRIVPWPGKNYVLHNISFVHNQKETFVTFFPVDASLILRTRLEYSGLVLNLIWHESEGKWKELRSAPKNLCEFYGHCGPYGMCNPLYLYPKFECDCLPGYEPQSPRDWNFLKDGSGGCVRKRKESSSLCNQGEGFVKVTAVKVPDASEAVWLGLNMSPVDCELQCKRNCTCSAYSSTSLSGKETGCLAWYGELMDTVIDIAEGSDIYVRVDALELAEITQKSNGFLEKKHLLAILLVSIFSAWFVIILFAYLWFKKKRKTVRNKWNAKLFNTINDPYYIENGDGGGMSYPEIVYFNLSTILSATDNFSLANKLGQGGFGLVYKGQLSNGQEIAVKRLSKSSGQGIEEFENEVLLIAKLQHQNLVKLLGCCIQGEEPMLVYEYMPNKSLDSFLFDETRRSILDWRKRFDIIVGIARGILYIHQDSRLRIIHRDLKTSNILLDKEMNPKISDFGLARVFKGDQSLEKTNKIAGTFGYMSPEYVAFGKFSTKSDVFSFGVILLEIVTGKKNNSFCQEDSYLSMAGKIWHLWKEERALEMVDSSLKESCSAHEVLRCIQIGLLCVQEDAFERPSMSAVVVMLNSEISLPSPRQPPFTFRNPSNSYSPLVTQKEFYSVDEETITQVVCR*",
+      "longitud": 675,
+      "locus_base": "Manes.06G011500",
+      "dominios_raw": [
+        {
+          "dominio": "PK_Tyr_Ser-Thr",
+          "accession": "PF07714.21"
+        },
+        {
+          "dominio": "Pkinase",
+          "accession": "PF00069.29"
+        },
+        {
+          "dominio": "S_locus_glycop",
+          "accession": "PF00954.24"
+        },
+        {
+          "dominio": "PAN_2",
+          "accession": "PF08276.15"
+        }
+      ],
+      "dominios_estres": [
+        {
+          "dominio": "Pkinase",
+          "funcion": "quinasa, senalizacion"
+        }
+      ],
+      "score_novel": 72,
+      "pista": "dominio Pkinase, sin anotación funcional clara",
+      "especulacion": "media",
+      "estructura": {
+        "fuente": "ESMAtlas (verificar)",
+        "url": "https://esmatlas.com/search?q=Manes.06G011500.4.p"
+      },
+      "menciones_pmc": 0,
+      "es_novel": true
+    }
+  ],
+  "conocidos_brazo_a": [
+    {
+      "simbolo": "LOC110601996",
+      "descripcion": "protein EARLY-RESPONSIVE TO DEHYDRATION 7, chloroplastic"
+    },
+    {
+      "simbolo": "LOC122721460",
+      "descripcion": "protein C2-DOMAIN ABA-RELATED 11-like"
+    },
+    {
+      "simbolo": "LOC110616594",
+      "descripcion": "protein DEHYDRATION-INDUCED 19 homolog 6"
+    },
+    {
+      "simbolo": "LOC110599882",
+      "descripcion": "protein DEHYDRATION-INDUCED 19 homolog 6"
+    },
+    {
+      "simbolo": "LOC110623446",
+      "descripcion": "protein DEHYDRATION-INDUCED 19 homolog 3"
+    },
+    {
+      "simbolo": "LOC110621395",
+      "descripcion": "protein DEHYDRATION-INDUCED 19 homolog 3"
+    },
+    {
+      "simbolo": "LOC110612172",
+      "descripcion": "protein DEHYDRATION-INDUCED 19 homolog 4"
+    },
+    {
+      "simbolo": "LOC110605467",
+      "descripcion": "protein DEHYDRATION-INDUCED 19 homolog 4"
+    },
+    {
+      "simbolo": "LOC110602598",
+      "descripcion": "protein DEHYDRATION-INDUCED 19 homolog 4"
+    },
+    {
+      "simbolo": "LOC110619721",
+      "descripcion": "protein EARLY RESPONSIVE TO DEHYDRATION 15"
+    }
+  ],
+  "convergencias": [
+    {
+      "accession": "Manes.07G008990.1.p",
+      "converge_con": "LOC122721460",
+      "tipo_convergencia": "via",
+      "hipotesis": "El dominio NACHT sugiere una función de receptor NLR que activa cascadas de señalización de estrés; este mecanismo puede integrarse en la vía ABA‑mediada de respuesta a la sequía, la misma vía en la que actúa el C2‑DOMAIN ABA‑RELATED 11‑like.",
+      "confianza": 78
+    },
+    {
+      "accession": "Manes.06G051300.1.p",
+      "converge_con": "LOC122721460",
+      "tipo_convergencia": "via",
+      "hipotesis": "El factor de transcripción WRKY es un regulador clásico de genes inducidos por sequía y ABA; comparte la vía de señalización con el C2‑DOMAIN ABA‑RELATED 11‑like, aunque no comparten dominio estructural.",
+      "confianza": 85
+    },
+    {
+      "accession": "Manes.07G043100.5.p",
+      "converge_con": "LOC122721460",
+      "tipo_convergencia": "via",
+      "hipotesis": "Los múltiples dominios zf‑C2H2_jaz indican una función de regulación transcripcional en respuesta a estrés hídrico, convergiendo funcionalmente con los TFs de la vía ABA que incluyen al C2‑DOMAIN ABA‑RELATED 11‑like.",
+      "confianza": 80
+    },
+    {
+      "accession": "Manes.05G061300.1.p",
+      "converge_con": "LOC110601996",
+      "tipo_convergencia": "dominio",
+      "hipotesis": "El dominio LEA_3 es característico de proteínas EARLY‑RESPONSIVE TO DEHYDRATION; por tanto, este candidato probablemente actúe como una proteína LEA protectora durante la deshidratación, similar a EARLY‑RESPONSIVE TO DEHYDRATION 7.",
+      "confianza": 92
+    },
+    {
+      "accession": "Manes.14G092100.1.p",
+      "converge_con": null,
+      "tipo_convergencia": "ninguna",
+      "hipotesis": "Los extensos repeticiones de dominios PPR indican una función en la edición o estabilización de RNAs mitocondriales o cloroplásticas; no se observa correspondencia directa con los genes de respuesta a deshidratación listados.",
+      "confianza": 55
+    },
+    {
+      "accession": "Manes.08G165200.1.p",
+      "converge_con": null,
+      "tipo_convergencia": "ninguna",
+      "hipotesis": "Aunque los dominios PPR pueden modular la expresión génica bajo estrés, no hay evidencia de ortología o dominio compartido con los genes conocidos de respuesta a sequía.",
+      "confianza": 55
+    },
+    {
+      "accession": "Manes.17G093600.8.p",
+      "converge_con": null,
+      "tipo_convergencia": "ninguna",
+      "hipotesis": "La abundancia de dominios PPR sugiere una regulación post‑transcripcional específica, pero sin paralelos claros con los genes de deshidratación anotados.",
+      "confianza": 55
+    },
+    {
+      "accession": "Manes.06G111800.1.p",
+      "converge_con": "LOC122721460",
+      "tipo_convergencia": "via",
+      "hipotesis": "Una quinasa tipo Pkinase puede participar en cascadas de señalización MAPK que actúan downstream de la percepción de sequía y ABA, conectándose funcionalmente con el C2‑DOMAIN ABA‑RELATED 11‑like.",
+      "confianza": 80
+    },
+    {
+      "accession": "Manes.07G097200.1.p",
+      "converge_con": "LOC122721460",
+      "tipo_convergencia": "via",
+      "hipotesis": "Similar al otro Pkinase, este candidato probablemente forme parte de la vía de señalización de estrés hídrico que culmina en la activación de genes de respuesta a deshidratación.",
+      "confianza": 78
+    },
+    {
+      "accession": "Manes.06G011500.4.p",
+      "converge_con": "LOC122721460",
+      "tipo_convergencia": "via",
+      "hipotesis": "Aunque la quinasa está poco anotada, su dominio sugiere un rol en la transmisión de señales de sequía, convergiendo con la vía ABA mediada por el C2‑DOMAIN ABA‑RELATED 11‑like.",
+      "confianza": 75
+    }
+  ],
+  "nota": "Modo descubrimiento v3.2. Correlacion != causalidad; validar experimentalmente."
+}

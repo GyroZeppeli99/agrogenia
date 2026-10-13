@@ -1,0 +1,670 @@
+{
+  "fecha": "2026-10-11 03:43",
+  "rasgo": "tolerancia a sequia",
+  "receptora": "Manihot esculenta",
+  "estrategia": "B (diversidad equilibrada)",
+  "pfam_modo": "auto",
+  "pfam_base": "sub-base:sequia",
+  "pfam_ruta": "/home/elrob/agrogenia/dbs/Pfam-sequia.hmm",
+  "donantes_validos": [
+    {
+      "nombre": "Xerophyta viscosa",
+      "tax_id": 90708,
+      "tipo": "planta",
+      "adaptacion": "Resurrection plant que sobrevive deshidratación extrema mediante acumulación de LEA y protección antioxidante.",
+      "genes_clave": [
+        "XvLEA14",
+        "XvDREB2A",
+        "XvNCED3"
+      ]
+    },
+    {
+      "nombre": "Sorghum bicolor",
+      "tax_id": 4558,
+      "tipo": "planta",
+      "adaptacion": "Cereal de sabana con alta tolerancia a sequía; regula la apertura estomática y la acumulación de osmólitos.",
+      "genes_clave": [
+        "SbNAC111",
+        "SbPP2C68",
+        "SbDREB2A"
+      ]
+    },
+    {
+      "nombre": "Bacillus subtilis",
+      "tax_id": 1423,
+      "tipo": "bacteria",
+      "adaptacion": "Productor de ACC desaminasa que reduce el etileno en raíces y promueve crecimiento bajo estrés hídrico.",
+      "genes_clave": [
+        "acdS",
+        "cspB",
+        "otsA"
+      ]
+    },
+    {
+      "nombre": "Pseudomonas fluorescens",
+      "tax_id": 294,
+      "tipo": "bacteria",
+      "adaptacion": "Rhizobacteria plantaria que sintetiza trehalosa y exopolímeros, mejorando la retención de agua en la zona radicular.",
+      "genes_clave": [
+        "treS",
+        "exsA",
+        "gltA"
+      ]
+    },
+    {
+      "nombre": "Serendipita indica",
+      "tax_id": 65672,
+      "tipo": "hongo",
+      "adaptacion": "Micorriza endofítica que aumenta la capacidad de la planta para acumular proline y trehalosa bajo déficit hídrico.",
+      "genes_clave": [
+        "SiTPS1",
+        "SiP5CS",
+        "SiHSP70"
+      ]
+    }
+  ],
+  "donantes_descartados": [],
+  "candidatos": [
+    {
+      "accession": "AAP22171.1",
+      "descripcion": "putative dehydrin",
+      "secuencia": "MEGYGNHQHHNVDEYGNPLPVGYGEGYGHQNMQRPGEYYGNQGYGGHQHGAYSGPGYQQDYGSGPRLQRSGSSTSSEDDGYGGRRKKGLKNRIMENLPGRR",
+      "longitud": 101,
+      "especie_donante": "Xerophyta viscosa",
+      "tipo_donante": "planta",
+      "dominios_raw": [],
+      "dominios_relevantes": [],
+      "score_transferencia": 90,
+      "mecanismo": "Proteína de tipo LEA (dehidrina) que se acumula durante la sequía; protege membranas y proteínas, estabiliza estructuras celulares y actúa como antioxidante, reduciendo el daño por estrés hídrico.",
+      "riesgos": [
+        "Posible interferencia con la regulación natural de deshidrinas del receptor, lo que podría alterar la germinación o el desarrollo bajo condiciones no estresantes.",
+        "Acumulación excesiva puede afectar la osmolaridad celular y el crecimiento."
+      ],
+      "val_epmc": {
+        "menciones": 1,
+        "novel": false,
+        "articulos": [
+          {
+            "titulo": "A molecular physiological review of vegetative desiccation tolerance in the resurrection plant Xerophyta viscosa (Baker)",
+            "anio": "2015",
+            "fuente": "MED"
+          }
+        ]
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 0,
+        "ids": []
+      },
+      "soporte_multifuente": {
+        "score": 25,
+        "fuentes": [
+          "literatura"
+        ]
+      },
+      "tiene_ortologo": "si",
+      "estrategia": "edicion_genica",
+      "riesgo_compatibility": "bajo",
+      "justificacion_compat": "Cassava posee múltiples genes LEA; la edición del promotor o aumento de copia puede mejorar la tolerancia sin introducir proteínas extrañas.",
+      "promotor": "inducible_drought_RD29A",
+      "localizacion": "citosol",
+      "codon_opt": "si",
+      "notas_constructo": "LEA dehidrina; añadir señal de retención en citosol si se desea; incluir secuencia de terminador NOS; usar versión optimizada para Manihot esculenta; considerar inserción en locus de alta expresión como el de la RuBisCO para evitar silencing."
+    },
+    {
+      "accession": "XP_021305765.1",
+      "descripcion": "probable galactinol--sucrose galactosyltransferase 6 isoform X2",
+      "secuencia": "MTISSSVKLAGGTLSVCGRTVLSGVPDAVVASSAAAGGAVDGVFIGADFAEPAARHVVSLGDLRGVRFMACFRFKLWWMAQRMGEKGGDVPRETQFLLVESKGAGDGAAAAYVVFLPLVEGAFRASLQGGAGDALELCVESGDAETRAASFERALFVGAAESDPFAAISGAVGAAKSALRTFRVRAEKKLPGIVDYFGWCTWDAFYQDVTQEGVEAGLRSLIAGGAPPKFVIIDDGWQSVGTDKSATDTDTDEPAGEDKPPRLSRLTGIKENSKFQNVDDPAAGIKTVVRAAKEEYGLKYVYVWHAITGYWGGVRPGEPGTEHYRSSMQFPKVSPGVMENEPGMKTDVLTVQGLGLVHPRAVYRFYDELHAYLAAAGVDGVKVDVQCILETLGAGHGGRVQLTRQYHQALDASIAKNFPENGIIACMSHNTDALYCSKQTAVVRASDDFYPRDPVSHTIHIASVAYNSVFLGEFMLPDWDMFHSLHQAGDYHGSARAISGGPVYVSDAPGKHNFELLKKIVLPDGSILRARLPGRPTKDCLFTDPARDGVSLLKIWNMNKFTGVLGVYNCQGAAWSSVEKKNTFHHTGTEALTCGIKGSDVHLISEAATDPEWNGDCTVYRHADSDLAVLPYGAALPVSLKVLEHDILTVSPIKDLAPGFRFAPIGLVDMFNSGGAVEGLTYHLLGGAKLLDGGNGSASGSEAVGLACMEVKGCGRFGAYSSVRPRKCMLGSAQLEFSYDSSSGLVVLQLEKMPKERVHKIVVEL",
+      "longitud": 765,
+      "especie_donante": "Sorghum bicolor",
+      "tipo_donante": "planta",
+      "dominios_relevantes": [],
+      "score_transferencia": 80,
+      "mecanismo": "Isoforma paralela de la galactinol‑sucrose galactosiltransferasa con la misma función de producción de osmoprotectores rafinosas.",
+      "riesgos": [
+        "Mismos riesgos que la isoforma XP_021305764.1.",
+        "Posible redundancia que genere sobreexpresión y efectos negativos en el metabolismo de azúcares."
+      ],
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": []
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 20,
+        "ids": [
+          "200274752",
+          "200276121",
+          "200262062",
+          "200218642",
+          "200178993"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 35,
+        "fuentes": [
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "si",
+      "estrategia": "edicion_genica",
+      "riesgo_compatibility": "bajo",
+      "justificacion_compat": "Genes de galactinol‑sucrose galactosiltransferasa (raffinosa synthase) están presentes en Manihot; su sobreexpresión es una vía segura para elevar osmoprotectores.",
+      "promotor": "constitutivo_CaMV35S",
+      "localizacion": "citosol",
+      "codon_opt": "si",
+      "notas_constructo": "Isoforma de galactinol‑sucrose galactosiltransferasa; no requiere señal de localización; usar versión codón‑optimizada para cassava; incluir terminador OCS; posible co‑expresión con galactinol‑sintasa para maximizar producción de rafinosa."
+    },
+    {
+      "accession": "XP_021305764.1",
+      "descripcion": "probable galactinol--sucrose galactosyltransferase 6 isoform X1",
+      "secuencia": "MSAMARRLSSSCSRAVASSSSSKSIPSSLLPRRIYTLPSRPLLLAPCPPLPLPPTPSRCSFRSLAAAKGSSATSSSVSPTQQQSRSTREEGEMTISSSVKLAGGTLSVCGRTVLSGVPDAVVASSAAAGGAVDGVFIGADFAEPAARHVVSLGDLRGVRFMACFRFKLWWMAQRMGEKGGDVPRETQFLLVESKGAGDGAAAAYVVFLPLVEGAFRASLQGGAGDALELCVESGDAETRAASFERALFVGAAESDPFAAISGAVGAAKSALRTFRVRAEKKLPGIVDYFGWCTWDAFYQDVTQEGVEAGLRSLIAGGAPPKFVIIDDGWQSVGTDKSATDTDTDEPAGEDKPPRLSRLTGIKENSKFQNVDDPAAGIKTVVRAAKEEYGLKYVYVWHAITGYWGGVRPGEPGTEHYRSSMQFPKVSPGVMENEPGMKTDVLTVQGLGLVHPRAVYRFYDELHAYLAAAGVDGVKVDVQCILETLGAGHGGRVQLTRQYHQALDASIAKNFPENGIIACMSHNTDALYCSKQTAVVRASDDFYPRDPVSHTIHIASVAYNSVFLGEFMLPDWDMFHSLHQAGDYHGSARAISGGPVYVSDAPGKHNFELLKKIVLPDGSILRARLPGRPTKDCLFTDPARDGVSLLKIWNMNKFTGVLGVYNCQGAAWSSVEKKNTFHHTGTEALTCGIKGSDVHLISEAATDPEWNGDCTVYRHADSDLAVLPYGAALPVSLKVLEHDILTVSPIKDLAPGFRFAPIGLVDMFNSGGAVEGLTYHLLGGAKLLDGGNGSASGSEAVGLACMEVKGCGRFGAYSSVRPRKCMLGSAQLEFSYDSSSGLVVLQLEKMPKERVHKIVVEL",
+      "longitud": 857,
+      "especie_donante": "Sorghum bicolor",
+      "tipo_donante": "planta",
+      "dominios_relevantes": [],
+      "score_transferencia": 80,
+      "mecanismo": "Galactinol‑sucrose galactosiltransferasa que sintetiza galactinol y rafinosa, osmoprotectores de la familia de los oligosacáridos de rafinosa que estabilizan proteínas y membranas bajo déficit hídrico.",
+      "riesgos": [
+        "Desvío de flujos de carbono hacia la síntesis de rafinosa puede reducir el rendimiento de almidón en la raíz de yuca.",
+        "Alteración del perfil de azúcares podría afectar la palatabilidad o la resistencia a patógenos."
+      ],
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": []
+      },
+      "val_string": {
+        "interacciones": 10,
+        "partners": [
+          "C5X1V2_SORBI",
+          "C5X6A1_SORBI",
+          "A0A1B6PFZ0",
+          "A0A1W0VUE2",
+          "C5Y7K3_SORBI",
+          "C5WXC7_SORBI",
+          "A0A1B6QBH8",
+          "A0A1B6QBH2",
+          "A0A1W0W482",
+          "A0A1W0W3H0"
+        ],
+        "encontrado": true
+      },
+      "val_geo": {
+        "datasets": 20,
+        "ids": [
+          "200274752",
+          "200276121",
+          "200262062",
+          "200218642",
+          "200178993"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 75,
+        "fuentes": [
+          "interacciones",
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "si",
+      "estrategia": "edicion_genica",
+      "riesgo_compatibility": "bajo",
+      "justificacion_compat": "Otra isoforma de la misma enzima; la cassava tiene ortólogos funcionales, por lo que la edición puntual es suficiente.",
+      "promotor": "inducible_drought_RD29A",
+      "localizacion": "citosol",
+      "codon_opt": "si",
+      "notas_constructo": "Enzima clave en síntesis de rafinosa; promoter inducible permite ahorro energético bajo condiciones normales; añadir secuencia de terminador HSP18.2 para mayor estabilidad del mRNA."
+    },
+    {
+      "accession": "XP_021306141.1",
+      "descripcion": "proline-rich receptor-like protein kinase PERK8",
+      "secuencia": "MIKNCSIFILAPIIFMQYDWANASARTRDYSHLNIVNSPSLPPYKDVIGGAPAPAANVPPSPPYCVYPPPAKPALPAPLLPVVASAPGASNSPPAGPPSIAPSSPGSSQPQPAPLFLPPVAFPAPPPGHARPAGLWCVANPAAASTVVQAAMDYACGSGADCSTMAAPGGPCYLPDTLVAHSSYAFNSYWQRTRVAGGTCDFGGAAMLVTRDPSYDGCQYIYM",
+      "longitud": 223,
+      "especie_donante": "Sorghum bicolor",
+      "tipo_donante": "planta",
+      "dominios_relevantes": [],
+      "score_transferencia": 70,
+      "mecanismo": "Quinasa receptora tipo PERK con dominio rico en prolina; percibe señales extracelulares de estrés y activa cascadas de fosforilación que inducen genes de tolerancia a sequía y refuerzan la pared celular.",
+      "riesgos": [
+        "Activación constitutiva puede provocar crecimiento reducido o alteraciones en la arquitectura de la planta.",
+        "Posible aumento de susceptibilidad a ciertos patógenos si la señalización de la pared celular se modifica."
+      ],
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": []
+      },
+      "val_string": {
+        "interacciones": 10,
+        "partners": [
+          "C5X7D7_SORBI",
+          "C5XSB8_SORBI",
+          "C5X2I5_SORBI",
+          "C5Z7L0_SORBI",
+          "C5YXJ4_SORBI",
+          "C5Z0T6_SORBI",
+          "C5WQW6_SORBI",
+          "C5YSM7_SORBI",
+          "C5WN82_SORBI",
+          "A0A1B6PSP2"
+        ],
+        "encontrado": true
+      },
+      "val_geo": {
+        "datasets": 20,
+        "ids": [
+          "200274752",
+          "200276121",
+          "200262062",
+          "200218642",
+          "200178993"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 75,
+        "fuentes": [
+          "interacciones",
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "si",
+      "estrategia": "edicion_genica",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "Receptores tipo PERK existen en cassava, pero modificar una quinasa de señalización puede generar efectos pleiotrópicos en desarrollo y defensa.",
+      "promotor": "inducible_drought_RD29A",
+      "localizacion": "membrana_plasmática",
+      "codon_opt": "si",
+      "notas_constructo": "Receptor tipo PERK con dominio rico en prolina; necesita dominio de ancla transmembrana N‑terminal; incluir señal de anclaje propia del receptor; usar versión codón‑optimizada; añadir terminador 35S_Term."
+    },
+    {
+      "accession": "XP_021305912.1",
+      "descripcion": "chaperone protein dnaJ 1, mitochondrial isoform X1",
+      "secuencia": "MGRFGWLRHASRFLAPRSGEVAVQRCAWMQPNTPCSTTGIYIGDKFYGRFILTPFVLSRSFHATGHRCSEHKDYYKILGVPKDASQDDIKKAFHSLAKKYHPDTNRGNTAAKRMFQEIRDAYETLRDPSKREQYDMLFSRGSRMEHDTFSGSNNQRHDPFTEFHRQNDGRFSSKFYKIFSEVFQQDINAQANDIKVELNLSFSEAANGCIKQVSYSAKNVCDSCGGRGHLPNAKIYVCPSCKGLGRVTMYPFTTVCSSCRGVGKVIKDYCLTCQGSGVVDGMKHVKLDIPAGLDSGDTINVPEAGDSGGLGVRSGNLHIKIQVEIDPVFTRDGADIHVDKRISFTQAVLGGKVEVPSLNGKTEVKIPKGVQPGQVVVLRGKGLPDPSGYFGDQYVRFRIHFPSVVTERQRALLEEFAVEEATKEQNTFVAGNWWRLVAENMTRQNVMIGVGILVLIHLMLSKAMS",
+      "longitud": 465,
+      "especie_donante": "Sorghum bicolor",
+      "tipo_donante": "planta",
+      "dominios_relevantes": [],
+      "score_transferencia": 65,
+      "mecanismo": "Proteína chaperona DnaJ mitocondrial que ayuda al plegamiento de proteínas bajo estrés oxidativo, manteniendo la funcionalidad de la cadena respiratoria durante la sequía.",
+      "riesgos": [
+        "Sobreexpresión puede desbalancear la homeostasis de proteínas mitocondriales y afectar la respiración normal.",
+        "Riesgo de interacción con proteínas nativas del receptor que no están adaptadas a niveles altos de DnaJ."
+      ],
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": []
+      },
+      "val_string": {
+        "interacciones": 10,
+        "partners": [
+          "C5WVD3_SORBI",
+          "C5X4H2_SORBI",
+          "A0A1B6QIR3",
+          "C5YU58_SORBI",
+          "A0A194YRT0",
+          "C5X787_SORBI",
+          "C5XEL1_SORBI",
+          "C5YS30_SORBI",
+          "C5YU66_SORBI",
+          "C5WN47_SORBI"
+        ],
+        "encontrado": true
+      },
+      "val_geo": {
+        "datasets": 20,
+        "ids": [
+          "200274752",
+          "200276121",
+          "200262062",
+          "200218642",
+          "200178993"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 75,
+        "fuentes": [
+          "interacciones",
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "si",
+      "estrategia": "edicion_genica",
+      "riesgo_compatibility": "bajo",
+      "justificacion_compat": "Chaperonas DnaJ mitocondriales son conservadas; su regulación mediante edición es poco invasiva.",
+      "promotor": "constitutivo_CaMV35S",
+      "localizacion": "mitocondria",
+      "codon_opt": "si",
+      "notas_constructo": "Chaperona DnaJ mitocondrial; añadir péptido señal mitocondrial N‑terminal (p.ej., de COX4) al inicio de la proteína; codón‑optimizada para Manihot; incluir terminador NOS; considerar uso de insuladores MAR para evitar silencing."
+    },
+    {
+      "accession": "XP_021305891.1",
+      "descripcion": "probable trehalose-phosphate phosphatase 8",
+      "secuencia": "MTNQDVVVPDMGIAAAAALPAAPGRALFACRGAAVSSLRGAYGGLGLPGGAATDAGEFLAAAGGRGGAPAPAAANAPPGRTCTSRVVEAIRASSPTRCPAAVDEYDAWTRRHPSALGSFDQIAAAAMGKRIVMFMDYDGTLSPIVTDPDMAFMTPEMRAAVRNVAKHFPTAIVTGRCIEKVCGFVGLPELYYAGSHGMDIKGPSSKEDKTVLLQPAREFLPVINKAYRALEERTKDTPGARVENNKFCLSVHFRCVDEKSWSSLADKVKAVLRDFPELKLTEGRKVLEIRPSIMWDKGKAVEFLLKSLGFDDSTNVLPVYIGDDRTDEDAFKALRERGQGIGILVSKCPRETDASYSLQDPTEVMEFLVRLGQWKLLRSPSPARPRV",
+      "longitud": 387,
+      "especie_donante": "Sorghum bicolor",
+      "tipo_donante": "planta",
+      "dominios_relevantes": [],
+      "score_transferencia": 65,
+      "mecanismo": "Isoforma X2 de la misma chaperona DnaJ mitocondrial con función idéntica a la isoforma X1.",
+      "riesgos": [
+        "Mismos riesgos que la isoforma X1.",
+        "Posible carga metabólica adicional por expresión de dos isoformas similares."
+      ],
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": []
+      },
+      "val_string": {
+        "interacciones": 10,
+        "partners": [
+          "A0A1Z5S8M8",
+          "C5Z1A2_SORBI",
+          "C5XSZ9_SORBI",
+          "C5YKV9_SORBI",
+          "A0A1B6QCD3",
+          "C5WSM2_SORBI",
+          "A0A1Z5R4L3",
+          "C5XUC4_SORBI",
+          "C5YLP6_SORBI",
+          "A0A1B6QHW4"
+        ],
+        "encontrado": true
+      },
+      "val_geo": {
+        "datasets": 20,
+        "ids": [
+          "200274752",
+          "200276121",
+          "200262062",
+          "200218642",
+          "200178993"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 75,
+        "fuentes": [
+          "interacciones",
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "si",
+      "estrategia": "edicion_genica",
+      "riesgo_compatibility": "bajo",
+      "justificacion_compat": "Isoforma adicional de DnaJ ya presente en la planta, por lo que la edición del gen nativo es adecuada.",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_021306047.1",
+      "descripcion": "hydroxyproline O-galactosyltransferase HPGT2 isoform X2",
+      "secuencia": "MGTLASAMRRENHRRSKAPSSALASGTVPLVMTFLSCLAWLYVAGRLWQDAQTRAILSAGLHEKSSGSVSKVLSVEDKLIRNLGCKAIGGKVVEAEMDLARAKTEGYLWENRTAAVDSGKKQKLLAVIGVYTGFGSHRKRNVFRGSWMPRGDALKKLEEKGVVIRFVIGRSANRGDSLDRNIDDENQQTKDFLLLESHEEVTEELPSKAKFFFSAAVDTWEAEFYVKVEDNINLDLAGLIEMLEGRRGSQGLYMGCMKSGVVISEKYRQWYEPDWWKFGDSNTYFRHASGSLFILSKNLARYININSASLQSYAHDDISVGSWMMGLNATYVDDDRLCCSSSRQEKVCSNA",
+      "longitud": 351,
+      "especie_donante": "Sorghum bicolor",
+      "tipo_donante": "planta",
+      "dominios_relevantes": [],
+      "score_transferencia": 60,
+      "mecanismo": "Transferasa O‑galactosiltransferasa de hidroxi‑prolina que glicosila extensinas, reforzando la pared celular y reduciendo la pérdida de agua.",
+      "riesgos": [
+        "Modificación de la composición de la pared celular puede alterar la interacción con micorrizas y patógenos.",
+        "Posible impacto negativo en la flexibilidad del tejido, afectando el desarrollo de tubérculos."
+      ],
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": []
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 20,
+        "ids": [
+          "200274752",
+          "200276121",
+          "200262062",
+          "200218642",
+          "200178993"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 35,
+        "fuentes": [
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "si",
+      "estrategia": "edicion_genica",
+      "riesgo_compatibility": "bajo",
+      "justificacion_compat": "O‑galactosiltransferasas de extensinas están anotadas en el genoma de cassava; su aumento de expresión refuerza la pared sin toxicidad.",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "XP_021306046.1",
+      "descripcion": "hydroxyproline O-galactosyltransferase HPGT2 isoform X1",
+      "secuencia": "MGTLASAMRRENHRRSKAPSSALASGTVPLVMTFLSCLAWLYVAGRLWQDAQTRAILSAGLHEKSSGSVSKVLSVEDKLIRNLGCKAIGGKVVEAEMDLARAKTEGYLWENRTAAVDSGKKQKLLAVIGVYTGFGSHRKRNVFRGSWMPRGDALKKLEEKGVVIRFVIGRSANRGDSLDRNIDDENQQTKDFLLLESHEEVTEELPSKAKFFFSAAVDTWEAEFYVKVEDNINLDLAGLIEMLEGRRGSQGLYMGCMKSGVVISEKLRARVNLTRVRLTLGYRQWYEPDWWKFGDSNTYFRHASGSLFILSKNLARYININSASLQSYAHDDISVGSWMMGLNATYVDDDRLCCSSSRQEKVCSNA",
+      "longitud": 366,
+      "especie_donante": "Sorghum bicolor",
+      "tipo_donante": "planta",
+      "dominios_relevantes": [],
+      "score_transferencia": 60,
+      "mecanismo": "Isoforma X1 de la misma O‑galactosiltransferasa con función idéntica a la isoforma X2.",
+      "riesgos": [
+        "Mismos riesgos que la isoforma X2.",
+        "Riesgo de sobrecarga de la vía de glicosilación."
+      ],
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": []
+      },
+      "val_string": {
+        "interacciones": 5,
+        "partners": [
+          "A0A1Z5R3D6",
+          "C5WPE2_SORBI",
+          "A0A1Z5R766",
+          "A0A1Z5R7Q0",
+          "A0A1Z5R7Z8"
+        ],
+        "encontrado": true
+      },
+      "val_geo": {
+        "datasets": 20,
+        "ids": [
+          "200274752",
+          "200276121",
+          "200262062",
+          "200218642",
+          "200178993"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 60,
+        "fuentes": [
+          "interacciones",
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "si",
+      "estrategia": "edicion_genica",
+      "riesgo_compatibility": "bajo",
+      "justificacion_compat": "Isoforma X1 de la misma transferasa tiene ortólogo en cassava; la edición del regulador natural minimiza riesgos.",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "NP_001410932.1",
+      "descripcion": "tyrosine N-monooxygenase",
+      "secuencia": "MATMEVEAAAATVLAAPLLSSSAILKLLLFVVTLSYLARALRRPRKSTTKCSSTTCASPPAGVGNPPLPPGPVPWPVVGNLPEMLLNKPAFRWIHQMMREMGTDIACVKLGGVHVVSITCPEIAREVLRKQDANFISRPLTFASETFSGGYRNAVLSPYGDQWKKMRRVLTSEIICPSRHAWLHDKRTDEADNLTRYVYNLATKAATGDVAVDVRHVARHYCGNVIRRLMFNRRYFGEPQADGGPGPMEVLHMDAVFTSLGLLYAFCVSDYLPWLRGLDLDGHEKIVKEANVAVNRLHDTVIDDRWRQWKSGERQEMEDFLDVLITLKDAQGNPLLTIEEVKAQSQDITFAAVDNPSNAVEWALAEMVNNPEVMAKAMEELDRVVGRERLVQESDIPKLNYVKACIREAFRLHPVAPFNVPHVALADTTIAGYRVPKGSHVILSRTGLGRNPRVWDEPLRFYPDRHLATAASDVALTENDLRFISFSTGRRGCIAASLGTAMSVMLFGRLLQGFTWSKPAGVEAVDLSESKSDTFMATPLVLHAEPRLPAHLYPSISI",
+      "longitud": 558,
+      "especie_donante": "Sorghum bicolor",
+      "tipo_donante": "planta",
+      "dominios_relevantes": [],
+      "score_transferencia": 55,
+      "mecanismo": "Tirosina N‑monooxigenasa que produce compuestos fenólicos y alcaloides que actúan como antioxidantes y pueden mejorar la tolerancia a estrés abiótico.",
+      "riesgos": [
+        "Producción de metabolitos secundarios puede generar compuestos tóxicos o anti‑nutricionales para humanos o animales.",
+        "Posible interferencia con rutas metabólicas nativas de fenilpropanoides."
+      ],
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": []
+      },
+      "val_string": {
+        "interacciones": 0,
+        "partners": [],
+        "encontrado": false
+      },
+      "val_geo": {
+        "datasets": 20,
+        "ids": [
+          "200274752",
+          "200276121",
+          "200262062",
+          "200218642",
+          "200178993"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 35,
+        "fuentes": [
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "no",
+      "estrategia": "transgenesis",
+      "riesgo_compatibility": "medio",
+      "justificacion_compat": "Cassava carece de tirosina N‑monooxigenasa típica de rutas de alcaloides; su introducción puede generar metabolitos no habituales, requiriendo evaluación de toxicidad.",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    },
+    {
+      "accession": "YP_899413.1",
+      "descripcion": "ATP synthase CF1 epsilon subunit (chloroplast)",
+      "secuencia": "MKLNLYVLTPKRIIWDCEVKEIILSTNSGQIGVLPNHAPINTAVDMGPLRIRLLNDQWLTAVLWSGFARIVNNEIIILGNDAELGSDIDPEEAQQALEIAEANLSKAEGTKELVEAKLALRRARIRVEAVNWIPPSN",
+      "longitud": 137,
+      "especie_donante": "Sorghum bicolor",
+      "tipo_donante": "planta",
+      "dominios_relevantes": [],
+      "score_transferencia": 45,
+      "mecanismo": "Subunidad épsilon del ATP sintasa CF1 cloroplástico; mejora la eficiencia de la fotofosforilación bajo limitación de agua, manteniendo la producción de ATP.",
+      "riesgos": [
+        "Integración inadecuada puede desbalancear el complejo ATP sintasa y generar estrés fotooxidativo.",
+        "Posible incompatibilidad con los reguladores nativos del receptor."
+      ],
+      "val_epmc": {
+        "menciones": 0,
+        "novel": true,
+        "articulos": []
+      },
+      "val_string": {
+        "interacciones": 10,
+        "partners": [
+          "atpF",
+          "atpA",
+          "atpB",
+          "atpI",
+          "atpH",
+          "C5XYR1_SORBI",
+          "A0A1B6QEH8",
+          "A0A1W0VXG8",
+          "C5WPC6_SORBI",
+          "C5XI41_SORBI"
+        ],
+        "encontrado": true
+      },
+      "val_geo": {
+        "datasets": 20,
+        "ids": [
+          "200274752",
+          "200276121",
+          "200262062",
+          "200218642",
+          "200178993"
+        ]
+      },
+      "soporte_multifuente": {
+        "score": 75,
+        "fuentes": [
+          "interacciones",
+          "expresion"
+        ]
+      },
+      "tiene_ortologo": "si",
+      "estrategia": "edicion_genica",
+      "riesgo_compatibility": "bajo",
+      "justificacion_compat": "La subunidad epsilon de la ATP sintasa es altamente conservada; la edición del gen nativo para mejorar su expresión es segura.",
+      "promotor": "",
+      "localizacion": "",
+      "codon_opt": "",
+      "notas_constructo": ""
+    }
+  ],
+  "genes_brazo_a": [
+    {
+      "simbolo": "LOC110615233",
+      "descripcion": "catalase isozyme 2"
+    },
+    {
+      "simbolo": "LOC110609185",
+      "descripcion": "heat shock cognate 70 kDa protein 2"
+    },
+    {
+      "simbolo": "LOC110628482",
+      "descripcion": "heat shock protein 90-6, mitochondrial"
+    },
+    {
+      "simbolo": "LOC110610426",
+      "descripcion": "heat shock 70 kDa protein 16"
+    },
+    {
+      "simbolo": "LOC110626448",
+      "descripcion": "17.4 kDa class III heat shock protein"
+    },
+    {
+      "simbolo": "LOC110624838",
+      "descripcion": "heat shock 70 kDa protein, mitochondrial"
+    },
+    {
+      "simbolo": "LOC110619268",
+      "descripcion": "heat shock 70 kDa protein, mitochondrial"
+    },
+    {
+      "simbolo": "LOC110617327",
+      "descripcion": "heat shock protein 90-5, chloroplastic"
+    },
+    {
+      "simbolo": "LOC110603605",
+      "descripcion": "heat shock protein 83"
+    },
+    {
+      "simbolo": "LOC110599687",
+      "descripcion": "heat shock protein 90-5, chloroplastic"
+    }
+  ],
+  "nota": "Busqueda trans-especie V4.4 orquestada por LLM. Validacion experimental requerida."
+}

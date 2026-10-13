@@ -1,0 +1,22 @@
+# Usa automáticamente la mejor base disponible según el rasgo
+python pipeline.py --rasgo "tolerancia a sequia" --pfam auto
+
+# Fuerza Pfam completo para auditoría máxima
+python pipeline.py --rasgo "tolerancia a sequia" --pfam completo
+
+# Fuerza una sub-base específica
+python pipeline.py --rasgo "tolerancia a sequia" --pfam sequia
+python pipeline.py --rasgo "tolerancia a salinidad" --pfam salinidad
+python pipeline.py --rasgo "tolerancia a calor" --pfam calor
+
+# Usa una base personalizada
+python pipeline.py --rasgo "estrés oxidativo" --pfam custom --pfam-ruta dbs/Pfam-oxidativo.hmm
+
+Pfam-estres.hmm
+Pfam-sequia.hmm
+Pfam-salinidad.hmm
+Pfam-calor.hmm
+Pfam-frio.hmm
+Pfam-inundacion.hmm
+Pfam-oxidativo.hmm
+Pfam-nutricion.hmm

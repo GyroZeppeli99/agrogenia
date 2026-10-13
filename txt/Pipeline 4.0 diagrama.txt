@@ -1,0 +1,45 @@
+FASE 0 · PLANIFICACIÓN
+├── Definir rasgo objetivo + especie receptora
+└── Seleccionar especies donantes según el rasgo
+
+FASE 1 · INGESTA MULTI-ESPECIE
+├── Descargar proteomas de especies donantes
+└── Filtrar por genes candidatos (keywords de estrés)
+
+FASE 2 · ANOTACIÓN DE DOMINIOS (HMMER)
+└── Identificar dominios funcionales en los candidatos
+
+FASE 3 · PRIORIZACIÓN LLM
+└── Evaluar plausibilidad de transferencia
+
+FASE 4 · EVALUACIÓN DE COMPATIBILIDAD
+├── ¿Tiene ortólogos en la receptora?
+│   ├── SÍ → edición génica (CRISPR)
+│   └── NO → transgénesis directa
+├── Verificar toxicidad (dominios alergénicos/toxinas)
+└── Evaluar compatibilidad metabólica
+
+FASE 5 · DISEÑO DE CONSTRUCTO
+├── Promotor apropiado
+├── Localización subcelular
+└── Codón optimization
+
+FASE 6 · INFORME COMPARATIVO
+└── Brazo A (modelo) vs Brazo B (donantes) vs Brazo C (compatibilidad)
+
+
+
+# Ejecución básica (V4 actual)
+python pipeline_v4.py --rasgo "tolerancia a sequia" --receptora yuca
+
+# Con validación de expresión
+python pipeline_v4.py --rasgo "tolerancia a sequia" --receptora yuca --geo
+
+# Con red de interacciones
+python pipeline_v4.py --rasgo "tolerancia a sequia" --receptora yuca --string
+
+# Con ortología
+python pipeline_v4.py --rasgo "tolerancia a sequia" --receptora yuca --ensembl
+
+# Modo completo
+python pipeline_v4.py --rasgo "tolerancia a sequia" --receptora yuca --all

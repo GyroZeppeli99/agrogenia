@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AgroGenIA · Presentación final 16:9</title>
+<link href="https://cdn.jsdelivr.net/npm/@fontsource/space-grotesk@5.0.20/400.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fontsource/space-grotesk@5.0.20/500.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fontsource/space-grotesk@5.0.20/600.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fontsource/space-grotesk@5.0.20/700.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.16/400.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.16/500.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.16/600.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fontsource/jetbrains-mono@5.0.18/400.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fontsource/jetbrains-mono@5.0.18/600.css" rel="stylesheet">
+<style>
+:root{
+  --bg:#050b08; --card:#0c1913; --card2:#10231b;
+  --line:rgba(134,239,172,.14); --line2:rgba(134,239,172,.3);
+  --txt:#e9f6ee; --mut:#9db8a9; --dim:#5d7a6c;
+  --acc:#4ade80; --acc2:#22d3ee; --lime:#a3e635; --amber:#fbbf24; --rose:#fb7185; --violet:#a78bfa;
+  --disp:'Space Grotesk',sans-serif; --body:'Inter',sans-serif; --mono:'JetBrains Mono',monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;overflow:hidden}
+body{background:#020503;color:var(--txt);font-family:var(--body)}
+h1,h2,h3{font-family:var(--disp);line-height:1.1}
+.grad{background:linear-gradient(92deg,var(--acc) 8%,var(--acc2) 55%,var(--lime) 96%);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* ====== ESCENARIO 16:9 ====== */
+#viewport{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;overflow:hidden}
+#stage{width:1600px;height:900px;flex-shrink:0;position:relative;background:var(--bg);
+  transform:scale(var(--scale,1));transform-origin:center center;overflow:hidden;
+  box-shadow:0 0 120px rgba(0,0,0,.8)}
+#stage::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+  background:radial-gradient(900px 520px at 12% -6%,rgba(34,211,238,.07),transparent 60%),
+             radial-gradient(820px 560px at 92% 8%,rgba(74,222,128,.07),transparent 55%),
+             radial-gradient(700px 480px at 50% 112%,rgba(163,230,53,.05),transparent 60%)}
+#stage::after{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.55;
+  background-image:linear-gradient(rgba(134,239,172,.028) 1px,transparent 1px),linear-gradient(90deg,rgba(134,239,172,.028) 1px,transparent 1px);
+  background-size:54px 54px;-webkit-mask-image:radial-gradient(ellipse at 50% 30%,#000 30%,transparent 78%);mask-image:radial-gradient(ellipse at 50% 30%,#000 30%,transparent 78%)}
+
+/* ====== CHROME (dentro del stage) ====== */
+#pbarWrap{position:absolute;top:0;left:0;right:0;height:4px;z-index:60;background:rgba(134,239,172,.1)}
+#pbar{height:100%;width:0;background:linear-gradient(90deg,var(--acc),var(--acc2));transition:width .5s cubic-bezier(.4,0,.2,1);box-shadow:0 0 12px rgba(74,222,128,.6)}
+.topbar{position:absolute;top:4px;left:0;right:0;z-index:55;display:flex;align-items:center;gap:14px;padding:16px 30px;pointer-events:none}
+.topbar>*{pointer-events:auto}
+.logo{display:flex;align-items:center;gap:10px;font-family:var(--disp);font-weight:700;font-size:19px}
+.logo em{font-style:normal;color:var(--acc)}
+.logo .ver{color:var(--acc2);font-size:13px;font-weight:500}
+.tbtns{margin-left:auto;display:flex;gap:10px;align-items:center}
+.tbtn{font-family:var(--body);font-size:14px;font-weight:600;color:var(--mut);background:rgba(12,25,19,.85);border:1px solid var(--line);border-radius:100px;padding:8px 16px;cursor:pointer;transition:.2s}
+.tbtn:hover{color:var(--txt);border-color:var(--line2);background:rgba(74,222,128,.12)}
+.tbtn.on{color:#04140b;background:linear-gradient(92deg,var(--acc),var(--acc2));border-color:transparent}
+#counter{font-family:var(--mono);font-size:14px;color:var(--dim);min-width:70px;text-align:right}
+.bottombar{position:absolute;bottom:0;left:0;right:0;z-index:55;display:flex;align-items:center;gap:16px;padding:16px 30px;pointer-events:none}
+.bottombar>*{pointer-events:auto}
+.navbtn{width:52px;height:52px;border-radius:15px;border:1px solid var(--line2);background:rgba(12,25,19,.85);color:var(--txt);font-size:20px;cursor:pointer;transition:.2s}
+.navbtn:hover{background:rgba(74,222,128,.16);border-color:var(--acc)}
+.navbtn:disabled{opacity:.25;cursor:default}
+.hint{margin-left:auto;font-family:var(--mono);font-size:13px;color:var(--dim)}
+.hint b{color:var(--mut);font-weight:600}
+
+/* ====== SLIDES ====== */
+.slide{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:90px 70px 100px;opacity:0;pointer-events:none;transform:translateX(70px);transition:opacity .5s ease,transform .5s cubic-bezier(.4,0,.2,1);z-index:10}
+.slide.prev{transform:translateX(-70px)}
+.slide.active{opacity:1;pointer-events:auto;transform:none}
+.slide-in{width:100%;max-width:1460px}
+.slide .notes{display:none}
+.rv{opacity:0;transform:translateY(26px)}
+.slide.active .rv{animation:reveal .7s cubic-bezier(.2,.7,.3,1) forwards;animation-delay:var(--d,0s)}
+@keyframes reveal{to{opacity:1;transform:none}}
+.tag{display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);border:1px solid var(--line2);border-radius:100px;padding:7px 16px;background:rgba(74,222,128,.06)}
+.tag::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--acc);box-shadow:0 0 10px var(--acc)}
+.slide h2{font-size:52px;font-weight:700;letter-spacing:-.015em;margin:20px 0 14px}
+.slide .sub{color:var(--mut);font-size:20px;max-width:1050px;line-height:1.55}
+.msg{margin-top:26px;border:1px solid rgba(163,230,53,.3);background:rgba(163,230,53,.06);border-radius:14px;padding:17px 22px;font-size:17px;color:var(--mut);line-height:1.55}
+.msg b{color:var(--lime)}
+.msg.cy{border-color:rgba(34,211,238,.35);background:rgba(34,211,238,.06)}
+.msg.cy b{color:var(--acc2)}
+
+/* cover */
+#helix{position:absolute;right:-40px;top:110px;z-index:1;opacity:.95;pointer-events:none}
+.cover-kicker{display:inline-flex;gap:10px;align-items:center;font-family:var(--mono);font-size:14px;color:var(--acc2);border:1px solid rgba(34,211,238,.3);background:rgba(34,211,238,.07);border-radius:100px;padding:9px 18px;letter-spacing:.1em}
+.cover-title{font-size:104px;font-weight:700;letter-spacing:-.03em;margin:28px 0 10px}
+.cover-sub2{font-size:30px;font-weight:600;color:var(--mut);margin-bottom:24px}
+.cover-sub{color:var(--mut);font-size:21px;max-width:760px;line-height:1.6}
+.cover-chips{display:flex;gap:12px;flex-wrap:wrap;margin-top:38px}
+.cchip{font-family:var(--mono);font-size:14px;color:var(--mut);border:1px solid var(--line);border-radius:10px;padding:10px 15px;background:rgba(12,25,19,.6)}
+.cchip b{color:var(--acc);font-weight:600}
+.start-hint{margin-top:44px;font-family:var(--mono);font-size:14px;color:var(--dim);animation:pulse2 2.2s ease infinite}
+@keyframes pulse2{0%,100%{opacity:.5}50%{opacity:1}}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:38px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:30px 24px;text-align:center;transition:.3s}
+.stat:hover{border-color:var(--line2);transform:translateY(-4px)}
+.stat .v{font-family:var(--disp);font-size:52px;font-weight:700;color:var(--acc)}
+.stat .v.c2{color:var(--acc2)} .stat .v.c3{color:var(--lime)} .stat .v.c4{color:var(--amber)}
+.stat .l{font-size:15px;color:var(--dim);margin-top:10px;line-height:1.5}
+
+/* two columns */
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:30px}
+.cols.w64{grid-template-columns:1.15fr .85fr}
+.cols.w46{grid-template-columns:.9fr 1.1fr}
+.acard{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px}
+.acard h3{font-size:21px;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.acard ul{list-style:none}
+.acard li{font-size:16px;color:var(--mut);padding:9px 0 9px 26px;position:relative;border-bottom:1px dashed var(--line);line-height:1.5}
+.acard li:last-child{border-bottom:none}
+.acard li::before{content:"▸";position:absolute;left:2px;color:var(--acc)}
+.acard li b{color:var(--txt);font-weight:600}
+.acard.gold{border-top:3px solid var(--amber)}
+.acard.green{border-top:3px solid var(--acc)}
+.acard.cyan{border-top:3px solid var(--acc2)}
+.acard.vio{border-top:3px solid var(--violet)}
+
+/* pipeline nodes */
+.pipe{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:36px}
+.pnode{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px 18px;text-align:center;transition:.3s;position:relative}
+.pnode:hover{border-color:var(--acc);transform:translateY(-5px);box-shadow:0 18px 40px rgba(0,0,0,.4)}
+.pnode .pn{font-family:var(--mono);font-size:12px;color:var(--acc);letter-spacing:.2em}
+.pnode .pi{font-size:36px;margin:14px 0 10px}
+.pnode h3{font-size:19px;font-weight:600}
+.pnode p{font-size:14px;color:var(--dim);margin-top:8px;line-height:1.5}
+.pnode::after{content:"→";position:absolute;right:-16px;top:50%;transform:translateY(-50%);color:var(--acc2);font-size:18px;z-index:2}
+.pnode:last-child::after{display:none}
+
+/* console */
+.console{background:#040a06;border:1px solid var(--line2);border-radius:16px;overflow:hidden;font-family:var(--mono);font-size:14.5px}
+.cons-bar{display:flex;gap:8px;align-items:center;padding:12px 16px;border-bottom:1px solid var(--line);background:rgba(12,25,19,.6)}
+.cons-bar i{width:11px;height:11px;border-radius:50%;display:block}
+.cons-bar span{margin-left:10px;color:var(--dim);font-size:12px}
+.cons-body{padding:18px 20px;line-height:2.05}
+.cons-body .t{color:var(--dim)}
+.cons-body .ok{color:var(--acc)} .cons-body .m{color:#c3d8cb} .cons-body .q{color:var(--lime)} .cons-body .s{color:var(--acc2)} .cons-body .w{color:var(--amber)}
+
+/* tables */
+.tbl{width:100%;border-collapse:collapse;margin-top:24px;font-size:15.5px}
+.tbl th{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);text-align:left;padding:10px 14px;border-bottom:1px solid var(--line2);font-weight:400}
+.tbl td{padding:11px 14px;border-bottom:1px dashed var(--line);color:var(--mut);vertical-align:top;line-height:1.45}
+.tbl tr:hover td{background:rgba(74,222,128,.04)}
+.tbl td b{color:var(--txt);font-weight:600}
+.tbl .num{font-family:var(--mono);color:var(--acc)}
+.tbl .warn{color:var(--amber)}
+.tbl .bad{color:var(--rose)}
+.tbl .good{color:var(--acc)}
+
+/* bars */
+.res-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:32px}
+.trait-card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px}
+.trait-card h3{font-size:19px;display:flex;align-items:center;gap:10px;margin-bottom:20px}
+.trait-card h3 small{color:var(--dim);font-size:12px;font-weight:400;font-family:var(--mono)}
+.brow{margin-bottom:17px}
+.brow .bl{display:flex;justify-content:space-between;font-size:15px;margin-bottom:7px}
+.brow .bl b{font-family:var(--disp);font-weight:600}
+.brow .bl span{font-family:var(--mono);color:var(--acc);font-size:14px}
+.btrack{height:9px;background:rgba(134,239,172,.1);border-radius:5px;overflow:hidden}
+.bfill{height:100%;width:0;border-radius:5px;background:linear-gradient(90deg,var(--acc),var(--acc2));transition:width 1.1s cubic-bezier(.2,.7,.3,1);transition-delay:var(--d,.3s)}
+.slide.active .bfill{width:var(--w)}
+
+/* funnel */
+.funnel{margin-top:34px;display:flex;flex-direction:column;gap:8px;align-items:center}
+.fstep{background:var(--card);border:1px solid var(--line2);border-radius:12px;padding:13px 24px;text-align:center;transition:.3s;position:relative}
+.fstep:hover{transform:scale(1.02);border-color:var(--acc)}
+.fstep .fn{font-family:var(--disp);font-size:26px;font-weight:700;color:var(--acc)}
+.fstep .fl{font-size:13.5px;color:var(--mut);margin-top:2px}
+.fstep .fx{position:absolute;right:-230px;top:50%;transform:translateY(-50%);width:210px;font-family:var(--mono);font-size:11.5px;color:var(--dim);text-align:left}
+.farrow{color:var(--acc2);font-size:15px;line-height:1}
+
+/* cascade */
+.cascade{display:flex;flex-direction:column;gap:0;align-items:center;margin-top:28px}
+.clayer{width:100%;max-width:980px;background:var(--card);border:1px solid var(--line);border-left:5px solid var(--acc);border-radius:14px;padding:18px 26px;display:flex;align-items:center;gap:20px}
+.clayer .cl-n{font-family:var(--mono);font-size:12px;color:var(--acc);letter-spacing:.15em;min-width:150px}
+.clayer .cl-genes{font-size:15.5px;color:var(--mut);line-height:1.5}
+.clayer .cl-genes b{color:var(--txt)}
+.clayer.l2{border-left-color:var(--acc2)} .clayer.l2 .cl-n{color:var(--acc2)}
+.clayer.l3{border-left-color:var(--lime)} .clayer.l3 .cl-n{color:var(--lime)}
+.clayer.l4{border-left-color:var(--amber)} .clayer.l4 .cl-n{color:var(--amber)}
+.carrow{color:var(--dim);font-size:18px;padding:5px 0}
+
+/* profile card */
+.profile{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:28px}
+.pf-card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px}
+.pf-card h3{font-family:var(--mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-bottom:16px;font-weight:400}
+.pf-row{display:flex;justify-content:space-between;gap:14px;padding:8px 0;border-bottom:1px dashed var(--line);font-size:15.5px}
+.pf-row:last-child{border-bottom:none}
+.pf-row .k{color:var(--dim)}
+.pf-row .v{color:var(--txt);font-weight:500;text-align:right}
+.pf-row .v.acc{color:var(--acc)} .pf-row .v.cy{color:var(--acc2)} .pf-row .v.am{color:var(--amber)}
+
+/* timeline */
+.timeline{display:flex;gap:0;margin-top:40px;align-items:stretch}
+.tl-node{flex:1;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px;position:relative;transition:.3s}
+.tl-node:hover{transform:translateY(-5px);border-color:var(--acc)}
+.tl-node .tl-v{font-family:var(--mono);font-size:13px;letter-spacing:.15em;color:var(--acc)}
+.tl-node h3{font-size:21px;margin:10px 0 12px}
+.tl-node p{font-size:14.5px;color:var(--mut);line-height:1.6}
+.tl-node .tl-q{margin-top:14px;font-family:var(--mono);font-size:12.5px;color:var(--acc2);border-top:1px dashed var(--line);padding-top:12px;line-height:1.6}
+.tl-link{display:flex;align-items:center;color:var(--acc2);font-size:26px;padding:0 10px;animation:slidear 1.8s ease infinite}
+@keyframes slidear{0%,100%{transform:translateX(0);opacity:.55}50%{transform:translateX(7px);opacity:1}}
+
+/* cards grid */
+.cards2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}
+.cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+.lcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;transition:.25s}
+.lcard:hover{border-color:var(--line2);transform:translateY(-4px)}
+.lcard .li-ic{font-size:26px;margin-bottom:12px;display:block}
+.lcard h3{font-size:18px;margin-bottom:9px}
+.lcard p{font-size:14.5px;color:var(--mut);line-height:1.6}
+.lcard .mit{margin-top:12px;font-size:12.5px;color:var(--lime);font-family:var(--mono);line-height:1.5}
+
+/* roadmap */
+.roadmap{display:flex;flex-direction:column;gap:14px;margin-top:30px}
+.rstep{display:flex;gap:20px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:19px 24px;align-items:flex-start;transition:.25s}
+.rstep:hover{border-color:var(--line2);transform:translateX(6px)}
+.rstep .rn{font-family:var(--mono);font-size:14px;color:#04140b;background:linear-gradient(92deg,var(--acc),var(--acc2));border-radius:10px;padding:7px 13px;font-weight:600;flex:none}
+.rstep h3{font-size:18px;margin-bottom:4px}
+.rstep p{font-size:14.5px;color:var(--mut);line-height:1.5}
+.rstep .when{font-family:var(--mono);font-size:11px;color:var(--dim);letter-spacing:.12em;text-transform:uppercase;margin-bottom:3px}
+
+/* validation sources */
+.vsrc{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:30px}
+.vcard{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px;text-align:center;transition:.3s;position:relative;overflow:hidden}
+.vcard:hover{transform:translateY(-5px);border-color:var(--acc)}
+.vcard .vi{font-size:40px;margin-bottom:14px}
+.vcard h3{font-size:19px;margin-bottom:6px}
+.vcard .vq{font-size:13.5px;color:var(--dim);font-style:italic;margin-bottom:18px;line-height:1.5}
+.vcard .vr{font-family:var(--disp);font-size:40px;font-weight:700;color:var(--acc)}
+.vcard .vr.cy{color:var(--acc2)} .vcard .vr.li{color:var(--lime)}
+.vcard .vl{font-size:13.5px;color:var(--mut);margin-top:8px;line-height:1.5}
+
+/* closing */
+.close-quote{text-align:center;max-width:1100px;margin:0 auto}
+.close-quote .big{font-size:66px;font-weight:700;letter-spacing:-.02em;line-height:1.18}
+.close-quote .sub{margin-top:26px;font-size:21px}
+.close-chips{display:flex;gap:13px;justify-content:center;flex-wrap:wrap;margin-top:44px}
+
+/* notes panel (fuera del stage) */
+#notesPanel{position:fixed;left:0;right:0;bottom:0;z-index:200;background:rgba(8,17,12,.97);border-top:1px solid var(--line2);backdrop-filter:blur(12px);padding:20px 32px 24px;transform:translateY(105%);transition:transform .4s cubic-bezier(.4,0,.2,1);max-height:40vh;overflow-y:auto}
+#notesPanel.open{transform:none}
+.np-head{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.np-head b{font-family:var(--disp);font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--acc)}
+.np-head button{margin-left:auto;background:none;border:1px solid var(--line);color:var(--dim);font-size:13px;cursor:pointer;border-radius:8px;padding:6px 14px}
+.np-head button:hover{color:var(--txt)}
+#npBody{font-size:16px;color:var(--mut);line-height:1.75;max-width:1100px}
+
+/* grid overview (fuera del stage) */
+#gridOverlay{position:fixed;inset:0;z-index:210;background:rgba(3,7,5,.97);backdrop-filter:blur(10px);display:none;overflow-y:auto;padding:60px 40px 50px}
+#gridOverlay.open{display:block}
+.grid-head{display:flex;align-items:center;gap:18px;max-width:1200px;margin:0 auto 26px}
+.grid-head h2{font-size:28px;font-family:var(--disp);color:var(--txt)}
+.grid-head button{margin-left:auto;background:rgba(12,25,19,.8);border:1px solid var(--line2);color:var(--txt);border-radius:10px;padding:9px 18px;cursor:pointer;font-size:14px}
+#gridCards{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px;max-width:1200px;margin:0 auto}
+.gcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;cursor:pointer;transition:.22s}
+.gcard:hover{border-color:var(--acc);transform:translateY(-3px)}
+.gcard.cur{border-color:var(--acc);box-shadow:0 0 0 1px var(--acc)}
+.gcard .gn{font-family:var(--mono);font-size:11px;color:var(--acc)}
+.gcard .gt{font-family:var(--disp);font-size:15px;font-weight:600;margin-top:8px;line-height:1.35;color:var(--txt)}
+.gcard .gs{font-size:11.5px;color:var(--dim);margin-top:6px}
+</style>
+</head>
+<body>
+
+<div id="viewport">
+<div id="stage">
+
+<div id="pbarWrap"><div id="pbar"></div></div>
+
+<div class="topbar">
+  <div class="logo">🧬 AgroGen<em>IA</em> <span class="ver">V2 · V3.2 · V4.2</span></div>
+  <div class="tbtns">
+    <span id="counter">1 / 21</span>
+    <button class="tbtn" id="btnGrid">☰ Índice (G)</button>
+    <button class="tbtn" id="btnNotes">🎤 Notas (N)</button>
+    <button class="tbtn" id="btnFull">⛶ Pantalla (F)</button>
+  </div>
+</div>
+
+<!-- ═══════════ 1 · PORTADA ═══════════ -->
+<section class="slide active" data-title="Portada" data-sec="Inicio">
+  <canvas id="helix" width="520" height="680"></canvas>
+  <div class="slide-in">
+    <div class="rv" style="--d:.05s"><span class="cover-kicker">GENÓMICA + INTELIGENCIA ARTIFICIAL · CULTIVOS HUÉRFANOS</span></div>
+    <h1 class="cover-title rv" style="--d:.15s">AgroGen<span class="grad">IA</span></h1>
+    <div class="cover-sub2 rv" style="--d:.25s">Del rasgo agronómico al gen candidato</div>
+    <p class="cover-sub rv" style="--d:.35s">Tres generaciones de un pipeline de descubrimiento genómico asistido por IA, aplicado a la yuca (<i>Manihot esculenta</i>): del redescubrimiento de genes conocidos, a la identificación de candidatos nunca estudiados y la búsqueda de transgenes en organismos extremos.</p>
+    <div class="cover-chips rv" style="--d:.5s">
+      <span class="cchip"><b>3</b> generaciones de pipeline</span>
+      <span class="cchip"><b>3</b> rasgos × yuca</span>
+      <span class="cchip"><b>30+</b> candidatos NOVEL</span>
+      <span class="cchip"><b>5</b> genes hub cross-stress</span>
+      <span class="cchip">costo <b>0 COP</b></span>
+    </div>
+    <div class="start-hint rv" style="--d:.65s">→ Navega con las flechas del teclado · N = notas del orador</div>
+  </div>
+  <div class="notes">Presente el proyecto completo: tres generaciones de un pipeline que combina inteligencia artificial con bases de datos genómicas públicas para acelerar el descubrimiento de genes en cultivos huérfanos. Enfatice desde el inicio que todo fue ejecutado de verdad — no es una simulación — y que el costo total fue cero (Groq free tier + bases públicas + laptop personal).</div>
+</section>
+
+<!-- ═══════════ 2 · EL PROBLEMA ═══════════ -->
+<section class="slide" data-title="El problema: cultivos huérfanos" data-sec="Contexto">
+  <div class="slide-in">
+    <span class="tag rv">Contexto</span>
+    <h2 class="rv" style="--d:.1s">Cultivos huérfanos: <span class="grad">ricos en genes, pobres en conocimiento</span></h2>
+    <p class="sub rv" style="--d:.2s">La yuca alimenta a más de 800 millones de personas, pero las herramientas clásicas de genómica fallan con ella: la mayoría de sus genes son <b style="color:var(--txt)">LOC*</b> sin curación funcional.</p>
+    <div class="stats">
+      <div class="stat rv" style="--d:.3s"><div class="v">59 151</div><div class="l">proteínas en el proteoma de yuca (JGI v8)</div></div>
+      <div class="stat rv" style="--d:.4s"><div class="v c2">31 469</div><div class="l">loci únicos tras eliminar 26 213 isoformas</div></div>
+      <div class="stat rv" style="--d:.5s"><div class="v c3">100%</div><div class="l">de los candidatos V2 eran LOC* sin datos en UniProt</div></div>
+      <div class="stat rv" style="--d:.6s"><div class="v c4">~150 M</div><div class="l">años de divergencia con Arabidopsis: poca transferencia directa</div></div>
+    </div>
+    <p class="msg rv" style="--d:.7s">💡 <b>La paradoja:</b> los cultivos que más necesitan mejoramiento genético son los que menos datos curados tienen. BLAST y la búsqueda bibliográfica fallan donde no hay literatura. Se necesita un enfoque que <b>infiera función desde la secuencia y la estructura</b>.</p>
+  </div>
+  <div class="notes">Contextualice el problema con las cifras del proteoma real descargado. El punto clave: en el informe V2 original, el 100% de los candidatos de yuca eran genes LOC sin anotación en UniProt — las herramientas clásicas no sirven ahí. Esa limitación fue el motor de toda la evolución del proyecto: si la literatura no alcanza, hay que inferir función desde dominios estructurales y ortología.</div>
+</section>
+
+<!-- ═══════════ 3 · LA SOLUCIÓN ═══════════ -->
+<section class="slide" data-title="Arquitectura multi-agente" data-sec="Concepto">
+  <div class="slide-in">
+    <span class="tag rv">Concepto</span>
+    <h2 class="rv" style="--d:.1s">Un equipo de especialistas, <span class="grad">coordinado por un orquestador</span></h2>
+    <div class="cols">
+      <div class="acard green rv" style="--d:.2s">
+        <h3>🔬 Especialistas (herramientas y bases de datos)</h3>
+        <ul>
+          <li><b>NCBI</b> — genes, proteínas RefSeq, taxonomía, PMC</li>
+          <li><b>HMMER + Pfam</b> — dominios funcionales locales (19 000 familias)</li>
+          <li><b>UniProt · AlphaFold · ESMAtlas</b> — función y estructura 3D</li>
+          <li><b>Europe PMC</b> — literatura completa + preprints</li>
+          <li><b>STRING</b> — redes de interacción proteína-proteína</li>
+          <li><b>GEO</b> — datasets de expresión bajo estrés</li>
+        </ul>
+      </div>
+      <div class="acard cyan rv" style="--d:.35s">
+        <h3>🧠 Orquestador (LLM vía Groq)</h3>
+        <ul>
+          <li>Traduce el rasgo a <b>términos biológicos de búsqueda</b></li>
+          <li>Sugiere <b>especies donantes</b> con adaptaciones extremas</li>
+          <li>Prioriza candidatos con <b>score 0–100 justificado</b></li>
+          <li>Evalúa <b>compatibilidad</b> y estrategia (CRISPR vs transgénesis)</li>
+          <li>Diseña <b>constructos</b> (promotor, localización, codones)</li>
+          <li>Devuelve <b>JSON estructurado</b>, auditable en cada paso</li>
+        </ul>
+      </div>
+    </div>
+    <p class="msg cy rv" style="--d:.5s">📌 <b>Principio de diseño:</b> el modelo no inventa los datos — los datos vienen de bases públicas trazables. El modelo <b>razona</b> sobre ellos. Cada afirmación del informe tiene un enlace a su fuente. Es el patrón de "ciencia agéntica" que hoy publican Google (AI co-scientist) y otros grupos.</p>
+  </div>
+  <div class="notes">Explique la separación de responsabilidades: las herramientas especializadas aportan los datos duros (secuencias, dominios, interacciones) y el orquestador LLM aporta el razonamiento (priorizar, sugerir, diseñar). Insista en el principio de trazabilidad: el modelo nunca es la fuente de los datos, solo el intérprete. Este patrón se llama ciencia agéntica y es una tendencia actual real en la literatura.</div>
+</section>
+
+<!-- ═══════════ 4 · EVOLUCIÓN ═══════════ -->
+<section class="slide" data-title="Evolución del pipeline" data-sec="Arquitectura">
+  <div class="slide-in">
+    <span class="tag rv">Arquitectura</span>
+    <h2 class="rv" style="--d:.1s">Tres generaciones, <span class="grad">tres preguntas distintas</span></h2>
+    <div class="timeline">
+      <div class="tl-node rv" style="--d:.2s">
+        <div class="tl-v">V2 · REDescUBRIMIENTO</div>
+        <h3>📥 Modo literatura</h3>
+        <p>NCBI keyword → 12 genes → priorización LLM → enriquecimiento por secuencia (RefSeq + dominios) → plan CRISPR + diseño estadístico.</p>
+        <div class="tl-q">"¿Qué genes YA conocidos están asociados al rasgo?"</div>
+      </div>
+      <div class="tl-link rv" style="--d:.3s">→</div>
+      <div class="tl-node rv" style="--d:.4s">
+        <div class="tl-v">V3.2 · DESCUBRIMIENTO</div>
+        <h3>🔬 Embudo invertido</h3>
+        <p>Proteoma completo → filtro adaptativo + deduplicación → HMMER/Pfam → priorización → verificación PMC → convergencia Brazo A vs B.</p>
+        <div class="tl-q">"¿Qué proteínas NO estudiadas tienen dominios de estrés?"</div>
+      </div>
+      <div class="tl-link rv" style="--d:.5s">→</div>
+      <div class="tl-node rv" style="--d:.6s">
+        <div class="tl-v">V4.2 · TRANS-ESPECIE</div>
+        <h3>🌍 Ingeniería genética</h3>
+        <p>LLM sugiere donantes extremos → resolución automática de tax_ids → proteomas multi-especie → validación Europe PMC + STRING + GEO → diseño de constructo.</p>
+        <div class="tl-q">"¿Qué genes de OTRAS especies pueden mejorar la yuca?"</div>
+      </div>
+    </div>
+    <p class="msg rv" style="--d:.75s">🎯 Cada generación responde una pregunta más ambiciosa. La V2 <b>valida el método</b> (redescubre lo conocido), la V3.2 <b>descubre</b> (candidatos vírgenes), la V4.2 <b>propone soluciones</b> (transgenes y edición).</p>
+  </div>
+  <div class="notes">Recorra las tres generaciones como una escalera de ambición científica. V2 demuestra que el método funciona porque recupera genes canónicos de la literatura. V3.2 invierte el embudo y busca en lo no estudiado. V4.2 cambia de especie: busca soluciones en organismos extremos y evalúa su transferibilidad. Las tres comparten la misma arquitectura modular: cada fase produce una salida auditable.</div>
+</section>
+
+<!-- ═══════════ 5 · V2 RESULTADOS ═══════════ -->
+<section class="slide" data-title="V2: validación del método" data-sec="Resultados">
+  <div class="slide-in">
+    <span class="tag rv">Resultados · V2</span>
+    <h2 class="rv" style="--d:.1s">V2 redescubrió la <span class="grad">biología canónica de la sequía</span></h2>
+    <div class="cols w64">
+      <div class="rv" style="--d:.2s">
+        <table class="tbl">
+          <tr><th>Gen (yuca)</th><th>Producto</th><th>Score</th><th>Evidencia</th></tr>
+          <tr><td><b>LOC110601996</b></td><td>ERD7 cloroplástico</td><td class="num">85</td><td class="good">alta</td></tr>
+          <tr><td><b>LOC122721460</b></td><td>C2-domain ABA-related 11 (CAR11)</td><td class="num">78</td><td class="good">alta</td></tr>
+          <tr><td><b>LOC110619721</b></td><td>ERD15 (MANES_07G136300)</td><td class="num">72</td><td class="warn">media</td></tr>
+          <tr><td><b>LOC110621996</b></td><td>ERD15 (MANES_09G010100)</td><td class="num">72</td><td class="warn">media</td></tr>
+        </table>
+        <p class="msg" style="margin-top:20px;font-size:15px">✅ <b>Validación por redescubrimiento:</b> en Arabidopsis recuperó DREB1A, en salinidad la vía SOS completa (SOS1/HKT1/NHX1), en enfermedad los genes R (SNC1/RPM1/RPS5). Si encuentra lo que la literatura establece, el método funciona.</p>
+      </div>
+      <div class="console rv" style="--d:.35s">
+        <div class="cons-bar"><i style="background:#fb7185"></i><i style="background:#fbbf24"></i><i style="background:#4ade80"></i><span>informe_yuca_v2 — plan de validación (fragmento real)</span></div>
+        <div class="cons-body" style="font-size:13.5px">
+          <div><span class="s">Hipótesis:</span> <span class="m">sobreexpresión de ERD7 aumenta tolerancia a sequía…</span></div>
+          <div><span class="s">CRISPR:</span> <span class="m">3 estrategias (KO, KI promotor 35S, CRISPRa dCas9-VP64)</span></div>
+          <div><span class="s">Guías:</span> <span class="q">AGTCTGCTGATGCTGACGAG (exón 1)</span></div>
+          <div><span class="s">Controles:</span> <span class="m">WT, vector vacío, gRNA scramble, KO no relacionado</span></div>
+          <div><span class="s">Fenotipado:</span> <span class="m">RWC, conductancia, Fv/Fm, ROS (DAB), qRT-PCR</span></div>
+          <div><span class="s">Estadística:</span> <span class="m">RCBD 3 bloques × n=12, ANOVA 2 factores, Tukey HSD</span></div>
+          <div><span class="w">⚠ "la causalidad requerirá complementación genética"</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="notes">Muestre que la V2 no solo prioriza genes: genera un plan experimental completo con guías CRISPR reales, controles, fenotipado y diseño estadístico RCBD con ANOVA de dos factores. Destaque dos cosas: (1) la validación por redescubrimiento — el pipeline recupera ERD7, CAR11 y la vía SOS que la literatura establece; (2) la advertencia final que el propio sistema genera: correlación no es causalidad. Esa honestidad calibrada es marca de buen diseño.</div>
+</section>
+
+<!-- ═══════════ 6 · V3.2 PARADIGMA ═══════════ -->
+<section class="slide" data-title="V3.2: invertir el embudo" data-sec="V3.2 Descubrimiento">
+  <div class="slide-in">
+    <span class="tag rv">V3.2 · Concepto</span>
+    <h2 class="rv" style="--d:.1s">El salto: <span class="grad">invertir el embudo</span></h2>
+    <div class="cols">
+      <div class="acard gold rv" style="--d:.2s">
+        <h3>🔴 Modo clásico (V2)</h3>
+        <ul>
+          <li>Palabra clave → NCBI → 12 genes</li>
+          <li>Sesgo total hacia <b>lo ya publicado</b></li>
+          <li>Resultado típico: DREB1A, ERD7, SOS1</li>
+          <li>Rol en el paper: <b>benchmark</b></li>
+        </ul>
+      </div>
+      <div class="acard green rv" style="--d:.35s">
+        <h3>🟢 Modo descubrimiento (V3.2)</h3>
+        <ul>
+          <li>Proteoma completo → filtrar no caracterizados</li>
+          <li>Sesgo hacia <b>lo virgen</b></li>
+          <li>Resultado típico: <b>Manes.14G044700</b> (hypothetical, 0 menciones PMC)</li>
+          <li>Rol en el paper: <b>contribución original</b></li>
+        </ul>
+      </div>
+    </div>
+    <p class="msg rv" style="--d:.5s">🧬 <b>La pista reveladora:</b> la V2 ya producía genes vírgenes por accidente (los MANES_07G136300v8 y MANES_09G010100v8 del informe). La V3.2 los convierte en el <b>objetivo central</b>: proteínas con dominios de estrés detectados por HMMER que nadie ha publicado.</p>
+  </div>
+  <div class="notes">Explique el cambio de paradigma con claridad: el modo clásico busca donde ya hay luz (la literatura); el modo descubrimiento ilumina donde nadie buscó (el proteoma sin anotar). La anécdota de los genes MANES que aparecieron por accidente en la V2 es poderosa: el sistema ya tropezaba con candidatos vírgenes; la V3.2 los convierte en objetivo deliberado.</div>
+</section>
+
+<!-- ═══════════ 7 · V3.2 PIPELINE ═══════════ -->
+<section class="slide" data-title="V3.2: pipeline y correcciones" data-sec="V3.2 Descubrimiento">
+  <div class="slide-in">
+    <span class="tag rv">V3.2 · Pipeline</span>
+    <h2 class="rv" style="--d:.1s">Filtrado adaptativo + deduplicación <span class="grad">por locus</span></h2>
+    <div class="cols w46">
+      <div class="console rv" style="--d:.2s">
+        <div class="cons-bar"><i style="background:#fb7185"></i><i style="background:#fbbf24"></i><i style="background:#4ade80"></i><span>ejecución real — yuca, 2000 proteínas</span></div>
+        <div class="cons-body" style="font-size:13.5px">
+          <div><span class="t">[F2]</span> <span class="m">Proteomas totales&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 59151</span></div>
+          <div><span class="t">[F2]</span> <span class="m">Excluidas (transp/frag): 1469</span></div>
+          <div><span class="t">[F2]</span> <span class="w">Nivel 1 estricto: 0 → fallback nivel 3</span></div>
+          <div><span class="t">[F2]</span> <span class="ok">✔ Deduplicación: −26213 isoformas → 31469 loci</span></div>
+          <div><span class="t">[F3]</span> <span class="m">hmmscan contra Pfam (2000 prot)...</span></div>
+          <div><span class="t">[F3]</span> <span class="ok">✔ 1697 con dominio Pfam · 295 con dominios de estrés</span></div>
+          <div><span class="t">[F4]</span> <span class="ok">✔ Manes.14G044700 score 92 (AP2)</span></div>
+          <div><span class="t">[F6]</span> <span class="ok">✔ PMC: 9/10 candidatos NOVEL (0 menciones)</span></div>
+          <div><span class="t">[F7]</span> <span class="s">Convergencia: 9/10 con genes conocidos</span></div>
+        </div>
+      </div>
+      <div class="rv" style="--d:.35s">
+        <div class="acard green" style="margin-bottom:18px">
+          <h3>🛠️ Filtro adaptativo (3 niveles)</h3>
+          <ul>
+            <li><b>Nivel 1:</b> "hypothetical", "uncharacterized" → si &lt;30, relaja</li>
+            <li><b>Nivel 2:</b> "DUF", "domain-containing", "conserved"</li>
+            <li><b>Nivel 3:</b> todas las limpias → HMMER decide por dominios</li>
+          </ul>
+        </div>
+        <div class="acard cyan">
+          <h3>🧬 Deduplicación por locus</h3>
+          <ul>
+            <li>9 isoformas <i>Manes.14G053100.{4..12}.p</i> ocupaban 9 de 10 slots</li>
+            <li>Solución: conservar la isoforma más larga por locus</li>
+            <li>Resultado: <b>−26 213 redundancias</b>, ranking de 10 genes únicos</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="notes">Esta diapositiva muestra la ingeniería detrás del descubrimiento. Dos correcciones clave documentadas en consola real: el filtro adaptativo de tres niveles (porque el proteoma de yuca no usa las palabras "hypothetical" como esperábamos) y la deduplicación por locus (porque 9 de 10 slots del primer ranking eran isoformas del mismo gen). Los números de la consola son de la ejecución real con 2000 proteínas.</div>
+</section>
+
+<!-- ═══════════ 8 · V3.2 EMBUDO ═══════════ -->
+<section class="slide" data-title="V3.2: el embudo en números" data-sec="V3.2 Descubrimiento">
+  <div class="slide-in">
+    <span class="tag rv">V3.2 · Resultados</span>
+    <h2 class="rv" style="--d:.1s">De 59 151 proteínas a <span class="grad">9 candidatos vírgenes</span></h2>
+    <div class="cols w46">
+      <div class="funnel rv" style="--d:.2s">
+        <div class="fstep" style="width:92%"><div class="fn">59 151</div><div class="fl">proteoma completo de yuca</div><div class="fx">descargado de NCBI/Phytozome</div></div>
+        <div class="farrow">▼</div>
+        <div class="fstep" style="width:80%"><div class="fn">57 682</div><div class="fl">limpias (sin transposones ni fragmentos)</div><div class="fx">−1 469 excluidas</div></div>
+        <div class="farrow">▼</div>
+        <div class="fstep" style="width:68%"><div class="fn">31 469</div><div class="fl">loci únicos</div><div class="fx">−26 213 isoformas redundantes</div></div>
+        <div class="farrow">▼</div>
+        <div class="fstep" style="width:52%"><div class="fn">295</div><div class="fl">con dominios de estrés (HMMER/Pfam)</div><div class="fx">de 2 000 escaneadas · 1697 con Pfam</div></div>
+        <div class="farrow">▼</div>
+        <div class="fstep" style="width:38%"><div class="fn">10</div><div class="fl">priorizados por el orquestador LLM</div><div class="fx">score 66–92 · especulación baja/media</div></div>
+        <div class="farrow">▼</div>
+        <div class="fstep" style="width:28%;border-color:var(--acc);background:rgba(74,222,128,.08)"><div class="fn" style="color:var(--lime)">9</div><div class="fl"><b>NOVEL verificados</b> (0 menciones en PMC)</div><div class="fx">el décimo tiene 1 mención: ¡más interesante aún!</div></div>
+      </div>
+      <div class="rv" style="--d:.4s">
+        <div class="acard green">
+          <h3>📉 Reducción con criterios biológicos</h3>
+          <ul>
+            <li>Ratio de reducción: <b>3 147×</b> (31 469 → 10)</li>
+            <li>Cada etapa usa un criterio distinto: texto → longitud → <b>dominios estructurales</b> → razonamiento LLM → literatura</li>
+            <li>Hit rate de Pfam: <b>84,9%</b> de las proteínas escaneadas tienen al menos un dominio</li>
+            <li>Tiempo total: <b>~10 min</b> en laptop (HMMER 503 s + APIs + LLM)</li>
+          </ul>
+        </div>
+        <p class="msg cy" style="margin-top:18px">🔍 <b>Nota de transparencia:</b> se escanearon 2 000 de 31 469 loci (muestreo). Correr el proteoma completo es el siguiente paso (~una noche de cómputo).</p>
+      </div>
+    </div>
+  </div>
+  <div class="notes">El embudo completo con números reales de la ejecución. Destaque que cada etapa aplica un criterio distinto y cada vez más inteligente: texto, longitud, dominios estructurales HMMER, razonamiento del LLM y finalmente verificación en literatura. La reducción es de más de 3000 veces. Sea transparente con la limitación: solo se escanearon 2000 proteínas por tiempo de cómputo; el batch completo es trabajo de una noche.</div>
+</section>
+
+<!-- ═══════════ 9 · 3 RASGOS ═══════════ -->
+<section class="slide" data-title="3 rasgos, una red compartida" data-sec="Resultados">
+  <div class="slide-in">
+    <span class="tag rv">Resultados · V3.2 en yuca</span>
+    <h2 class="rv" style="--d:.1s">Tres rasgos independientes, <span class="grad">los mismos genes hub</span></h2>
+    <div class="res-cols">
+      <div class="trait-card rv" style="--d:.2s">
+        <h3>💧 Sequía <small>vía ABA / ERD</small></h3>
+        <div class="brow"><div class="bl"><b>Manes.14G044700 · AP2</b><span>92</span></div><div class="btrack"><div class="bfill" style="--w:92%;--d:.4s"></div></div></div>
+        <div class="brow"><div class="bl"><b>Manes.07G043100 · zf-C2H2</b><span>85</span></div><div class="btrack"><div class="bfill" style="--w:85%;--d:.55s"></div></div></div>
+        <div class="brow"><div class="bl"><b>Manes.14G095800 · ABC2</b><span>83</span></div><div class="btrack"><div class="bfill" style="--w:83%;--d:.7s"></div></div></div>
+        <div class="brow"><div class="bl"><b>Manes.14G106050 · Pkinase</b><span>80</span></div><div class="btrack"><div class="bfill" style="--w:80%;--d:.85s"></div></div></div>
+      </div>
+      <div class="trait-card rv" style="--d:.3s">
+        <h3>🧂 Salinidad <small>homeostasis iónica</small></h3>
+        <div class="brow"><div class="bl"><b>Manes.07G142400 · WRKY</b><span>92</span></div><div class="btrack"><div class="bfill" style="--w:92%;--d:.5s"></div></div></div>
+        <div class="brow"><div class="bl"><b>Manes.07G012700 · WRKY</b><span>92</span></div><div class="btrack"><div class="bfill" style="--w:92%;--d:.65s"></div></div></div>
+        <div class="brow"><div class="bl"><b>Manes.14G044700 · AP2</b><span>88</span></div><div class="btrack"><div class="bfill" style="--w:88%;--d:.8s"></div></div></div>
+        <div class="brow"><div class="bl"><b>Manes.07G043100 · zf-C2H2</b><span>85</span></div><div class="btrack"><div class="bfill" style="--w:85%;--d:.95s"></div></div></div>
+      </div>
+      <div class="trait-card rv" style="--d:.4s">
+        <h3>🔥 Calor <small>HSF / chaperonas</small></h3>
+        <div class="brow"><div class="bl"><b>Manes.07G142400 · WRKY</b><span>82</span></div><div class="btrack"><div class="bfill" style="--w:82%;--d:.6s"></div></div></div>
+        <div class="brow"><div class="bl"><b>Manes.14G044700 · AP2</b><span>80</span></div><div class="btrack"><div class="bfill" style="--w:80%;--d:.75s"></div></div></div>
+        <div class="brow"><div class="bl"><b>Manes.07G012700 · WRKY</b><span>80</span></div><div class="btrack"><div class="bfill" style="--w:80%;--d:.9s"></div></div></div>
+        <div class="brow"><div class="bl"><b>Manes.07G043100 · zf-C2H2</b><span>78</span></div><div class="btrack"><div class="bfill" style="--w:78%;--d:1.05s"></div></div></div>
+      </div>
+    </div>
+    <p class="msg rv" style="--d:1.1s">🎯 <b>Validación cruzada natural:</b> tres consultas independientes (sin conocimiento entre sí) convergen en los mismos genes. <b>Manes.14G044700 aparece en los 3 rasgos</b> — si el pipeline generara ruido, esto no pasaría.</p>
+  </div>
+  <div class="notes">Este es uno de los resultados más fuertes del proyecto. Se ejecutó el mismo pipeline tres veces con rasgos distintos: sequía, salinidad y calor. Los genes que aparecen recurrentemente son los "hub" de la red de estrés. Manes.14G044700 (AP2) está en los tres; los WRKY Manes.07G142400 y Manes.07G012700 en dos. La recurrencia entre ejecuciones independientes es una forma de validación cruzada: el sistema no genera ruido aleatorio.</div>
+</section>
+
+<!-- ═══════════ 10 · GENES HUB ═══════════ -->
+<section class="slide" data-title="Los 5 genes hub" data-sec="Resultados">
+  <div class="slide-in">
+    <span class="tag rv">Resultados · Hub genes</span>
+    <h2 class="rv" style="--d:.1s">La red <span class="grad">cross-stress</span> de la yuca</h2>
+    <table class="tbl rv" style="--d:.2s">
+      <tr><th>Gen hub</th><th>Dominio</th><th>💧 Sequía</th><th>🧂 Salinidad</th><th>🔥 Calor</th><th>PMC</th><th>Rol inferido</th></tr>
+      <tr><td><b>Manes.14G044700</b></td><td>AP2/ERF</td><td class="num">#1 · 92</td><td class="num">#3 · 88</td><td class="num">#2 · 80</td><td class="warn">1</td><td>Regulador maestro cross-stress</td></tr>
+      <tr><td><b>Manes.07G043100</b></td><td>zf-C2H2 ×20</td><td class="num">#2 · 85</td><td class="num">#4 · 85</td><td class="num">#4 · 78</td><td class="good">0 NOVEL</td><td>Regulador transcripcional virgen</td></tr>
+      <tr><td><b>Manes.14G095800</b></td><td>ABC2_membrane</td><td class="num">#3 · 83</td><td class="num">#5 · 82</td><td class="num">#10 · 70</td><td class="good">0 NOVEL</td><td>Transportador multi-estrés</td></tr>
+      <tr><td><b>Manes.06G106900</b></td><td>LRR ×50</td><td class="num">#9 · 70</td><td class="num">#6 · 80</td><td class="num">#6 · 75</td><td class="good">0 NOVEL</td><td>Receptor de percepción</td></tr>
+      <tr><td><b>Manes.14G106050</b></td><td>Pkinase</td><td class="num">#4 · 80</td><td>—</td><td class="num">#5 · 75</td><td class="good">0 NOVEL</td><td>Cascada de señalización</td></tr>
+    </table>
+    <p class="msg rv" style="--d:.4s">🧬 <b>Coherencia biológica:</b> los 5 hubs cubren las cuatro capas de la respuesta al estrés — percepción, señalización, transcripción y efecto — y 4 de los 5 son <b>completamente vírgenes en la literatura</b>. La familia AP2/ERF y los WRKY son exactamente los reguladores que la literatura reporta para estrés abiótico en plantas.</p>
+  </div>
+  <div class="notes">La tabla resume los cinco genes que aparecen en múltiples rasgos. Cuatro de cinco tienen cero menciones en PMC: son candidatos genuinamente no estudiados. Note la coherencia funcional: un factor AP2/ERF, un regulador zinc-finger, un transportador ABC, un receptor LRR y una quinasa — cada uno en una capa distinta de la respuesta al estrés. Esto no fue programado; emergió de los datos.</div>
+</section>
+
+<!-- ═══════════ 11 · CASCADA EMERGENTE ═══════════ -->
+<section class="slide" data-title="La cascada emergente" data-sec="Resultados">
+  <div class="slide-in">
+    <span class="tag rv">Hallazgo emergente</span>
+    <h2 class="rv" style="--d:.1s">La cascada de señalización <span class="grad">emergió sola</span></h2>
+    <div class="cascade">
+      <div class="clayer rv" style="--d:.2s"><div class="cl-n">CAPA 1 · PERCEPCIÓN</div><div class="cl-genes"><b>Manes.06G106900</b> (LRR ×50) · <b>Manes.14G137228</b> (LRR ×33) · <b>Manes.07G075300</b> (LRRNT_2) — receptores de superficie que detectan el déficit hídrico → convergen con <b>ERD15</b> (70–72%)</div></div>
+      <div class="carrow rv" style="--d:.3s">▼</div>
+      <div class="clayer l2 rv" style="--d:.38s"><div class="cl-n">CAPA 2 · SEÑALIZACIÓN</div><div class="cl-genes"><b>Manes.14G106050</b> · <b>Manes.14G112600</b> · <b>Manes.07G137800</b> (Pkinases / LRR-RLK) — cascada MAPK que amplifica la señal → converge con <b>DI19</b> (64–66%)</div></div>
+      <div class="carrow rv" style="--d:.46s">▼</div>
+      <div class="clayer l3 rv" style="--d:.54s"><div class="cl-n">CAPA 3 · TRANSCRIPCIÓN</div><div class="cl-genes"><b>Manes.14G044700</b> (AP2) · <b>Manes.07G043100</b> (zf-C2H2 ×20) · <b>Manes.07G142400 / 07G012700</b> (WRKY) → convergen con <b>ERD7</b> (88%) y <b>CAR11</b> vía ABA (71–78%)</div></div>
+      <div class="carrow rv" style="--d:.62s">▼</div>
+      <div class="clayer l4 rv" style="--d:.7s"><div class="cl-n">CAPA 4 · EFECTORES</div><div class="cl-genes"><b>Manes.14G095800</b> (ABC2 — transporte de osmoprotectores) · <b>Manes.14G107700</b> (PAP2 — señalización lipídica)</div></div>
+    </div>
+    <p class="msg rv" style="--d:.8s">⚡ <b>Nadie programó esta cascada.</b> El pipeline solo recibió dominios Pfam y genes conocidos; el orquestador reconstruyó la arquitectura percepción → señal → transcripción → efecto porque razonó sobre las relaciones funcionales. Y fue honesto: al candidato NACHT (inmunidad, no sequía) le asignó <b>convergencia 0%</b>.</p>
+  </div>
+  <div class="notes">Esta es la diapositiva para el profesor que estudia yucas. La cascada de cuatro capas no fue diseñada: emergió del análisis de convergencia entre candidatos noveles y genes conocidos. Cada capa tiene sus genes y sus porcentajes de convergencia reales del informe. Remate con el detalle de honestidad: el candidato con dominio NACHT (típico de inmunidad NLR) recibió convergencia 0% porque el sistema no forzó una conexión falsa — eso es un LLM bien calibrado.</div>
+</section>
+
+<!-- ═══════════ 12 · MANES.14G044700 ═══════════ -->
+<section class="slide" data-title="Candidato estrella: Manes.14G044700" data-sec="Caso de estudio">
+  <div class="slide-in">
+    <span class="tag rv">Caso de estudio</span>
+    <h2 class="rv" style="--d:.1s">Manes.14G044700: <span class="grad">el gen que nadie siguió</span></h2>
+    <div class="profile">
+      <div class="pf-card rv" style="--d:.2s">
+        <h3>Ficha del gen</h3>
+        <div class="pf-row"><span class="k">Familia</span><span class="v acc">ERF subfamilia VII (MeERF130)</span></div>
+        <div class="pf-row"><span class="k">Dominio</span><span class="v">AP2 (HMMER/Pfam confirmado)</span></div>
+        <div class="pf-row"><span class="k">Proteína</span><span class="v">243 aa · ~27 kDa · pI 9.80</span></div>
+        <div class="pf-row"><span class="k">Score promedio (3 rasgos)</span><span class="v acc">86.7</span></div>
+        <div class="pf-row"><span class="k">Convergencia con ERD7</span><span class="v acc">88% (mismo dominio AP2/ERF)</span></div>
+        <div class="pf-row"><span class="k">Menciones Europe PMC</span><span class="v am">1 — y es reveladora</span></div>
+      </div>
+      <div class="pf-card rv" style="--d:.35s">
+        <h3>La única mención en la literatura</h3>
+        <p style="font-size:15.5px;color:var(--mut);line-height:1.65">Aparece en Zárate-Chaves et al. 2021 sobre efectores TAL de <b style="color:var(--txt)">Xanthomonas phaseoli pv. manihotis</b> — la bacteria del añublo de la yuca. Es <b style="color:var(--acc)">target del efector TAL15</b>: la bacteria lo secuestra porque regula defensa.</p>
+        <p style="font-size:15.5px;color:var(--mut);line-height:1.65;margin-top:14px"><b style="color:var(--lime)">Interpretación (cross-talk):</b> el mismo factor ERF participa en defensa contra patógenos <i>y</i> en respuesta a estrés abiótico. Alguien lo detectó en el contexto bacteriano; <b style="color:var(--txt)">nadie lo siguió para sequía</b>. Nuestro pipeline lo redescubre de forma independiente para los 3 rasgos abióticos.</p>
+      </div>
+    </div>
+    <p class="msg cy rv" style="--d:.5s">🎯 <b>Por qué es el candidato perfecto para el profesor:</b> gen de yuca · familia ERF relevante para el cultivo · con una pista experimental previa (el patógeno lo considera importante) · y sin ningún estudio funcional de su rol en sequía, salinidad o calor. Hipótesis lista: <i>"MeERF130 integra la respuesta a estrés biótico y abiótico en yuca"</i>.</p>
+  </div>
+  <div class="notes">Este es el hallazgo narrativamente más potente. El pipeline priorizó este gen para los tres rasgos. Al buscar su única mención en literatura, resulta ser target de un efector TAL de Xanthomonas — la bacteria que causa el añublo bacteriano de la yuca, enfermedad que el profesor conoce bien. La hipótesis integradora es cross-talk biótico/abiótico: los efectores bacterianos secuestran factores ERF precisamente porque regulan defensa, y esos mismos factores controlan respuesta a sequía. Nadie lo ha estudiado para estrés abiótico. Es material directo para propuesta de investigación.</div>
+</section>
+
+<!-- ═══════════ 13 · V4.2 CONCEPTO ═══════════ -->
+<section class="slide" data-title="V4.2: búsqueda trans-especie" data-sec="V4.2 Trans-especie">
+  <div class="slide-in">
+    <span class="tag rv">V4.2 · Concepto</span>
+    <h2 class="rv" style="--d:.1s">Y si la solución <span class="grad">no está en la yuca?</span></h2>
+    <p class="sub rv" style="--d:.2s">La V4.2 cambia la pregunta: en lugar de buscar dentro del proteoma de la receptora, busca <b style="color:var(--txt)">genes de organismos con adaptaciones extremas</b> que puedan transferirse por ingeniería genética. Es exactamente cómo funciona la biotecnología agrícola moderna.</p>
+    <table class="tbl rv" style="--d:.3s">
+      <tr><th>Gen donante (real)</th><th>Organismo</th><th>Rasgo conferido</th></tr>
+      <tr><td><b>Cry1Ab</b></td><td>Bacillus thuringiensis</td><td>Resistencia a insectos (maíz Bt)</td></tr>
+      <tr><td><b>DREB1A</b></td><td>Arabidopsis thaliana</td><td>Tolerancia a sequía (trigo, arroz)</td></tr>
+      <tr><td><b>codA</b></td><td>Arthrobacter globiformis</td><td>Tolerancia a salinidad (tomate)</td></tr>
+      <tr><td><b>AVP1</b></td><td>Arabidopsis thaliana</td><td>Mayor rendimiento + estrés (algodón)</td></tr>
+    </table>
+    <p class="msg rv" style="--d:.45s">🌵 <b>El patrón:</b> los mejores transgenes vienen de organismos extremos — plantas resurrección (<i>Xerophyta</i>), halófitas (<i>Eutrema</i>, <i>Salicornia</i>), bacterias del suelo (<i>Bacillus</i>), arqueas (<i>Halobacterium</i>). La V4.2 automatiza su búsqueda para <b>cualquier rasgo imaginable</b>, sin editar código.</p>
+  </div>
+  <div class="notes">Introduzca la V4.2 con ejemplos históricos reales de transgenes exitosos: Bt, DREB1A, codA. El patrón es claro: los organismos extremos son la fuente natural de genes de tolerancia. La contribución de la V4.2 es automatizar la búsqueda de esos donantes para cualquier rasgo, usando el LLM como experto en biología de extremófilos y las APIs de NCBI para resolver y validar cada especie sugerida.</div>
+</section>
+
+<!-- ═══════════ 14 · V4.2 ORQUESTACIÓN ═══════════ -->
+<section class="slide" data-title="V4.2: orquestación LLM" data-sec="V4.2 Trans-especie">
+  <div class="slide-in">
+    <span class="tag rv">V4.2 · Orquestación</span>
+    <h2 class="rv" style="--d:.1s">El LLM elige los donantes, <span class="grad">NCBI los valida</span></h2>
+    <div class="cols w64">
+      <div class="rv" style="--d:.2s">
+        <div class="acard green" style="margin-bottom:16px">
+          <h3>Flujo automático (sin lista fija)</h3>
+          <ul>
+            <li><b>1.</b> El LLM sugiere 4–6 donantes con adaptación y genes clave</li>
+            <li><b>2.</b> Nombre científico → tax_id (NCBI Taxonomy)</li>
+            <li><b>3.</b> Verificación de genoma disponible (NCBI Datasets)</li>
+            <li><b>4.</b> Si no hay genoma → el LLM sugiere alternativa filogenética</li>
+            <li><b>5.</b> Descarga de proteomas RefSeq + filtro por keywords + HMMER</li>
+          </ul>
+        </div>
+        <div class="acard cyan">
+          <h3>Ejemplo real de autocorrección</h3>
+          <ul>
+            <li><i>Opuntia ficus-indica</i> → sin genoma → LLM sugiere <i>Selenicereus undatus</i> → solo 75 proteínas → <b>descartada automáticamente</b></li>
+            <li><i>Xerophyta viscosa</i> (planta resurrección) → 260 proteínas RefSeq → <b>descartada</b> con aviso de "anotación pobre"</li>
+          </ul>
+        </div>
+      </div>
+      <div class="console rv" style="--d:.4s">
+        <div class="cons-bar"><i style="background:#fb7185"></i><i style="background:#fbbf24"></i><i style="background:#4ade80"></i><span>ejecución real — fase 0/1 (estrategia A)</span></div>
+        <div class="cons-body" style="font-size:13.5px">
+          <div><span class="t">[F0]</span> <span class="q">LLM sugirió 6 especies:</span></div>
+          <div><span class="t">&nbsp;&nbsp;&nbsp;</span><span class="m">Sorghum bicolor · Eutrema salsugineum</span></div>
+          <div><span class="t">&nbsp;&nbsp;&nbsp;</span><span class="m">Bacillus subtilis · Deinococcus radiodurans</span></div>
+          <div><span class="t">&nbsp;&nbsp;&nbsp;</span><span class="m">Halobacterium salinarum (arquea)</span></div>
+          <div><span class="t">[F1]</span> <span class="ok">✔ 5 resueltas con genoma</span></div>
+          <div><span class="t">[F1]</span> <span class="w">! Opuntia → alternativa Selenicereus</span></div>
+          <div><span class="t">[F2]</span> <span class="m">E-utilities: lotes 167/167 ok, 0 fallidos</span></div>
+          <div><span class="t">[F2]</span> <span class="ok">✔ 250 candidatos de 4 especies válidas</span></div>
+          <div><span class="t">[F3]</span> <span class="ok">✔ HMMER: dominios de estrés detectados</span></div>
+        </div>
+      </div>
+    </div>
+    <p class="msg rv" style="--d:.55s">🛡️ <b>Anti-alucinación por diseño:</b> cada especie sugerida se verifica contra NCBI Taxonomy y NCBI Datasets antes de usarse. Las que no existen o no tienen genoma se descartan con razón documentada en el informe.</p>
+  </div>
+  <div class="notes">Explique el mecanismo anti-alucinación: el LLM propone, pero NCBI dispone. Cada nombre sugerido se resuelve a tax_id real y se verifica que tenga genoma disponible; si falla, el propio LLM sugiere una alternativa filogenética, y si esa también falla o tiene anotación pobre, se descarta con documentación. La consola muestra una ejecución real con 167 lotes de descarga sin fallos.</div>
+</section>
+
+<!-- ═══════════ 15 · A vs B ═══════════ -->
+<section class="slide" data-title="Estrategias A vs B" data-sec="V4.2 Trans-especie">
+  <div class="slide-in">
+    <span class="tag rv">V4.2 · Dos estrategias</span>
+    <h2 class="rv" style="--d:.1s">A: ortología segura · <span class="grad">B: diversidad exploratoria</span></h2>
+    <div class="cols">
+      <div class="acard green rv" style="--d:.2s">
+        <h3>🅰️ Estrategia A — sesgo por ortología</h3>
+        <ul>
+          <li>Distribución final: <b>10/10 plantas</b> (Sorghum bicolor)</li>
+          <li>Score máximo: <b style="color:var(--acc)">90</b> (XP_021305891.1 · TPP)</li>
+          <li>9 de 10 candidatos → <b>edición génica</b> (ortólogo en yuca)</li>
+          <li>Tiempo: 107 s · la vía <b>segura y regulatoriamente simple</b></li>
+        </ul>
+        <p style="font-size:13.5px;color:var(--dim);margin-top:14px;font-family:var(--mono)">USE CASE: propuesta de transformación inmediata</p>
+      </div>
+      <div class="acard cyan rv" style="--d:.35s">
+        <h3>🅱️ Estrategia B — diversidad equilibrada</h3>
+        <ul>
+          <li>Muestra diversa pre-LLM: 10 plantas + 10 bacterias + 10 levaduras</li>
+          <li>Distribución final: <b>6 plantas + 4 bacterias</b></li>
+          <li>Mecanismo novedoso: <b>EpsG de Bacillus</b> — exopolisacáridos que forman capa hidratante en la rizosfera (sin homólogo en plantas → transgénesis)</li>
+          <li>El LLM descartó solo: sigma factor SigF → <b>riesgo alto</b> (score 10)</li>
+        </ul>
+        <p style="font-size:13.5px;color:var(--dim);margin-top:14px;font-family:var(--mono)">USE CASE: exploración de mecanismos no vegetales</p>
+      </div>
+    </div>
+    <p class="msg rv" style="--d:.5s">⚖️ <b>Complementarias, no competidoras:</b> A da el candidato listo para propuesta (TPP de Sorghum, score 90); B abre líneas novedosas (microbioma de rizosfera como mecanismo de retención de agua). Ambas verificaron <b>10/10 candidatos NOVEL en Europe PMC</b>.</p>
+  </div>
+  <div class="notes">Compare las dos estrategias con sus números reales. La A concentra todo en Sorghum porque el LLM prioriza ortólogos — es la vía segura para edición génica. La B fuerza representación de bacterias y levaduras antes de la priorización, lo que reveló los candidatos EpsG de Bacillus: un mecanismo completamente distinto (exopolisacáridos de rizosfera) que la estrategia A jamás habría mostrado. Destaque que el LLM descartó correctamente el sigma factor bacteriano con riesgo alto: el sistema se auto-regula.</div>
+</section>
+
+<!-- ═══════════ 16 · CANDIDATO TPP ═══════════ -->
+<section class="slide" data-title="Candidato trans-especie: TPP" data-sec="V4.2 Trans-especie">
+  <div class="slide-in">
+    <span class="tag rv">V4.2 · Candidato principal</span>
+    <h2 class="rv" style="--d:.1s">XP_021305891.1: <span class="grad">trehalosa-fosfato fosfatasa de Sorghum</span></h2>
+    <div class="profile">
+      <div class="pf-card rv" style="--d:.2s">
+        <h3>Perfil de transferencia</h3>
+        <div class="pf-row"><span class="k">Donante</span><span class="v">Sorghum bicolor (cereal C4 tolerante)</span></div>
+        <div class="pf-row"><span class="k">Score de transferencia</span><span class="v acc">90 / 100</span></div>
+        <div class="pf-row"><span class="k">Mecanismo</span><span class="v">TPP → trehalosa (osmoprotector que estabiliza membranas y proteínas)</span></div>
+        <div class="pf-row"><span class="k">Ortólogo en yuca</span><span class="v acc">SÍ — familia MeTPP conservada</span></div>
+        <div class="pf-row"><span class="k">Estrategia</span><span class="v acc">edición_genica (no introduce proteína exógena)</span></div>
+        <div class="pf-row"><span class="k">Riesgo</span><span class="v acc">bajo</span></div>
+      </div>
+      <div class="pf-card rv" style="--d:.35s">
+        <h3>Constructo diseñado por el orquestador</h3>
+        <div class="pf-row"><span class="k">Promotor</span><span class="v cy">rd29A inducible por sequía (evita penalización en riego normal)</span></div>
+        <div class="pf-row"><span class="k">Localización</span><span class="v">citosol (opción: péptido de tránsito cloroplástico)</span></div>
+        <div class="pf-row"><span class="k">Codón optimization</span><span class="v">sí (monocot → dicot)</span></div>
+        <div class="pf-row"><span class="k">Riesgo señalado</span><span class="v am">exceso de trehalosa interfiere con señalización de azúcares</span></div>
+        <div class="pf-row"><span class="k">Validación cruzada</span><span class="v">el Brazo A encontró <b>7 genes TPP/TPS nativos</b> en yuca (LOC110616848, LOC110611765…)</span></div>
+      </div>
+    </div>
+    <p class="msg rv" style="--d:.5s">🔗 <b>Convergencia entre pipelines:</b> el Brazo A (búsqueda clásica en yuca) ya había encontrado la familia trehalosa-fosfato nativa; la V4.2 llegó al mismo mecanismo desde Sorghum. Dos rutas independientes → <b>la misma conclusión biológica</b>.</p>
+  </div>
+  <div class="notes">El candidato trans-especie estrella. La TPP de Sorghum tiene todo: score 90, mecanismo validado (la trehalosa es osmoprotector confirmado en múltiples especies), ortólogo en yuca (por lo que se puede editar el gen nativo MeTPP en vez de hacer transgénesis — menor carga regulatoria), promotor inducible diseñado para no penalizar el crecimiento en condiciones normales. Y el detalle elegante: el Brazo A encontró independentemente 7 genes de trehalosa en la yuca. Dos caminos, misma biología.</div>
+</section>
+
+<!-- ═══════════ 17 · VALIDACIÓN MULTI-FUENTE ═══════════ -->
+<section class="slide" data-title="Validación multi-fuente" data-sec="V4.2 Trans-especie">
+  <div class="slide-in">
+    <span class="tag rv">V4.2 · Tier 1</span>
+    <h2 class="rv" style="--d:.1s">Tres fuentes independientes <span class="grad">auditan cada candidato</span></h2>
+    <div class="vsrc">
+      <div class="vcard rv" style="--d:.2s">
+        <div class="vi">📚</div>
+        <h3>Europe PMC</h3>
+        <div class="vq">¿Alguien ha estudiado este gen? (PubMed + PMC + preprints bioRxiv)</div>
+        <div class="vr">10/10</div>
+        <div class="vl">candidatos verificados como <b>NOVEL</b> — cero menciones en toda la literatura indexada</div>
+      </div>
+      <div class="vcard rv" style="--d:.35s">
+        <div class="vi">🕸️</div>
+        <h3>STRING</h3>
+        <div class="vq">¿La proteína participa en redes funcionales reales?</div>
+        <div class="vr cy">10</div>
+        <div class="vl">interacciones para la TPP (partners: A0A1Z5S8M8, C5Z1A2_SORBI…) — red metabólica activa en Sorghum</div>
+      </div>
+      <div class="vcard rv" style="--d:.5s">
+        <div class="vi">📈</div>
+        <h3>GEO</h3>
+        <div class="vq">¿Hay datos experimentales para validar la hipótesis?</div>
+        <div class="vr li">20</div>
+        <div class="vl">datasets de expresión de Sorghum bajo sequía/deshidratación — el candidato puede validarse con datos públicos existentes</div>
+      </div>
+    </div>
+    <p class="msg rv" style="--d:.65s">🧮 <b>Índice de soporte multi-fuente (0–100):</b> literatura (25) + interacciones (hasta 40) + datos de expresión (hasta 35). La TPP obtuvo <b>75/100</b>. El informe final pasa de "predicción del LLM" a <b>"predicción con evidencia independiente de 3 fuentes"</b> — el estándar de un paper de genómica funcional.</p>
+  </div>
+  <div class="notes">Explique las tres fuentes de validación y qué pregunta responde cada una: Europe PMC verifica novedad real (incluye preprints, más completo que PMC solo); STRING confirma que la proteína interactúa en redes funcionales reales; GEO indica cuántos datasets experimentales existen para validar la hipótesis sin generar datos nuevos. El índice de soporte combina las tres. Con esto, el informe deja de ser una predicción y se convierte en una hipótesis con evidencia multi-fuente auditable.</div>
+</section>
+
+<!-- ═══════════ 18 · TRAVESÍA TÉCNICA ═══════════ -->
+<section class="slide" data-title="La travesía técnica" data-sec="Ingeniería">
+  <div class="slide-in">
+    <span class="tag rv">Ingeniería honesta</span>
+    <h2 class="rv" style="--d:.1s">10 obstáculos reales, <span class="grad">10 soluciones documentadas</span></h2>
+    <div class="cols" style="margin-top:22px">
+      <table class="tbl rv" style="--d:.2s;margin-top:0">
+        <tr><th>#</th><th>Obstáculo</th><th>Solución</th></tr>
+        <tr><td class="num">1</td><td>InterPro API → <b>403</b> "Authentication credentials were not provided"</td><td>Diagnóstico con respuesta cruda → migración a <b>HMMER/Pfam local</b></td></tr>
+        <tr><td class="num">2</td><td>NCBI CDD devuelve <b>HTML</b>, no JSON</td><td>Batch CD-Search es asíncrono con qrid → descartado por HMMER local</td></tr>
+        <tr><td class="num">3</td><td>Filtro "hypothetical" → <b>0 candidatas</b> en yuca</td><td><b>Filtro adaptativo de 3 niveles</b> con fallback</td></tr>
+        <tr><td class="num">4</td><td>9 de 10 slots del ranking = <b>isoformas del mismo gen</b></td><td><b>Deduplicación por locus</b> (−26 213 redundancias)</td></tr>
+        <tr><td class="num">5</td><td>Datasets API → <b>ZIP vacío</b> (3 KB, solo README)</td><td>Fallback a <b>E-utilities</b> (esearch + efetch por lotes)</td></tr>
+      </table>
+      <table class="tbl rv" style="--d:.35s;margin-top:0">
+        <tr><th>#</th><th>Obstáculo</th><th>Solución</th></tr>
+        <tr><td class="num">6</td><td>Rate limit NCBI → <b>99% de proteínas perdidas</b> (250 de 39 250)</td><td>Lotes de 300 + <b>3 reintentos</b> + sleep 1 s → 167/167 lotes OK</td></tr>
+        <tr><td class="num">7</td><td>B. subtilis: <b>2,8 millones</b> de entradas proteicas</td><td>Filtro <b>srcdb_refseq[PROP]</b> + muestreo reproducible</td></tr>
+        <tr><td class="num">8</td><td>LLM devuelve <b>JSON malformado</b> (comillas en descripciones)</td><td>Limpieza de texto + parser robusto + <b>fallback a modelo rápido</b></td></tr>
+        <tr><td class="num">9</td><td>Estrategia B sin diversidad real (10/10 plantas)</td><td>Muestreo diverso <b>antes</b> de la priorización, no después</td></tr>
+        <tr><td class="num">10</td><td>Proteomas pobres (Selenicereus: <b>75 proteínas</b>)</td><td>Detección automática + <b>skip documentado</b> (&lt;1000)</td></tr>
+      </table>
+    </div>
+    <p class="msg cy rv" style="--d:.5s">🛠️ <b>Lección metodológica:</b> cada fallo se diagnosticó con evidencia (respuesta cruda, contadores de lotes, tamaños de ZIP) y se corrigió de forma verificable. Así se construye software científico confiable — y así se documenta en un paper.</p>
+  </div>
+  <div class="notes">Esta diapositiva convierte los fracasos en fortaleza académica. Cada uno de los 10 obstáculos fue real, diagnosticado con evidencia y resuelto de forma verificable. Mencione los más ilustrativos: el 403 de InterPro que obligó a migrar a HMMER local (Nivel 2), la pérdida del 99% de proteínas por rate limiting que se resolvió con reintentos y lotes más pequeños, y el bug de diversidad donde la muestra equilibrada debía seleccionarse ANTES de la priorización. Esta travesía es exactamente lo que se documenta en la sección de métodos de un paper.</div>
+</section>
+
+<!-- ═══════════ 19 · LÍMITES ═══════════ -->
+<section class="slide" data-title="Límites y rigor" data-sec="Discusión">
+  <div class="slide-in">
+    <span class="tag rv">Rigor científico</span>
+    <h2 class="rv" style="--d:.1s">Lo que el sistema <span class="grad">no puede reemplazar</span></h2>
+    <div class="cards2">
+      <div class="lcard rv" style="--d:.2s"><span class="li-ic">⚠️</span><h3>Correlación ≠ causalidad</h3><p>Los scores priorizan, no prueban. La confirmación exige KO/KI, complementación genética y fenotipado — el propio informe lo advierte textualmente.</p><div class="mit">Mitigación: plan CRISPR + RCBD + ANOVA generados en Fase 4</div></div>
+      <div class="lcard rv" style="--d:.3s"><span class="li-ic">🌀</span><h3>Alucinaciones del LLM</h3><p>Puede inventar funciones plausibles pero falsas, o especies inexistentes al sugerir donantes.</p><div class="mit">Mitigación: verificación NCBI Taxonomy + Datasets + Europe PMC anclan todo a fuentes externas</div></div>
+      <div class="lcard rv" style="--d:.4s"><span class="li-ic">🔍</span><h3>Muestreo parcial</h3><p>HMMER escaneó 2 000 de 31 469 loci en V3.2 y 200 por ejecución en V4.2. El proteoma completo requiere ~una noche de cómputo.</p><div class="mit">Mitigación: batch nocturno con --max-hmmer 31469 (siguiente paso)</div></div>
+      <div class="lcard rv" style="--d:.5s"><span class="li-ic">📉</span><h3>Sesgo de las bases de datos</h3><p>Keywords en inglés y descripciones RefSeq sesgadas; hongos benéficos como Trichoderma dieron 0 candidatos por keywords (mecanismo indirecto).</p><div class="mit">Mitigación: dominios estructurales (HMMER) como criterio primario, no el texto</div></div>
+    </div>
+    <p class="msg rv" style="--d:.6s">📌 <b>Frase para el tribunal:</b> "El pipeline reduce el espacio de búsqueda de 59 151 proteínas a 10 candidatos auditables. La validación experimental sigue siendo humana e irremplazable — esa es exactamente la división correcta del trabajo."</p>
+  </div>
+  <div class="notes">Anticípese a las objeciones mostrando que ya las conocemos y las mitigamos. Cuatro límites honestos con su mitigación concreta. El caso Trichoderma es instructivo: el filtrado por keywords falló con un hongo cuyo mecanismo es indirecto — por eso los dominios estructurales deben ser el criterio primario. Cierre con la división correcta del trabajo: la IA reduce el espacio de búsqueda, el experimento confirma.</div>
+</section>
+
+<!-- ═══════════ 20 · ROADMAP ═══════════ -->
+<section class="slide" data-title="Hoja de ruta" data-sec="Futuro">
+  <div class="slide-in">
+    <span class="tag rv">Futuro</span>
+    <h2 class="rv" style="--d:.1s">De piloto docente a <span class="grad">investigación formal</span></h2>
+    <div class="roadmap">
+      <div class="rstep rv" style="--d:.2s"><span class="rn">1</span><div><div class="when">Inmediato</div><h3>Batch completo del proteoma de yuca</h3><p>HMMER sobre los 31 469 loci (una noche) → cobertura total del embudo de descubrimiento.</p></div></div>
+      <div class="rstep rv" style="--d:.3s"><span class="rn">2</span><div><div class="when">Corto plazo</div><h3>Validación in silico de los candidatos estrella</h3><p>MeERF130 (Manes.14G044700): ortólogos, promotor, guías CRISPR, expresión en GEO de yuca bajo estrés. MeTPP: datos de RNA-seq + diseño de constructo completo.</p></div></div>
+      <div class="rstep rv" style="--d:.4s"><span class="rn">3</span><div><div class="when">Mediano plazo</div><h3>Modelos locales + fine-tuning</h3><p>Con GPU dedicada: DNABERT-2 para promotores, ESM-2 para dominios, LLM local 14B para privacidad. Sustituir el sesgo de keywords por predicción desde secuencia.</p></div></div>
+      <div class="rstep rv" style="--d:.5s"><span class="rn">4</span><div><div class="when">Largo plazo</div><h3>Publicación / tesis en cultivo huérfano</h3><p>"AI-driven discovery of uncharacterized stress genes in cassava": método + 30 candidatos NOVEL + red cross-stress + validación experimental colaborativa.</p></div></div>
+    </div>
+  </div>
+  <div class="notes">La hoja de ruta en cuatro pasos con horizontes claros. El paso 2 es el puente hacia la investigación real: validar in silico los dos candidatos estrella con datos públicos existentes. El paso 3 conecta con el plan de hardware (fine-tuning local). El paso 4 es el destino: una publicación con contribución original en un cultivo huérfano, que es exactamente el nicho donde este enfoque tiene más valor y menos competencia.</div>
+</section>
+
+<!-- ═══════════ 21 · CIERRE ═══════════ -->
+<section class="slide" data-title="Conclusión" data-sec="Cierre">
+  <div class="slide-in close-quote">
+    <span class="tag rv" style="--d:.05s">Conclusión</span>
+    <p class="big rv" style="--d:.2s">"La IA no reemplaza al genetista:<br><span class="grad">lo amplifica.</span>"</p>
+    <p class="sub rv" style="--d:.4s">De una pregunta en lenguaje natural, a genes candidatos auditables con evidencia multi-fuente, plan CRISPR y diseño estadístico — en minutos, con trazabilidad completa y costo cero.</p>
+    <div class="close-chips rv" style="--d:.55s">
+      <span class="cchip"><b>3</b> generaciones de pipeline</span>
+      <span class="cchip"><b>3</b> rasgos × yuca</span>
+      <span class="cchip"><b>30+</b> candidatos NOVEL verificados</span>
+      <span class="cchip"><b>5</b> genes hub cross-stress</span>
+      <span class="cchip"><b>1</b> cascada emergente</span>
+      <span class="cchip"><b>10</b> obstáculos de ingeniería resueltos</span>
+    </div>
+    <p class="start-hint rv" style="--d:.7s">Gracias · ¿preguntas?</p>
+  </div>
+  <div class="notes">Cierre con el mensaje central del proyecto: la IA amplifica al genetista, no lo reemplaza. Resuma los números finales: tres generaciones de pipeline, tres rasgos analizados en yuca, más de 30 candidatos verificados como novedosos en Europe PMC, cinco genes hub de estrés cruzado, una cascada de señalización que emergió sin ser programada, y diez obstáculos de ingeniería documentados. Todo gratuito, reproducible y ejecutado en una laptop. Abra el espacio para preguntas.</div>
+</section>
+
+<div class="bottombar">
+  <button class="navbtn" id="btnPrev" title="Anterior">←</button>
+  <button class="navbtn" id="btnNext" title="Siguiente">→</button>
+  <div class="hint"><b>← →</b> navegar &nbsp;·&nbsp; <b>G</b> índice &nbsp;·&nbsp; <b>N</b> notas del orador &nbsp;·&nbsp; <b>F</b> pantalla completa</div>
+</div>
+
+</div><!-- /stage -->
+</div><!-- /viewport -->
+
+<div id="notesPanel">
+  <div class="np-head"><b>🎤 Notas del orador</b><button id="npClose">✕ cerrar (N)</button></div>
+  <p id="npBody"></p>
+</div>
+
+<div id="gridOverlay">
+  <div class="grid-head"><h2>Índice de diapositivas</h2><button id="gridClose">✕ cerrar (Esc)</button></div>
+  <div id="gridCards"></div>
+</div>
+
+<script>
+/* ===== escalado 16:9 ===== */
+const stage = document.getElementById('stage');
+function fitStage(){
+  const s = Math.min(window.innerWidth/1600, window.innerHeight/900);
+  stage.style.setProperty('--scale', s);
+}
+window.addEventListener('resize', fitStage);
+fitStage();
+
+/* ===== navegación ===== */
+const slides = Array.from(document.querySelectorAll('.slide'));
+let cur = 0, gridOpen = false;
+const pbar = document.getElementById('pbar'), counter = document.getElementById('counter');
+const notesPanel = document.getElementById('notesPanel'), npBody = document.getElementById('npBody');
+const gridOverlay = document.getElementById('gridOverlay'), gridCards = document.getElementById('gridCards');
+
+function go(i){
+  if(gridOpen) return;
+  i = Math.max(0, Math.min(slides.length-1, i));
+  cur = i;
+  slides.forEach((s,j)=>{
+    s.classList.toggle('active', j===i);
+    s.classList.toggle('prev', j<i);
+  });
+  pbar.style.width = ((i+1)/slides.length*100)+'%';
+  counter.textContent = (i+1)+' / '+slides.length;
+  document.getElementById('btnPrev').disabled = (i===0);
+  document.getElementById('btnNext').disabled = (i===slides.length-1);
+  const n = slides[i].querySelector('.notes');
+  npBody.textContent = n ? n.textContent.trim() : '—';
+  Array.from(gridCards.children).forEach((c,j)=>c.classList.toggle('cur', j===i));
+}
+
+slides.forEach((s,i)=>{
+  const c = document.createElement('div');
+  c.className = 'gcard';
+  c.innerHTML = '<div class="gn">DIAP '+String(i+1).padStart(2,'0')+' · '+s.dataset.sec+'</div><div class="gt">'+s.dataset.title+'</div>';
+  c.onclick = ()=>{ closeGrid(); setTimeout(()=>go(i), 60); };
+  gridCards.appendChild(c);
+});
+function openGrid(){ gridOpen = true; gridOverlay.classList.add('open'); }
+function closeGrid(){ gridOpen = false; gridOverlay.classList.remove('open'); }
+function toggleNotes(){ notesPanel.classList.toggle('open'); document.getElementById('btnNotes').classList.toggle('on'); }
+function toggleFull(){
+  if(!document.fullscreenElement){ document.documentElement.requestFullscreen && document.documentElement.requestFullscreen(); }
+  else { document.exitFullscreen(); }
+}
+
+document.getElementById('btnPrev').onclick = ()=>go(cur-1);
+document.getElementById('btnNext').onclick = ()=>go(cur+1);
+document.getElementById('btnGrid').onclick = ()=> gridOpen ? closeGrid() : openGrid();
+document.getElementById('gridClose').onclick = closeGrid;
+document.getElementById('btnNotes').onclick = toggleNotes;
+document.getElementById('npClose').onclick = toggleNotes;
+document.getElementById('btnFull').onclick = toggleFull;
+
+window.addEventListener('keydown', e=>{
+  if(e.key === 'Escape'){ closeGrid(); return; }
+  if(gridOpen) return;
+  if(e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown' || e.key === 'Enter'){ e.preventDefault(); go(cur+1); }
+  else if(e.key === 'ArrowLeft' || e.key === 'PageUp'){ e.preventDefault(); go(cur-1); }
+  else if(e.key === 'Home'){ go(0); }
+  else if(e.key === 'End'){ go(slides.length-1); }
+  else if(e.key.toLowerCase() === 'g'){ openGrid(); }
+  else if(e.key.toLowerCase() === 'n'){ toggleNotes(); }
+  else if(e.key.toLowerCase() === 'f'){ toggleFull(); }
+});
+
+let tx = null;
+window.addEventListener('touchstart', e=>{ tx = e.touches[0].clientX; }, {passive:true});
+window.addEventListener('touchend', e=>{
+  if(tx === null) return;
+  const dx = e.changedTouches[0].clientX - tx;
+  if(Math.abs(dx) > 60){ dx < 0 ? go(cur+1) : go(cur-1); }
+  tx = null;
+}, {passive:true});
+
+/* ===== hélice de ADN ===== */
+const cv = document.getElementById('helix');
+if(cv){
+  const cx = cv.getContext('2d');
+  let fr = 0;
+  function draw(){
+    cx.clearRect(0,0,cv.width,cv.height);
+    const N = 16, amp = 112, mx = cv.width/2, top = 30, sp = 40;
+    fr += 0.02;
+    for(let i=0;i<N;i++){
+      const y = top + i*sp, ph = fr + i*0.5;
+      const x1 = mx + Math.sin(ph)*amp, x2 = mx + Math.sin(ph+Math.PI)*amp;
+      const z1 = (Math.cos(ph)+1)/2, z2 = (Math.cos(ph+Math.PI)+1)/2;
+      cx.strokeStyle = 'rgba(134,239,172,'+(0.07+0.14*((z1+z2)/2))+')';
+      cx.lineWidth = 1;
+      cx.beginPath(); cx.moveTo(x1,y); cx.lineTo(x2,y); cx.stroke();
+      cx.beginPath(); cx.arc(x1,y, 3+z1*3.4, 0, 7);
+      cx.fillStyle = 'rgba(74,222,128,'+(0.3+z1*0.6)+')'; cx.fill();
+      cx.beginPath(); cx.arc(x2,y, 3+z2*3.4, 0, 7);
+      cx.fillStyle = 'rgba(34,211,238,'+(0.3+z2*0.6)+')'; cx.fill();
+    }
+    requestAnimationFrame(draw);
+  }
+  draw();
+}
+
+go(0);
+</script>
+</body>
+</html>

@@ -1,0 +1,712 @@
+﻿Busqueda Trans-especie Orquestada · AgroGenIA V5.1
+* Fecha: 2026-10-11 23:56
+* Estrategia de seleccion: B (diversidad equilibrada)
+* Panel de donantes: hibrido
+* Max proteinas por especie: 50000
+* Modo de busqueda: exhaustivo: pre-ranqueo heuristico + LLM por lotes
+* Rasgo objetivo: tolerancia a sequia
+* Receptora (input usuario): fresa
+* Especie receptora resuelta:Fragaria vesca
+* Tax_id receptora: 57918
+* Tipo receptora: planta
+* Proteoma receptora: proteomas_receptor/proteoma_Fragaria_vesca.faa
+* Proteinas receptora: 31492
+* Base Pfam: sub-base:sequia
+* Modo Pfam: auto
+* Especies donantes validas: 13
+* Especies descartadas: 3
+* Candidatos priorizados: 30
+Especies donantes sugeridas por el LLM
+Aceptadas (con genoma disponible)
+* Xerophyta viscosa (tax_id 90708)
+	* Tipo: planta
+	* Adaptacion: Planta resurrección que tolera desecación extrema mediante LEA, HSP y protección de membranas.
+	* Genes clave: LEA, HSP90, DREB2A
+* Selaginella moellendorffii (tax_id 88036) (alternativa de Selaginella lepidophylla)
+	* Tipo: planta
+	* Adaptacion: Planta resurrección con estabilización de membranas y protección antioxidante durante desecación.
+	* Genes clave: LEA, sucrose phosphate synthase, antioxidant
+* Craterostigma plantagineum (tax_id 4153)
+	* Tipo: planta
+	* Adaptacion: Planta resurrección modelo para tolerancia a desecación y recuperación tras rehidratación.
+	* Genes clave: LEA, DREB, CPK
+* Eutrema salsugineum (tax_id 72664)
+	* Tipo: planta
+	* Adaptacion: Crucífera halófita/xerófita con regulación osmótica y ABA eficiente.
+	* Genes clave: DREB2A, NCED3, SOS1
+* Sorghum bicolor (tax_id 4558)
+	* Tipo: planta
+	* Adaptacion: Cereal C4 tolerante a sequía con cierre estomático rápido y acumulación de osmólitos.
+	* Genes clave: NAC, DREB, PP2C, TPP
+* Bacillus subtilis (tax_id 1423)
+	* Tipo: bacteria
+	* Adaptacion: Bacteria del suelo productora de osmoprotectores, trehalosa, prolina y biofilm.
+	* Genes clave: otsA, proP, betA, eps
+* Pseudomonas fluorescens (tax_id 294)
+	* Tipo: bacteria
+	* Adaptacion: Rhizobacteria promotora del crecimiento que mejora retención de agua en rizosfera.
+	* Genes clave: trehalose synthase, ACC deaminase, exopolysaccharide
+* Trichoderma harzianum (tax_id 5544)
+	* Tipo: hongo
+	* Adaptacion: Hongo benéfico que induce tolerancia a sequía en plantas mediante señalización y osmoprotectores.
+	* Genes clave: TPS1, HOG1, chaperone
+* Halobacterium salinarum (tax_id 2242)
+	* Tipo: arquea
+	* Adaptacion: Arquea extrema con protección frente a desecación y estrés osmótico.
+	* Genes clave: Dps, trehalose, bacteriorhodopsin, chaperone
+* Zea mays (tax_id 4577)
+	* Tipo: planta
+	* Adaptacion: Evita la sequía mediante un sistema radicular profundo y ajuste osmótico
+	* Genes clave: ZmDREB2A, ZmNCED1, ZmPIP1
+* Oryza sativa (tax_id 4530)
+	* Tipo: planta
+	* Adaptacion: Tolerancia a la sequía a través de señalización ABA y expresión de proteínas LEA
+	* Genes clave: OsDREB2B, OsNCED2, OsLEA3
+* Chenopodium quinoa (tax_id 63459) (alternativa de Salicornia europaea)
+	* Tipo: planta
+	* Adaptacion: Halofita con síntesis de osmólitos y uso eficiente del agua bajo condiciones salinas y secas
+	* Genes clave: SeDREB2, SeNCED1, SePIP1
+* Carnegiea gigantea (tax_id 171969) (alternativa de Opuntia ficus-indica)
+	* Tipo: planta
+	* Adaptacion: Cacto suculento con fotosíntesis CAM y tejidos de almacenamiento de agua
+	* Genes clave: OfDREB2A, OfNCED3, OfPIP2
+Descartadas
+*  → Sin genoma; reemplazada por Selaginella moellendorffii
+*  → Sin genoma; reemplazada por Chenopodium quinoa
+*  → Sin genoma; reemplazada por Carnegiea gigantea
+Ranking separado por reino (V5.1)
+* Top plantas solicitado: 20
+* Top microorganismos solicitado: 10
+* Plantas seleccionadas: 27
+* Microorganismos seleccionados: 3
+Top plantas
+---------------------------------------------
+| |# | |Accession | |Donante | |Tipo | |Grupo | |Score | |Pre-score | |Soporte | |Europe PMC | |Estrategia | |Riesgo |
+---------------------------------------------
+| |1 | |CAB43063.1 | |Craterostigma plantagineum | |planta | |planta | |95 | |63 | |? | |NOVEL | |edicion_genica | |bajo |
+---------------------------------------------
+| |2 | |AAP22171.1 | |Xerophyta viscosa | |planta | |planta | |95 | |28 | |? | |1 menciones | |edicion_genica | |bajo |
+---------------------------------------------
+| |3 | |XP_024015294.1 | |Eutrema salsugineum | |planta | |planta | |92 | |223 | |? | |NOVEL | |edicion_genica | |bajo |
+---------------------------------------------
+| |4 | |XP_024011474.1 | |Eutrema salsugineum | |planta | |planta | |92 | |183 | |? | |NOVEL | |edicion_genica | |bajo |
+---------------------------------------------
+| |5 | |XP_021776063.1 | |Chenopodium quinoa | |planta | |planta | |92 | |183 | |? | |NOVEL | |edicion_genica | |bajo |
+---------------------------------------------
+| |6 | |CAB43062.1 | |Craterostigma plantagineum | |planta | |planta | |92 | |63 | |? | |NOVEL | |edicion_genica | |bajo |
+---------------------------------------------
+| |7 | |XP_002456584.1 | |Sorghum bicolor | |planta | |planta | |90 | |183 | |? | |NOVEL | |edicion_genica | |bajo |
+---------------------------------------------
+| |8 | |XP_021748420.1 | |Chenopodium quinoa | |planta | |planta | |90 | |183 | |? | |NOVEL | |edicion_genica | |bajo |
+---------------------------------------------
+| |9 | |CAD36023.1 | |Craterostigma plantagineum | |planta | |planta | |90 | |83 | |? | |NOVEL | |edicion_genica | |bajo |
+---------------------------------------------
+| |10 | |XP_024016841.1 | |Eutrema salsugineum | |planta | |planta | |88 | |183 | |? | |NOVEL | |edicion_genica | |bajo |
+---------------------------------------------
+| |11 | |XP_002448943.1 | |Sorghum bicolor | |planta | |planta | |88 | |183 | |? | |NOVEL | |edicion_genica | |bajo |
+---------------------------------------------
+| |12 | |NP_001390030.1 | |Oryza sativa | |planta | |planta | |85 | |203 | |? | |NOVEL | |edicion_genica | |bajo |
+---------------------------------------------
+| |13 | |XP_006391245.1 | |Eutrema salsugineum | |planta | |planta | |85 | |203 | |? | |NOVEL | |edicion_genica | |bajo |
+---------------------------------------------
+| |14 | |XP_002458979.1 | |Sorghum bicolor | |planta | |planta | |85 | |183 | |? | |NOVEL | |edicion_genica | |bajo |
+---------------------------------------------
+| |15 | |XP_021744705.1 | |Chenopodium quinoa | |planta | |planta | |82 | |203 | |? | |NOVEL | |edicion_genica | |bajo |
+---------------------------------------------
+| |16 | |XP_024520904.1 | |Selaginella moellendorffii | |planta | |planta | |82 | |163 | |? | |NOVEL | |edicion_genica | |bajo |
+---------------------------------------------
+| |17 | |NP_001151914.2 | |Zea mays | |planta | |planta | |82 | |163 | |? | |NOVEL | |edicion_genica | |bajo |
+---------------------------------------------
+| |18 | |NP_001388960.1 | |Oryza sativa | |planta | |planta | |80 | |183 | |? | |NOVEL | |edicion_genica | |bajo |
+---------------------------------------------
+| |19 | |XP_002984512.1 | |Selaginella moellendorffii | |planta | |planta | |80 | |143 | |? | |NOVEL | |edicion_genica | |bajo |
+---------------------------------------------
+| |20 | |XP_021305136.1 | |Sorghum bicolor | |planta | |planta | |78 | |183 | |? | |NOVEL | |edicion_genica | |medio |
+---------------------------------------------
+| |21 | |XP_008668118.1 | |Zea mays | |planta | |planta | |78 | |163 | |? | |NOVEL | |edicion_genica | |medio |
+---------------------------------------------
+| |22 | |XP_021720754.1 | |Chenopodium quinoa | |planta | |planta | |75 | |183 | |? | |NOVEL | |edicion_genica | |medio |
+---------------------------------------------
+| |23 | |NP_001105455.2 | |Zea mays | |planta | |planta | |75 | |163 | |? | |NOVEL | |edicion_genica | |medio |
+---------------------------------------------
+| |24 | |XP_066168104.1 | |Oryza sativa | |planta | |planta | |75 | |163 | |? | |NOVEL | |edicion_genica | |medio |
+---------------------------------------------
+| |25 | |XP_024544664.1 | |Selaginella moellendorffii | |planta | |planta | |75 | |143 | |? | |NOVEL | |edicion_genica | |medio |
+---------------------------------------------
+| |26 | |NP_001410292.1 | |Oryza sativa | |planta | |planta | |70 | |163 | |? | |NOVEL | |edicion_genica | |medio |
+---------------------------------------------
+| |27 | |NP_001130206.1 | |Zea mays | |planta | |planta | |65 | |183 | |? | |NOVEL | |edicion_genica | |medio |
+
+Top microorganismos
+---------------------------------------------
+| |# | |Accession | |Donante | |Tipo | |Grupo | |Score | |Pre-score | |Soporte | |Europe PMC | |Estrategia | |Riesgo |
+---------------------------------------------
+| |1 | |XP_024772748.1 | |Trichoderma harzianum | |hongo | |microorganismo | |68 | |143 | |? | |NOVEL | |transgenesis | |medio |
+---------------------------------------------
+| |2 | |XP_024778146.1 | |Trichoderma harzianum | |hongo | |microorganismo | |65 | |143 | |? | |NOVEL | |transgenesis | |medio |
+---------------------------------------------
+| |3 | |XP_024772657.1 | |Trichoderma harzianum | |hongo | |microorganismo | |65 | |143 | |? | |NOVEL | |transgenesis | |medio |
+
+Candidatos para transferencia (orden combinado)
+---------------------------------------------
+| |# | |Accession | |Donante | |Score | |Soporte | |Europe PMC | |Estrategia | |Riesgo |
+---------------------------------------------
+| |1 | |CAB43063.1 | |Craterostigma plantagineum | |95 | |35/100 | |NOVEL | |edicion_genica | |bajo |
+---------------------------------------------
+| |2 | |AAP22171.1 | |Xerophyta viscosa | |95 | |25/100 | |1 menciones | |edicion_genica | |bajo |
+---------------------------------------------
+| |3 | |XP_024015294.1 | |Eutrema salsugineum | |92 | |15/100 | |NOVEL | |edicion_genica | |bajo |
+---------------------------------------------
+| |4 | |XP_024011474.1 | |Eutrema salsugineum | |92 | |15/100 | |NOVEL | |edicion_genica | |bajo |
+---------------------------------------------
+| |5 | |XP_021776063.1 | |Chenopodium quinoa | |92 | |0/100 | |NOVEL | |edicion_genica | |bajo |
+---------------------------------------------
+| |6 | |CAB43062.1 | |Craterostigma plantagineum | |92 | |35/100 | |NOVEL | |edicion_genica | |bajo |
+---------------------------------------------
+| |7 | |XP_002456584.1 | |Sorghum bicolor | |90 | |75/100 | |NOVEL | |edicion_genica | |bajo |
+---------------------------------------------
+| |8 | |XP_021748420.1 | |Chenopodium quinoa | |90 | |0/100 | |NOVEL | |edicion_genica | |bajo |
+---------------------------------------------
+| |9 | |CAD36023.1 | |Craterostigma plantagineum | |90 | |35/100 | |NOVEL | |edicion_genica | |bajo |
+---------------------------------------------
+| |10 | |XP_024016841.1 | |Eutrema salsugineum | |88 | |15/100 | |NOVEL | |edicion_genica | |bajo |
+---------------------------------------------
+| |11 | |XP_002448943.1 | |Sorghum bicolor | |88 | |75/100 | |NOVEL | |edicion_genica | |bajo |
+---------------------------------------------
+| |12 | |NP_001390030.1 | |Oryza sativa | |85 | |35/100 | |NOVEL | |edicion_genica | |bajo |
+---------------------------------------------
+| |13 | |XP_006391245.1 | |Eutrema salsugineum | |85 | |30/100 | |NOVEL | |edicion_genica | |bajo |
+---------------------------------------------
+| |14 | |XP_002458979.1 | |Sorghum bicolor | |85 | |75/100 | |NOVEL | |edicion_genica | |bajo |
+---------------------------------------------
+| |15 | |XP_021744705.1 | |Chenopodium quinoa | |82 | |0/100 | |NOVEL | |edicion_genica | |bajo |
+---------------------------------------------
+| |16 | |XP_024520904.1 | |Selaginella moellendorffii | |82 | |0/100 | |NOVEL | |edicion_genica | |bajo |
+---------------------------------------------
+| |17 | |NP_001151914.2 | |Zea mays | |82 | |75/100 | |NOVEL | |edicion_genica | |bajo |
+---------------------------------------------
+| |18 | |NP_001388960.1 | |Oryza sativa | |80 | |35/100 | |NOVEL | |edicion_genica | |bajo |
+---------------------------------------------
+| |19 | |XP_002984512.1 | |Selaginella moellendorffii | |80 | |0/100 | |NOVEL | |edicion_genica | |bajo |
+---------------------------------------------
+| |20 | |XP_021305136.1 | |Sorghum bicolor | |78 | |35/100 | |NOVEL | |edicion_genica | |medio |
+---------------------------------------------
+| |21 | |XP_008668118.1 | |Zea mays | |78 | |35/100 | |NOVEL | |edicion_genica | |medio |
+---------------------------------------------
+| |22 | |XP_021720754.1 | |Chenopodium quinoa | |75 | |0/100 | |NOVEL | |edicion_genica | |medio |
+---------------------------------------------
+| |23 | |NP_001105455.2 | |Zea mays | |75 | |35/100 | |NOVEL | |edicion_genica | |medio |
+---------------------------------------------
+| |24 | |XP_066168104.1 | |Oryza sativa | |75 | |35/100 | |NOVEL | |edicion_genica | |medio |
+---------------------------------------------
+| |25 | |XP_024544664.1 | |Selaginella moellendorffii | |75 | |0/100 | |NOVEL | |edicion_genica | |medio |
+---------------------------------------------
+| |26 | |NP_001410292.1 | |Oryza sativa | |70 | |35/100 | |NOVEL | |edicion_genica | |medio |
+---------------------------------------------
+| |27 | |NP_001130206.1 | |Zea mays | |65 | |35/100 | |NOVEL | |edicion_genica | |medio |
+---------------------------------------------
+| |28 | |XP_024772748.1 | |Trichoderma harzianum | |68 | |0/100 | |NOVEL | |transgenesis | |medio |
+---------------------------------------------
+| |29 | |XP_024778146.1 | |Trichoderma harzianum | |65 | |0/100 | |NOVEL | |transgenesis | |medio |
+---------------------------------------------
+| |30 | |XP_024772657.1 | |Trichoderma harzianum | |65 | |0/100 | |NOVEL | |transgenesis | |medio |
+
+Detalles de candidatos
+1. CAB43063.1
+* Especie donante: Craterostigma plantagineum
+* Score de transferencia: 95
+* Europe PMC: NOVEL
+* STRING: 0 interacciones
+* GEO: 13 datasets de expresion disponibles
+* Soporte multi-fuente: 35/100 (expresion)
+* Mecanismo: Regulación de la señalización de ácido abscísico (ABA) y remodelación de membranas celulares mediante fosfolipasa D, induciendo el cierre estomático y la síntesis de osmoprotectores bajo estrés hídrico extremo.
+* Tiene ortologo en receptora: no_se
+* Estrategia: edicion_genica
+* Riesgo de compatibilidad: bajo
+* Justificacion: Heuristica V5.1: flag --no-compatibilidad. Candidato vegetal con score suficiente para considerar edicion de ortologo/endogeno. Revision manual requerida.
+* Promotor: rd29A (inducible por sequia/ABA) - pendiente de validacion
+* Localizacion: citosol - pendiente de validacion
+* Codon optimization: si
+* Riesgos potenciales: Posible alteración en la dinámica de las membranas celulares en condiciones óptimas., Sensibilidad estomática excesiva que podría reducir ligeramente la tasa fotosintética basal.
+2. AAP22171.1
+* Especie donante: Xerophyta viscosa
+* Score de transferencia: 95
+* Europe PMC: 1 menciones
+	* A molecular physiological review of vegetative desiccation tolerance in the resurrection plant Xerophyta viscosa (Baker) (2015)
+* STRING: 0 interacciones
+* GEO: 0 datasets de expresion disponibles
+* Soporte multi-fuente: 25/100 (literatura)
+* Mecanismo: Actúa como una proteína protectora (dehidrina) que previene la agregación de proteínas, secuestra iones metálicos y estabiliza membranas celulares bajo estrés osmótico severo inducido por sequía.
+* Tiene ortologo en receptora: no_se
+* Estrategia: edicion_genica
+* Riesgo de compatibilidad: bajo
+* Justificacion: Heuristica V5.1: flag --no-compatibilidad. Candidato vegetal con score suficiente para considerar edicion de ortologo/endogeno. Revision manual requerida.
+* Promotor: rd29A (inducible por sequia/ABA) - pendiente de validacion
+* Localizacion: citosol - pendiente de validacion
+* Codon optimization: si
+* Riesgos potenciales: Posible alteración menor del balance energético si se expresa constitutivamente a niveles muy altos.
+3. XP_024015294.1
+* Especie donante: Eutrema salsugineum
+* Score de transferencia: 92
+* Europe PMC: NOVEL
+* STRING: 0 interacciones
+* GEO: 3 datasets de expresion disponibles
+* Soporte multi-fuente: 15/100 (expresion)
+* Mecanismo: Las quinasas dependientes de calcio (CDPKs) actúan como sensores clave en la transducción de señales de estrés osmótico y sequía, regulando la apertura estomática y la expresión de genes responsivos a ABA mediante fosforilación.
+* Tiene ortologo en receptora: no_se
+* Estrategia: edicion_genica
+* Riesgo de compatibilidad: bajo
+* Justificacion: Heuristica V5.1: flag --no-compatibilidad. Candidato vegetal con score suficiente para considerar edicion de ortologo/endogeno. Revision manual requerida.
+* Promotor: rd29A (inducible por sequia/ABA) - pendiente de validacion
+* Localizacion: citosol - pendiente de validacion
+* Codon optimization: si
+* Riesgos potenciales: Posible alteración en el desarrollo vegetativo normal si la quinasa se expresa constitutivamente sin regulación estricta.
+4. XP_024011474.1
+* Especie donante: Eutrema salsugineum
+* Score de transferencia: 92
+* Europe PMC: NOVEL
+* STRING: 0 interacciones
+* GEO: 3 datasets de expresion disponibles
+* Soporte multi-fuente: 15/100 (expresion)
+* Mecanismo: Quinasa dependiente de calcio (CDPK). Actúa como sensor secundario de señales de estrés osmótico/hídrico, fosforilando proteínas blanco corriente abajo (canales iónicos, factores de transcripción) para inducir respuestas estomáticas y protección celular.
+* Tiene ortologo en receptora: no_se
+* Estrategia: edicion_genica
+* Riesgo de compatibilidad: bajo
+* Justificacion: Heuristica V5.1: flag --no-compatibilidad. Candidato vegetal con score suficiente para considerar edicion de ortologo/endogeno. Revision manual requerida.
+* Promotor: rd29A (inducible por sequia/ABA) - pendiente de validacion
+* Localizacion: citosol - pendiente de validacion
+* Codon optimization: si
+* Riesgos potenciales: Posible alteración del crecimiento vegetativo si la expresión constitutiva es muy alta., Interferencia cruzada con vías de señalización de patógenos.
+5. XP_021776063.1
+* Especie donante: Chenopodium quinoa
+* Score de transferencia: 92
+* Europe PMC: NOVEL
+* STRING: 0 interacciones
+* GEO: 0 datasets de expresion disponibles
+* Soporte multi-fuente: 0/100 ()
+* Mecanismo: Las quinasas dependientes de calcio (CDPKs) como CDPK20 actúan como sensores clave en las vías de transducción de señales de estrés osmótico y sequía, fosforilando canales iónicos y factores de transcripción para inducir el cierre estomático y la expresión de genes de respuesta a deshidratación.
+* Tiene ortologo en receptora: no_se
+* Estrategia: edicion_genica
+* Riesgo de compatibilidad: bajo
+* Justificacion: Heuristica V5.1: flag --no-compatibilidad. Candidato vegetal con score suficiente para considerar edicion de ortologo/endogeno. Revision manual requerida.
+* Promotor: rd29A (inducible por sequia/ABA) - pendiente de validacion
+* Localizacion: citosol - pendiente de validacion
+* Codon optimization: si
+* Riesgos potenciales: Posible alteración del crecimiento vegetativo si se expresa constitutivamente bajo promotores no regulados.
+6. CAB43062.1
+* Especie donante: Craterostigma plantagineum
+* Score de transferencia: 92
+* Europe PMC: NOVEL
+* STRING: 0 interacciones
+* GEO: 13 datasets de expresion disponibles
+* Soporte multi-fuente: 35/100 (expresion)
+* Mecanismo: Fosfolipasa D2 de la planta resucitadora Craterostigma plantagineum; participa en la generación de ácido fosfatídico (PA), un segundo mensajero clave en la señalización del estrés hídrico y el cierre estomático.
+* Tiene ortologo en receptora: no_se
+* Estrategia: edicion_genica
+* Riesgo de compatibilidad: bajo
+* Justificacion: Heuristica V5.1: flag --no-compatibilidad. Candidato vegetal con score suficiente para considerar edicion de ortologo/endogeno. Revision manual requerida.
+* Promotor: rd29A (inducible por sequia/ABA) - pendiente de validacion
+* Localizacion: citosol - pendiente de validacion
+* Codon optimization: si
+* Riesgos potenciales: Alteración en la morfogénesis foliar si se sobreexpresa constitutivamente., Posible interferencia con vías de defensa mediadas por patógenos.
+7. XP_002456584.1
+* Especie donante: Sorghum bicolor
+* Score de transferencia: 90
+* Europe PMC: NOVEL
+* STRING: 10 interacciones
+	* Partners: C5Y043_SORBI, A0A194YR57, C5X772_SORBI, C5YA53_SORBI, A0A1B6P9G9
+* GEO: 20 datasets de expresion disponibles
+* Soporte multi-fuente: 75/100 (interacciones, expresion)
+* Mecanismo: Transducción de señales dependiente de calcio (CDPK). Fosforila proteínas corriente abajo involucradas en la respuesta al estrés abiótico, activación de canales iónicos y rutas de detoxificación de ROS.
+* Tiene ortologo en receptora: no_se
+* Estrategia: edicion_genica
+* Riesgo de compatibilidad: bajo
+* Justificacion: Heuristica V5.1: flag --no-compatibilidad. Candidato vegetal con score suficiente para considerar edicion de ortologo/endogeno. Revision manual requerida.
+* Promotor: rd29A (inducible por sequia/ABA) - pendiente de validacion
+* Localizacion: citosol - pendiente de validacion
+* Codon optimization: si
+* Riesgos potenciales: Pleiotropía potencial debido a la diafonía (cross-talk) con rutas de desarrollo y señalización de patógenos., Sobrerregulación constitutiva puede causar enanismo o menor rendimiento.
+8. XP_021748420.1
+* Especie donante: Chenopodium quinoa
+* Score de transferencia: 90
+* Europe PMC: NOVEL
+* STRING: 0 interacciones
+* GEO: 0 datasets de expresion disponibles
+* Soporte multi-fuente: 0/100 ()
+* Mecanismo: Quinasa dependiente de calcio (CDPK) homóloga de halófita/especie resistente, involucrada en la traducción de señales de estrés por sequía y alta salinidad hacia mecanismos de osmorregulación.
+* Tiene ortologo en receptora: no_se
+* Estrategia: edicion_genica
+* Riesgo de compatibilidad: bajo
+* Justificacion: Heuristica V5.1: flag --no-compatibilidad. Candidato vegetal con score suficiente para considerar edicion de ortologo/endogeno. Revision manual requerida.
+* Promotor: rd29A (inducible por sequia/ABA) - pendiente de validacion
+* Localizacion: citosol - pendiente de validacion
+* Codon optimization: si
+* Riesgos potenciales: Efectos pleiotrópicos en el desarrollo floral o rendimiento de frutos en Fragaria vesca., Desregulación del balance hídrico basal.
+9. CAD36023.1
+* Especie donante: Craterostigma plantagineum
+* Score de transferencia: 90
+* Europe PMC: NOVEL
+* STRING: 0 interacciones
+* GEO: 13 datasets de expresion disponibles
+* Soporte multi-fuente: 35/100 (expresion)
+* Mecanismo: Factor de transcripción con dominios de tipo dedo de zinc (CCCH) que regula la expresión de genes de respuesta tardía al estrés hídrico y desecación en una planta resurrectora.
+* Tiene ortologo en receptora: no_se
+* Estrategia: edicion_genica
+* Riesgo de compatibilidad: bajo
+* Justificacion: Heuristica V5.1: flag --no-compatibilidad. Candidato vegetal con score suficiente para considerar edicion de ortologo/endogeno. Revision manual requerida.
+* Promotor: rd29A (inducible por sequia/ABA) - pendiente de validacion
+* Localizacion: citosol - pendiente de validacion
+* Codon optimization: si
+* Riesgos potenciales: Pleiotropía: podría afectar el crecimiento vegetativo o la floración si no se usa un promotor inducible por estrés.
+10. XP_024016841.1
+* Especie donante: Eutrema salsugineum
+* Score de transferencia: 88
+* Europe PMC: NOVEL
+* STRING: 0 interacciones
+* GEO: 3 datasets de expresion disponibles
+* Soporte multi-fuente: 15/100 (expresion)
+* Mecanismo: Quinasa dependiente de calcio (CDPK) de Eutrema salsugineum (halófita extrema); transduce señales de estrés osmótico activando rutas de detoxificación de ROS y canales iónicos.
+* Tiene ortologo en receptora: no_se
+* Estrategia: edicion_genica
+* Riesgo de compatibilidad: bajo
+* Justificacion: Heuristica V5.1: flag --no-compatibilidad. Candidato vegetal con score suficiente para considerar edicion de ortologo/endogeno. Revision manual requerida.
+* Promotor: rd29A (inducible por sequia/ABA) - pendiente de validacion
+* Localizacion: citosol - pendiente de validacion
+* Codon optimization: si
+* Riesgos potenciales: Desregulación del crecimiento vegetativo debido a la fosforilación cruzada de proteínas no blanco., Sensibilidad al timing del promotor utilizado.
+11. XP_002448943.1
+* Especie donante: Sorghum bicolor
+* Score de transferencia: 88
+* Europe PMC: NOVEL
+* STRING: 10 interacciones
+	* Partners: C5Y043_SORBI, A0A194YR57, C5X772_SORBI, C5YA53_SORBI, A0A1W0VXJ9
+* GEO: 20 datasets de expresion disponibles
+* Soporte multi-fuente: 75/100 (interacciones, expresion)
+* Mecanismo: Transducción de señales mediada por calcio (CPK25). Regula redes transcripcionales en respuesta a la escasez hídrica y regula la apertura estomática en gramíneas, extrapolable a dicotiledóneas como Fragaria vesca.
+* Tiene ortologo en receptora: no_se
+* Estrategia: edicion_genica
+* Riesgo de compatibilidad: bajo
+* Justificacion: Heuristica V5.1: flag --no-compatibilidad. Candidato vegetal con score suficiente para considerar edicion de ortologo/endogeno. Revision manual requerida.
+* Promotor: rd29A (inducible por sequia/ABA) - pendiente de validacion
+* Localizacion: citosol - pendiente de validacion
+* Codon optimization: si
+* Riesgos potenciales: Interferencia cruzada con vías de señalización de patógenos debido a la diafonía (crosstalk) del calcio.
+12. NP_001390030.1
+* Especie donante: Oryza sativa
+* Score de transferencia: 85
+* Europe PMC: NOVEL
+* STRING: 0 interacciones
+* GEO: 20 datasets de expresion disponibles
+* Soporte multi-fuente: 35/100 (expresion)
+* Mecanismo: Transducción de señales de estrés hídrico mediada por cascadas de fosforilación dependientes de calcio, homóloga a vías bien caracterizadas en gramíneas.
+* Tiene ortologo en receptora: no_se
+* Estrategia: edicion_genica
+* Riesgo de compatibilidad: bajo
+* Justificacion: Heuristica V5.1: flag --no-compatibilidad. Candidato vegetal con score suficiente para considerar edicion de ortologo/endogeno. Revision manual requerida.
+* Promotor: rd29A (inducible por sequia/ABA) - pendiente de validacion
+* Localizacion: citosol - pendiente de validacion
+* Codon optimization: si
+* Riesgos potenciales: Incompatibilidad menor en el reconocimiento de dominios corriente abajo debido a la divergencia evolutiva entre monocotiledóneas y dicotiledóneas (Fragaria vesca).
+13. XP_006391245.1
+* Especie donante: Eutrema salsugineum
+* Score de transferencia: 85
+* Europe PMC: NOVEL
+* STRING: 3 interacciones
+	* Partners: V4MIU8_EUTSA, V4MJQ1_EUTSA, V4KNR9_EUTSA
+* GEO: 3 datasets de expresion disponibles
+* Soporte multi-fuente: 30/100 (interacciones, expresion)
+* Mecanismo: Quinasa dependiente de calcio (CDPK) que integra señales de calcio para activar cascadas de fosforilación que cierran estomas y activan mecanismos de detoxificación antioxidante.
+* Tiene ortologo en receptora: no_se
+* Estrategia: edicion_genica
+* Riesgo de compatibilidad: bajo
+* Justificacion: Heuristica V5.1: flag --no-compatibilidad. Candidato vegetal con score suficiente para considerar edicion de ortologo/endogeno. Revision manual requerida.
+* Promotor: rd29A (inducible por sequia/ABA) - pendiente de validacion
+* Localizacion: citosol - pendiente de validacion
+* Codon optimization: si
+* Riesgos potenciales: Interferencia cruzada con vías de señalización de defensa contra patógenos debido al dominio TIR.
+14. XP_002458979.1
+* Especie donante: Sorghum bicolor
+* Score de transferencia: 85
+* Europe PMC: NOVEL
+* STRING: 10 interacciones
+	* Partners: C5Y043_SORBI, A0A194YR57, C5X772_SORBI, C5YA53_SORBI, A0A1Z5SA56
+* GEO: 20 datasets de expresion disponibles
+* Soporte multi-fuente: 75/100 (interacciones, expresion)
+* Mecanismo: Proteína quinasa dependiente de calcio (CDPK 22). Regula la red de señalización ante déficit hídrico, promoviendo la tolerancia al estrés oxidativo y cierre estomático.
+* Tiene ortologo en receptora: no_se
+* Estrategia: edicion_genica
+* Riesgo de compatibilidad: bajo
+* Justificacion: Heuristica V5.1: flag --no-compatibilidad. Candidato vegetal con score suficiente para considerar edicion de ortologo/endogeno. Revision manual requerida.
+* Promotor: rd29A (inducible por sequia/ABA) - pendiente de validacion
+* Localizacion: citosol - pendiente de validacion
+* Codon optimization: si
+* Riesgos potenciales: Posible hiperactivación del cierre estomático limitando la tasa fotosintética bajo riego normal.
+15. XP_021744705.1
+* Especie donante: Chenopodium quinoa
+* Score de transferencia: 82
+* Europe PMC: NOVEL
+* STRING: 0 interacciones
+* GEO: 0 datasets de expresion disponibles
+* Soporte multi-fuente: 0/100 ()
+* Mecanismo: Respuesta al estrés abiótico vía señalización por calcio, proveniente de una especie halófita/resistente a la sequía (Chenopodium quinoa).
+* Tiene ortologo en receptora: no_se
+* Estrategia: edicion_genica
+* Riesgo de compatibilidad: bajo
+* Justificacion: Heuristica V5.1: flag --no-compatibilidad. Candidato vegetal con score suficiente para considerar edicion de ortologo/endogeno. Revision manual requerida.
+* Promotor: rd29A (inducible por sequia/ABA) - pendiente de validacion
+* Localizacion: citosol - pendiente de validacion
+* Codon optimization: si
+* Riesgos potenciales: Efectos pleiotrópicos en la osmorregulación debido a la alta reactividad cruzada con vías de tolerancia a salinidad.
+16. XP_024520904.1
+* Especie donante: Selaginella moellendorffii
+* Score de transferencia: 82
+* Europe PMC: NOVEL
+* STRING: 0 interacciones
+* GEO: 0 datasets de expresion disponibles
+* Soporte multi-fuente: 0/100 ()
+* Mecanismo: Modulación de la homeostasis de calcio intracelular como sensor secundario, regulando redes de transcripción responsivas al estrés hídrico heredadas de una planta vascular sin semilla adaptada a la desecación.
+* Tiene ortologo en receptora: no_se
+* Estrategia: edicion_genica
+* Riesgo de compatibilidad: bajo
+* Justificacion: Heuristica V5.1: flag --no-compatibilidad. Candidato vegetal con score suficiente para considerar edicion de ortologo/endogeno. Revision manual requerida.
+* Promotor: rd29A (inducible por sequia/ABA) - pendiente de validacion
+* Localizacion: citosol - pendiente de validacion
+* Codon optimization: si
+* Riesgos potenciales: Alto grado de conservación con calmodulinas endógenas de Fragaria vesca, lo que podría generar silenciamiento génico por co-supresión o interferencia con la maquinaria de calcio nativa.
+17. NP_001151914.2
+* Especie donante: Zea mays
+* Score de transferencia: 82
+* Europe PMC: NOVEL
+* STRING: 10 interacciones
+	* Partners: Gpm494, TIDP3120, A0A1D6EN37, Crt2, CRT
+* GEO: 20 datasets de expresion disponibles
+* Soporte multi-fuente: 75/100 (interacciones, expresion)
+* Mecanismo: Proteína relacionada con calmodulina. Modula la homeostasis del calcio y activa proteínas downstream implicadas en la tolerancia al estrés oxidativo y osmótico asociado a la sequía.
+* Tiene ortologo en receptora: no_se
+* Estrategia: edicion_genica
+* Riesgo de compatibilidad: bajo
+* Justificacion: Heuristica V5.1: flag --no-compatibilidad. Candidato vegetal con score suficiente para considerar edicion de ortologo/endogeno. Revision manual requerida.
+* Promotor: rd29A (inducible por sequia/ABA) - pendiente de validacion
+* Localizacion: citosol - pendiente de validacion
+* Codon optimization: si
+* Riesgos potenciales: Efectos pleiotrópicos moderados sobre el desarrollo floral y foliar por desregulación del calcio intracelular.
+18. NP_001388960.1
+* Especie donante: Oryza sativa
+* Score de transferencia: 80
+* Europe PMC: NOVEL
+* STRING: 0 interacciones
+* GEO: 20 datasets de expresion disponibles
+* Soporte multi-fuente: 35/100 (expresion)
+* Mecanismo: Regulación por fosforilación de canales iónicos y factores de transcripción involucrados en la tolerancia a la sequía y la homeostasis osmótica.
+* Tiene ortologo en receptora: no_se
+* Estrategia: edicion_genica
+* Riesgo de compatibilidad: bajo
+* Justificacion: Heuristica V5.1: flag --no-compatibilidad. Candidato vegetal con score suficiente para considerar edicion de ortologo/endogeno. Revision manual requerida.
+* Promotor: rd29A (inducible por sequia/ABA) - pendiente de validacion
+* Localizacion: citosol - pendiente de validacion
+* Codon optimization: si
+* Riesgos potenciales: Posible hiperactivación de respuestas de estrés que reduzca el rendimiento general (biomasa) en condiciones óptimas.
+19. XP_002984512.1
+* Especie donante: Selaginella moellendorffii
+* Score de transferencia: 80
+* Europe PMC: NOVEL
+* STRING: 0 interacciones
+* GEO: 0 datasets de expresion disponibles
+* Soporte multi-fuente: 0/100 ()
+* Mecanismo: Neo-calmodulina rica en dominios EF-hand de Selaginella moellendorffii; amortigua y canaliza fluctuaciones extremas de iones calcio intracelulares inducidas por desecación.
+* Tiene ortologo en receptora: no_se
+* Estrategia: edicion_genica
+* Riesgo de compatibilidad: bajo
+* Justificacion: Heuristica V5.1: flag --no-compatibilidad. Candidato vegetal con score suficiente para considerar edicion de ortologo/endogeno. Revision manual requerida.
+* Promotor: rd29A (inducible por sequia/ABA) - pendiente de validacion
+* Localizacion: citosol - pendiente de validacion
+* Codon optimization: si
+* Riesgos potenciales: Interferencia con la homeostasis normal del calcio en tejidos florales y frutos de Fragaria vesca.
+20. XP_021305136.1
+* Especie donante: Sorghum bicolor
+* Score de transferencia: 78
+* Europe PMC: NOVEL
+* STRING: 0 interacciones
+* GEO: 20 datasets de expresion disponibles
+* Soporte multi-fuente: 35/100 (expresion)
+* Mecanismo: Fosforilación de proteínas reguladoras en respuesta a señales de estrés osmótico y deshidratación.
+* Tiene ortologo en receptora: no_se
+* Estrategia: edicion_genica
+* Riesgo de compatibilidad: medio
+* Justificacion: Heuristica V5.1: flag --no-compatibilidad. Candidato vegetal prometedor; verificar ortologia en receptora antes de editar. Revision manual requerida.
+* Promotor: rd29A (inducible por sequia/ABA) - pendiente de validacion
+* Localizacion: citosol - pendiente de validacion
+* Codon optimization: si
+* Riesgos potenciales: Baja eficiencia catalítica en un fondo genético de dicotiledónea (Fragaria) por ser una enzima adaptada a fisiología C4.
+21. XP_008668118.1
+* Especie donante: Zea mays
+* Score de transferencia: 78
+* Europe PMC: NOVEL
+* STRING: 0 interacciones
+* GEO: 20 datasets de expresion disponibles
+* Soporte multi-fuente: 35/100 (expresion)
+* Mecanismo: Regulación de cascadas de señalización dependientes de calcio y activación de bombas de protones/canales iónicos para mantener el turgor celular durante el déficit hídrico.
+* Tiene ortologo en receptora: no_se
+* Estrategia: edicion_genica
+* Riesgo de compatibilidad: medio
+* Justificacion: Heuristica V5.1: flag --no-compatibilidad. Candidato vegetal prometedor; verificar ortologia en receptora antes de editar. Revision manual requerida.
+* Promotor: rd29A (inducible por sequia/ABA) - pendiente de validacion
+* Localizacion: citosol - pendiente de validacion
+* Codon optimization: si
+* Riesgos potenciales: Posible interferencia con la homeostasis normal de calcio en tejidos florales o frutos de la fresa debido a la alta homología con proteínas endógenas.
+22. XP_021720754.1
+* Especie donante: Chenopodium quinoa
+* Score de transferencia: 75
+* Europe PMC: NOVEL
+* STRING: 0 interacciones
+* GEO: 0 datasets de expresion disponibles
+* Soporte multi-fuente: 0/100 ()
+* Mecanismo: Glutatión S-transferasa que detoxifica especies reactivas de oxígeno (ROS) acumuladas durante el estrés oxidativo por sequía.
+* Tiene ortologo en receptora: no_se
+* Estrategia: edicion_genica
+* Riesgo de compatibilidad: medio
+* Justificacion: Heuristica V5.1: flag --no-compatibilidad. Candidato vegetal prometedor; verificar ortologia en receptora antes de editar. Revision manual requerida.
+* Promotor: rd29A (inducible por sequia/ABA) - pendiente de validacion
+* Localizacion: citosol - pendiente de validacion
+* Codon optimization: si
+* Riesgos potenciales: Baja especificidad de sustrato si interfiere con la detoxificación de ciertos plaguicidas aplicados en el cultivo.
+23. NP_001105455.2
+* Especie donante: Zea mays
+* Score de transferencia: 75
+* Europe PMC: NOVEL
+* STRING: 0 interacciones
+* GEO: 20 datasets de expresion disponibles
+* Soporte multi-fuente: 35/100 (expresion)
+* Mecanismo: Calmodulina. Actúa como transductor universal de señales de calcio inducidas por sequía, modulando múltiples enzimas y canales iónicos.
+* Tiene ortologo en receptora: no_se
+* Estrategia: edicion_genica
+* Riesgo de compatibilidad: medio
+* Justificacion: Heuristica V5.1: flag --no-compatibilidad. Candidato vegetal prometedor; verificar ortologia en receptora antes de editar. Revision manual requerida.
+* Promotor: rd29A (inducible por sequia/ABA) - pendiente de validacion
+* Localizacion: citosol - pendiente de validacion
+* Codon optimization: si
+* Riesgos potenciales: Alta conservación en plantas que puede generar silenciamiento génico por homología (co-suppression) o interferencia con calmodulinas endógenas.
+24. XP_066168104.1
+* Especie donante: Oryza sativa
+* Score de transferencia: 75
+* Europe PMC: NOVEL
+* STRING: 0 interacciones
+* GEO: 20 datasets de expresion disponibles
+* Soporte multi-fuente: 35/100 (expresion)
+* Mecanismo: Proteína similar a calmodulina (CML24) de Oryza sativa; actúa como sensor de calcio en respuestas adaptativas al estrés abiótico.
+* Tiene ortologo en receptora: no_se
+* Estrategia: edicion_genica
+* Riesgo de compatibilidad: medio
+* Justificacion: Heuristica V5.1: flag --no-compatibilidad. Candidato vegetal prometedor; verificar ortologia en receptora antes de editar. Revision manual requerida.
+* Promotor: rd29A (inducible por sequia/ABA) - pendiente de validacion
+* Localizacion: citosol - pendiente de validacion
+* Codon optimization: si
+* Riesgos potenciales: Posible redundancia funcional con genes endógenos de Fragaria vesca.
+25. XP_024544664.1
+* Especie donante: Selaginella moellendorffii
+* Score de transferencia: 75
+* Europe PMC: NOVEL
+* STRING: 0 interacciones
+* GEO: 0 datasets de expresion disponibles
+* Soporte multi-fuente: 0/100 ()
+* Mecanismo: Proteína transportadora mitocondrial fijadora de calcio (SCaMC-1). Regula el metabolismo energético mitocondrial y el intercambio de nucleótidos de adenina bajo estrés hídrico en una planta vascular basal adaptada a la desecación.
+* Tiene ortologo en receptora: no_se
+* Estrategia: edicion_genica
+* Riesgo de compatibilidad: medio
+* Justificacion: Heuristica V5.1: flag --no-compatibilidad. Candidato vegetal prometedor; verificar ortologia en receptora antes de editar. Revision manual requerida.
+* Promotor: rd29A (inducible por sequia/ABA) - pendiente de validacion
+* Localizacion: citosol - pendiente de validacion
+* Codon optimization: si
+* Riesgos potenciales: Incompatibilidad en la importación mitocondrial en angiospermas superiores si los péptidos de tránsito no son reconocidos eficientemente.
+26. NP_001410292.1
+* Especie donante: Oryza sativa
+* Score de transferencia: 70
+* Europe PMC: NOVEL
+* STRING: 0 interacciones
+* GEO: 20 datasets de expresion disponibles
+* Soporte multi-fuente: 35/100 (expresion)
+* Mecanismo: Proteína similar a calmodulina (CML28). Participa en la decodificación de firmas de calcio generadas durante el estrés por sequía.
+* Tiene ortologo en receptora: no_se
+* Estrategia: edicion_genica
+* Riesgo de compatibilidad: medio
+* Justificacion: Heuristica V5.1: flag --no-compatibilidad. Candidato vegetal prometedor; verificar ortologia en receptora antes de editar. Revision manual requerida.
+* Promotor: rd29A (inducible por sequia/ABA) - pendiente de validacion
+* Localizacion: citosol - pendiente de validacion
+* Codon optimization: si
+* Riesgos potenciales: Redundancia funcional con genes endógenos de Fragaria vesca; impacto fenotípico potencialmente bajo.
+27. NP_001130206.1
+* Especie donante: Zea mays
+* Score de transferencia: 65
+* Europe PMC: NOVEL
+* STRING: 0 interacciones
+* GEO: 20 datasets de expresion disponibles
+* Soporte multi-fuente: 35/100 (expresion)
+* Mecanismo: Desintoxicación de especies reactivas de oxígeno (ROS) acumuladas durante el estrés por sequía mediante actividad glutatión S-transferasa (GST).
+* Tiene ortologo en receptora: no_se
+* Estrategia: edicion_genica
+* Riesgo de compatibilidad: medio
+* Justificacion: Heuristica V5.1: flag --no-compatibilidad. Candidato vegetal prometedor; verificar ortologia en receptora antes de editar. Revision manual requerida.
+* Promotor: rd29A (inducible por sequia/ABA) - pendiente de validacion
+* Localizacion: citosol - pendiente de validacion
+* Codon optimization: si
+* Riesgos potenciales: Sobreactivación del metabolismo de xenobióticos que podría interferir con la detoxificación endógena de pesticidas en fresa.
+28. XP_024772748.1
+* Especie donante: Trichoderma harzianum
+* Score de transferencia: 68
+* Europe PMC: NOVEL
+* STRING: 0 interacciones
+* GEO: 0 datasets de expresion disponibles
+* Soporte multi-fuente: 0/100 ()
+* Mecanismo: Glutatión S-transferasa (GST) putativa de Trichoderma harzianum; detoxificación de especies reactivas de oxígeno (ROS) acumuladas durante la sequía severa.
+* Tiene ortologo en receptora: no_se
+* Estrategia: transgenesis
+* Riesgo de compatibilidad: medio
+* Justificacion: Heuristica V5.1: flag --no-compatibilidad. Microorganismo prometedor; posible gen heterologo, elicitor o factor de simbiosis. Revision manual requerida.
+* Promotor: rd29A (inducible por sequia/ABA) - pendiente de validacion
+* Localizacion: citosol - pendiente de validacion
+* Codon optimization: si
+* Riesgos potenciales: Acumulación de intermediarios metabólicos fúngicos potencialmente alergénicos o fitotóxicos.
+29. XP_024778146.1
+* Especie donante: Trichoderma harzianum
+* Score de transferencia: 65
+* Europe PMC: NOVEL
+* STRING: 0 interacciones
+* GEO: 0 datasets de expresion disponibles
+* Soporte multi-fuente: 0/100 ()
+* Mecanismo: Proteína fúngica putativa con dominios GST para la mitigación del estrés oxidativo asociado a la desecación.
+* Tiene ortologo en receptora: no_se
+* Estrategia: transgenesis
+* Riesgo de compatibilidad: medio
+* Justificacion: Heuristica V5.1: flag --no-compatibilidad. Microorganismo prometedor; posible gen heterologo, elicitor o factor de simbiosis. Revision manual requerida.
+* Promotor: rd29A (inducible por sequia/ABA) - pendiente de validacion
+* Localizacion: citosol - pendiente de validacion
+* Codon optimization: si
+* Riesgos potenciales: Incompatibilidad post-traduccional o plegamiento incorrecto en tejidos vegetales superiores.
+30. XP_024772657.1
+* Especie donante: Trichoderma harzianum
+* Score de transferencia: 65
+* Europe PMC: NOVEL
+* STRING: 0 interacciones
+* GEO: 0 datasets de expresion disponibles
+* Soporte multi-fuente: 0/100 ()
+* Mecanismo: Detoxificación de especies reactivas de oxígeno (ROS) acumuladas durante la sequía mediante conjugación con glutatión (actividad glutatión S-transferasa).
+* Tiene ortologo en receptora: no_se
+* Estrategia: transgenesis
+* Riesgo de compatibilidad: medio
+* Justificacion: Heuristica V5.1: flag --no-compatibilidad. Microorganismo prometedor; posible gen heterologo, elicitor o factor de simbiosis. Revision manual requerida.
+* Promotor: rd29A (inducible por sequia/ABA) - pendiente de validacion
+* Localizacion: citosol - pendiente de validacion
+* Codon optimization: si
+* Riesgos potenciales: Alteración del balance redox celular normal; baja especificidad hacia el estrés osmótico estricto al ser una enzima de detoxificación general.
+Genes conocidos en receptora (Brazo A)
+* LOC105349251: heat shock 70 kDa protein-like
+* LOC101312933: heat shock cognate 70 kDa protein-like
+* LOC101312639: heat shock cognate 70 kDa protein-like
+* LOC101297476: heat shock cognate 70 kDa protein 2-like
+* LOC101294000: heat shock 70 kDa protein
+* LOC101291669: heat shock cognate 70 kDa protein 2-like
+* LOC101291093: heat shock cognate 70 kDa protein 2
+* LOC101314995: 18.1 kDa class I heat shock protein-like
+* LOC101314220: 18.1 kDa class I heat shock protein-like
+* LOC101313245: 15.7 kDa heat shock protein, peroxisomal
+La seleccion de donantes fue orquestada por el LLM. Los candidatos requieren validacion experimental antes de su uso.

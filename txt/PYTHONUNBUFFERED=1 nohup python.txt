@@ -1,0 +1,24 @@
+PYTHONUNBUFFERED=1 nohup python -u pipeline_v5.1_separar_reinos.py \
+  --rasgo "tolerancia a sequia" \
+  --receptora fresa \
+  --estrategia B \
+  --modo exhaustivo \
+  --panel hibrido \
+  --pfam auto \
+  --hmmer-por-especie 5000 \
+  --max-proteinas-especie 50000 \
+  --max-proteinas-receptora 100000 \
+  --pre-top-por-especie 80 \
+  --lote-llm 8 \
+  --llm-lotes 6 \
+  --top 30 \
+  --separar-reinos \
+  --top-planta 20 \
+  --top-microbios 10 \
+  --llm-provider gemini \
+  --gemini-model gemini-3.5-flash-lite \
+  --modelo rapido \
+  --no-compatibilidad \
+  --no-constructos \
+  --salida v51_fresa_exh_sep_microbios \
+  > v51_fresa_exh_sep_microbios.log 2>&1 &

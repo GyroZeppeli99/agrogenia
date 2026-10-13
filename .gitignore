@@ -1,0 +1,44 @@
+# ===== Bases Pfam y sus índices HMMER (gigantes, NUNCA subir) =====
+dbs/Pfam-A.hmm
+dbs/*.h3f
+dbs/*.h3m
+dbs/*.h3p
+dbs/*.h3i
+*.h3f
+*.h3m
+*.h3p
+*.h3i
+
+# ===== Proteomas (gigantes) =====
+proteomas_donantes/
+proteomas_receptor/
+*.faa
+
+# ===== Cachés y archivos de ejecución =====
+*.estado
+*.log
+panel_donantes_*.json
+*.pyc
+__pycache__/
+
+# ===== Entornos virtuales =====
+venv/
+.venv/
+
+# ===== Claves =====
+.env
+
+# ===== Resultados grandes (subir solo los representativos) =====
+v*.json
+v*.md
+consenso*.json
+consenso*.md
+!resultados/*.json
+!resultados/*.md
+
+# ===== Editor / OS =====
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*~

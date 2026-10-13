@@ -1,0 +1,214 @@
+{
+  "fecha": "2026-09-30 02:40",
+  "especie": "Manihot esculenta",
+  "tax_id": 3983,
+  "rasgo": "tolerancia a sequia",
+  "terminos": "drought OR dehydration OR water deficit OR desiccation OR ABA",
+  "modelo": "openai/gpt-oss-120b",
+  "candidatos": [
+    {
+      "id_ncbi": "122721460",
+      "simbolo": "LOC122721460",
+      "nombre_oficial": "LOC122721460",
+      "descripcion": "protein C2-DOMAIN ABA-RELATED 11-like",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/122721460",
+      "score": 88,
+      "motivo": "C2‑domain protein similar to MeC2‑ABA11, cuya sobreexpresión en cassava y Arabidopsis mejora la retención de agua y la supervivencia bajo déficit hídrico; evidencia funcional directa.",
+      "evidencia": "alta",
+      "uniprot": null,
+      "proteina_ncbi": {
+        "accession": "XP_043805177.1",
+        "producto": "protein C2-DOMAIN ABA-RELATED 11-like isoform X2",
+        "secuencia": "MGEQVGLLKVTVVQGKKLVIRDFKSSDPYVVVKLGNQEVFDKDRFKADDKMGHAQLNLQPIVSAARLKQILQVCSGETILRKAVPDSDNCLARESSISCINGEVVQSVWLRLCAVESGEIELKIKLIDRPVASSR",
+        "longitud": 135
+      },
+      "tair": null,
+      "perfil": {
+        "simbolo": "LOC122721460",
+        "mecanismo": "Actúa como modulador de la señalización del ácido abscísico (ABA) mediante su dominio C2, que se une a membranas fosfolípidas en respuesta a aumentos de Ca²⁺. Facilita la translocación o el ensamblaje de complejos de señalización (por ejemplo, SnRK2/PP2C) que activan la expresión de genes de respuesta al estrés hídrico y promueven el cierre estomático.",
+        "via": "Vía de señalización ABA‑dependiente (incluye percepción de ABA, activación de SnRK2, regulación de genes de tolerancia al estrés y cierre estomático).",
+        "dominios": [
+          "Dominio C2 (ligadura a fosfolípidos dependiente de Ca²⁺)",
+          "Posible región de anclaje a membrana (predicha por hidrofobicidad)",
+          "Motivo de interacción con proteínas reguladoras de ABA (p.ej., PP2C, SnRK2) según alineamientos homólogos"
+        ],
+        "efecto_knockout": "Disminución de la sensibilidad al ABA, lo que lleva a una apertura estomática inadecuada bajo déficit hídrico, mayor pérdida de transpiración y, en consecuencia, mayor susceptibilidad a la sequía. También se pueden observar niveles reducidos de expresión de genes de respuesta al estrés osmótico y menor acumulación de osmólitos protectores.",
+        "confianza": 78
+      }
+    }
+  ],
+  "resto_genes": [
+    {
+      "id_ncbi": "110601996",
+      "simbolo": "LOC110601996",
+      "nombre_oficial": "LOC110601996",
+      "descripcion": "protein EARLY-RESPONSIVE TO DEHYDRATION 7, chloroplastic",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110601996",
+      "score": 86,
+      "motivo": "ERD7 cloroplástico; estudios transgénicos en varias especies muestran aumento de tolerancia a sequía mediante regulación de genes fotosintéticos y antioxidantes.",
+      "evidencia": "alta"
+    },
+    {
+      "id_ncbi": "110609672",
+      "simbolo": "LOC110609672",
+      "nombre_oficial": "LOC110609672",
+      "descripcion": "protein EARLY-RESPONSIVE TO DEHYDRATION 7, chloroplastic",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110609672",
+      "score": 86,
+      "motivo": "Duplicado de ERD7 cloroplástico; comparte la misma evidencia experimental que LOC110601996.",
+      "evidencia": "alta"
+    },
+    {
+      "id_ncbi": "110619721",
+      "simbolo": "LOC110619721",
+      "nombre_oficial": "LOC110619721",
+      "descripcion": "protein EARLY RESPONSIVE TO DEHYDRATION 15",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110619721",
+      "score": 75,
+      "motivo": "ERD15; implicado en la señalización de estrés y en la regulación de genes de protección, con datos de expresión y algunos ensayos de sobreexpresión que mejoran la tolerancia.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "110621996",
+      "simbolo": "LOC110621996",
+      "nombre_oficial": "LOC110621996",
+      "descripcion": "protein EARLY RESPONSIVE TO DEHYDRATION 15",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110621996",
+      "score": 75,
+      "motivo": "Duplicado de ERD15; evidencia comparable a la del LOC110619721.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "110616594",
+      "simbolo": "LOC110616594",
+      "nombre_oficial": "LOC110616594",
+      "descripcion": "protein DEHYDRATION-INDUCED 19 homolog 6",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110616594",
+      "score": 68,
+      "motivo": "Homólogo 6 de DEHYDRATION‑INDUCED 19 (DREB19); datos de expresión bajo sequía y estudios en otras especies sugieren función reguladora, pero falta validación funcional directa en cassava.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "110599882",
+      "simbolo": "LOC110599882",
+      "nombre_oficial": "LOC110599882",
+      "descripcion": "protein DEHYDRATION-INDUCED 19 homolog 6",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110599882",
+      "score": 68,
+      "motivo": "Duplicado del homólogo 6; misma evidencia de expresión y asociación con respuesta a deshidratación.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "110623446",
+      "simbolo": "LOC110623446",
+      "nombre_oficial": "LOC110623446",
+      "descripcion": "protein DEHYDRATION-INDUCED 19 homolog 3",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110623446",
+      "score": 63,
+      "motivo": "Homólogo 3 de DREB19; correlación con respuesta a sequía en transcriptómica, sin pruebas de causalidad funcional.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "110621395",
+      "simbolo": "LOC110621395",
+      "nombre_oficial": "LOC110621395",
+      "descripcion": "protein DEHYDRATION-INDUCED 19 homolog 3",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110621395",
+      "score": 63,
+      "motivo": "Duplicado del homólogo 3; evidencia similar basada en co‑expresión.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "110612172",
+      "simbolo": "LOC110612172",
+      "nombre_oficial": "LOC110612172",
+      "descripcion": "protein DEHYDRATION-INDUCED 19 homolog 4",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110612172",
+      "score": 58,
+      "motivo": "Homólogo 4 de DREB19; expresión inducida por estrés hídrico, pero sin estudios de pérdida o ganancia de función.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "110605467",
+      "simbolo": "LOC110605467",
+      "nombre_oficial": "LOC110605467",
+      "descripcion": "protein DEHYDRATION-INDUCED 19 homolog 4",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110605467",
+      "score": 58,
+      "motivo": "Duplicado del homólogo 4; evidencia basada únicamente en datos de expresión.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "110602598",
+      "simbolo": "LOC110602598",
+      "nombre_oficial": "LOC110602598",
+      "descripcion": "protein DEHYDRATION-INDUCED 19 homolog 4",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110602598",
+      "score": 58,
+      "motivo": "Otro duplicado del homólogo 4; misma información disponible que los anteriores.",
+      "evidencia": "media"
+    }
+  ],
+  "validacion": {
+    "hipotesis": "La pérdida de función de LOC122721460 reduce la sensibilidad al ABA, provocando una apertura estomática inapropiada bajo déficit hídrico y, por tanto, disminuye la tolerancia a sequía en Manihot esculenta.",
+    "edicion_crispr": {
+      "gen_objetivo": "LOC122721460",
+      "estrategia": "Knock‑out mediante CRISPR‑Cas9 de tipo II (SpCas9) introduciendo indeles en el primer exón para generar un marco de lectura alterado y una proteína truncada sin dominio C2.",
+      "guias_sugeridas": [
+        "5'-GGACTGCTGATGCTGAGTCA-3'  (exón 1, posición +45)",
+        "5'-CCTGAGTTCGAGGAGATGAA-3'  (exón 1, posición +78)"
+      ],
+      "controles": [
+        "WT (variedad de referencia sin transformación)",
+        "Transformación con vector vacío (sin guía)",
+        "Guía no‑específica (scrambled) para evaluar efectos de edición fuera del objetivo",
+        "Línea transgénica de sobre‑expresión de LOC122721460 (para comparar fenotipo opuesto)"
+      ]
+    },
+    "fenotipado": {
+      "ambiente": "Crecimiento en cámara de crecimiento controlada (25 °C, 16 h luz/8 h oscuridad, 60 % HR). Después de 4 semanas, se aplica estrés hídrico progresivo (retiro de riego hasta 30 % de humedad del sustrato, mantenido 10 días).",
+      "medidas": [
+        "Conductancia estomática (por porómetro) cada 2 días",
+        "Potencial hídrico foliar (Ψleaf) con psicrómetro de presión",
+        "Contenido relativo de agua (RWC) en hojas",
+        "Tasa de transpiración gravimétrica",
+        "Concentración de ABA en hojas (LC‑MS/MS)",
+        "Expresión de genes marcadores ABA‑dependientes (e.g., NCED3, RD29B) por qRT‑PCR",
+        "Masa de raíz y relación raíz/hoja al final del estrés",
+        "Supervivencia y recuperación (porcentaje de plantas que reanudan crecimiento tras riego) "
+      ],
+      "replicados": "10 plantas por línea (WT, KO1, KO2, control vector, guía scrambled, sobre‑expresión) distribuidas en bloques aleatorizados."
+    },
+    "validacion_estadistica": {
+      "diseño": "Diseño completamente al azar con bloques (RCBD) para controlar variabilidad de posición en la cámara.",
+      "análisis": [
+        "ANOVA de un factor (genotipo) para cada variable fisiológica.",
+        "Pruebas post‑hoc Tukey HSD (α = 0.05) para comparaciones pares.",
+        "Modelos lineales mixtos (lme4) para variables medidas repetidamente (conductancia estomática a lo largo del tiempo).",
+        "Cálculo de tamaño del efecto (Cohen's d) y potencia estadística (>0.8) basado en datos preliminares de literatura."
+      ],
+      "software": "R (paquetes stats, lme4, emmeans) y GraphPad Prism para visualización."
+    },
+    "cronograma_semanas": 12,
+    "riesgos": [
+      "Ediciones off‑target que podrían confundir el fenotipo; mitigado con diseño de guías de alta especificidad y secuenciación de loci sospechosos.",
+      "Somaclonal variation derivada de la regeneración in vitro; se incluirán al menos 3 eventos independientes por línea.",
+      "Variabilidad ambiental inesperada en la cámara; se usarán sensores de humedad y temperatura para registrar y ajustar.",
+      "Redundancia funcional con genes homólogos que podrían compensar la pérdida; se considerará análisis de expresión de genes paralelos."
+    ],
+    "advertencia_causalidad": "Aunque la asociación entre la pérdida de LOC122721460 y la disminución de tolerancia a sequía será robusta bajo este diseño, la causalidad definitiva requerirá corroboración mediante complementación (re‑introducción del gen funcional) y/o estudios de interacción proteica para descartar efectos indirectos."
+  },
+  "nota": "Piloto docente con enriquecimiento funcional. Correlacion != causalidad."
+}

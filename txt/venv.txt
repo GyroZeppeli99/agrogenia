@@ -1,0 +1,13 @@
+python3 -m venv venv
+source venv/bin/activate
+export GROQ_API_KEY="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"
+export GOOGLE_API_KEY="AQ.Ab8RN6LewQJ8WG6L5IytVZAMfD6gVDhYebkm5cagYMaZ6s0qDw"
+
+AgroGenIA
+
+API KEY gemini
+AQ.Ab8RN6LewQJ8WG6L5IytVZAMfD6gVDhYebkm5cagYMaZ6s0qDw
+
+projects/514266025133
+
+514266025133

@@ -1,0 +1,261 @@
+{
+  "fecha": "2026-09-30 01:33",
+  "especie": "Oryza sativa",
+  "tax_id": 4530,
+  "rasgo": "tolerancia a sequía",
+  "terminos": "drought OR dehydration OR water deficit OR desiccation OR ABA",
+  "modelo": "openai/gpt-oss-120b",
+  "candidatos": [
+    {
+      "id_ncbi": "4338484",
+      "simbolo": "LOC4338484",
+      "nombre_oficial": "LOC4338484",
+      "descripcion": "dehydration-responsive element-binding protein 2B-like",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/4338484",
+      "score": 92,
+      "motivo": "TF DREB2B-like; over‑expression in rice mejora la supervivencia bajo déficit hídrico y regula genes de respuesta al estrés.",
+      "evidencia": "alta",
+      "uniprot": null,
+      "tair": null,
+      "perfil": {
+        "simbolo": "LOC4338484",
+        "mecanismo": "Factor de transcripción que se une a los elementos DRE/CRT del promotor de genes de respuesta al estrés, activando la expresión de genes protectores (p.ej., LEA, proteínas de choque térmico) en una vía ABA‑independiente.",
+        "via": "Señalización de estrés por deshidratación (ruta DREB2/ERF) y regulación de genes de tolerancia osmótica y antioxidante.",
+        "dominios": [
+          "AP2/ERF DNA‑binding domain (PF00847)"
+        ],
+        "efecto_knockout": "Reducción significativa de la tolerancia a sequía; plantas presentan mayor pérdida de turgencia, menor acumulación de osmoprotectores y mayor susceptibilidad al estrés hídrico.",
+        "confianza": 88
+      }
+    },
+    {
+      "id_ncbi": "4339084",
+      "simbolo": "LOC4339084",
+      "nombre_oficial": "LOC4339084",
+      "descripcion": "dehydration-responsive element-binding protein 2D-like",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/4339084",
+      "score": 88,
+      "motivo": "DREB2D‑like; estudios funcionales demuestran aumento de tolerancia a sequía al inducir su expresión.",
+      "evidencia": "alta",
+      "uniprot": null,
+      "tair": null,
+      "perfil": {
+        "simbolo": "LOC4339084",
+        "mecanismo": "Factor de transcripción similar a DREB2D que regula la expresión de genes de respuesta a la deshidratación mediante unión a cis‑elementos DRE, modulando tanto rutas ABA‑dependientes como ABA‑independientes.",
+        "via": "Ruta DREB2/ERF y crosstalk con señalización ABA; inducción de genes de protección celular y de detoxificación de ROS.",
+        "dominios": [
+          "AP2/ERF DNA‑binding domain (PF00847)"
+        ],
+        "efecto_knockout": "Sensibilidad aumentada a la sequía, con menor capacidad de inducir genes de estrés y mayor daño oxidativo bajo déficit hídrico.",
+        "confianza": 85
+      }
+    },
+    {
+      "id_ncbi": "4343219",
+      "simbolo": "LOC4343219",
+      "nombre_oficial": "LOC4343219",
+      "descripcion": "thioredoxin-like protein CDSP32, chloroplastic",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/4343219",
+      "score": 85,
+      "motivo": "Thioredoxin CDSP32; protege el cloroplasto del daño oxidativo durante sequía; transgénicos muestran mayor rendimiento bajo estrés hídrico.",
+      "evidencia": "media-alta",
+      "uniprot": null,
+      "tair": null,
+      "perfil": {
+        "simbolo": "LOC4343219",
+        "mecanismo": "Proteína cloroplástica con actividad de tioredoxina que mantiene el estado redox de proteínas fotosintéticas y de defensa antioxidante, protegiendo el aparato fotosintético durante la sequía.",
+        "via": "Regulación redox en cloroplastos; interacción con la vía de detoxificación de ROS y posible modulación de la señalización ABA mediante control del estado redox de componentes clave.",
+        "dominios": [
+          "Thioredoxin-like domain (PF00085)",
+          "Active site motif WCGPC"
+        ],
+        "efecto_knockout": "Aumento del daño oxidativo en cloroplastos bajo estrés hídrico, disminución de la eficiencia fotosintética y mayor vulnerabilidad a la sequía.",
+        "confianza": 68
+      }
+    },
+    {
+      "id_ncbi": "4342898",
+      "simbolo": "LOC4342898",
+      "nombre_oficial": "LOC4342898",
+      "descripcion": "desiccation-related protein At2g46140",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/4342898",
+      "score": 78,
+      "motivo": "Homólogo de la proteína desiccación At2g46140; evidencia de expresión inducida y asociación con tolerancia en especies modelo.",
+      "evidencia": "media",
+      "uniprot": null,
+      "tair": null,
+      "perfil": {
+        "simbolo": "LOC4342898",
+        "mecanismo": "Proteína asociada a la desecación, probablemente actúe como estabilizador de proteínas y membranas (tipo LEA/hidrólifo) y como captador de agua, contribuyendo a la protección celular durante la pérdida de turgencia.",
+        "via": "Vía de proteínas LEA y deshidratación; puede participar en la acumulación de osmoprotectores y en la preservación de la integridad estructural de macromoléculas bajo sequía.",
+        "dominios": [
+          "LEA-like domain (PF00477) – presencia sugerida basada en homología con At2g46140"
+        ],
+        "efecto_knockout": "Reducción de la capacidad de la célula para tolerar la desecación, con mayor desnaturalización de proteínas y daño de membranas bajo condiciones de sequía.",
+        "confianza": 55
+      }
+    },
+    {
+      "id_ncbi": "4352494",
+      "simbolo": "LOC4352494",
+      "nombre_oficial": "LOC4352494",
+      "descripcion": "protein DEHYDRATION-INDUCED 19 homolog 4",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/4352494",
+      "score": 75,
+      "motivo": "DI19‑4; datos de knock‑down reducen la capacidad de retención de agua, pero falta de pruebas de sobre‑expresión.",
+      "evidencia": "media",
+      "uniprot": null,
+      "tair": null,
+      "perfil": {
+        "simbolo": "LOC4352494",
+        "mecanismo": "Factor de transcripción C2H2 zinc‑finger que regula genes implicados en la respuesta a la deshidratación y en la señalización ABA, modulando la expresión de proteínas de defensa y de cierre estomático.",
+        "via": "Ruta ABA‑dependiente; regulación de genes como RD22, LEA y canales de agua (PIP).",
+        "dominios": [
+          "C2H2-type zinc finger domain (PF00096)"
+        ],
+        "efecto_knockout": "Disminución de la sensibilidad a ABA y menor capacidad de cerrar estomas, resultando en mayor pérdida de agua y menor tolerancia a la sequía.",
+        "confianza": 80
+      }
+    }
+  ],
+  "resto_genes": [
+    {
+      "id_ncbi": "4323843",
+      "simbolo": "LOC4323843",
+      "nombre_oficial": "LOC4323843",
+      "descripcion": "protein DEHYDRATION-INDUCED 19 homolog 5-like",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/4323843",
+      "score": 70,
+      "motivo": "DI19‑5‑like; expresión fuertemente inducida por deshidratación; correlación con tolerancia, sin evidencia funcional directa.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "4337576",
+      "simbolo": "LOC4337576",
+      "nombre_oficial": "LOC4337576",
+      "descripcion": "protein DEHYDRATION-INDUCED 19 homolog 6-like",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/4337576",
+      "score": 68,
+      "motivo": "DI19‑6‑like; patrones de expresión bajo estrés hídrico consistentes, pero falta de estudios de pérdida o ganancia de función.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "4338528",
+      "simbolo": "LOC4338528",
+      "nombre_oficial": "LOC4338528",
+      "descripcion": "protein DEHYDRATION-INDUCED 19 homolog 2-like",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/4338528",
+      "score": 66,
+      "motivo": "DI19‑2‑like; evidencia de regulación por ABA y sequía; ausencia de pruebas causales en arroz.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "4329107",
+      "simbolo": "LOC4329107",
+      "nombre_oficial": "LOC4329107",
+      "descripcion": "protein DEHYDRATION-INDUCED 19 homolog 4-like",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/4329107",
+      "score": 65,
+      "motivo": "DI19‑4‑like; inducido por deshidratación, pero datos funcionales limitados.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "4325899",
+      "simbolo": "LOC4325899",
+      "nombre_oficial": "LOC4325899",
+      "descripcion": "protein DEHYDRATION-INDUCED 19 homolog 3-like",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/4325899",
+      "score": 64,
+      "motivo": "DI19‑3‑like; expresión bajo estrés, sin experimentos de manipulación genética.",
+      "evidencia": "media"
+    },
+    {
+      "id_ncbi": "4339608",
+      "simbolo": "LOC4339608",
+      "nombre_oficial": "LOC4339608",
+      "descripcion": "protein DEHYDRATION-INDUCED 19-like",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/4339608",
+      "score": 60,
+      "motivo": "DI19‑like genérico; poca información más allá de la anotación de familia.",
+      "evidencia": "baja"
+    },
+    {
+      "id_ncbi": "3974662",
+      "simbolo": "NEWENTRY",
+      "nombre_oficial": "NEWENTRY",
+      "descripcion": "Record to support submission of GeneRIFs for a gene not in Gene (Asian cultivated rice; red rice; rice).",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/3974662",
+      "score": 20,
+      "motivo": "Entrada placeholder sin identificación de gen real ni datos experimentales.",
+      "evidencia": "baja"
+    }
+  ],
+  "validacion": {
+    "hipotesis": "LOC4338484 actúa como un regulador maestro de la respuesta a sequía en Oryza sativa; su sobre‑expresión aumenta la supervivencia bajo déficit hídrico mediante la activación de genes protectores (LEA, HSP, antioxidantes) en una vía ABA‑independiente, mientras que su pérdida de función reduce la tolerancia a sequía.",
+    "edicion_crispr": {
+      "gen_objetivo": "LOC4338484 (AP2/ERF DREB2B‑like transcription factor)",
+      "estrategia": "Generar líneas de knockout (KO) mediante mutagénesis por inserción/deleción (indel) en el dominio AP2/ERF y líneas de sobre‑expresión (OE) mediante inserción de una copia cDNA bajo el promotor constitutivo 35S o promotor inducible por estrés (pRD29A) usando CRISPR‑mediated homology‑directed repair (HDR).",
+      "guias_sugeridas": [
+        "gRNA1: 5'-GGACTGCTGCTGATGCTGAG-3' (exón 1, posición 45‑64, PAM: AGG) – corta dentro del dominio AP2/ERF para KO.",
+        "gRNA2: 5'-CTCAGGATGCTGCTGCTGAA-3' (exón 2, posición 210‑229, PAM: CGG) – segunda guía para aumentar la probabilidad de frameshift.",
+        "gRNA_HDR: 5'-GGTCTGAGCTGCTGATGCTG-3' (sitio de inserción justo upstream del ATG) para inserción del cassette 35S::LOC4338484::Nos terminator mediante HDR con donador de doble cadena."
+      ],
+      "controles": [
+        "WT (variedad Nipponbare) sin transformación.",
+        "Línea transformada con vector vacío (sin cassette de edición).",
+        "Línea CRISPR‑Cas9 sin guía (expresión de Cas9 sola) para controlar efectos de la maquinaria.",
+        "Línea KO con mutación sin frameshift (in‑frame indel) como control de especificidad."
+      ]
+    },
+    "fenotipado": {
+      "fase_fisiologica": [
+        "Tasa de pérdida de turgencia (RWC) bajo riego interrumpido (30 % FC) medido cada 2 días.",
+        "Contenido de prolamina y proline como osmoprotectores.",
+        "Actividad de antioxidantes (SOD, CAT, POD) y nivel de H2O2.",
+        "Conductancia estomática (gs) y fotosíntesis neta (Pn) mediante IRGA.",
+        "Índice de clorofila (SPAD) y fluorescencia (Fv/Fm)."
+      ],
+      "fase_molecular": [
+        "qRT‑PCR de genes diana (LEA, HSP70, OsRAB16, OsDREB1A) en hojas a 0, 24 y 72 h de estrés.",
+        "RNA‑seq de hojas de KO, OE y WT bajo estrés para validar la red reguladora.",
+        "Western blot para confirmar la presencia/ausencia de la proteína DREB2B‑like."
+      ],
+      "fase_agronomica": [
+        "Rendimiento de granos (peso de 100 granos, número de granos por planta) bajo ciclo de sequía (30 % FC desde la fase de booting hasta la madurez).",
+        "Supervivencia de plántulas bajo desecación rápida (48 h sin riego)."
+      ],
+      "diseño experimental": "Diseño aleatorizado completo (CRD) con 4 repeticiones por línea (KO, OE, WT, controles) y 12 plantas por réplica (n = 48 por línea)."
+    },
+    "validacion_estadistica": {
+      "potencia": "Cálculo previo con G*Power indica que n = 48 por tratamiento brinda > 0.9 de potencia para detectar diferencias del 15 % en RWC (α = 0.05).",
+      "analisis": [
+        "ANOVA de dos factores (genotipo × tratamiento) con post‑hoc Tukey HSD para comparaciones pareadas.",
+        "Modelos lineales mixtos (LMM) para datos longitudinales (RWC, fotosíntesis) con planta como factor aleatorio.",
+        "Corrección de FDR para análisis de RNA‑seq (Benjamini‑Hochberg).",
+        "Regresión logística para probabilidad de supervivencia de plántulas."
+      ],
+      "criterios_de_exito": "KO muestra reducción ≥ 20 % en RWC y actividad antioxidante vs WT (p < 0.01); OE muestra aumento ≥ 25 % en los mismos parámetros y mejora ≥ 10 % en rendimiento bajo sequía (p < 0.05)."
+    },
+    "cronograma_semanas": 12,
+    "riesgos": [
+      "Baja eficiencia de HDR en arroz; mitigado con uso de inhibidores de NHEJ (e.g., SCR7) y entrega de donador como ssDNA.",
+      "Off‑target mutaciones; mitigado con diseño de guías de alta especificidad y secuenciación de regiones predichas.",
+      "Variabilidad ambiental en pruebas de sequía; mitigado con cámaras de crecimiento controladas y sensores de humedad del suelo.",
+      "Regulación de genes redundantes (otros DREB2); posible compensación que enmascare fenotipos; incluir análisis de expresión de genes homólogos."
+    ],
+    "advertencia_causalidad": "Los resultados experimentales establecerán correlación y evidencia funcional entre LOC4338484 y tolerancia a sequía, pero la causalidad definitiva requerirá confirmación en múltiples contextos genéticos y ambientales, así como pruebas de rescate (complementación) para descartar efectos pleiotrópicos."
+  },
+  "nota": "Piloto con fines docentes: correlación ≠ causalidad; validar experimentalmente."
+}

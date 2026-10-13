@@ -1,0 +1,1552 @@
+{
+  "corridas_consideradas": [
+    "v51_fresa_exh_sep_microbios.json",
+    "v51_fresa_exh_auto.json",
+    "v52_fresa_exh_sep_microbios.json"
+  ],
+  "total_candidatos_consenso": 69,
+  "candidatos": [
+    {
+      "accession": "NP_001130206.1",
+      "n_corridas": 2,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 379.1,
+      "score_llm_promedio": 224.0,
+      "pre_score_promedio": 283.0,
+      "soporte_promedio": 35.0,
+      "epmc_novels": 2,
+      "epmc_total": 2,
+      "donante": "Zea mays",
+      "tipo": "planta",
+      "mecanismos": [
+        "Desintoxicación de especies reactivas de oxígeno (ROS) acumuladas durante el estrés por sequía mediante actividad glutatión S-transferasa (GST).",
+        "heuristico: dominios de estres + keywords"
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "XP_024772748.1",
+      "n_corridas": 2,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 342.6,
+      "score_llm_promedio": 193.0,
+      "pre_score_promedio": 230.5,
+      "soporte_promedio": 0.0,
+      "epmc_novels": 2,
+      "epmc_total": 2,
+      "donante": "Trichoderma harzianum",
+      "tipo": "hongo",
+      "mecanismos": [
+        "Glutatión S-transferasa (GST) putativa de Trichoderma harzianum; detoxificación de especies reactivas de oxígeno (ROS) acumuladas durante la sequía severa.",
+        "heuristico: dominios de estres + keywords"
+      ],
+      "estrategias": [
+        "expresion_heterologa",
+        "transgenesis"
+      ]
+    },
+    {
+      "accession": "XP_024778146.1",
+      "n_corridas": 2,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 341.85,
+      "score_llm_promedio": 191.5,
+      "pre_score_promedio": 230.5,
+      "soporte_promedio": 0.0,
+      "epmc_novels": 2,
+      "epmc_total": 2,
+      "donante": "Trichoderma harzianum",
+      "tipo": "hongo",
+      "mecanismos": [
+        "Proteína fúngica putativa con dominios GST para la mitigación del estrés oxidativo asociado a la desecación.",
+        "heuristico: dominios de estres + keywords"
+      ],
+      "estrategias": [
+        "expresion_heterologa",
+        "transgenesis"
+      ]
+    },
+    {
+      "accession": "XP_024772657.1",
+      "n_corridas": 2,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 341.85,
+      "score_llm_promedio": 191.5,
+      "pre_score_promedio": 230.5,
+      "soporte_promedio": 0.0,
+      "epmc_novels": 2,
+      "epmc_total": 2,
+      "donante": "Trichoderma harzianum",
+      "tipo": "hongo",
+      "mecanismos": [
+        "Detoxificación de especies reactivas de oxígeno (ROS) acumuladas durante la sequía mediante conjugación con glutatión (actividad glutatión S-transferasa).",
+        "heuristico: dominios de estres + keywords"
+      ],
+      "estrategias": [
+        "expresion_heterologa",
+        "transgenesis"
+      ]
+    },
+    {
+      "accession": "XP_002448943.1",
+      "n_corridas": 2,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 303.1,
+      "score_llm_promedio": 88.0,
+      "pre_score_promedio": 183.0,
+      "soporte_promedio": 75.0,
+      "epmc_novels": 2,
+      "epmc_total": 2,
+      "donante": "Sorghum bicolor",
+      "tipo": "planta",
+      "mecanismos": [
+        "CDPK25 que modula la actividad de bombas de protones y transportadores de solutos, mejorando la acumulación de osmólitos y la resistencia a la desecación.",
+        "Transducción de señales mediada por calcio (CPK25). Regula redes transcripcionales en respuesta a la escasez hídrica y regula la apertura estomática en gramíneas, extrapolable a dicotiledóneas como Fragaria vesca."
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "XP_002458979.1",
+      "n_corridas": 2,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 302.35,
+      "score_llm_promedio": 86.5,
+      "pre_score_promedio": 183.0,
+      "soporte_promedio": 75.0,
+      "epmc_novels": 2,
+      "epmc_total": 2,
+      "donante": "Sorghum bicolor",
+      "tipo": "planta",
+      "mecanismos": [
+        "CDPK22 que modula la síntesis de ácidos grasos y la señalización de fosfatidilinositol, mejorando la resistencia de la membrana a la deshidratación.",
+        "Proteína quinasa dependiente de calcio (CDPK 22). Regula la red de señalización ante déficit hídrico, promoviendo la tolerancia al estrés oxidativo y cierre estomático."
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "XP_024015294.1",
+      "n_corridas": 2,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 295.6,
+      "score_llm_promedio": 93.0,
+      "pre_score_promedio": 223.0,
+      "soporte_promedio": 15.0,
+      "epmc_novels": 2,
+      "epmc_total": 2,
+      "donante": "Eutrema salsugineum",
+      "tipo": "planta",
+      "mecanismos": [
+        "Kinasa dependiente de Ca²⁺ que fosforila componentes de la vía ABA y reguladores de cierre estomático, aumentando la síntesis de osmólitos y la expresión de genes protectores contra la deshidratación.",
+        "Las quinasas dependientes de calcio (CDPKs) actúan como sensores clave en la transducción de señales de estrés osmótico y sequía, regulando la apertura estomática y la expresión de genes responsivos a ABA mediante fosforilación."
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "NP_001390030.1",
+      "n_corridas": 2,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 293.85,
+      "score_llm_promedio": 85.5,
+      "pre_score_promedio": 203.0,
+      "soporte_promedio": 35.0,
+      "epmc_novels": 2,
+      "epmc_total": 2,
+      "donante": "Oryza sativa",
+      "tipo": "planta",
+      "mecanismos": [
+        "CDPK19 que modula la respuesta ABA y la producción de antioxidantes bajo déficit hídrico.",
+        "Transducción de señales de estrés hídrico mediada por cascadas de fosforilación dependientes de calcio, homóloga a vías bien caracterizadas en gramíneas."
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "XP_006391245.1",
+      "n_corridas": 2,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 290.35,
+      "score_llm_promedio": 81.5,
+      "pre_score_promedio": 203.0,
+      "soporte_promedio": 30.0,
+      "epmc_novels": 2,
+      "epmc_total": 2,
+      "donante": "Eutrema salsugineum",
+      "tipo": "planta",
+      "mecanismos": [
+        "CDPK20 con dominio TIR que puede activar respuestas de defensa y estrés, incluyendo la regulación de genes de tolerancia a sequía.",
+        "Quinasa dependiente de calcio (CDPK) que integra señales de calcio para activar cascadas de fosforilación que cierran estomas y activan mecanismos de detoxificación antioxidante."
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "XP_021305136.1",
+      "n_corridas": 2,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 287.6,
+      "score_llm_promedio": 81.0,
+      "pre_score_promedio": 183.0,
+      "soporte_promedio": 35.0,
+      "epmc_novels": 2,
+      "epmc_total": 2,
+      "donante": "Sorghum bicolor",
+      "tipo": "planta",
+      "mecanismos": [
+        "Fosforilación de proteínas reguladoras en respuesta a señales de estrés osmótico y deshidratación.",
+        "Kinasa calcio‑dependiente que activa vías de señalización de estrés, favoreciendo cierre estomático y acumulación de solutos compatibles."
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "XP_024011474.1",
+      "n_corridas": 2,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 287.1,
+      "score_llm_promedio": 92.0,
+      "pre_score_promedio": 183.0,
+      "soporte_promedio": 15.0,
+      "epmc_novels": 2,
+      "epmc_total": 2,
+      "donante": "Eutrema salsugineum",
+      "tipo": "planta",
+      "mecanismos": [
+        "Quinasa dependiente de Ca2+ que fosforila proteínas clave en la vía de señalización ABA, favoreciendo el cierre estomático y la activación de genes de tolerancia al estrés hídrico.",
+        "Quinasa dependiente de calcio (CDPK). Actúa como sensor secundario de señales de estrés osmótico/hídrico, fosforilando proteínas blanco corriente abajo (canales iónicos, factores de transcripción) para inducir respuestas estomáticas y protección celular."
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "XP_024016841.1",
+      "n_corridas": 2,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 284.85,
+      "score_llm_promedio": 87.5,
+      "pre_score_promedio": 183.0,
+      "soporte_promedio": 15.0,
+      "epmc_novels": 2,
+      "epmc_total": 2,
+      "donante": "Eutrema salsugineum",
+      "tipo": "planta",
+      "mecanismos": [
+        "CDPK24 que actúa en la cascada de señalización de estrés hídrico, incrementando la expresión de aquaporinas y proteínas LEA.",
+        "Quinasa dependiente de calcio (CDPK) de Eutrema salsugineum (halófita extrema); transduce señales de estrés osmótico activando rutas de detoxificación de ROS y canales iónicos."
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "XP_021744705.1",
+      "n_corridas": 2,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 283.35,
+      "score_llm_promedio": 85.5,
+      "pre_score_promedio": 203.0,
+      "soporte_promedio": 0.0,
+      "epmc_novels": 2,
+      "epmc_total": 2,
+      "donante": "Chenopodium quinoa",
+      "tipo": "planta",
+      "mecanismos": [
+        "CDPK13 que integra señales de Ca²⁺ y activa cascadas de fosforilación para regular genes de tolerancia a sequía y la biosíntesis de prolina.",
+        "Respuesta al estrés abiótico vía señalización por calcio, proveniente de una especie halófita/resistente a la sequía (Chenopodium quinoa)."
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "XP_066168104.1",
+      "n_corridas": 2,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 282.85,
+      "score_llm_promedio": 79.5,
+      "pre_score_promedio": 163.0,
+      "soporte_promedio": 35.0,
+      "epmc_novels": 2,
+      "epmc_total": 2,
+      "donante": "Oryza sativa",
+      "tipo": "planta",
+      "mecanismos": [
+        "CML24 que actúa como sensor de calcio, modulando la actividad de TFs como DREB2A y mejorando la tolerancia osmótica.",
+        "Proteína similar a calmodulina (CML24) de Oryza sativa; actúa como sensor de calcio en respuestas adaptativas al estrés abiótico."
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "NP_001105455.2",
+      "n_corridas": 2,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 282.6,
+      "score_llm_promedio": 79.0,
+      "pre_score_promedio": 163.0,
+      "soporte_promedio": 35.0,
+      "epmc_novels": 2,
+      "epmc_total": 2,
+      "donante": "Zea mays",
+      "tipo": "planta",
+      "mecanismos": [
+        "Calmodulina clásica que regula enzimas antioxidantes (SOD, CAT) y la síntesis de ABA bajo déficit hídrico.",
+        "Calmodulina. Actúa como transductor universal de señales de calcio inducidas por sequía, modulando múltiples enzimas y canales iónicos."
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "XP_021776063.1",
+      "n_corridas": 2,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 282.1,
+      "score_llm_promedio": 91.0,
+      "pre_score_promedio": 183.0,
+      "soporte_promedio": 0.0,
+      "epmc_novels": 2,
+      "epmc_total": 2,
+      "donante": "Chenopodium quinoa",
+      "tipo": "planta",
+      "mecanismos": [
+        "CDPK20‑like que regula la expresión de genes de estrés abiótico (ej. DREB, NAC) y controla la apertura estomática mediante fosforilación de canales de iones.",
+        "Las quinasas dependientes de calcio (CDPKs) como CDPK20 actúan como sensores clave en las vías de transducción de señales de estrés osmótico y sequía, fosforilando canales iónicos y factores de transcripción para inducir el cierre estomático y la expresión de genes de respuesta a deshidratación."
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "NP_001410292.1",
+      "n_corridas": 2,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 281.85,
+      "score_llm_promedio": 77.5,
+      "pre_score_promedio": 163.0,
+      "soporte_promedio": 35.0,
+      "epmc_novels": 2,
+      "epmc_total": 2,
+      "donante": "Oryza sativa",
+      "tipo": "planta",
+      "mecanismos": [
+        "Proteína calmodulina‑like que detecta aumentos de Ca2+ y activa transductores de señal que regulan genes de respuesta a sequía y síntesis de proline.",
+        "Proteína similar a calmodulina (CML28). Participa en la decodificación de firmas de calcio generadas durante el estrés por sequía."
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "XP_021748420.1",
+      "n_corridas": 2,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 281.6,
+      "score_llm_promedio": 90.0,
+      "pre_score_promedio": 183.0,
+      "soporte_promedio": 0.0,
+      "epmc_novels": 2,
+      "epmc_total": 2,
+      "donante": "Chenopodium quinoa",
+      "tipo": "planta",
+      "mecanismos": [
+        "CDPK similar que regula la expresión de genes de osmoprotectores y la producción de ROS scavengers mediante fosforilación de factores de transcripción.",
+        "Quinasa dependiente de calcio (CDPK) homóloga de halófita/especie resistente, involucrada en la traducción de señales de estrés por sequía y alta salinidad hacia mecanismos de osmorregulación."
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "XP_002984512.1",
+      "n_corridas": 2,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 268.6,
+      "score_llm_promedio": 80.0,
+      "pre_score_promedio": 143.0,
+      "soporte_promedio": 0.0,
+      "epmc_novels": 2,
+      "epmc_total": 2,
+      "donante": "Selaginella moellendorffii",
+      "tipo": "planta",
+      "mecanismos": [
+        "Neo-calmodulina rica en dominios EF-hand de Selaginella moellendorffii; amortigua y canaliza fluctuaciones extremas de iones calcio intracelulares inducidas por desecación.",
+        "Neo‑calmodulina que potencia la señalización de Ca2+ en respuesta a estrés, favoreciendo la expresión de genes de protección celular."
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "CAB43063.1",
+      "n_corridas": 2,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 266.35,
+      "score_llm_promedio": 86.5,
+      "pre_score_promedio": 63.0,
+      "soporte_promedio": 35.0,
+      "epmc_novels": 2,
+      "epmc_total": 2,
+      "donante": "Craterostigma plantagineum",
+      "tipo": "planta",
+      "mecanismos": [
+        "Fosfolipasa D1 que genera ácido fosfatídico como segundo mensajero, activando rutas de tolerancia a sequía y estabilizando membranas.",
+        "Regulación de la señalización de ácido abscísico (ABA) y remodelación de membranas celulares mediante fosfolipasa D, induciendo el cierre estomático y la síntesis de osmoprotectores bajo estrés hídrico extremo."
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "AAP22171.1",
+      "n_corridas": 2,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 259.85,
+      "score_llm_promedio": 93.5,
+      "pre_score_promedio": 28.0,
+      "soporte_promedio": 25.0,
+      "epmc_novels": 0,
+      "epmc_total": 2,
+      "donante": "Xerophyta viscosa",
+      "tipo": "planta",
+      "mecanismos": [
+        "Actúa como una proteína protectora (dehidrina) que previene la agregación de proteínas, secuestra iones metálicos y estabiliza membranas celulares bajo estrés osmótico severo inducido por sequía.",
+        "Dehidrina que estabiliza proteínas y membranas durante la deshidratación, atrapando agua y previniendo la agregación proteica."
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "XP_002467609.2",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 487.1,
+      "score_llm_promedio": 538.0,
+      "pre_score_promedio": 538.0,
+      "soporte_promedio": 35.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Sorghum bicolor",
+      "tipo": "planta",
+      "mecanismos": [
+        "heuristico: dominios de estres + keywords"
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "XP_002465909.2",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 415.1,
+      "score_llm_promedio": 418.0,
+      "pre_score_promedio": 418.0,
+      "soporte_promedio": 75.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Sorghum bicolor",
+      "tipo": "planta",
+      "mecanismos": [
+        "heuristico: dominios de estres + keywords"
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "XP_002459355.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 376.6,
+      "score_llm_promedio": 363.0,
+      "pre_score_promedio": 363.0,
+      "soporte_promedio": 75.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Sorghum bicolor",
+      "tipo": "planta",
+      "mecanismos": [
+        "heuristico: dominios de estres + keywords"
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "XP_006389995.2",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 370.6,
+      "score_llm_promedio": 363.0,
+      "pre_score_promedio": 363.0,
+      "soporte_promedio": 55.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Eutrema salsugineum",
+      "tipo": "planta",
+      "mecanismos": [
+        "heuristico: dominios de estres + keywords"
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "XP_006416732.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 370.6,
+      "score_llm_promedio": 363.0,
+      "pre_score_promedio": 363.0,
+      "soporte_promedio": 55.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Eutrema salsugineum",
+      "tipo": "planta",
+      "mecanismos": [
+        "heuristico: dominios de estres + keywords"
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "XP_021303416.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 345.1,
+      "score_llm_promedio": 318.0,
+      "pre_score_promedio": 318.0,
+      "soporte_promedio": 75.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Sorghum bicolor",
+      "tipo": "planta",
+      "mecanismos": [
+        "heuristico: dominios de estres + keywords"
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "XP_002451782.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 345.1,
+      "score_llm_promedio": 318.0,
+      "pre_score_promedio": 318.0,
+      "soporte_promedio": 75.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Sorghum bicolor",
+      "tipo": "planta",
+      "mecanismos": [
+        "heuristico: dominios de estres + keywords"
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "XP_002456930.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 345.1,
+      "score_llm_promedio": 318.0,
+      "pre_score_promedio": 318.0,
+      "soporte_promedio": 75.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Sorghum bicolor",
+      "tipo": "planta",
+      "mecanismos": [
+        "heuristico: dominios de estres + keywords"
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "XP_006392370.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 339.1,
+      "score_llm_promedio": 318.0,
+      "pre_score_promedio": 318.0,
+      "soporte_promedio": 55.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Eutrema salsugineum",
+      "tipo": "planta",
+      "mecanismos": [
+        "heuristico: dominios de estres + keywords"
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "WP_424089016.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 338.1,
+      "score_llm_promedio": 338.0,
+      "pre_score_promedio": 338.0,
+      "soporte_promedio": 5.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Pseudomonas fluorescens",
+      "tipo": "bacteria",
+      "mecanismos": [
+        "heuristico: dominios de estres + keywords"
+      ],
+      "estrategias": [
+        "expresion_heterologa"
+      ]
+    },
+    {
+      "accession": "XP_015612592.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 333.1,
+      "score_llm_promedio": 318.0,
+      "pre_score_promedio": 318.0,
+      "soporte_promedio": 35.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Oryza sativa",
+      "tipo": "planta",
+      "mecanismos": [
+        "heuristico: dominios de estres + keywords"
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "XP_035821990.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 333.1,
+      "score_llm_promedio": 318.0,
+      "pre_score_promedio": 318.0,
+      "soporte_promedio": 35.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Zea mays",
+      "tipo": "planta",
+      "mecanismos": [
+        "heuristico: dominios de estres + keywords"
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "XP_066161079.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 333.1,
+      "score_llm_promedio": 318.0,
+      "pre_score_promedio": 318.0,
+      "soporte_promedio": 35.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Oryza sativa",
+      "tipo": "planta",
+      "mecanismos": [
+        "heuristico: dominios de estres + keywords"
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "XP_025876545.2",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 333.1,
+      "score_llm_promedio": 318.0,
+      "pre_score_promedio": 318.0,
+      "soporte_promedio": 35.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Oryza sativa",
+      "tipo": "planta",
+      "mecanismos": [
+        "heuristico: dominios de estres + keywords"
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "NP_001396797.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 333.1,
+      "score_llm_promedio": 318.0,
+      "pre_score_promedio": 318.0,
+      "soporte_promedio": 35.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Oryza sativa",
+      "tipo": "planta",
+      "mecanismos": [
+        "heuristico: dominios de estres + keywords"
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "XP_024006402.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 327.1,
+      "score_llm_promedio": 318.0,
+      "pre_score_promedio": 318.0,
+      "soporte_promedio": 15.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Eutrema salsugineum",
+      "tipo": "planta",
+      "mecanismos": [
+        "heuristico: dominios de estres + keywords"
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "XP_006400210.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 321.6,
+      "score_llm_promedio": 293.0,
+      "pre_score_promedio": 293.0,
+      "soporte_promedio": 55.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Eutrema salsugineum",
+      "tipo": "planta",
+      "mecanismos": [
+        "heuristico: dominios de estres + keywords"
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "WP_235167790.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 308.6,
+      "score_llm_promedio": 298.0,
+      "pre_score_promedio": 298.0,
+      "soporte_promedio": 0.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Halobacterium salinarum",
+      "tipo": "arquea",
+      "mecanismos": [
+        "heuristico: dominios de estres + keywords"
+      ],
+      "estrategias": [
+        "expresion_heterologa"
+      ]
+    },
+    {
+      "accession": "WP_136361596.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 308.6,
+      "score_llm_promedio": 298.0,
+      "pre_score_promedio": 298.0,
+      "soporte_promedio": 0.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Halobacterium salinarum",
+      "tipo": "arquea",
+      "mecanismos": [
+        "heuristico: dominios de estres + keywords"
+      ],
+      "estrategias": [
+        "expresion_heterologa"
+      ]
+    },
+    {
+      "accession": "WP_010903696.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 308.6,
+      "score_llm_promedio": 298.0,
+      "pre_score_promedio": 298.0,
+      "soporte_promedio": 0.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Halobacterium salinarum",
+      "tipo": "arquea",
+      "mecanismos": [
+        "heuristico: dominios de estres + keywords"
+      ],
+      "estrategias": [
+        "expresion_heterologa"
+      ]
+    },
+    {
+      "accession": "WP_205251170.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 308.6,
+      "score_llm_promedio": 298.0,
+      "pre_score_promedio": 298.0,
+      "soporte_promedio": 0.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Halobacterium salinarum",
+      "tipo": "arquea",
+      "mecanismos": [
+        "heuristico: dominios de estres + keywords"
+      ],
+      "estrategias": [
+        "expresion_heterologa"
+      ]
+    },
+    {
+      "accession": "XP_020405652.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 301.6,
+      "score_llm_promedio": 273.0,
+      "pre_score_promedio": 273.0,
+      "soporte_promedio": 35.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Zea mays",
+      "tipo": "planta",
+      "mecanismos": [
+        "heuristico: dominios de estres + keywords"
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "XP_035820438.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 301.6,
+      "score_llm_promedio": 273.0,
+      "pre_score_promedio": 273.0,
+      "soporte_promedio": 35.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Zea mays",
+      "tipo": "planta",
+      "mecanismos": [
+        "heuristico: dominios de estres + keywords"
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "WP_424088740.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 292.6,
+      "score_llm_promedio": 273.0,
+      "pre_score_promedio": 273.0,
+      "soporte_promedio": 5.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Pseudomonas fluorescens",
+      "tipo": "bacteria",
+      "mecanismos": [
+        "heuristico: dominios de estres + keywords"
+      ],
+      "estrategias": [
+        "expresion_heterologa"
+      ]
+    },
+    {
+      "accession": "WP_490808372.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 292.6,
+      "score_llm_promedio": 273.0,
+      "pre_score_promedio": 273.0,
+      "soporte_promedio": 5.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Pseudomonas fluorescens",
+      "tipo": "bacteria",
+      "mecanismos": [
+        "heuristico: dominios de estres + keywords"
+      ],
+      "estrategias": [
+        "expresion_heterologa"
+      ]
+    },
+    {
+      "accession": "XP_024773116.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 291.1,
+      "score_llm_promedio": 273.0,
+      "pre_score_promedio": 273.0,
+      "soporte_promedio": 0.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Trichoderma harzianum",
+      "tipo": "hongo",
+      "mecanismos": [
+        "heuristico: dominios de estres + keywords"
+      ],
+      "estrategias": [
+        "expresion_heterologa"
+      ]
+    },
+    {
+      "accession": "XP_002456584.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 204.1,
+      "score_llm_promedio": 90.0,
+      "pre_score_promedio": 183.0,
+      "soporte_promedio": 75.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Sorghum bicolor",
+      "tipo": "planta",
+      "mecanismos": [
+        "Transducción de señales dependiente de calcio (CDPK). Fosforila proteínas corriente abajo involucradas en la respuesta al estrés abiótico, activación de canales iónicos y rutas de detoxificación de ROS."
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "XP_002450385.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 202.6,
+      "score_llm_promedio": 87.0,
+      "pre_score_promedio": 183.0,
+      "soporte_promedio": 75.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Sorghum bicolor",
+      "tipo": "planta",
+      "mecanismos": [
+        "CDPK24 que participa en la señalización de Ca²⁺ bajo déficit hídrico, activando genes de síntesis de proline y antioxidantes."
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "XP_006394622.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 199.1,
+      "score_llm_promedio": 92.0,
+      "pre_score_promedio": 183.0,
+      "soporte_promedio": 55.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Eutrema salsugineum",
+      "tipo": "planta",
+      "mecanismos": [
+        "Quinasa dependiente de Ca2+ que activa vías de señalización de estrés hídrico, regulando cierre estomático, síntesis de ABA y genes de osmoprotectores."
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "XP_006410285.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 196.6,
+      "score_llm_promedio": 87.0,
+      "pre_score_promedio": 183.0,
+      "soporte_promedio": 55.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Eutrema salsugineum",
+      "tipo": "planta",
+      "mecanismos": [
+        "Quinasa que fosforila sustratos clave en la respuesta al déficit hídrico, potenciando cierre estomático y síntesis de proteínas protectoras."
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "NP_001151914.2",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 196.1,
+      "score_llm_promedio": 82.0,
+      "pre_score_promedio": 163.0,
+      "soporte_promedio": 75.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Zea mays",
+      "tipo": "planta",
+      "mecanismos": [
+        "Proteína relacionada con calmodulina. Modula la homeostasis del calcio y activa proteínas downstream implicadas en la tolerancia al estrés oxidativo y osmótico asociado a la sequía."
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "XP_008655644.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 193.1,
+      "score_llm_promedio": 84.0,
+      "pre_score_promedio": 143.0,
+      "soporte_promedio": 75.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Zea mays",
+      "tipo": "planta",
+      "mecanismos": [
+        "Receptor tipo LRR‑serina/treonina quinasa que percibe señales extracelulares de déficit hídrico y activa cascada MAPK para expresar genes de resistencia a sequía."
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "XP_024016164.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 187.6,
+      "score_llm_promedio": 93.0,
+      "pre_score_promedio": 183.0,
+      "soporte_promedio": 15.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Eutrema salsugineum",
+      "tipo": "planta",
+      "mecanismos": [
+        "Calcio‑dependiente proteína quinasa (CDPK) que activa vías de señalización de Ca²⁺, fosforilando factores de transcripción y proteínas de transporte de agua (ej. aquaporinas), mejorando la respuesta osmótica y la tolerancia al estrés hídrico."
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "NP_001388960.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 187.1,
+      "score_llm_promedio": 80.0,
+      "pre_score_promedio": 183.0,
+      "soporte_promedio": 35.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Oryza sativa",
+      "tipo": "planta",
+      "mecanismos": [
+        "Regulación por fosforilación de canales iónicos y factores de transcripción involucrados en la tolerancia a la sequía y la homeostasis osmótica."
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "XP_008668118.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 182.1,
+      "score_llm_promedio": 78.0,
+      "pre_score_promedio": 163.0,
+      "soporte_promedio": 35.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Zea mays",
+      "tipo": "planta",
+      "mecanismos": [
+        "Regulación de cascadas de señalización dependientes de calcio y activación de bombas de protones/canales iónicos para mantener el turgor celular durante el déficit hídrico."
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "NP_001381984.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 178.1,
+      "score_llm_promedio": 78.0,
+      "pre_score_promedio": 143.0,
+      "soporte_promedio": 35.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Zea mays",
+      "tipo": "planta",
+      "mecanismos": [
+        "Receptor‑quinasa tipo LRR que percibe señales externas (ej. hormonas de ABA) y desencadena cascadas MAPK que aumentan la expresión de genes de tolerancia a la sequía."
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "XP_021771315.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 177.1,
+      "score_llm_promedio": 89.0,
+      "pre_score_promedio": 163.0,
+      "soporte_promedio": 0.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Chenopodium quinoa",
+      "tipo": "planta",
+      "mecanismos": [
+        "Calcium‑dependent protein kinase que modula canales iónicos y factores de transcripción asociados a la tolerancia a sequía, favoreciendo acumulación de solutos compatibles."
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "XP_021720754.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 174.1,
+      "score_llm_promedio": 75.0,
+      "pre_score_promedio": 183.0,
+      "soporte_promedio": 0.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Chenopodium quinoa",
+      "tipo": "planta",
+      "mecanismos": [
+        "Glutatión S-transferasa que detoxifica especies reactivas de oxígeno (ROS) acumuladas durante el estrés oxidativo por sequía."
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "XP_024520904.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 173.6,
+      "score_llm_promedio": 82.0,
+      "pre_score_promedio": 163.0,
+      "soporte_promedio": 0.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Selaginella moellendorffii",
+      "tipo": "planta",
+      "mecanismos": [
+        "Modulación de la homeostasis de calcio intracelular como sensor secundario, regulando redes de transcripción responsivas al estrés hídrico heredadas de una planta vascular sin semilla adaptada a la desecación."
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "CAD36023.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 172.1,
+      "score_llm_promedio": 90.0,
+      "pre_score_promedio": 83.0,
+      "soporte_promedio": 35.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Craterostigma plantagineum",
+      "tipo": "planta",
+      "mecanismos": [
+        "Factor de transcripción con dominios de tipo dedo de zinc (CCCH) que regula la expresión de genes de respuesta tardía al estrés hídrico y desecación en una planta resurrectora."
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "CAB43062.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 169.1,
+      "score_llm_promedio": 92.0,
+      "pre_score_promedio": 63.0,
+      "soporte_promedio": 35.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Craterostigma plantagineum",
+      "tipo": "planta",
+      "mecanismos": [
+        "Fosfolipasa D2 de la planta resucitadora Craterostigma plantagineum; participa en la generación de ácido fosfatídico (PA), un segundo mensajero clave en la señalización del estrés hídrico y el cierre estomático."
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "XP_024544664.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 166.1,
+      "score_llm_promedio": 75.0,
+      "pre_score_promedio": 143.0,
+      "soporte_promedio": 0.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Selaginella moellendorffii",
+      "tipo": "planta",
+      "mecanismos": [
+        "Proteína transportadora mitocondrial fijadora de calcio (SCaMC-1). Regula el metabolismo energético mitocondrial y el intercambio de nucleótidos de adenina bajo estrés hídrico en una planta vascular basal adaptada a la desecación."
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "QUF58260.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 165.1,
+      "score_llm_promedio": 92.0,
+      "pre_score_promedio": 43.0,
+      "soporte_promedio": 35.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Craterostigma plantagineum",
+      "tipo": "planta",
+      "mecanismos": [
+        "Quinasa de proteína asociada a la pared celular (WAK) que percibe cambios en la turgencia y activa cascadas MAPK y genes de síntesis de cutícula y protoplasma, favoreciendo la retención de agua."
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "AAB58314.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 164.1,
+      "score_llm_promedio": 90.0,
+      "pre_score_promedio": 43.0,
+      "soporte_promedio": 35.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Craterostigma plantagineum",
+      "tipo": "planta",
+      "mecanismos": [
+        "Factor de transcripción Myb que activa genes de protección contra desecación (LEA, osmólitos, antioxidantes) y regula la respuesta al ABA."
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "AAB58313.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 163.1,
+      "score_llm_promedio": 88.0,
+      "pre_score_promedio": 43.0,
+      "soporte_promedio": 35.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Craterostigma plantagineum",
+      "tipo": "planta",
+      "mecanismos": [
+        "Otro factor Myb de desecación que controla redes de genes asociados a tolerancia a sequía y acumulación de compuestos protectores."
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "ALQ43974.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 159.1,
+      "score_llm_promedio": 80.0,
+      "pre_score_promedio": 43.0,
+      "soporte_promedio": 35.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Craterostigma plantagineum",
+      "tipo": "planta",
+      "mecanismos": [
+        "Quinasa asociada a la pared que detecta pérdida de turgencia y regula la síntesis de polisacáridos de la pared para retener agua."
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "ALQ43975.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 158.1,
+      "score_llm_promedio": 78.0,
+      "pre_score_promedio": 43.0,
+      "soporte_promedio": 35.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Craterostigma plantagineum",
+      "tipo": "planta",
+      "mecanismos": [
+        "Quinasa de membrana que integra señales de estrés hídrico y activa rutas de refuerzo de la pared y cierre estomático."
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    },
+    {
+      "accession": "AAN34791.1",
+      "n_corridas": 1,
+      "n_receptoras": 1,
+      "receptoras": [
+        "Fragaria vesca"
+      ],
+      "score_consenso": 144.6,
+      "score_llm_promedio": 80.0,
+      "pre_score_promedio": 23.0,
+      "soporte_promedio": 0.0,
+      "epmc_novels": 1,
+      "epmc_total": 1,
+      "donante": "Xerophyta viscosa",
+      "tipo": "planta",
+      "mecanismos": [
+        "Chaperona HSP90 (Grp94) que estabiliza proteínas y membranas durante el estrés hídrico, evitando agregación proteica."
+      ],
+      "estrategias": [
+        "edicion_genica"
+      ]
+    }
+  ]
+}

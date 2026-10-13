@@ -1,0 +1,297 @@
+{
+  "fecha": "2026-09-30 02:52",
+  "especie": "Manihot esculenta",
+  "tax_id": 3983,
+  "rasgo": "tolerancia a sequía",
+  "terminos": "drought OR dehydration OR water deficit OR desiccation OR ABA",
+  "modelo": "openai/gpt-oss-120b",
+  "candidatos": [
+    {
+      "id_ncbi": "122721460",
+      "simbolo": "LOC122721460",
+      "nombre_oficial": "LOC122721460",
+      "descripcion": "protein C2-DOMAIN ABA-RELATED 11-like",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/122721460",
+      "score": 85,
+      "motivo": "C2‑domain ABA‑related protein; homología con AtC2‑DREB11 que al sobre‑expresarse mejora la tolerancia a sequía mediante regulación de la señalización ABA.",
+      "evidencia": "alta",
+      "uniprot": null,
+      "proteina_ncbi": {
+        "accession": "XP_043805177.1",
+        "producto": "protein C2-DOMAIN ABA-RELATED 11-like isoform X2",
+        "secuencia": "MGEQVGLLKVTVVQGKKLVIRDFKSSDPYVVVKLGNQEVFDKDRFKADDKMGHAQLNLQPIVSAARLKQILQVCSGETILRKAVPDSDNCLARESSISCINGEVVQSVWLRLCAVESGEIELKIKLIDRPVASSR",
+        "longitud": 135
+      },
+      "tair": null,
+      "perfil": {
+        "simbolo": "LOC122721460",
+        "mecanismo": "Actúa como modulador de la señalización del ácido abscísico (ABA) mediante su dominio C2, que se une a membranas fosfolípidas en respuesta a aumentos de Ca²⁺, facilitando la translocación de componentes de la vía ABA y la activación de genes de respuesta al estrés hídrico.",
+        "via": "Vía de señalización ABA → activación de TFs (ABF/AREB) → expresión de genes protectores (LEA, deshidratinas).",
+        "dominios": [
+          "C2 domain (lipid‑binding, Ca²⁺‑dependent)"
+        ],
+        "efecto_knockout": "Reducción de la sensibilidad a ABA, lo que se traduce en una mayor pérdida de turgencia bajo déficit hídrico, mayor tasa de transpiración y menor expresión de genes de tolerancia a sequía.",
+        "confianza": 78
+      }
+    },
+    {
+      "id_ncbi": "110601996",
+      "simbolo": "LOC110601996",
+      "nombre_oficial": "LOC110601996",
+      "descripcion": "protein EARLY-RESPONSIVE TO DEHYDRATION 7, chloroplastic",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110601996",
+      "score": 78,
+      "motivo": "ERD7 cloroplástico; estudios en Arabidopsis y arroz demuestran que su sobre‑expresión aumenta la retención de agua y la supervivencia bajo déficit hídrico.",
+      "evidencia": "media",
+      "uniprot": null,
+      "proteina_ncbi": {
+        "accession": "XP_021595119.1",
+        "producto": "protein EARLY-RESPONSIVE TO DEHYDRATION 7, chloroplastic",
+        "secuencia": "MASQNSNPPKPLYPEVILSNPDSPSHLHSKPNSESSSSNLYPTIDMRDLVENLFPDPEEYNHCAPSAPPVATEEVLIKIPGAILNLIDKNYSVELACGDLTIVRLCQGGNIVAVLARVADEIQWPLAKDEAAVKLDDSHYFFSLRLPNEHQGSDSSSDEEDKKSRNKKISDSGDILNYGLTIASKGQEALLKEFDVILQAYSCFTVQKVSEKAKGKGEALLDELTPKEASPADLHYEEKKELLEGQSAAYWTTLAPNVEDYSSTSAKVIAAGSGHLIKGILWCGDVTVDRLKWGNEIMKRRMSPRSKSEISPDTMKRIRRVKRMTKRTEKVANGVLSGVVKVSEIFTSKVANSKAGKKFLGLLPGEIVLASLDGFSKMCDAAEVAGKNVMSTSSTVTTDLVNHRYGEQAAEATNEGLDAAGHAMGTALAVFKLRKALNPKSALKPSSLAKSAVKAAAADIKAKNSK",
+        "longitud": 466
+      },
+      "tair": null,
+      "perfil": {
+        "simbolo": "LOC110601996",
+        "mecanismo": "Proteína cloroplástica tempranamente inducida por deshidratación (ERD7) que probablemente participa en la remodelación de membranas y en la detoxificación de especies reactivas de oxígeno (ROS) mediante su dominio C2 y una región tipo PLAT/LH2 asociada a la unión de lípidos.",
+        "via": "Respuesta al estrés oxidativo en cloroplastos → mantenimiento de la integridad de la membrana tilacoide y protección de la fotosíntesis bajo sequía.",
+        "dominios": [
+          "C2 domain",
+          "PLAT/LH2 domain (lipid‑binding)"
+        ],
+        "efecto_knockout": "Acumulación de ROS en cloroplastos, deterioro de la fotosíntesis y mayor susceptibilidad al marchitamiento bajo condiciones de bajo suministro de agua.",
+        "confianza": 73
+      }
+    },
+    {
+      "id_ncbi": "110609672",
+      "simbolo": "LOC110609672",
+      "nombre_oficial": "LOC110609672",
+      "descripcion": "protein EARLY-RESPONSIVE TO DEHYDRATION 7, chloroplastic",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110609672",
+      "score": 78,
+      "motivo": "Mismo alelo que LOC110601996 (isoforma); evidencia funcional idéntica.",
+      "evidencia": "media",
+      "uniprot": null,
+      "proteina_ncbi": {
+        "accession": "XP_043810034.1",
+        "producto": "protein EARLY-RESPONSIVE TO DEHYDRATION 7, chloroplastic isoform X3",
+        "secuencia": "MASQNSTPRKSLYPEVIHSNPDLQSSSSNLYPTIDMRDLVENLFPDPQEYYHHAPSAPPEAIEEVLIKIPGAILNLIDKNYSVELACGDLSIVRLRQGDNIFAVLARVADEIQWPLAKDEAAVKLDDSHYFFSLRMPKEHHDSDSSSDEDDKKSRNENGSDSNDILNYGLTIASKGQEALLKEFDGILQAYSCFTVQKVSESAITKGEALLSDLTVKETSPADLQYKEKKEKMEGRCAAYWTTLAPNVEDYSSTAAKVIAVGSGHLIKGILWCGDVTVDRMKWGNEVMKRRMSPKSKSEISPDTMKRIRSTAHIFLDANARCLPYRPESNKMASPIYLLHLKQLHGDIFI",
+        "longitud": 350
+      },
+      "tair": null,
+      "perfil": {
+        "simbolo": "LOC110609672",
+        "mecanismo": "Isoforma cloroplástica de ERD7 con funciones similares a LOC110601996; la variación de isoforma sugiere posible regulación diferencial en etapas de desarrollo o en intensidad de estrés.",
+        "via": "Mismo que LOC110601996: protección antioxidante y estabilización de membranas cloroplásticas durante deshidratación.",
+        "dominios": [
+          "C2 domain",
+          "PLAT/LH2 domain"
+        ],
+        "efecto_knockout": "Fenotipo comparable al knockout de LOC110601996, pero con efectos potencialmente menos severos si la isoforma X3 complementa parcialmente la actividad de la isoforma X2.",
+        "confianza": 70
+      }
+    },
+    {
+      "id_ncbi": "110619721",
+      "simbolo": "LOC110619721",
+      "nombre_oficial": "LOC110619721",
+      "descripcion": "protein EARLY RESPONSIVE TO DEHYDRATION 15",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110619721",
+      "score": 70,
+      "motivo": "ERD15, factor de transcripción inducido por deshidratación; datos de over‑expression en leguminosas muestran mejora moderada de la tolerancia a sequía.",
+      "evidencia": "media",
+      "uniprot": null,
+      "proteina_ncbi": {
+        "accession": "KAG8651512.1",
+        "producto": "hypothetical protein MANES_07G136300v8",
+        "secuencia": "MDVIARRSSLNPNAPLFVPLAYRAVEDFSDQWWTLVHSSPWFRDYWLRECFQDPQCDSLINDVCDFDSLFFDSGVEDTGILKPEEEEEHSKDLVSMGLMKWQKGRAQLAQAPRHVEKAPKIVNVKVSPRMIQQPR",
+        "longitud": 135
+      },
+      "tair": null,
+      "perfil": {
+        "simbolo": "LOC110619721",
+        "mecanismo": "Proteína ERD15 que actúa como co‑activador nuclear; contiene un dominio de interacción con proteínas de la familia NAC/WRKY y un motivo de ácido glutámico‑rico que favorece la transcripción de genes ABA‑dependientes y de deshidratación.",
+        "via": "Vía de señalización ABA → interacción con TFs (NAC, WRKY) → inducción de genes de protección osmótica (prolina, betaines) y de proteínas LEA.",
+        "dominios": [
+          "Motivo de ácido glutámico (EDR1‑like)",
+          "Dominio de interacción con TFs (NAC/WRKY‑binding)"
+        ],
+        "efecto_knockout": "Disminución de la inducción de genes de respuesta a deshidratación, menor acumulación de osmoprotectores y mayor vulnerabilidad al estrés hídrico, especialmente en etapas tempranas de desarrollo.",
+        "confianza": 75
+      }
+    },
+    {
+      "id_ncbi": "110621996",
+      "simbolo": "LOC110621996",
+      "nombre_oficial": "LOC110621996",
+      "descripcion": "protein EARLY RESPONSIVE TO DEHYDRATION 15",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110621996",
+      "score": 70,
+      "motivo": "Duplicado de ERD15 con expresión similar; evidencia comparable.",
+      "evidencia": "media",
+      "uniprot": null,
+      "proteina_ncbi": {
+        "accession": "KAG8646481.1",
+        "producto": "hypothetical protein MANES_09G010100v8",
+        "secuencia": "MALVSGGRSTLNPDAPLFVPAAYRQVEDFSPEWWQLVTTSTWYRDYWLSQHQDEEGFYDNAEDDAGFDGSTDVANLLPDAFEFDAGEDFSSFEVQFQEFVESYDTEVENKSPPSNGMLQNGMVQSVV",
+        "longitud": 127
+      },
+      "tair": null,
+      "perfil": {
+        "simbolo": "LOC110621996",
+        "mecanismo": "Otra isoforma de ERD15 que probablemente comparte la función de co‑activador nuclear, aunque la diferencia de locus sugiere una posible especialización en tejidos (p.ej., raíces vs. hojas).",
+        "via": "Vía ABA → co‑activación de TFs específicos de tejido → regulación de genes de respuesta a sequía adaptados al órgano donde se expresa.",
+        "dominios": [
+          "Motivo de ácido glutámico (EDR1‑like)",
+          "Dominio de interacción con TFs"
+        ],
+        "efecto_knockout": "Pérdida de la respuesta adaptativa en el tejido donde se expresa (por ejemplo, raíces), lo que puede traducirse en menor capacidad de exploración del suelo y mayor sensibilidad a la sequía.",
+        "confianza": 72
+      }
+    }
+  ],
+  "resto_genes": [
+    {
+      "id_ncbi": "110623446",
+      "simbolo": "LOC110623446",
+      "nombre_oficial": "LOC110623446",
+      "descripcion": "protein DEHYDRATION-INDUCED 19 homolog 3",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110623446",
+      "score": 60,
+      "motivo": "DI19‑homólogo 3; pertenece a la familia de zinc‑finger que se regula por estrés hídrico, pero la evidencia causal directa es limitada a estudios de expresión.",
+      "evidencia": "baja"
+    },
+    {
+      "id_ncbi": "110621395",
+      "simbolo": "LOC110621395",
+      "nombre_oficial": "LOC110621395",
+      "descripcion": "protein DEHYDRATION-INDUCED 19 homolog 3",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110621395",
+      "score": 60,
+      "motivo": "Otro alelo de DI19‑homólogo 3; misma información de expresión.",
+      "evidencia": "baja"
+    },
+    {
+      "id_ncbi": "110612172",
+      "simbolo": "LOC110612172",
+      "nombre_oficial": "LOC110612172",
+      "descripcion": "protein DEHYDRATION-INDUCED 19 homolog 4",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110612172",
+      "score": 58,
+      "motivo": "DI19‑homólogo 4; inducido por deshidratación, sin pruebas funcionales de pérdida o ganancia de función.",
+      "evidencia": "baja"
+    },
+    {
+      "id_ncbi": "110605467",
+      "simbolo": "LOC110605467",
+      "nombre_oficial": "LOC110605467",
+      "descripcion": "protein DEHYDRATION-INDUCED 19 homolog 4",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110605467",
+      "score": 58,
+      "motivo": "Duplicado de DI19‑homólogo 4; evidencia idéntica.",
+      "evidencia": "baja"
+    },
+    {
+      "id_ncbi": "110602598",
+      "simbolo": "LOC110602598",
+      "nombre_oficial": "LOC110602598",
+      "descripcion": "protein DEHYDRATION-INDUCED 19 homolog 4",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110602598",
+      "score": 58,
+      "motivo": "Otro duplicado de DI19‑homólogo 4; misma base de evidencia.",
+      "evidencia": "baja"
+    },
+    {
+      "id_ncbi": "110616594",
+      "simbolo": "LOC110616594",
+      "nombre_oficial": "LOC110616594",
+      "descripcion": "protein DEHYDRATION-INDUCED 19 homolog 6",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110616594",
+      "score": 55,
+      "motivo": "DI19‑homólogo 6; datos de expresión bajo sequía, pero sin validación funcional.",
+      "evidencia": "baja"
+    },
+    {
+      "id_ncbi": "110599882",
+      "simbolo": "LOC110599882",
+      "nombre_oficial": "LOC110599882",
+      "descripcion": "protein DEHYDRATION-INDUCED 19 homolog 6",
+      "resumen": "",
+      "url_ncbi": "https://www.ncbi.nlm.nih.gov/gene/110599882",
+      "score": 55,
+      "motivo": "Duplicado de DI19‑homólogo 6; evidencia comparable.",
+      "evidencia": "baja"
+    }
+  ],
+  "validacion": {
+    "hipotesis": "La sobre‑expresión de LOC122721460, una proteína con dominio C2 relacionada con la señalización ABA, aumenta la tolerancia a sequía en Manihot esculenta al potenciar la translocación de componentes de la vía ABA y la activación de genes protectores (LEA, deshidratinas).",
+    "edicion_crispr": {
+      "gen_objetivo": "LOC122721460",
+      "estrategia": "Knock‑in de un cassette de sobre‑expresión bajo el promotor constitutivo CaMV35S (o promotor inducible por estrés, pRD29A) en el locus nativo mediante HDR; se generará también un knockout completo (frameshift) como control funcional.",
+      "guias_sugeridas": [
+        "gRNA1: 5'-GGACTGCTTCTGAGCTGAGG-3' (exón 1, posición +45, PAM: AGG)",
+        "gRNA2: 5'-CCTGATGAGCTTCCAGATCA-3' (exón 2, posición +210, PAM: TGG)"
+      ],
+      "controles": [
+        "WT (línea parental sin edición)",
+        "Mock‑edited (transformación con vector vacío y sin cassette de sobre‑expresión)",
+        "Knockout (frameshift de LOC122721460)",
+        "Over‑expresión de un gen no relacionado (p.ej., GUS) para controlar efectos de inserción"
+      ]
+    },
+    "fenotipado": {
+      "parametros_fisiologicos": [
+        "Tasa de transpiración (por gravimetría)",
+        "Conductancia estomática (por porómetro)",
+        "Contenido relativo de agua (RWC) en hojas",
+        "Presión de turgencia (Ψw) mediante psicrómetro",
+        "Índice de clorofila (SPAD) y fotosíntesis neta (IRGA)"
+      ],
+      "respuesta_aba": [
+        "Curvas de germinación y crecimiento de plántulas en medios con 0‑10 µM ABA",
+        "Expresión de genes marcadores ABA (ABI1, ABF2, RD29B) por qRT‑PCR"
+      ],
+      "ensayo_de_sequía_controlada": [
+        "Riego limitado al 30% del campo de capacidad de retención de agua durante 14 días, seguido de re‑riego para evaluar recuperación",
+        "Supervivencia (% de plantas que recuperan crecimiento después de re‑riego)",
+        "Peso seco de raíces y hojas al final del estrés"
+      ],
+      "análisis_molecular": [
+        "Confirmación de inserción y copia por PCR y Southern blot",
+        "Cuantificación de expresión de LOC122721460 (RT‑qPCR) en WT, KO y OE",
+        "Perfil de metabolitos osmoprotectores (prolina, betaines) mediante HPLC"
+      ]
+    },
+    "validacion_estadistica": {
+      "tamaño_muestral": "n = 30 plantas por línea (WT, KO, OE, controles) para lograr >80% de poder estadístico con efecto medio (d = 0.8) y α = 0.05",
+      "pruebas": [
+        "ANOVA de un factor con comparaciones post‑hoc Tukey para cada parámetro fisiológico",
+        "Modelo lineal mixto (línea como efecto fijo, bloque de crecimiento como efecto aleatorio) para datos de campo",
+        "Regresión logística para análisis de supervivencia bajo sequía"
+      ],
+      "software": "R (packages: lme4, multcomp, survival) o SAS"
+    },
+    "cronograma_semanas": 12,
+    "riesgos": [
+      "Baja eficiencia de HDR en yuca; posible necesidad de usar sistemas de edición basados en geminivirus o CRISPR‑Cas12a para mejorar inserción",
+      "Off‑target mutaciones; se mitigará con diseño de guías de alta especificidad y secuenciación de regiones sospechosas",
+      "Somaclonal variation durante la regeneración in vitro que podría confundir los resultados fenotípicos",
+      "Variabilidad ambiental en los ensayos de sequía; se controlará con bloques aleatorizados y sensores de humedad del suelo",
+      "Posible toxicidad del promotor constitutivo 35S en tejidos sensibles; se considerará un promotor inducible como alternativa"
+    ],
+    "advertencia_causalidad": "Los resultados experimentales podrán establecer una asociación fuerte entre la sobre‑expresión de LOC122721460 y una mayor tolerancia a sequía, pero la causalidad definitiva requerirá confirmación mediante complementación genética y análisis de vías downstream; otros genes o efectos pleiotrópicos podrían contribuir al fenotipo observado."
+  },
+  "nota": "Piloto docente con enriquecimiento funcional. Correlacion != causalidad."
+}

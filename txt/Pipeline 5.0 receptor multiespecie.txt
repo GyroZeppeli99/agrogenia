@@ -1,0 +1,121 @@
+--receptora fresa
+   ↓
+alias curado -> Fragaria vesca
+   ↓
+NCBI Taxonomy valida tax_id
+   ↓
+descarga proteoma de receptora en proteomas_receptor/
+   ↓
+LLM/panel curado sugiere donantes para fresa
+   ↓
+HMMER sub-base sequía
+   ↓
+pre-ranqueo/exploración
+   ↓
+validación multi-fuente
+   ↓
+informe JSON/MD/estado
+
+
+
+V4.2  validación multi-fuente (PMC/STRING/GEO)
+V4.4  sub-bases Pfam por rasgo + HMMER primario        ← corrige sesgo keywords
+V4.5  modo exhaustivo: pre-ranqueo + lotes LLM          ← corrige sesgo de muestreo
+V4.6  panel curado/hibrido + profundidad proteoma       ← corrige sesgo de panel
+V4.6.1 PMC honesto (NOVEL vs UNKNOWN) + monitoreo .estado
+V5.0  receptora dinámica (fresa, cualquier cultivo)     ← en construcción
+V5.1  ortología real blastp/hmmer contra receptora      ← puente natural
+V5.2  consenso multi-configuración                      ← robustez para paper
+
+
+cd ~/agrogenia
+
+# 1) borrar el caché contaminado de la variedad
+rm -f panel_donantes_tolerancia_a_sequia_Fragaria_vesca_var._mexicana.json
+
+# 2) borrar el proteoma basura de la variedad
+rm -f proteomas_receptor/proteoma_Fragaria_vesca_var._mexicana.faa
+
+# 3) correr forzando el tax_id de la especie tipo
+PYTHONUNBUFFERED=1 nohup python -u pipeline_v5.0_receptora_dynamic.py \
+  --rasgo "tolerancia a sequia" \
+  --receptora "Fragaria vesca" \
+  --receptora-tax-id 3831 \
+  --estrategia B \
+  --modo exploracion \
+  --panel hibrido \
+  --pfam auto \
+  --hmmer-por-especie 1000 \
+  --max-proteinas-receptora 100000 \
+  --top 5 \
+  --modelo rapido \
+  --no-compatibilidad \
+  --no-constructos \
+  --salida v50_fresa_3831_humo \
+  > v50_fresa_3831_humo.log 2>&1 &
+
+
+
+  cd ~/agrogenia
+
+# limpiar caché y proteoma basura de la variedad
+rm -f panel_donantes_tolerancia_a_sequia_Fragaria_vesca_var._mexicana.json
+rm -f proteomas_receptor/proteoma_Fragaria_vesca_var._mexicana.faa
+
+PYTHONUNBUFFERED=1 python -u pipeline_v5.0.1_receptora_segura.py \
+  --receptora fresa \
+  --solo-receptora \
+  --max-proteinas-receptora 100000 \
+  --salida v501_fresa_solo
+
+
+  ./vigilar.sh v502_fresa_exhaustivo_5000_seguro
+
+
+
+  Puedes vigilar también el archivo de salida de HMMER
+El comando usa:
+text
+
+/tmp/tmp8zupby7d.fasta.domtbl
+
+
+Puedes ver si existe o crece:
+
+watch -n 15 'ls -lh /tmp/tmp8zupby7d.fasta.domtbl 2>/dev/null || echo "domtbl aún no aparece"'
+
+No siempre crece de forma visible porque HMMER también puede bufferizar, pero si lo ves crecer, es buena señal.
+También puedes combinar monitoreo:
+
+watch -n 15 'ps -p 203368 -o pid,etime,time,%cpu,comm; echo; ls -lh /tmp/tmp8zupby7d.fasta.domtbl 2>/dev/null || echo "domtbl aún no aparece"'
+
+
+V5.0.3 = V5.0.2
+       + proveedor LLM múltiple / fallback
+       + ranking separado plantas vs microorganismos
+       + heurística de compatibilidad más honesta
+       + pre_score también en exploración
+       + bonus por dominios de alto valor biológico
+
+
+cd ~/agrogenia
+
+export GOOGLE_API_KEY="AIza..."
+
+PYTHONUNBUFFERED=1 python -u pipeline_v5.0.4_multi_llm.py \
+  --rasgo "tolerancia a sequia" \
+  --receptora fresa \
+  --estrategia B \
+  --modo exploracion \
+  --panel hibrido \
+  --pfam auto \
+  --hmmer-por-especie 500 \
+  --max-proteinas-especie 50000 \
+  --max-proteinas-receptora 100000 \
+  --top 5 \
+  --llm-provider gemini \
+  --gemini-model gemini-3.5-flash-lite \
+  --modelo rapido \
+  --no-compatibilidad \
+  --no-constructos \
+  --salida v504_gemini_35lite_mini2       
